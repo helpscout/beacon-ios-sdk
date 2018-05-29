@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script type="text/javascript">
+
+    function addHeader(header) {
+        document.getElementById('convo-header').innerHTML = header;
+    }
+
+    function addThread(threadHtml) {
+        var threadList = document.getElementById('thread-list');
+        threadList.insertAdjacentHTML('afterbegin', threadHtml);
+    }
+
+    function scrollToLast() {
+        var threadElements = document.getElementsByClassName('thread-item');
+        var lastThread = threadElements[threadElements.length - 1];
+        lastThread.scrollIntoView(true);
+    }
+
+    function clearThreads() {
+        document.getElementById('thread-list').innerHTML = '';
+    }
+
+    function showWaiting(text1, text2) {
+        var waitingText = document.getElementById('waiting-alert-text');
+        waitingText.innerHTML = "<strong>" + text1 + "</strong>. " + text2;
+        var waitingDiv = document.getElementById('waiting-alert');
+        waitingDiv.classList.remove('hidden');
+    }
+
+    </script>
+    <link rel='stylesheet' type='text/css' href='conversationDetails.css'>
+</head>
+
+<body>
+    <div class="convo-header" id="convo-header"></div>
+    <ul id="thread-list" class="thread-list"></ul>
+    <div id="waiting-alert" class="waiting-alert hidden">
+      <div class="waiting-alert-box">
+        <div class="waiting-alert-wrapper">
+          <div class="waiting-alert-content">
+            <div class="waiting-alert-icon-wrapper">
+                <span class="waiting-alert-icon-span">
+                  <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8 14a.997.997 0 0 1-.707-.293l-2-2a.999.999 0 1 1 1.414-1.414L8 11.586l4.293-4.293a.999.999 0 1 1 1.414 1.414l-5 5A.997.997 0 0 1 8 14" fill="#228350" fill-rule="evenodd"></path></svg>
+                </span>
+            </div>
+            <div class="waiting-alert-text" id="waiting-alert-text">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
