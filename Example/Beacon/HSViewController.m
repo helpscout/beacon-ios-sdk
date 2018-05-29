@@ -8,7 +8,7 @@
 
 @implementation HSViewController
 
-static NSString *const DEFAULT_BEACON_ID = @"43f48699-c851-4526-943c-87c3fc1fbe69";
+static NSString *const DEFAULT_BEACON_ID = @""; // Add a Beacon ID here
 static NSString *const DEFAULTS_KEY = @"HSBeaconExampleSavedFormValues";
 static NSString *const BEACON_ID_KEY = @"beaconId";
 static NSString *const EMAIL_KEY = @"email";
