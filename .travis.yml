@@ -1,0 +1,5 @@
+osx_image: xcode9.2
+language: objective-c
+
+script:
+- set -o pipefail && xcodebuild build -project Example/Beacon\ Example.xcodeproj -scheme 'BeaconExample' -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.2' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
