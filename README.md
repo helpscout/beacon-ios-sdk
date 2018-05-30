@@ -58,7 +58,10 @@ Secure mode authentication uses an user identifier (similar to basic mode) but a
 ```objc
 HSBeaconUser *user = [[HSBeaconUser alloc] init];
 user.email = @"user@domain.com";
-user.signature = @"8235545a15c6f41b64e3c47e5c94d3...";
+[HSBeacon login:user];
+
+HSBeaconSettings *settings = [[HSBeaconSettings alloc] initWithBeaconId:@"beacon-id"];
+[HSBeacon openBeacon:settings signature:@"8235545a15c6f41b64e3c47e5c94d3..."];
 ```
 
 ### User Attributes
