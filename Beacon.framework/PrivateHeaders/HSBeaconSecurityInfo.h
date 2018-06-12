@@ -17,4 +17,6 @@
 
 -(BOOL)hasSignature;
 
+-(BOOL)hasBeaconAuthorization;
+
 @end

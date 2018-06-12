@@ -4,6 +4,4 @@
 
 - (NSDate *)dateFromString:(NSString *)dateString;
 
-- (NSDate *)dateFromStringWithMicroseconds:(NSString *)dateString;
-
 @end
