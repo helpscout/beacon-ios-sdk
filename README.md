@@ -143,3 +143,7 @@ user.clearAttributes() // Clear all attributes
 
 To run the example project, clone the Beacon repo and run `pod install` from the Example directory. Once installation is complete, open `Beacon Example.xcworkspace` and run the `Beacon Example` scheme.
 
+## Useful Links
+
+* [Changelog](https://github.com/helpscout/beacon-ios-sdk/blob/master/CHANGELOG.md) – get a list of recent changes to the Beacon SDK
+
