@@ -43,6 +43,7 @@ static NSString *const SIGNATURE_KEY = @"signature";
     HSBeaconSettings *settings = [[HSBeaconSettings alloc] initWithBeaconId:_beaconIdText.text];
     settings.useNavigationBarAppearance = NO;
     settings.beaconTitle = @"Example Support";
+    settings.useLocalTranslationOverrides = YES;
 
     NSString *signature = (self.signatureText.text.length > 0) ? self.signatureText.text : nil;
     [HSBeacon openBeacon:settings signature:signature];

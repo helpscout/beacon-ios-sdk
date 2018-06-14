@@ -2,6 +2,17 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 1.0.0 beta (build 37)
+
+##### Enhancements
+
+* Improve error handling in the Previous Messages flow
+* Prevent sending duplicate messages when replying to a thread or starting a new one
+
+##### Bug Fixes
+
+* Attachments with zero length are now rejected
+
 ## 1.0.0 beta (build 36)
 
 ##### Enhancements

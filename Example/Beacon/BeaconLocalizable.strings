@@ -1,0 +1,117 @@
+/* send button */
+"sendMessage"="Send";
+
+/* attachments header label */
+"Attachments"="Attachments";
+
+/* Message response times */
+
+"weUsuallyRespondIn"="We usually respond in";
+"aFewMinutes"="a few minutes";
+"aFewHours"="a few hours";
+"aDay"="a day";
+
+/* Dropdown picker actions */
+
+"dropdownPickerClear"="Clear";
+"dropdownPickerDone"="Done";
+
+/* from Server translations */
+
+/* */
+"addReply"="Add Reply";
+
+/* Placeholder for message entry */
+"addYourMessageHere"="Add your message here...";
+
+/* Label for docs tab */
+"answer"="Answer";
+
+/* Label for messaging tab */
+"ask"="Ask";
+
+/* */
+"cantFindAnswer"="Can’t find an answer?";
+
+/* */
+"customFieldsValidationLabel"="Please complete all fields";
+
+"defaultMessageErrorText"= "There was a problem sending your message. Please try again in a moment.";
+
+/* */
+"docsArticleErrorText"="There was a problem retrieving this article. Please double-check your internet connection and try again.";
+
+/* */
+"docsSearchEmptyText"="We couldn’t find any articles that match your question. Try searching a broader term or get in touch.";
+
+/* */
+"docsSearchErrorText"="There was a problem retrieving articles. Please double-check your internet connection and try again.";
+
+/* No Internet connection message in Previous Messages */
+"previousMessagesErrorText"="There was a problem retrieving messages. Please double-check your internet connection and try again.";
+
+/* */
+"emailLabel"="Email address";
+
+/* */
+"firstAFewQuestions"="First, a few questions";
+
+/* Table item on landing page */
+"getInTouch"="Get in Touch";
+
+/* */
+"howCanWeHelp"="How can we help?";
+
+/* Show after message sent */
+"messageConfirmationText"="You can expect to receive a reply via email in the next few hours.";
+
+/* */
+"messageLabel"="How can we help?";
+
+/* */
+"sendAMessage"="Send a message";
+
+/* Field label for send message */
+"nameLabel"="Name";
+
+/* */
+"next"="Next";
+
+/* */
+"nothingFound"="Nothing Found";
+
+/* Table item on landing page */
+"previousMessages"="Previous Messages";
+
+/* Shown in previous messages for messages pending a reply */
+"received"="Received";
+
+/* */
+"relatedArticles"="Related Articles";
+
+/* Error message on send */
+"replyErrorText"="There was a problem sending your message. Please try again in a moment.";
+
+/* Search bar placeholder */
+"searchLabel"="What do you need help with?";
+
+/* */
+"sendMessage"="Send Message";
+
+/* Field label on send message page */
+"subjectLabel"="Subject";
+
+/* Group header in suggestions table */
+"suggestedForYou"="Suggested For You";
+
+/* */
+"tryBroaderTerm"="Try searching a broader term or";
+
+/* */
+"viewAndUpdateMessage"="View and update this message in";
+
+/* */
+"waitingForAnAnswer"="Waiting for an answer";
+
+/* Header on message sent confirmation screen */
+"weAreOnIt"="We’re on it!";

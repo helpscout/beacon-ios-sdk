@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B00E94620D443DC0077FC6B /* BeaconLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B00E94520D443DC0077FC6B /* BeaconLocalizable.strings */; };
 		4B35C7D420BE0F26000C1573 /* Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; };
 		4B35C7D620BE1158000C1573 /* HSAttachmentPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D520BE1158000C1573 /* HSAttachmentPicker.framework */; };
 		4B35C7D720BE11C9000C1573 /* Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; };
@@ -41,6 +42,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4B00E94520D443DC0077FC6B /* BeaconLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = BeaconLocalizable.strings; sourceTree = "<group>"; };
 		4B35C7D320BE0F26000C1573 /* Beacon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beacon.framework; path = ../Beacon.framework; sourceTree = "<group>"; };
 		4B35C7D520BE1158000C1573 /* HSAttachmentPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HSAttachmentPicker.framework; path = Frameworks/HSAttachmentPicker.framework; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* BeaconExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,7 @@
 				6003F5A5195388D20070C39A /* HSViewController.h */,
 				6003F5A6195388D20070C39A /* HSViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				4B00E94520D443DC0077FC6B /* BeaconLocalizable.strings */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -202,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B00E94620D443DC0077FC6B /* BeaconLocalizable.strings in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
