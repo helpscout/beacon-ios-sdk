@@ -75,7 +75,7 @@ HSBeacon.open(settings)
 
 #### Secure Mode
 
-Secure mode authentication uses an user identifier (similar to basic mode) but also requires a signature. The signature must be computed on a *per user* basis using the secret key. The Secret Key is provided on the Manage Beacon page > Messaging > Advance Options.
+Secure mode authentication uses an user identifier (similar to basic mode) but also requires a signature. The signature must be computed on a *per user* basis using the secret key. The Secret Key is provided on the [Manage Beacon page](https://secure.helpscout.net/settings/beacons/) > Messaging > Advance Options.
 
 > Note: the secret key should *not* be stored in the app; instead your server should provide the computed signature value.  
 

@@ -8,7 +8,9 @@
 
 @implementation HSViewController
 
+#warning The Beacon ID should be replaced with a valid value: https://secure.helpscout.net/settings/beacons/
 static NSString *const DEFAULT_BEACON_ID = @""; // Add a Beacon ID here
+
 static NSString *const DEFAULTS_KEY = @"HSBeaconExampleSavedFormValues";
 static NSString *const BEACON_ID_KEY = @"beaconId";
 static NSString *const EMAIL_KEY = @"email";
