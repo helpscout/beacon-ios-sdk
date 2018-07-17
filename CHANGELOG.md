@@ -2,6 +2,20 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 1.0.0 beta (build 41)
+
+##### Enhancements
+
+* Added state restoring when opening the same Beacon after it has been closed
+* Improvements to network error handling
+* Updated the visual appearance of custom fields
+* Updated the contact button when viewing empty search results
+
+##### Bug Fixes
+
+* Fixed crashes around attachment uploading
+* Fixed articles failing to load correctly
+
 ## 1.0.0 beta (build 37)
 
 ##### Enhancements
