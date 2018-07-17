@@ -42,4 +42,6 @@
 
 - (UIStatusBarStyle)statusBarStyle;
 
+- (UIActivityIndicatorViewStyle)indicatorViewStyle;
+
 @end

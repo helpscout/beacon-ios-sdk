@@ -8,4 +8,8 @@
 
 -(void)activeState:(HSTintColor *)tintColor;
 
+-(void)showSpinner:(HSTintColor *)tintColor;
+
+-(void)hideSpinner;
+
 @end

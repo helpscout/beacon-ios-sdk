@@ -7,10 +7,14 @@
 #import "HSBeaconBaseAPIClient.h"
 #import "HSBeaconSuggestion.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface HSBeaconDocsAPIClient : HSBeaconBaseAPIClient
 
-- (NSURLSessionDataTask *)fetchArticle:(NSString *)articleId completionHandler: (void (^)(HSBeaconArticleDetails *article, NSError *error))completion;
+- (NSURLSessionDataTask *)fetchArticle:(NSString *)articleId completionHandler: (void (^)(HSBeaconArticleDetails *_Nullable article, NSError *error))completion;
 
-- (NSURLSessionDataTask *)fetchSearchResults:query page:(int)page completionHandler:(void (^)(HSBeaconPaginatedResponse *results, NSError *error)) completion;
+- (NSURLSessionDataTask *)fetchSearchResults:query page:(int)page completionHandler:(void (^)(HSBeaconPaginatedResponse *_Nullable results, NSError *error)) completion;
 
 @end
+
+NS_ASSUME_NONNULL_END

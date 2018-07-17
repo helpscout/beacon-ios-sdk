@@ -2,6 +2,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class HSBorderedButton;
+
 @interface HSStatusMessageViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
@@ -9,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) IBOutlet UILabel *messageLabel;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *viewTopConstraint; // For assigning to a Safe Area layout guide
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *titleTopConstraint;
+@property (nonatomic, weak) IBOutlet HSBorderedButton *actionButton;
 
 - (instancetype)initWithMessage:(NSString *)errorString;
 

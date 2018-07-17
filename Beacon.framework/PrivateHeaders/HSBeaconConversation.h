@@ -3,6 +3,8 @@
 #import "HSBeaconAgent.h"
 #import "HSBeaconConversationThread.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface HSBeaconConversation : NSObject
 
 @property (readonly, nonatomic) long conversationId;
@@ -13,7 +15,7 @@
 
 @property (readonly, nonatomic) NSDate *lastUpdated;
 
-@property (readonly, nonatomic) NSString *lastThreadPreview;
+@property (readonly, nonatomic, nullable) NSString *lastThreadPreview;
 
 @property (readonly, nonatomic) BOOL waitingForReply;
 
@@ -24,3 +26,5 @@
 -(BOOL)hasMultipleThreads;
 
 @end
+
+NS_ASSUME_NONNULL_END

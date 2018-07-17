@@ -70,11 +70,11 @@ html {
 
 .c-BeaconHistoryTimelineListItem a:hover { color: #2091d9; text-decoration: underline; }
 
-#fullArticle { color: #4f5d6b; font-family: 'Roboto', 'Helvetica', sans-serif; line-height: 1.75em; }
+#fullArticle { color: #4f5d6b; font-family: '-apple-system'; line-height: 1.75em; }
 
 #fullArticle { box-sizing: border-box; }
 
-#fullArticle { font-family: "Roboto", "Helvetica", sans-serif; font-size: 14px; }
+#fullArticle { font-family: '-apple-system'; font-size: 14px; }
 
 #fullArticle * { box-sizing: border-box; }
 
@@ -197,3 +197,13 @@ html {
 #fullArticle .callout-red.dashed { border: 1px dashed #e52f28; }
 
 #fullArticle { padding: 0 15px; }
+
+#fullArticle .c-Article__title {
+    color: #2a3b47;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    font-weight: 500;
+}

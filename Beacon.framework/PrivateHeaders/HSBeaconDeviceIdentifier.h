@@ -4,6 +4,6 @@
 
 + (NSString *)platform;
 
-+(NSString *)platformString;
++ (NSString *)platformString;
 
 @end

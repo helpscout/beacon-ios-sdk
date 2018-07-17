@@ -1,5 +1,7 @@
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  `HSBeaconUser` represents a user identified with Help Scout, allowing you to
  match up support requests to your customer base.
@@ -12,12 +14,12 @@
 /**
  The email address for the current user.
  */
-@property(strong, nonatomic) NSString *email;
+@property(strong, nonatomic, nullable) NSString *email;
 
 /**
  The name of the current user.
  */
-@property(strong, nonatomic) NSString *name;
+@property(strong, nonatomic, nullable) NSString *name;
 
 /**
  The attributes for the current user. These are arbitrary key/value pairs that
@@ -44,4 +46,11 @@
  */
 - (void)clearAttributes;
 
+/**
+ Check if two users are equal
+ */
+- (BOOL)isEqualToBeaconUser:(HSBeaconUser *)user;
+
 @end
+
+NS_ASSUME_NONNULL_END

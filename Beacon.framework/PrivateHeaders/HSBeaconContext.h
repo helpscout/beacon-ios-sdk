@@ -15,20 +15,31 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HSBeaconContext : NSObject
 
-@property(strong, nonatomic) HSBeaconConfig *config;
-@property(readonly) HSBeaconSettings *beaconSettings;
-@property(readonly) HSTintColor *tintColorSettings;
-@property(readonly) HSBeaconDocsAPIClient *docsApiClient;
-@property(readonly) HSBeaconMessagingAPIClient *messagingApiClient;
-@property(readonly) HSBeaconCloudFrontAPIClient *cloudFrontApiClient;
-@property(readonly) HSBeaconLocalizedStrings *localizedStrings;
-@property(readonly) HSBeaconActivityLog *activityLog;
-@property(readonly) HSBeaconSecurityInfo *securityInfo;
-@property(readonly) HSBeaconKeychainWrapper *keychainWrapper;
+@property (strong, nonatomic) HSBeaconConfig *config;
+@property (readonly) HSBeaconSettings *beaconSettings;
+@property (readonly) HSTintColor *tintColorSettings;
+@property (readonly) HSBeaconDocsAPIClient *docsApiClient;
+@property (readonly) HSBeaconMessagingAPIClient *messagingApiClient;
+@property (readonly) HSBeaconCloudFrontAPIClient *cloudFrontApiClient;
+@property (readonly) id<HSBeaconStringLocalizer> localizedStrings;
+@property (readonly) HSBeaconActivityLog *activityLog;
+@property (readonly) HSBeaconSecurityInfo *securityInfo;
+@property (readonly) HSBeaconKeychainWrapper *keychainWrapper;
+@property (readonly) NSMutableDictionary<NSNumber *, HSBeaconReplyMessage *> *draftReplies;
 
-@property(nullable) HSBeaconEmailMessage *draftMessage;
+@property (atomic) BOOL loadFailed;
+
+@property (nullable) HSBeaconEmailMessage *draftMessage;
 
 - (instancetype _Nonnull)initWithBeaconSettings:(HSBeaconSettings *_Nullable)beaconSettings user:(HSBeaconUser *_Nullable)user signature:(NSString *_Nullable)signature;
+
+- (instancetype _Nonnull)initWithBeaconSettings:(HSBeaconSettings *_Nullable)beaconSettings
+                                           user:(HSBeaconUser *_Nullable)user
+                                      signature:(NSString *_Nullable)signature
+                                stringLocalizer:(id<HSBeaconStringLocalizer>)stringLocalizer
+                                messagingClient:(HSBeaconMessagingAPIClient *_Nullable)messagingClient;
+
+- (void)lookupUserDeviceInfo;
 
 @end
 

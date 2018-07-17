@@ -13,6 +13,6 @@
 @property(nonatomic) float progress;
 @property(nonatomic) BOOL uploadStarted;
 
--(instancetype)initWithData: (NSData *)data filename: (NSString *)filename image: (UIImage *)image;
+- (nonnull instancetype)initWithData:(NSData *_Nonnull)data filename:(NSString *_Nonnull)filename image:(UIImage *_Nullable)image;
 
 @end

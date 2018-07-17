@@ -1,5 +1,7 @@
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface HSBeaconArticleDetails: NSObject
 
 @property (readonly, nonatomic, nonnull) NSString *identifier;
@@ -15,3 +17,5 @@
 - (NSString * _Nullable)linkedArticleIdForUrl:(NSString *_Nonnull)url;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -4,4 +4,6 @@
 
 + (NSBundle * _Nonnull)beaconBundle;
 
++ (UIViewController *)viewControllerInStoryboard:(NSString *_Nonnull)storyboardName viewControllerIdentifier:(NSString *_Nonnull)identifier;
+
 @end

@@ -36,15 +36,10 @@
 @property(weak, nonatomic) IBOutlet UILabel *responseTimeText;
 @property(weak, nonatomic) IBOutlet UILabel *helpText;
 
-@property(weak, nonatomic) IBOutlet UIView *messageEntryContainerView;
-@property(weak, nonatomic) IBOutlet UIView *customFieldsContainerView;
-
 @property(weak, nonatomic) IBOutlet NSLayoutConstraint *footerBottomConstraint;
 
 @property(weak, nonatomic) IBOutlet HSBeaconErrorView *errorContainer;
 @property(strong, nonatomic) IBOutlet NSLayoutConstraint *errorContainerHeight;
-
-@property(readonly, nonatomic) HSBeaconCustomFieldsEntryController *customFieldsEntryController;
 
 - (void)sendMessage;
 

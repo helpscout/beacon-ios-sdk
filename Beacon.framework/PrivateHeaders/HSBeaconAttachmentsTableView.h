@@ -1,35 +1,32 @@
 #import <UIKit/UIKit.h>
 
 #import "HSBeaconAttachment.h"
-#import "HSBeaconAttachmentTableViewCell.h"
 #import "HSBeaconContext.h"
+
+@class HSBeaconAttachmentTableViewCell;
 
 @protocol HSBeaconAttachmentsTableViewDelegate
 
--(void)attachmentsTableShowError:(NSString *)error;
-
--(void)attachmentUploadComplete;
-
--(void)attachmentsTableLayoutChanged:(CGFloat)newHeight;
+- (void)attachmentsTableShowError:(NSString *)error;
+- (void)attachmentUploadComplete;
+- (void)attachmentsTableLayoutChanged:(CGFloat)newHeight;
 
 @end
 
 @interface HSBeaconAttachmentsTableView : UITableView
 
-@property(nonatomic) HSBeaconContext *beaconContext;
+@property (nonatomic) HSBeaconContext *beaconContext;
+@property (nonatomic) NSMutableArray<HSBeaconAttachment *> *attachments;
+@property (weak) id<HSBeaconAttachmentsTableViewDelegate> attachmentsTableDelegate;
 
-@property(nonatomic) NSMutableArray<HSBeaconAttachment *> *attachments;
+- (void)addAttachment:(HSBeaconAttachment *)attachment;
 
-@property(weak) id<HSBeaconAttachmentsTableViewDelegate> attachmentsTableDelegate;
+- (BOOL)canAddAttachment;
 
--(void)addAttachment:(HSBeaconAttachment *)attachment;
+- (BOOL)hasPendingUpload;
 
--(BOOL)canAddAttachment;
+- (BOOL)sendPendingUploads;
 
--(BOOL)hasPendingUpload;
-
--(BOOL)sendPendingUploads;
-
--(void)clearAttachments;
+- (void)clearAttachments;
 
 @end

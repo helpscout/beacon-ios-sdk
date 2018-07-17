@@ -1,29 +1,26 @@
 #import <UIKit/UIKit.h>
 
 #import "HSBeaconContext.h"
-#import "HSBeaconAttachmentsTableView.h"
-#import "HSBeaconContactFormField.h"
-#import "HSBeaconEmailMessage.h"
 
-@class HSBeaconContactFormController;
+@class HSBeaconAttachmentsTableView;
+@class HSBeaconContactFormViewController;
+@class HSBeaconContactFormField;
+@class HSBeaconEmailMessage;
 
 @protocol HSBeaconContactFormControllerDelegate
 @required
-- (void)contactFormControllerDidChangeAttachmentCount:(HSBeaconContactFormController *)controller;
-
+- (void)contactFormControllerDidChangeAttachmentCount:(HSBeaconContactFormViewController *)controller;
 - (void)contactFormControllerEnableSubmit:(BOOL)enabled;
-
 - (void)showErrorMessage:(NSString *)errorMessage;
-
 @end
 
 #pragma mark -
 
-@interface HSBeaconContactFormController: UIViewController
+@interface HSBeaconContactFormViewController: UIViewController
 
 @property (nonatomic, weak) id<HSBeaconContactFormControllerDelegate> delegate;
 @property (strong, nonatomic) HSBeaconContext *beaconContext;
-
+@property (nonatomic) BOOL sendQueued;
 
 @property (weak, nonatomic) IBOutlet HSBeaconContactFormField *nameField;
 @property (weak, nonatomic) IBOutlet HSBeaconContactFormField *subjectField;
@@ -40,26 +37,30 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *subjectHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *emailHeight;
 
++ (instancetype)instantiateViewController;
+
 - (BOOL)canAddAttachment;
 
--(void)addAttachment:(HSBeaconAttachment *)attachment;
+- (void)addAttachment:(HSBeaconAttachment *)attachment;
 
 /*!
  @brief Check if we have a valid message to send
  
  @return YES if validation passes, NO if there are errors
  */
--(BOOL)validateFieldsWithErrorsDisplayed:(BOOL)showErrors;
+- (BOOL)validateFieldsWithErrorsDisplayed:(BOOL)showErrors;
 
 /*!
  @brief Upload any pending attachments
  
  @return YES if attachments are pending, NO if it's okay to send the email message
  */
--(BOOL)queueAttachments;
+- (BOOL)queueAttachments;
 
--(HSBeaconEmailMessage *)constructMessage;
+- (HSBeaconEmailMessage *)constructMessage;
 
 - (void)clearForm;
+
+- (void)setCustomFieldDefinitions:(NSArray<HSBeaconCustomFieldDefinition *> *)fieldDefinitions;
 
 @end

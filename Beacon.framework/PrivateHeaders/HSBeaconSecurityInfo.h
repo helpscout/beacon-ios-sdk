@@ -5,9 +5,10 @@
 
 @interface HSBeaconSecurityInfo : NSObject
 
-@property (strong, nonatomic) HSBeaconUser *user;
-@property (strong, nonatomic) NSString *signature;
-@property (strong, nonatomic) NSString *deviceId;
+@property (nonatomic) HSBeaconUser *user;
+@property (nonatomic) NSString *signature;
+@property (nonatomic) NSString *deviceId;
+@property (nonatomic) BOOL signatureVerified;
 
 -(BOOL)requiresSynchronization;
 
@@ -18,5 +19,7 @@
 -(BOOL)hasSignature;
 
 -(BOOL)hasBeaconAuthorization;
+
+-(BOOL)signatureMatches:(NSString *)signature;
 
 @end

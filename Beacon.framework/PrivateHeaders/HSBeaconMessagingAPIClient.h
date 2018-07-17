@@ -3,6 +3,8 @@
 #import "HSBeaconAgent.h"
 #import "HSBeaconAttachment.h"
 #import "HSBeaconBaseAPIClient.h"
+#import "HSBeaconConversation.h"
+#import "HSBeaconConversationThread.h"
 #import "HSBeaconCustomFieldDefinition.h"
 #import "HSBeaconEmailMessage.h"
 #import "HSBeaconPaginatedResponse.h"
@@ -22,6 +24,8 @@
 - (NSURLSessionTask *)getPreviousMessages:(HSBeaconSecurityInfo *)securityInfo page:(int)page completion: (void (^)(HSBeaconPaginatedResponse *response, NSError *error))completion;
 
 - (NSURLSessionTask *)getPreviousMessagesCountWithSecurityInfo:(HSBeaconSecurityInfo *)securityInfo completion:(void (^)(NSNumber *previousMessagesCount, NSError *error))completion;
+
+- (NSURLSessionTask *)getConversation:(long)conversationID securityInfo:(HSBeaconSecurityInfo *)securityInfo completion:(void (^)(HSBeaconConversation *conversation, NSArray<HSBeaconConversationThread *> *threads, NSError *error))completion;
 
 - (NSURLSessionTask *)getConversationThreads:(long)conversationID securityInfo:(HSBeaconSecurityInfo *)securityInfo page:(int)page completion:(void (^)(HSBeaconPaginatedResponse *response, NSError *error))completion;
 

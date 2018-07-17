@@ -5,11 +5,19 @@
 #import "HSBeaconConversationDetailsWebView.h"
 #import "HSCardStackViewController.h"
 
+@protocol HSBeaconConversationDetailsControllerDelegate
+
+- (void)conversationUpdated:(HSBeaconConversation *)conversation;
+
+@end
+
 @interface HSBeaconConversationDetailsController : UIViewController <HSCardStackEmbeddable>
 
 @property (nonatomic) HSBeaconConversation *conversation;
 
 @property (nonatomic) HSBeaconContext *beaconContext;
+
+@property (weak, nonatomic) id<HSBeaconConversationDetailsControllerDelegate> delegate;
 
 @property (weak, nonatomic) IBOutlet HSBeaconConversationDetailsWebView *webView;
 

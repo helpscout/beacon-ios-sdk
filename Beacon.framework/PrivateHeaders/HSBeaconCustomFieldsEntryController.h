@@ -14,6 +14,9 @@
 
 @interface HSBeaconCustomFieldsEntryController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *topSeparator;
+@property (weak, nonatomic) IBOutlet UIView *bottomSeparator;
+
 @property (nonatomic, strong) HSBeaconContext *beaconContext;
 
 @property (readwrite, nonatomic) NSArray<HSBeaconCustomFieldDefinition *> *fieldDefinitions;
