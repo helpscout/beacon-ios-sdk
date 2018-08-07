@@ -29,7 +29,11 @@ Next, ensure your project is linking against the following system frameworks:
 * `UserNotifications`
 * `WebKit`
 
+Beacon also requires the [HSAttachmentPicker framework](https://github.com/helpscout/HSAttachmentPicker). It should be integrated similarly to Beacon; the recommended method is to build and integrate it using Carthage.
+
 Finally, ensure your project includes `-all_load` in its `OTHER_LINKER_FLAGS` build setting.
+
+The Example project in this repo integrates Beacon and HSAttachmentPicker manually.
 
 ## Usage
 
