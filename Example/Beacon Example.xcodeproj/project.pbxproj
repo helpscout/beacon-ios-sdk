@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4B00E94620D443DC0077FC6B /* BeaconLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B00E94520D443DC0077FC6B /* BeaconLocalizable.strings */; };
+		4B2681DF2119E315002D2EC8 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681DE2119E315002D2EC8 /* UserNotifications.framework */; };
+		4B2681E12119E323002D2EC8 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E02119E323002D2EC8 /* SafariServices.framework */; };
+		4B2681E32119E383002D2EC8 /* Beacon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4B2681E22119E383002D2EC8 /* Beacon.bundle */; };
+		4B2681E52119E3D1002D2EC8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E42119E3D1002D2EC8 /* WebKit.framework */; };
+		4B2681E72119E3E3002D2EC8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E62119E3E3002D2EC8 /* MobileCoreServices.framework */; };
 		4B35C7D420BE0F26000C1573 /* Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; };
 		4B35C7D620BE1158000C1573 /* HSAttachmentPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D520BE1158000C1573 /* HSAttachmentPicker.framework */; };
-		4B35C7D720BE11C9000C1573 /* Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; };
 		4B35C7D820BE11C9000C1573 /* Beacon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4B35C7D920BE11C9000C1573 /* HSAttachmentPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D520BE1158000C1573 /* HSAttachmentPicker.framework */; };
 		4B35C7DA20BE11C9000C1573 /* HSAttachmentPicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D520BE1158000C1573 /* HSAttachmentPicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -43,6 +46,11 @@
 
 /* Begin PBXFileReference section */
 		4B00E94520D443DC0077FC6B /* BeaconLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = BeaconLocalizable.strings; sourceTree = "<group>"; };
+		4B2681DE2119E315002D2EC8 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		4B2681E02119E323002D2EC8 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		4B2681E22119E383002D2EC8 /* Beacon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Beacon.bundle; path = ../Beacon.framework/Beacon.bundle; sourceTree = "<group>"; };
+		4B2681E42119E3D1002D2EC8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		4B2681E62119E3E3002D2EC8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		4B35C7D320BE0F26000C1573 /* Beacon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beacon.framework; path = ../Beacon.framework; sourceTree = "<group>"; };
 		4B35C7D520BE1158000C1573 /* HSAttachmentPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HSAttachmentPicker.framework; path = Frameworks/HSAttachmentPicker.framework; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* BeaconExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,12 +77,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B2681E72119E3E3002D2EC8 /* MobileCoreServices.framework in Frameworks */,
+				4B2681E52119E3D1002D2EC8 /* WebKit.framework in Frameworks */,
+				4B2681E12119E323002D2EC8 /* SafariServices.framework in Frameworks */,
+				4B2681DF2119E315002D2EC8 /* UserNotifications.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				4B35C7D620BE1158000C1573 /* HSAttachmentPicker.framework in Frameworks */,
-				4B35C7D920BE11C9000C1573 /* HSAttachmentPicker.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				4B35C7D420BE0F26000C1573 /* Beacon.framework in Frameworks */,
-				4B35C7D720BE11C9000C1573 /* Beacon.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +95,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				4B2681E22119E383002D2EC8 /* Beacon.bundle */,
 				9611A9001FFBF8B000516839 /* Beacon_Example.entitlements */,
 				6003F593195388D20070C39A /* Example for Beacon */,
 				6003F58C195388D20070C39A /* Frameworks */,
@@ -103,6 +114,10 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B2681E62119E3E3002D2EC8 /* MobileCoreServices.framework */,
+				4B2681E42119E3D1002D2EC8 /* WebKit.framework */,
+				4B2681E02119E323002D2EC8 /* SafariServices.framework */,
+				4B2681DE2119E315002D2EC8 /* UserNotifications.framework */,
 				4B35C7D320BE0F26000C1573 /* Beacon.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
@@ -210,6 +225,7 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				4B2681E32119E383002D2EC8 /* Beacon.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -368,6 +384,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/**";
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = net.helpscout.beacondemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -393,6 +410,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/**";
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = net.helpscout.beacondemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
