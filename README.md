@@ -15,13 +15,21 @@ Beacon is available through [CocoaPods](http://cocoapods.org). To install it, si
 pod 'Beacon'
 ```
 
-#### Carthage
+#### Manually
 
-Beacon can be installed using Carthage by adding the following line to your `Cartfile` and then following the [Carthage installation instructions](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application):
+Beacon can be installed manually by linking the Beacon framework and bundle. To do so, download the Beacon framework from this GitHub repo and integrate it similar to [how Carthage integrates frameworks](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application).
 
-```ruby
-github "helpscout/beacon-ios-sdk"
-```
+Next, ensure your project is linking against the following system frameworks:
+
+* `UIKit`
+* `Foundation`
+* `MobileCoreServices`
+* `Photos`
+* `SafariServices`
+* `UserNotifications`
+* `WebKit`
+
+Finally, ensure your project includes `-all_load` in its `OTHER_LINKER_FLAGS` build setting.
 
 ## Usage
 
