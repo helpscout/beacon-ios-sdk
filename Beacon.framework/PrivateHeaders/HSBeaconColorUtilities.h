@@ -17,8 +17,6 @@ FOUNDATION_EXPORT CGFloat const HSShadowOverlayOpacity;
 
 + (UIColor * _Nonnull)errorRedColor;
 
-+ (UIColor * _Nonnull)closeButtonColor;
-
 + (HSBeaconColorShade)optimalShadeForColor:(nonnull UIColor *)color;
 
 /*!

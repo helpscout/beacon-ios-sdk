@@ -29,4 +29,6 @@
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
 
++ (instancetype)instantiateViewController;
+
 @end

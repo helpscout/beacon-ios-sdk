@@ -74,6 +74,82 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)logout;
 
+#pragma mark - Push Notifications
+
+/**
+ Initializes push notifications for the Beacon SDK. This should be called if you
+ intend to receive push notifications, whether they are handled automatically or
+ manually.
+ */
++ (void)initializeBeaconPushNotificationSupport;
+
+/**
+ Initializes automatic push notification handling for the Beacon SDK. This should
+ be called if you do not have to handle any push notifications that aren't from
+ Beacon.
+
+ @param methodSwizzling Whether to override push notification methods on the
+ App Delegate.
+ @param overrideDelegate Whether to override `UNUserNotificationCenter`'s delegate
+ method for automatic handling of push notifications.
+ */
++ (void)initializeAutomaticPushNotificationHandlingWithMethodSwizzling:(BOOL)methodSwizzling overrideUserNotificationCenterDelegate:(BOOL)overrideDelegate;
+
+/**
+ Sets the push notification device token.
+ */
++ (void)setDeviceToken:(NSData *)deviceToken;
+
+/**
+ Checks whether a given push notification came from Help Scout. You should call
+ this method before calling `handlePushNotification:`.
+ */
++ (BOOL)isBeaconPushNotification:(NSDictionary *)userInfo;
+
+/**
+ Handles a Beacon push notification. If the user info dictionary does not match
+ the expected format, this method does nothing.
+
+ @param userInfo The user info payload from the notification.
+ @param settings The Beacon settings from which to load Beacon.
+
+ @note Displays Beacon from the application delegate's window root view controller.
+ */
++ (void)handlePushNotification:(NSDictionary *)userInfo beaconSettings:(HSBeaconSettings *)settings;
+
+/**
+ Handles a Beacon push notification. If the user info dictionary does not match
+ the expected format, this method does nothing.
+
+ @param userInfo The user info payload from the notification.
+ @param settings The Beacon settings from which to load Beacon.
+ @param viewController The view controller to display Beacon from.
+ */
++ (void)handlePushNotification:(NSDictionary *)userInfo beaconSettings:(HSBeaconSettings *)settings viewController:(UIViewController *)viewController;
+
+/**
+ Handles a Beacon push notification. If the user info dictionary does not match
+ the expected format, this method does nothing.
+
+ @param userInfo The user info payload from the notification.
+ @param settings The Beacon settings from which to load Beacon.
+ @param signature The signature to provide, if you are using secure mode.
+
+ @note Displays Beacon from the application delegate's window root view controller.
+ */
++ (void)handlePushNotification:(NSDictionary *)userInfo beaconSettings:(HSBeaconSettings *)settings signature:(NSString * _Nullable)signature;
+
+/**
+ Handles a Beacon push notification. If the user info dictionary does not match
+ the expected format, this method does nothing.
+
+ @param userInfo The user info payload from the notification.
+ @param settings The Beacon settings from which to load Beacon.
+ @param viewController The view controller to display Beacon from.
+ @param signature The signature to provide, if you are using secure mode.
+ */
++ (void)handlePushNotification:(NSDictionary *)userInfo beaconSettings:(HSBeaconSettings *)settings viewController:(UIViewController *)viewController signature:(NSString * _Nullable)signature;
+
 #pragma mark - Unavailable Methods
 
 /**

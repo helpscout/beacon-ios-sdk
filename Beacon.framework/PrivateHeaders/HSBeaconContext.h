@@ -10,6 +10,7 @@
 #import "HSBeaconCloudFrontAPIClient.h"
 #import "HSBeaconSecurityInfo.h"
 #import "HSTintColor.h"
+#import "HSBeaconReplyNotificationPayload.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -25,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) HSBeaconActivityLog *activityLog;
 @property (readonly) HSBeaconSecurityInfo *securityInfo;
 @property (readonly) HSBeaconKeychainWrapper *keychainWrapper;
+@property (atomic, strong, nullable) HSBeaconReplyNotificationPayload *lastReceivedReplyNotification;
 @property (readonly) NSMutableDictionary<NSNumber *, HSBeaconReplyMessage *> *draftReplies;
 
 @property (atomic) BOOL loadFailed;

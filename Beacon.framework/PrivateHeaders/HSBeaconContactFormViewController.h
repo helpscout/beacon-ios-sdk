@@ -12,6 +12,7 @@
 - (void)contactFormControllerDidChangeAttachmentCount:(HSBeaconContactFormViewController *)controller;
 - (void)contactFormControllerEnableSubmit:(BOOL)enabled;
 - (void)showErrorMessage:(NSString *)errorMessage;
+- (void)clearErrorMessage;
 @end
 
 #pragma mark -
@@ -21,6 +22,7 @@
 @property (nonatomic, weak) id<HSBeaconContactFormControllerDelegate> delegate;
 @property (strong, nonatomic) HSBeaconContext *beaconContext;
 @property (nonatomic) BOOL sendQueued;
+@property (nonatomic) HSBeaconContactForm *prefilledForm;
 
 @property (weak, nonatomic) IBOutlet HSBeaconContactFormField *nameField;
 @property (weak, nonatomic) IBOutlet HSBeaconContactFormField *subjectField;

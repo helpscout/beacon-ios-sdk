@@ -3,7 +3,7 @@
 static NSString *const kHSBeaconFontFamilyName = @ "scouticons";
 
 typedef NS_ENUM (NSInteger, HSIcon) {
-    HSActiveChat, HSAttach, HSBack, HSCaretDown, HSCaretUp, HSChat, HSCheck, HSCheckbox, HSClock, HSClose, HSDoc, HSLink, HSSearch
+    HSActiveChat, HSAttach, HSCaretDown, HSCaretUp, HSChat, HSCheck, HSCheckbox, HSClock, HSClose, HSDoc, HSLink, HSSearch
 };
 
 @interface HSBeaconFontIcons: NSObject
@@ -14,8 +14,10 @@ typedef NS_ENUM (NSInteger, HSIcon) {
 
 +(NSAttributedString *)attributedStringForIcon: (HSIcon)icon color: (UIColor *)color size: (CGFloat)size;
 
-+(UIImage *)imageForIcon: (HSIcon)icon color: (UIColor *)color size: (CGFloat)size;
++(UIBarButtonItem *)barButtonForIcon:(HSIcon)icon color:(UIColor *)color target:(id)target action:(SEL)action;
 
-+(UIBarButtonItem *)barButtonForIcon: (HSIcon)icon color: (UIColor *)color target: (id)target action: (SEL)action;
++(UIButton *)buttonForIcon:(HSIcon)icon color:(UIColor *)color target:(id)target action:(SEL)action;
+
++(UIImage *)imageForIcon: (HSIcon)icon color: (UIColor *)color size: (CGFloat)size;
 
 @end

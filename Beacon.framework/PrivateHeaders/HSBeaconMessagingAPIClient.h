@@ -13,9 +13,13 @@
 
 @interface HSBeaconMessagingAPIClient: HSBeaconBaseAPIClient
 
+- (NSURLSessionDataTask *)registerForPushNotificationsWithVendorID:(NSString *)vendorID securityInfo:(HSBeaconSecurityInfo *)securityInfo token:(NSData *)token completion:(ErrorCompletionHandler)completion;
+
+- (NSURLSessionDataTask *)subscribeToNotificationsForConversation:(NSString *)conversationID securityInfo:(HSBeaconSecurityInfo *)securityInfo completion:(ErrorCompletionHandler)completion;
+
 - (NSURLSessionDataTask *)identifyUser:(HSBeaconSecurityInfo *)securityInfo completion:(BooleanCompletionHandler)completion;
 
-- (NSURLSessionDataTask *)sendMessage:(HSBeaconEmailMessage *)message securityInfo:(HSBeaconSecurityInfo *)securityInfo completion:(ErrorCompletionHandler)completion;
+- (NSURLSessionDataTask *)sendMessage:(HSBeaconEmailMessage *)message securityInfo:(HSBeaconSecurityInfo *)securityInfo completion:(StringCompletionHandler)completion;
 
 - (NSURLSessionUploadTask *)uploadAttachment:(HSBeaconAttachment *)attachment securityInfo:(HSBeaconSecurityInfo *)securityInfo completion:(StringCompletionHandler)completion;
 

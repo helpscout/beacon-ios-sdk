@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
+#import <Beacon/HSBeaconContactForm.h>
 
-@interface HSBeaconAttachment: NSObject
+@interface HSBeaconAttachment: NSObject <HSBeaconContactFormAttachment>
 
 @property(readonly, nonatomic) NSString *filename;
 @property(readonly, nonatomic) UIImage *image;

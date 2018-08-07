@@ -1,10 +1,12 @@
 #import <UIKit/UIKit.h>
+#import "HSBeaconContactFormValidator.h"
 
 @class HSBeaconContactFormField;
 
 @protocol HSBeaconContactFormFieldDelegate
 
 - (void)contactFormFieldTextChanged:(HSBeaconContactFormField *)field;
+- (void)contactFormField:(HSBeaconContactFormField *)field didReachMaximumLength:(BOOL)reachedMaximumLength;
 
 @end
 
@@ -16,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *errorIcon;
 @property (weak, nonatomic) id<HSBeaconContactFormFieldDelegate> delegate;
 @property (strong, nonatomic) IBOutlet UIView *contentView;
+@property (nonatomic) HSContactFieldType fieldType;
 
 - (void)showError;
 
@@ -26,5 +29,7 @@
 - (void)setText:(NSString *)text;
 
 - (void)setPlaceholder:(NSString *)placeholder;
+
+- (HSContactFieldValidationResult)validate:(BOOL)errorsDisplayed;
 
 @end

@@ -1,6 +1,23 @@
 #import <Foundation/Foundation.h>
 
+#import "HSBeaconContactForm.h"
+
 NS_ASSUME_NONNULL_BEGIN
+
+/**
+ `HSBeaconDelegate` can optionally be set on your `HSBeaconSettings` object to customize
+ the runtime behavior of the Beacon SDK.
+ */
+@protocol HSBeaconDelegate <NSObject>
+
+/**
+ The `prefill` method is called before showing the new conversation contact form. Any values
+ set on the `form` object will be prepopulated for the customer.
+ */
+- (void)prefill:(HSBeaconContactForm *)form;
+
+@end
+
 
 /**
  `HSBeaconSettings` allows you to customize the Beacon SDK and provide the
@@ -35,6 +52,11 @@ NS_ASSUME_NONNULL_BEGIN
  This is false by default, and will instead use the Beacon color defined in the Beacon Builder.
  */
 @property BOOL useNavigationBarAppearance;
+
+/**
+ Used for customizing the runtime behavior of the Beacon SDK
+ */
+@property (weak, nonatomic, nullable) id<HSBeaconDelegate> delegate;
 
 // also use translations from the API or local translation strings (maybe)
 

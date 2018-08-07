@@ -5,8 +5,7 @@ html {
 body {
     background-color: #ffffff;
     color: #394956;
-    font: 400 100% / 1.65 '-apple-system', 'Helvetica Neue';
-    font-size: 15px;
+    font: -apple-system-subheadline;
     margin: 0;
     text-rendering: optimizeLegibility;
 }
@@ -38,8 +37,8 @@ img {
 
 .convo-header {
     color: #2a3b47;
-    font-size: 20px;
-    font-weight: 500;
+    font: -apple-system-title3;
+    font-weight: bold;
     margin: 24px 24px 0 24px;
 }
 
@@ -105,6 +104,7 @@ li.thread-item {
 }
 
 .avatar-initials {
+    font-family: "-apple-system";
     font-weight: 500;
     font-size: 10px;
     text-transform: uppercase;
@@ -179,7 +179,7 @@ li.attachment-item {
 }
 
 .attachment-filename {
-    font-size: 13px;
+    font: -apple-system-footnote;
     line-height: 1.5;
     padding-right: 4px;
 }
@@ -242,6 +242,6 @@ li.attachment-item {
 
 .waiting-alert-text {
     display: block;
-    font-size: 13px;
+    font: -apple-system-footnote;
     line-height: 1.5;
 }

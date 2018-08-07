@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIView *bottomSeparator;
 
 @property (nonatomic, strong) HSBeaconContext *beaconContext;
+@property (nonatomic, strong) HSBeaconContactForm *prefilledForm;
 
 @property (readwrite, nonatomic) NSArray<HSBeaconCustomFieldDefinition *> *fieldDefinitions;
 @property (readonly, nonatomic) NSArray<HSBeaconCustomFieldValue *> *fieldValues;
@@ -26,5 +27,7 @@
 - (BOOL)validateFieldsWithErrorsDisplayed:(BOOL)showErrors;
 
 - (void)clearFields;
+
+- (NSArray<UITextView *> *)textViews;
 
 @end

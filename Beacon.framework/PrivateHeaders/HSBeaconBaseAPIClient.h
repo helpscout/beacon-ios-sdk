@@ -1,9 +1,12 @@
 #import <Foundation/Foundation.h>
 
+@class HSBeaconSecurityInfo;
+
 typedef void (^CompletionHandler)(void);
 typedef void (^ErrorCompletionHandler)(NSError * _Nullable error);
 typedef void (^BooleanCompletionHandler)(BOOL result, NSError * _Nullable error);
 typedef void (^StringCompletionHandler)(NSString * _Nullable result, NSError * _Nullable error);
+typedef void (^NetworkResponseCompletionHandler)(NSURLResponse *response, NSError * _Nullable error);
 typedef void (^NetworkCompletionHandler)(NSDictionary * _Nullable result, NSError * _Nullable error);
 
 NS_ASSUME_NONNULL_BEGIN
@@ -20,6 +23,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSURLSessionDataTask *)performGETRequestForURL:(NSURL *)url completion:(NetworkCompletionHandler)completion;
 
 - (NSURLSessionDataTask *)performGETRequest:(NSURLRequest *)request completion:(NetworkCompletionHandler)completion;
+
+- (NSURLSessionDataTask *)performPUTRequestForURL:(NSURL *)url body:(NSDictionary *)body securityInfo:(HSBeaconSecurityInfo *)securityInfo completion:(ErrorCompletionHandler)completion;
+
+- (void)addBeaconAuthHeader:(HSBeaconSecurityInfo *)securityInfo request:(NSMutableURLRequest *)request;
 
 - (NSError * _Nullable)errorFor:(NSData *)data response:(NSHTTPURLResponse *)response error:(NSError *)connectionError;
 

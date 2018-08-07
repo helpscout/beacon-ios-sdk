@@ -1,6 +1,3 @@
-@import Foundation;
-@import UIKit;
-
 #import "HSBeaconCoordinator.h"
 #import "HSBeaconContext.h"
 #import "HSBeaconMessageEntryContainerController.h"
