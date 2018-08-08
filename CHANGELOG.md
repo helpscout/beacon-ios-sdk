@@ -2,6 +2,22 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 1.0.0 beta (build 44)
+
+##### Enhancements
+
+* Beacon is now distributed as a static framework
+* Added up & down arrows to navigate between form fields
+* Custom fields and agent avatars are now cached between loads
+* Dynamic Type is supported in multiple areas
+* Form field length limits are now more tightly enforced
+* The contact form can now be prefilled to provide attachments and field values automatically
+
+##### Bug Fixes
+
+* Fix a case where related article links would not always work from search
+* Ensure that the search results back button will adhere to the Beacon color
+
 ## 1.0.0 beta (build 41)
 
 ##### Enhancements
