@@ -2,6 +2,19 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 1.0.0 beta (build 49)
+
+##### Enhancements
+
+* Added a flag for disabling the contact form
+* Added a blank state in cases where Docs and Messaging are both disabled
+* UI enhancements related to overlapping & loading content
+
+##### Bug Fixes
+
+* Dynamic Type will no longer need an app restart to take effect
+* Fixed scrolling issues for articles with large tables
+
 ## 1.0.0 beta (build 44)
 
 ##### Enhancements
