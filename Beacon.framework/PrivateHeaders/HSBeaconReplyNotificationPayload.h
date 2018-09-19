@@ -4,7 +4,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HSBeaconReplyNotificationPayload : NSObject
 
-@property (nonatomic, strong) NSString *conversationID;
+@property (nonatomic, strong) NSNumber *conversationID;
 @property (nonatomic, strong) NSString *mailboxID;
 @property (nonatomic, strong) NSString *messageID;
 @property (nonatomic, strong) NSString *threadID;

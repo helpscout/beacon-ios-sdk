@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithTitle:(nullable NSString *)title message:(NSString *)message;
 
+- (instancetype)initWithTitle:(nullable NSString *)title message:(NSString *)message image:(nullable UIImage *)image;
+
 - (void)showStatusInViewController:(UIViewController *)viewController;
 
 - (void)removeStatus;

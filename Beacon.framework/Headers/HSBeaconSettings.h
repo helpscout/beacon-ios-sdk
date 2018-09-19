@@ -54,6 +54,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL useNavigationBarAppearance;
 
 /**
+ 
+ */
+@property BOOL messagingEnabled;
+
+/**
  Used for customizing the runtime behavior of the Beacon SDK
  */
 @property (weak, nonatomic, nullable) id<HSBeaconDelegate> delegate;

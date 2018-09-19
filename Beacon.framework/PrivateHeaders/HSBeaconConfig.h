@@ -36,10 +36,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype _Nonnull)initWithDictionary:(NSDictionary *_Nonnull)dictionary;
 
-- (BOOL)isDocsOnly;
-
-- (BOOL)isMessagingOnly;
-
 @end
 
 NS_ASSUME_NONNULL_END

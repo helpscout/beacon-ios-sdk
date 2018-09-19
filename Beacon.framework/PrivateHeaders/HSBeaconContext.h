@@ -28,7 +28,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) HSBeaconKeychainWrapper *keychainWrapper;
 @property (atomic, strong, nullable) HSBeaconReplyNotificationPayload *lastReceivedReplyNotification;
 @property (readonly) NSMutableDictionary<NSNumber *, HSBeaconReplyMessage *> *draftReplies;
-
+@property (readonly) BOOL messagingEnabled;
+@property (readonly) BOOL docsOnly;
+@property (readonly) BOOL messagingOnly;
+@property (readonly) BOOL validConfig;
 @property (atomic) BOOL loadFailed;
 
 @property (nullable) HSBeaconEmailMessage *draftMessage;

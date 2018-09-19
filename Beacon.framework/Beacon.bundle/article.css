@@ -142,7 +142,7 @@ html {
 
 #fullArticle table.table-striped tr:nth-child(odd) td { background: #f9fafa; }
 
-#fullArticle table.table-bordered { border-collapse: separate; border-radius: 3px; border: 1px solid #e3e8eb; border-left: 0; }
+#fullArticle table.table-bordered { border-radius: 3px; border: 1px solid #e3e8eb; border-left: 0; }
 
 #fullArticle table.table-bordered td { padding: 0.5em; }
 
@@ -206,4 +206,8 @@ html {
     margin-bottom: 15px;
     word-wrap: break-word;
     font-weight: bolder;
+}
+
+#fullArticle .u-overflow-x {
+    overflow-x: auto;
 }

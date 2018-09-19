@@ -6,7 +6,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)saveConversationID:(NSString *)conversationID mappedToBeaconID:(NSString *)beaconID;
 
-+ (nullable NSString *)beaconIDForConversationID:(NSString *)conversationID;
++ (nullable NSString *)beaconIDForConversationID:(NSNumber *)conversationID;
+
++ (BOOL)isBeaconInitialized;
+
++ (void)setBeaconInitialized;
 
 @end
 
