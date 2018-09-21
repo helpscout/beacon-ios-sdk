@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://github.com/helpscout/beacon-ios-sdk"
   s.author       = { "Help Scout" => "help@helpscout.com" }
   s.platform     = :ios, "9.0"
-  s.source       = { :git => 'https://github.com/helpscout/beacon-ios-sdk.git', :tag => "0.49" }
+  s.source       = { :git => 'https://github.com/helpscout/beacon-ios-sdk.git', :tag => s.version }
 
   s.source_files  = "Beacon.framework/Headers/*.h"
   s.module_map = "Beacon.framework/Modules/module.modulemap"
