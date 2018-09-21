@@ -2,6 +2,12 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 1.0.0 beta (build 51)
+
+##### Bug Fixes
+
+* Fixed a crash on previous messages with an empty subject reported [here](https://github.com/helpscout/beacon-ios-sdk/issues/6)
+
 ## 1.0.0 beta (build 49)
 
 ##### Enhancements
