@@ -2,6 +2,26 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 1.0.0 beta (build 57)
+
+##### Enhancements
+* New local overrides added to `HSBeaconSettings`
+  * Color
+  * Docs enabled
+  * Custom fields enabled
+  * Show name
+  * Show subject
+  * Allow attachments
+  * Show get in touch
+  * Show prefilled custom fields
+* User attribute limit increased to 30
+* Attachment preview now uses QuickLook instead of `UIDocumentInteractionController` to address App Store rejections
+
+##### Bug Fixes
+
+* Status bar color is restored when exiting Beacon
+
+
 ## 1.0.0 beta (build 52)
 
 ##### Bug Fixes
