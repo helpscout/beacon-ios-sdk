@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 
 #import "HSBeaconContactForm.h"
+#import "HSBeaconMessagingSettings.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -54,14 +55,34 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL useNavigationBarAppearance;
 
 /**
- 
+ Disable the contact options manually if it's enabled in the Beacon config.
+
+ This will not enable the contact options if it's disabled in the config.
  */
 @property BOOL messagingEnabled;
+
+/**
+ Disable the Docs integration manually if it's enabled in the Beacon config.
+
+ This will not enable Docs if it's disabled in the config.
+ */
+@property BOOL docsEnabled;
 
 /**
  Used for customizing the runtime behavior of the Beacon SDK
  */
 @property (weak, nonatomic, nullable) id<HSBeaconDelegate> delegate;
+
+/**
+ Override the color from the Beacon Builder. The `useNavigationBarAppearance` option
+ will override this value.
+ */
+@property (weak, nonatomic, nullable) UIColor *color;
+
+/**
+ Set different display options for messaging.
+ */
+@property (nonatomic, nonnull, readonly) HSBeaconMessagingSettings *messagingSettings;
 
 // also use translations from the API or local translation strings (maybe)
 

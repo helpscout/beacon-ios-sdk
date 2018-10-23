@@ -1,14 +1,14 @@
 #import <UIKit/UIKit.h>
 
-#import "HSTintColor.h"
+#import "HSBeaconTintColor.h"
 
 @interface HSBeaconSubmitButton : UIButton
 
 -(void)inactiveState;
 
--(void)activeState:(HSTintColor *)tintColor;
+-(void)activeState:(HSBeaconTintColor *)tintColor;
 
--(void)showSpinner:(HSTintColor *)tintColor;
+-(void)showSpinner:(HSBeaconTintColor *)tintColor;
 
 -(void)hideSpinner;
 

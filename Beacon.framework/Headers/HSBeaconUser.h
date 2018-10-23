@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface HSBeaconUser: NSObject
 
+extern const NSUInteger HSBeaconMaximumUserAttributes;
+
 /**
  The email address for the current user.
  */
@@ -24,13 +26,13 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The attributes for the current user. These are arbitrary key/value pairs that
  will be sent to Help Scout to help identify the current user. You may add up to
- 10 different attributes.
+ 30 different attributes.
  */
 @property(strong, nonatomic, readonly) NSDictionary *attributes;
 
 /**
  Adds an attribute with a given key to the attributes dictionary. The attributes
- dictionary is limited to 10 entries.
+ dictionary is limited to 30 entries.
 
  @returns True if the attribute was added; false if the attribute limit has been reached.
  */

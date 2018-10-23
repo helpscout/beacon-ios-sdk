@@ -6,6 +6,8 @@
 
 @property (nonatomic) NSString *value;
 
+@property (nonatomic) BOOL visible;
+
 - (instancetype) initWithFieldId:(NSNumber *)fieldId;
 
 - (NSDictionary *) asDictionary;

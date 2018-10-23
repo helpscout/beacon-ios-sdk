@@ -9,7 +9,7 @@
 #import "HSBeaconMessagingAPIClient.h"
 #import "HSBeaconCloudFrontAPIClient.h"
 #import "HSBeaconSecurityInfo.h"
-#import "HSTintColor.h"
+#import "HSBeaconTintColor.h"
 #import "HSBeaconReplyNotificationPayload.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) HSBeaconConfig *config;
 @property (readonly) HSBeaconSettings *beaconSettings;
-@property (readonly) HSTintColor *tintColorSettings;
+@property (readonly) HSBeaconTintColor *tintColorSettings;
 @property (readonly) HSBeaconDocsAPIClient *docsApiClient;
 @property (readonly) HSBeaconMessagingAPIClient *messagingApiClient;
 @property (readonly) HSBeaconCloudFrontAPIClient *cloudFrontApiClient;
@@ -32,6 +32,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) BOOL docsOnly;
 @property (readonly) BOOL messagingOnly;
 @property (readonly) BOOL validConfig;
+
+@property (readonly, nonatomic) BOOL showNameEnabled;
+@property (readonly, nonatomic) BOOL showSubjectEnabled;
+@property (readonly, nonatomic) BOOL attachmentsEnabled;
+@property (readonly, nonatomic) BOOL customFieldsEnabled;
+@property (readonly, nonatomic) BOOL showGetInTouchEnabled;
+
 @property (atomic) BOOL loadFailed;
 
 @property (nullable) HSBeaconEmailMessage *draftMessage;

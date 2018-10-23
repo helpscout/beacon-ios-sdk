@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 
+@class HSBeaconContext;
 @class HSBeaconNavigationController;
 
 @protocol HSBeaconNavigationControllerDelegate
@@ -11,5 +12,8 @@
 @interface HSBeaconNavigationController : UINavigationController
 
 @property (nonatomic, weak) id<HSBeaconNavigationControllerDelegate> beaconNavigationDelegate;
+@property (nonatomic, weak) HSBeaconContext *beaconContext;
+
+- (void)updateStatusBar;
 
 @end
