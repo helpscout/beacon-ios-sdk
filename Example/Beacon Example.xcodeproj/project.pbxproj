@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B00E94620D443DC0077FC6B /* BeaconLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B00E94520D443DC0077FC6B /* BeaconLocalizable.strings */; };
 		4B2681DF2119E315002D2EC8 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681DE2119E315002D2EC8 /* UserNotifications.framework */; };
 		4B2681E12119E323002D2EC8 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E02119E323002D2EC8 /* SafariServices.framework */; };
 		4B2681E32119E383002D2EC8 /* Beacon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4B2681E22119E383002D2EC8 /* Beacon.bundle */; };
@@ -27,6 +26,7 @@
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		9F3C5B4F2180ABC60064E1A1 /* BeaconLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F3C5B512180ABC60064E1A1 /* BeaconLocalizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,7 +45,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4B00E94520D443DC0077FC6B /* BeaconLocalizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = BeaconLocalizable.strings; sourceTree = "<group>"; };
 		4B2681DE2119E315002D2EC8 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		4B2681E02119E323002D2EC8 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		4B2681E22119E383002D2EC8 /* Beacon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Beacon.bundle; path = ../Beacon.framework/Beacon.bundle; sourceTree = "<group>"; };
@@ -69,7 +68,8 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9611A9001FFBF8B000516839 /* Beacon_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beacon_Example.entitlements; sourceTree = "<group>"; };
-		962219B62009770800953031 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9F3C5B502180ABC60064E1A1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/BeaconLocalizable.strings; sourceTree = "<group>"; };
+		9F3C5B522180ABCA0064E1A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BeaconLocalizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +136,7 @@
 				6003F5A5195388D20070C39A /* HSViewController.h */,
 				6003F5A6195388D20070C39A /* HSViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				4B00E94520D443DC0077FC6B /* BeaconLocalizable.strings */,
+				9F3C5B512180ABC60064E1A1 /* BeaconLocalizable.strings */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -204,6 +204,7 @@
 				en,
 				Base,
 				es,
+				fr,
 			);
 			mainGroup = 6003F581195388D10070C39A;
 			productRefGroup = 6003F58B195388D20070C39A /* Products */;
@@ -220,7 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B00E94620D443DC0077FC6B /* BeaconLocalizable.strings in Resources */,
+				9F3C5B4F2180ABC60064E1A1 /* BeaconLocalizable.strings in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -249,7 +250,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				6003F597195388D20070C39A /* en */,
-				962219B62009770800953031 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -260,6 +260,15 @@
 				71719F9E1E33DC2100824A3D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9F3C5B512180ABC60064E1A1 /* BeaconLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F3C5B502180ABC60064E1A1 /* fr */,
+				9F3C5B522180ABCA0064E1A1 /* en */,
+			);
+			name = BeaconLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
