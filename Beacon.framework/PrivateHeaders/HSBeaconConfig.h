@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readonly, nonatomic) BOOL showGetInTouchEnabled;
 
-@property (readonly, nonatomic) NSString *responseTimeText;
+@property (readonly, nonatomic) NSString *expectedResponseTime;
 
 @property (readonly, nonatomic) NSDictionary <NSString *, NSString *> *translations;
 
