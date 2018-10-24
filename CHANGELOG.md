@@ -4,6 +4,13 @@ To install Beacon, see the [documentation](https://developer.helpscout.com/beaco
 
 ## 1.0.0 beta (build 57)
 
+##### Bug Fixes
+
+* The text for "We usually respond in..." was not getting translated with the `useLocalTranslationOverrides` option enabled ([reported issue](https://github.com/helpscout/beacon-ios-sdk/issues/8))
+
+
+## 1.0.0 beta (build 57)
+
 ##### Enhancements
 * New local overrides added to `HSBeaconSettings`
   * Color
