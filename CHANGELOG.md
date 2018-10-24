@@ -2,7 +2,7 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
-## 1.0.0 beta (build 57)
+## 1.0.0 beta (build 58)
 
 ##### Bug Fixes
 
