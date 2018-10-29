@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Beacon  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Beacon  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Beacon Docs</a> (96% documented)</p>
+        <p class="header-right"><a href="https://github.com/helpscout/beacon-ios-sdk"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Beacon Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Beacon  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/HSBeacon.html">HSBeacon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HSBeaconContactForm.html">HSBeaconContactForm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HSBeaconMessagingSettings.html">HSBeaconMessagingSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HSBeaconSettings.html">HSBeaconSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HSBeaconUser.html">HSBeaconUser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@HSBeaconMaximumUserAttributes">HSBeaconMaximumUserAttributes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/HSBeaconContactFormAttachment.html">HSBeaconContactFormAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/HSBeaconDelegate.html">HSBeaconDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p><strong>The Beacon SDK is currently in beta. For issues or questions, contact Help Scout support at <a href="mailto:help@helpscout.com">help@helpscout.com</a>.</strong></p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<p>The Beacon SDK requires iOS 9.0+.</p>
+<h2 id='features' class='heading'>Features</h2>
+<h3 id='coming-soon' class='heading'>Coming Soon</h3>
+
+<ul>
+<li>Beacon chat</li>
+<li>Push notification support</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+
+<p>Beacon is available through <a href="http://cocoapods.org">CocoaPods</a>. To install it, simply add the following line to your <code>Podfile</code>:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'Beacon'</span>
+</code></pre>
+<h3 id='carthage' class='heading'>Carthage</h3>
+
+<p>Beacon can be installed using Carthage by adding the following line to your <code>Cartfile</code> and then following the <a href="https://github.com/Carthage/Carthage#adding-frameworks-to-an-application">Carthage installation instructions</a>:</p>
+<pre class="highlight ruby"><code><span class="n">github</span> <span class="s2">"helpscout/beacon-ios-sdk"</span>
+</code></pre>
+<h2 id='additional-setup' class='heading'>Additional Setup</h2>
+<h3 id='photos' class='heading'>Photos</h3>
+
+<p>The attachments menu for sending a message has code to allow users to take a photo or select a photo from their photo library. Even if you have attachments disabled, usage of these APIs is flagged by Apple and requires a description string in the app&rsquo;s <code>Info.plist</code> file.</p>
+
+<p>The required settings are <code>NSPhotoLibraryUsageDescription</code> and <code>NSCameraUsageDescription</code>:</p>
+
+<p><img src="https://github.com/helpscout/HSAttachmentPicker/raw/master/picker_photos_permissions.png" width="650" height="376"></p>
+<h3 id='documents' class='heading'>Documents</h3>
+
+<p>To access the documents picker in the attachment menu, you&rsquo;ll need the entitlements for iCloud and iCloud Containers. Without the entitlements, an error message will be thrown via the delegate on the &lsquo;Import file from&rsquo; menu option.</p>
+
+<p><img src="https://github.com/helpscout/HSAttachmentPicker/raw/master/picker_icloud_permissions.png" width="856" height="346"></p>
+<h3 id='push-notifications' class='heading'>Push Notifications</h3>
+
+<p>You may recieve a warning when uploading to App Store connect related to push notifications if they aren&rsquo;t already active in your application. Similar to Photos, App Store Connect will flag usage of these APIs in code even if they aren&rsquo;t invoked in the app.</p>
+
+<p>The notification feature is still under construction for the Beacon SDK.</p>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>You can find basic setup code and your Beacon ID in the web Beacon builder by clicking <q>Installation</q> on the left sidebar, then navigating to <q>iOS</q> in the options displayed at the top.</p>
+
+<p>Basic usage of the Beacon SDK requires an <code><a href="Classes/HSBeaconSettings.html">HSBeaconSettings</a></code> object, which can be initialized using your Beacon ID. After you have created a settings object, you can display the Beacon modal view controller via <code><a href="Classes/HSBeacon.html">HSBeacon</a></code>:</p>
+<h5 id='objective-c' class='heading'>Objective-C</h5>
+<pre class="highlight objective_c"><code><span class="n">HSBeaconSettings</span> <span class="o">*</span><span class="n">settings</span> <span class="o">=</span> <span class="p">[[</span><span class="n">HSBeaconSettings</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithBeaconId</span><span class="p">:</span><span class="s">@"beacon-id"</span><span class="p">];</span>
+<span class="p">[</span><span class="n">HSBeacon</span> <span class="nf">openBeacon</span><span class="p">:</span><span class="n">settings</span><span class="p">];</span>
+</code></pre>
+<h5 id='swift' class='heading'>Swift</h5>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">settings</span> <span class="o">=</span> <span class="kt">HSBeaconSettings</span><span class="p">(</span><span class="nv">beaconId</span><span class="p">:</span> <span class="s">"beacon-id"</span><span class="p">)</span>
+<span class="kt">HSBeacon</span><span class="o">.</span><span class="nf">open</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span>
+</code></pre>
+<h2 id='authenticating-users' class='heading'>Authenticating Users</h2>
+
+<p>You can provide the name and email address to pre-populate and hide the fields on the ‘Create a message’ screen.</p>
+<h5 id='objective-c' class='heading'>Objective-C</h5>
+<pre class="highlight objective_c"><code><span class="n">HSBeaconUser</span> <span class="o">*</span><span class="n">user</span> <span class="o">=</span> <span class="p">[[</span><span class="n">HSBeaconUser</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span>
+<span class="n">user</span><span class="p">.</span><span class="n">email</span> <span class="o">=</span> <span class="s">"test@example.com"</span>
+<span class="n">user</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Test User"</span><span class="p">;</span>
+
+<span class="p">[</span><span class="n">HSBeacon</span> <span class="nf">login</span><span class="p">:</span><span class="n">user</span><span class="p">];</span>
+
+<span class="n">HSBeaconSettings</span> <span class="o">*</span><span class="n">settings</span> <span class="o">=</span> <span class="p">[[</span><span class="n">HSBeaconSettings</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithBeaconId</span><span class="p">:</span><span class="s">@"beacon-id"</span><span class="p">];</span>
+<span class="p">[</span><span class="n">HSBeacon</span> <span class="nf">openBeacon</span><span class="p">:</span><span class="n">settings</span><span class="p">];</span>
+</code></pre>
+<h5 id='swift' class='heading'>Swift</h5>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">user</span> <span class="o">=</span> <span class="kt">HSBeaconUser</span><span class="p">()</span>
+<span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s">"test@example.com"</span>
+<span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Test User"</span><span class="p">;</span>
+
+<span class="kt">HSBeacon</span><span class="o">.</span><span class="nf">login</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">settings</span> <span class="o">=</span> <span class="kt">HSBeaconSettings</span><span class="p">(</span><span class="nv">beaconId</span><span class="p">:</span> <span class="s">"123"</span><span class="p">)</span>
+<span class="kt">HSBeacon</span><span class="o">.</span><span class="nf">open</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span>
+</code></pre>
+<h3 id='secure-mode' class='heading'>Secure Mode</h3>
+
+<p>If a valid signature is provided, it can be used to authenticate a user in <a href="https://developer.helpscout.com/beacon-2/web/secure-mode/">Secure Mode</a> and retrieve their previous conversations. Secure Mode ensures that the visitor is who they say they are.</p>
+
+<blockquote>
+<p>Note: the secret key should <em>not</em> be stored in the app; instead your server should provide the computed signature value.</p>
+</blockquote>
+<h5 id='objective-c' class='heading'>Objective-C</h5>
+<pre class="highlight objective_c"><code><span class="n">HSBeaconUser</span> <span class="o">*</span><span class="n">user</span> <span class="o">=</span> <span class="p">[[</span><span class="n">HSBeaconUser</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span>
+<span class="n">user</span><span class="p">.</span><span class="n">email</span> <span class="o">=</span> <span class="s">@"test@example.com"</span><span class="p">;</span>
+<span class="p">[</span><span class="n">HSBeacon</span> <span class="nf">login</span><span class="p">:</span><span class="n">user</span><span class="p">];</span>
+
+<span class="n">HSBeaconSettings</span> <span class="o">*</span><span class="n">settings</span> <span class="o">=</span> <span class="p">[[</span><span class="n">HSBeaconSettings</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithBeaconId</span><span class="p">:</span><span class="s">@"beacon-id"</span><span class="p">];</span>
+<span class="p">[</span><span class="n">HSBeacon</span> <span class="nf">openBeacon</span><span class="p">:</span><span class="n">settings</span> <span class="nf">signature</span><span class="p">:</span><span class="s">@"8235545a15c6f41b64e3c47e5c94d3..."</span><span class="p">];</span>
+</code></pre>
+<h5 id='swift' class='heading'>Swift</h5>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">user</span> <span class="o">=</span> <span class="kt">HSBeaconUser</span><span class="p">()</span>
+<span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s">"test@example.com"</span>
+<span class="kt">HSBeacon</span><span class="o">.</span><span class="nf">login</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+
+<span class="k">let</span> <span class="nv">settings</span> <span class="o">=</span> <span class="kt">HSBeaconSettings</span><span class="p">(</span><span class="nv">beaconId</span><span class="p">:</span> <span class="s">"beacon-id"</span><span class="p">)</span>
+<span class="kt">HSBeacon</span><span class="o">.</span><span class="nf">open</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="s">"8235545a15c6f41b64e3c47e5c94d3..."</span><span class="p">)</span>
+</code></pre>
+<h2 id='user-attributes' class='heading'>User Attributes</h2>
+
+<p><code><a href="Classes/HSBeaconUser.html">HSBeaconUser</a></code> supports the addition of up to 30 attributes. These are arbitrary key-value pairs used to track custom data attributes that are then synced with the customer’s Help Scout profile and displayed in the Beacon Sidebar app. You can add as many attributes to the ‘identify’ method as you wish, not just “name’ and “email”.</p>
+
+<p>Here&rsquo;s some example code:</p>
+<h5 id='objective-c' class='heading'>Objective-C</h5>
+<pre class="highlight objective_c"><code><span class="n">HSBeaconUser</span> <span class="o">*</span><span class="n">user</span> <span class="o">=</span> <span class="p">[[</span><span class="n">HSBeaconUser</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span>
+<span class="p">[</span><span class="n">user</span> <span class="nf">addAttributeWithKey</span><span class="p">:</span><span class="s">@"key"</span> <span class="nf">value</span><span class="p">:</span><span class="s">@"attribute value"</span><span class="p">];</span>
+</code></pre>
+<h5 id='swift' class='heading'>Swift</h5>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">user</span> <span class="o">=</span> <span class="kt">HSBeaconUser</span><span class="p">()</span>
+<span class="n">user</span><span class="o">.</span><span class="nf">addAttribute</span><span class="p">(</span><span class="nv">withKey</span><span class="p">:</span> <span class="s">"key"</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="s">"attribute value"</span><span class="p">)</span>
+</code></pre>
+
+<p>You may also remove specific attributes, or clear the entire set:</p>
+<h5 id='objective-c' class='heading'>Objective-C</h5>
+<pre class="highlight objective_c"><code><span class="n">HSBeaconUser</span> <span class="o">*</span><span class="n">user</span> <span class="o">=</span> <span class="p">[[</span><span class="n">HSBeaconUser</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span>
+<span class="p">[</span><span class="n">user</span> <span class="nf">removeAttributeWithKey</span><span class="p">:</span><span class="s">@"key"</span><span class="p">];</span> <span class="c1">// Remove one attribute
+</span><span class="p">[</span><span class="n">user</span> <span class="nf">clearAttributes</span><span class="p">];</span> <span class="c1">// Clear all attributes
+</span></code></pre>
+<h5 id='swift' class='heading'>Swift</h5>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">user</span> <span class="o">=</span> <span class="kt">HSBeaconUser</span><span class="p">()</span>
+<span class="n">user</span><span class="o">.</span><span class="nf">removeAttribute</span><span class="p">(</span><span class="nv">withKey</span><span class="p">:</span> <span class="s">"key"</span><span class="p">)</span> <span class="c1">// Remove one attribute</span>
+<span class="n">user</span><span class="o">.</span><span class="nf">clearAttributes</span><span class="p">()</span> <span class="c1">// Clear all attributes</span>
+</code></pre>
+<h2 id='prefilling-the-contact-form' class='heading'>Prefilling the contact form</h2>
+
+<p>By implementing the <code>prefill</code> method on the <code><a href="Protocols/HSBeaconDelegate.html">HSBeaconDelegate</a></code> protocol, you can pre-populate the contact form data.  You can fill any of the fields: name, email, subject, the body of the message (text), custom fields, and attachments. Unlike when using secure mode, the name and email fields will remain visible and editable.</p>
+
+<p>The <code>delegate</code> attribute of the settings object will need to be set to the instance implementing the <code><a href="Protocols/HSBeaconDelegate.html">HSBeaconDelegate</a></code> protocol.</p>
+<h5 id='objective-c' class='heading'>Objective-C</h5>
+<pre class="highlight objective_c"><code><span class="cp"># pragma mark HSBeaconDelegate
+</span><span class="k">-</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">prefill</span><span class="p">:(</span><span class="n">HSBeaconContactForm</span> <span class="o">*</span><span class="p">)</span><span class="nv">form</span> <span class="p">{</span>
+    <span class="n">form</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">@"Steve Aoki"</span><span class="p">;</span>
+    <span class="n">form</span><span class="p">.</span><span class="n">email</span> <span class="o">=</span> <span class="s">@"steve@aoki.com"</span><span class="p">;</span>
+    <span class="n">form</span><span class="p">.</span><span class="n">subject</span> <span class="o">=</span> <span class="s">@"Need help with invoice"</span><span class="p">;</span>
+    <span class="n">form</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">@"Hello, I need some help with my invoice. See attached PDF..."</span><span class="p">;</span>
+    <span class="p">[</span><span class="n">form</span> <span class="nf">addCustomFieldValue</span><span class="p">:</span> <span class="s">@"Question"</span> <span class="nf">forId</span><span class="p">:</span> <span class="mi">5678</span><span class="p">];</span>
+    <span class="n">NSData</span> <span class="o">*</span><span class="n">invoiceData</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSData</span> <span class="nf">dataWithContentsOfFile</span><span class="p">:</span><span class="s">@"/path/to/invoice.pdf"</span><span class="p">];</span>
+    <span class="p">[</span><span class="n">form</span> <span class="nf">addAttachment</span><span class="p">:</span> <span class="s">@"invoice.pdf"</span> <span class="nf">data</span><span class="p">:</span><span class="n">invoiceData</span><span class="p">];</span>
+<span class="p">}</span>
+</code></pre>
+<h5 id='swift' class='heading'>Swift</h5>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">HSBeaconDelegate</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">prefill</span><span class="p">(</span><span class="n">_</span> <span class="nv">form</span><span class="p">:</span> <span class="kt">HSBeaconContactForm</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">form</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s">"Steve Aoki"</span>
+        <span class="n">form</span><span class="o">.</span><span class="n">email</span> <span class="o">=</span> <span class="s">"steve@aoki.com"</span>
+        <span class="n">form</span><span class="o">.</span><span class="n">subject</span> <span class="o">=</span> <span class="s">"Need help with invoice"</span>
+        <span class="n">form</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">"Hello, I need some help with my invoice. See attached PDF..."</span>
+        <span class="n">form</span><span class="o">.</span><span class="nf">addCustomFieldValue</span><span class="p">(</span><span class="s">"Question"</span><span class="p">,</span> <span class="nv">forId</span><span class="p">:</span> <span class="mi">5678</span><span class="p">)</span>
+        <span class="k">let</span> <span class="nv">invoiceData</span> <span class="o">=</span> <span class="k">try!</span> <span class="kt">Data</span><span class="p">(</span><span class="nv">contentsOf</span><span class="p">:</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">fileURLWithPath</span><span class="p">:</span> <span class="s">"/path/to/invoice.pdf"</span><span class="p">))</span>
+        <span class="n">form</span><span class="o">.</span><span class="nf">addAttachment</span><span class="p">(</span><span class="s">"invoice.pdf"</span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="n">invoiceData</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h2 id='settings-customization' class='heading'>Settings customization</h2>
+
+<p>You can set various options on the <code><a href="Classes/HSBeaconSettings.html">HSBeaconSettings</a></code> object to override the Beacon Builder configuration.</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><pre>messagingEnabled</pre></td>
+    <td>Bool</td>
+    <td>Enable or disable the contact options</td>
+  </tr>
+  <tr>
+    <td><pre>docsEnabled</pre></td>
+    <td>Bool</td>
+    <td>Enable or disable the Docs integration</td>
+  </tr>
+  <tr>
+    <td><pre>beaconTitle</pre></td>
+    <td>String</td>
+    <td>The navigation title shown on the intial Beacon screen (only if docs is enabled); the default is &ldquo;Support&rdquo;.</td>
+  </tr>
+  <tr>
+    <td><pre>useNavigationBarAppearance</pre></td>
+    <td>Bool</td>
+    <td>If this is true, then Beacon will use tint colors defined via `UIAppearance` providing they are not nil; otherwise it will use the Beacon color</td>
+  </tr>
+  <tr>
+    <td><pre>color</pre></td>
+    <td>UIColor</td>
+    <td>Brand color for your Beacon; the `useNavigationBarAppearance` option will override this value.</td>
+  </tr>
+  <tr>
+    <td><pre>useLocalTranslationOverrides</pre></td>
+    <td>Bool</td>
+    <td>You may customize the user-facing strings in Beacon locally using `HSBeaconSettings`. This will tell Beacon to look for a `BeaconLocalizable.strings` file. You can find an example of this <a href="https://github.com/helpscout/beacon-ios-sdk/blob/master/Example/Beacon/BeaconLocalizable.strings">in the Beacon Example app</a>. If this flag isn&rsquo;t set, the translations provided in Beacon Builder will be used.
+    </td>
+  </tr>
+  <tr>
+    <td><pre>messagingSettings</pre></td>
+    <td>HSBeaconMessagingSettings</td>
+    <td>This object holds a number of messaging specific overrides you can set client side; see below for a list of values
+    </td>
+  </tr>
+</table>
+<h3 id='messaging-settings-object' class='heading'>Messaging Settings object</h3>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><pre>contactFormCustomFieldsEnabled</pre></td>
+    <td>Bool</td>
+    <td>Enable or disable Custom Fields</td>
+  </tr>
+  <tr>
+    <td><pre>contactFormShowNameField</pre></td>
+    <td>Bool</td>
+    <td>Display an editable Name field</td>
+  </tr>
+  <tr>
+    <td><pre>contactFormShowSubjectField</pre></td>
+    <td>Bool</td>
+    <td>Display an editable Subject field</td>
+  </tr>
+  <tr>
+    <td><pre>contactFormAllowAttachments</pre></td>
+    <td>Bool</td>
+    <td>Enable or disable file attachments</td>
+  </tr>
+  <tr>
+    <td><pre>showGetInTouch</pre></td>
+    <td>Bool</td>
+    <td>Show a contact link on the Beacon home screen</td>
+  </tr>
+  <tr>
+    <td><pre>showPrefilledCustomFields</pre></td>
+    <td>Bool</td>
+    <td>Show a contact link on the Beacon home screen</td>
+  </tr>
+</table>
+<h2 id='running-the-example-app' class='heading'>Running The Example App</h2>
+
+<p>To run the example project, clone the Beacon repo and run <code>pod install</code> from the Example directory. Once the installation is complete, open <code>Beacon Example.xcworkspace</code> and run the <code>Beacon Example</code> scheme.</p>
+<h2 id='useful-links' class='heading'>Useful Links</h2>
+
+<ul>
+<li><a href="https://github.com/helpscout/beacon-ios-sdk/blob/master/CHANGELOG.md">Changelog</a> – get a list of recent changes to the Beacon SDK</li>
+</ul>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2018-10-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

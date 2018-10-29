@@ -1,0 +1,19 @@
+{
+  "warnings": [
+    {
+      "file": "../Beacon/Classes/HSBeaconMessagingSettings.h",
+      "line": 5,
+      "symbol": "HSBeaconMessagingSettings",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "../Beacon/Classes/HSBeaconSettings.h",
+      "line": 95,
+      "symbol": "HSBeaconSettings.-initWithBeaconId:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/samsymons/Code/HelpScout/Beacon/fastlane"
+}

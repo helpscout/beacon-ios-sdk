@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HSBeaconContactForm Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/HSBeaconContactForm" class="dashAnchor"></a>
+    <a title="HSBeaconContactForm Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Beacon Docs</a> (96% documented)</p>
+        <p class="header-right"><a href="https://github.com/helpscout/beacon-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Beacon Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        HSBeaconContactForm Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeacon.html">HSBeacon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeaconContactForm.html">HSBeaconContactForm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeaconMessagingSettings.html">HSBeaconMessagingSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeaconUser.html">HSBeaconUser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@HSBeaconMaximumUserAttributes">HSBeaconMaximumUserAttributes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/HSBeaconContactFormAttachment.html">HSBeaconContactFormAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HSBeaconDelegate.html">HSBeaconDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HSBeaconContactForm</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">HSBeaconContactForm</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>A model object representing a new conversation. Values set on this are prepopulated in the
+new conversation contact form.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconContactForm(py)email"></a>
+                    <a name="//apple_ref/objc/Property/email" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconContactForm(py)email">email</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The customer email. This will be ignored if secure mode is used or if the customer has previously
+sent a message through the Beacon SDK. Unlike the email set in the <code>login</code> method, this value
+will be editable for the customer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">email</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconContactForm(py)name"></a>
+                    <a name="//apple_ref/objc/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconContactForm(py)name">name</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The customer name. This will be ignored if the user has previously sent a message through the Beacon SDK.
+Unlike the name set in the <code>login</code> method, this value will be editable for the customer.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconContactForm(py)subject"></a>
+                    <a name="//apple_ref/objc/Property/subject" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconContactForm(py)subject">subject</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The message subject</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">subject</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconContactForm(py)text"></a>
+                    <a name="//apple_ref/objc/Property/text" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconContactForm(py)text">text</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The body text for the email.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">text</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconContactForm(py)customFields"></a>
+                    <a name="//apple_ref/objc/Property/customFields" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconContactForm(py)customFields">customFields</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Read only dictionary of the custom fields ids and values set on this object</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSNumber</span> <span class="o">*</span><span class="p">,</span> <span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">customFields</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconContactForm(py)attachments"></a>
+                    <a name="//apple_ref/objc/Property/attachments" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconContactForm(py)attachments">attachments</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Read only array of the files attached to this object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span>
+    <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/HSBeaconContactFormAttachment.html">HSBeaconContactFormAttachment</a></span><span class="o">&gt;&gt;</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">attachments</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconContactForm(im)addAttachment:data:"></a>
+                    <a name="//apple_ref/objc/Method/-addAttachment:data:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconContactForm(im)addAttachment:data:">-addAttachment:data:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a new attachment to this object. There is a maximum of 3 attachments allowed. Any calls
+after the first 3 will be ignored and the method will return <code>NO</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">addAttachment</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">filename</span> <span class="nf">data</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">data</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconContactForm(im)addCustomFieldValue:forId:"></a>
+                    <a name="//apple_ref/objc/Method/-addCustomFieldValue:forId:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconContactForm(im)addCustomFieldValue:forId:">-addCustomFieldValue:forId:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a prefilled custom field value to the form.</p>
+
+<p>For dropdown fields, set this to the id of the value you want to select.</p>
+
+<p>For date fields, use yyyy-MM-dd style.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">addCustomFieldValue</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">value</span> <span class="nf">forId</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">fieldId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2018-10-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

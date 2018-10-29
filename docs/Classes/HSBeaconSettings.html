@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HSBeaconSettings Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/HSBeaconSettings" class="dashAnchor"></a>
+    <a title="HSBeaconSettings Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Beacon Docs</a> (96% documented)</p>
+        <p class="header-right"><a href="https://github.com/helpscout/beacon-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Beacon Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        HSBeaconSettings Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeacon.html">HSBeacon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeaconContactForm.html">HSBeaconContactForm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeaconMessagingSettings.html">HSBeaconMessagingSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeaconUser.html">HSBeaconUser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@HSBeaconMaximumUserAttributes">HSBeaconMaximumUserAttributes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/HSBeaconContactFormAttachment.html">HSBeaconContactFormAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HSBeaconDelegate.html">HSBeaconDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HSBeaconSettings</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">HSBeaconSettings</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p><code>HSBeaconSettings</code> allows you to customize the Beacon SDK and provide the
+Beacon identifier to use.</p>
+<h3 id='initialization' class='heading'>Initialization</h3>
+<pre class="highlight objective_c"><code><span class="n">HSBeaconSettings</span> <span class="o">*</span><span class="n">settings</span> <span class="o">=</span> <span class="p">[[</span><span class="n">HSBeaconSettings</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithBeaconId</span><span class="p">:</span><span class="s">@"beacon-id"</span><span class="p">];</span>
+<span class="n">settings</span><span class="p">.</span><span class="n">useNavigationBarAppearance</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconSettings(py)beaconId"></a>
+                    <a name="//apple_ref/objc/Property/beaconId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconSettings(py)beaconId">beaconId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The Beacon ID to use.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    This can be found during Beacon creation.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">beaconId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconSettings(py)beaconTitle"></a>
+                    <a name="//apple_ref/objc/Property/beaconTitle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconSettings(py)beaconTitle">beaconTitle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The title used in the main Beacon interface. This is <code>Support</code> by default.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">beaconTitle</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconSettings(py)useLocalTranslationOverrides"></a>
+                    <a name="//apple_ref/objc/Property/useLocalTranslationOverrides" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconSettings(py)useLocalTranslationOverrides">useLocalTranslationOverrides</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display strings from BeaconLocalizable.strings instead of those setup in the Beacon Web UI</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">useLocalTranslationOverrides</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconSettings(py)useNavigationBarAppearance"></a>
+                    <a name="//apple_ref/objc/Property/useNavigationBarAppearance" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconSettings(py)useNavigationBarAppearance">useNavigationBarAppearance</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows the Beacon SDK to use the <code>UIAppearance</code> settings for <code>UINavigationController</code>.
+This is false by default, and will instead use the Beacon color defined in the Beacon Builder.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">useNavigationBarAppearance</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconSettings(py)messagingEnabled"></a>
+                    <a name="//apple_ref/objc/Property/messagingEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconSettings(py)messagingEnabled">messagingEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disable the contact options manually if it&rsquo;s enabled in the Beacon config.</p>
+
+<p>This will not enable the contact options if it&rsquo;s disabled in the config.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">messagingEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconSettings(py)docsEnabled"></a>
+                    <a name="//apple_ref/objc/Property/docsEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconSettings(py)docsEnabled">docsEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disable the Docs integration manually if it&rsquo;s enabled in the Beacon config.</p>
+
+<p>This will not enable Docs if it&rsquo;s disabled in the config.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">atomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">docsEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconSettings(py)delegate"></a>
+                    <a name="//apple_ref/objc/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconSettings(py)delegate">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Used for customizing the runtime behavior of the Beacon SDK</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/HSBeaconDelegate.html">HSBeaconDelegate</a></span><span class="o">&gt;</span> <span class="n">delegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconSettings(py)color"></a>
+                    <a name="//apple_ref/objc/Property/color" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconSettings(py)color">color</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Override the color from the Beacon Builder. The <code><a href="../Classes/HSBeaconSettings.html#/c:objc(cs)HSBeaconSettings(py)useNavigationBarAppearance">useNavigationBarAppearance</a></code> option
+will override this value.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">UIColor</span> <span class="o">*</span><span class="n">color</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconSettings(py)messagingSettings"></a>
+                    <a name="//apple_ref/objc/Property/messagingSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconSettings(py)messagingSettings">messagingSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set different display options for messaging.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nonnull</span><span class="p">)</span>
+    <span class="n"><a href="../Classes/HSBeaconMessagingSettings.html">HSBeaconMessagingSettings</a></span> <span class="o">*</span><span class="n">messagingSettings</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconSettings(im)initWithBeaconId:"></a>
+                    <a name="//apple_ref/objc/Method/-initWithBeaconId:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconSettings(im)initWithBeaconId:">-initWithBeaconId:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithBeaconId</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">beaconId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2018-10-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

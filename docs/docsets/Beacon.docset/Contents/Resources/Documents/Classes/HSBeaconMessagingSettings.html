@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HSBeaconMessagingSettings Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/HSBeaconMessagingSettings" class="dashAnchor"></a>
+    <a title="HSBeaconMessagingSettings Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Beacon Docs</a> (96% documented)</p>
+        <p class="header-right"><a href="https://github.com/helpscout/beacon-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Beacon Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        HSBeaconMessagingSettings Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeacon.html">HSBeacon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeaconContactForm.html">HSBeaconContactForm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeaconMessagingSettings.html">HSBeaconMessagingSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeaconUser.html">HSBeaconUser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@HSBeaconMaximumUserAttributes">HSBeaconMaximumUserAttributes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/HSBeaconContactFormAttachment.html">HSBeaconContactFormAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/HSBeaconDelegate.html">HSBeaconDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>HSBeaconMessagingSettings</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">HSBeaconMessagingSettings</span> <span class="p">:</span> <span class="nc">NSObject</span>
+
+<span class="cm">/**
+ Disable contact form custom fields if enabled in the Beacon config.
+
+ This will not enable custom fields if disabled in the config.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormCustomFieldsEnabled</span><span class="p">;</span>
+
+<span class="cm">/**
+ Display an editable Name field.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowNameField</span><span class="p">;</span>
+
+<span class="cm">/**
+ Was contactFormShowNameField set with a local override.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowNameFieldSet</span><span class="p">;</span>
+
+<span class="cm">/**
+ Display an editable Subject field.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowSubjectField</span><span class="p">;</span>
+
+<span class="cm">/**
+ Was contactFormShowSubjectFieldSet set with a local override.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowSubjectFieldSet</span><span class="p">;</span>
+
+<span class="cm">/**
+ Enable or disable file attachments.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormAllowAttachments</span><span class="p">;</span>
+
+<span class="cm">/**
+ Was contactFormAllowAttachmentsSet set with a local override.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormAllowAttachmentsSet</span><span class="p">;</span>
+
+<span class="cm">/**
+ Show a contact link on the Beacon home screen.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showGetInTouch</span><span class="p">;</span>
+
+<span class="cm">/**
+ Was showGetInTouchSet set with a local override.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showGetInTouchSet</span><span class="p">;</span>
+
+<span class="cm">/**
+ When custom field values are pre-filled, set to true to make them visible.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showPrefilledCustomFields</span><span class="p">;</span>
+
+
+<span class="k">@end</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconMessagingSettings(py)contactFormCustomFieldsEnabled"></a>
+                    <a name="//apple_ref/objc/Property/contactFormCustomFieldsEnabled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconMessagingSettings(py)contactFormCustomFieldsEnabled">contactFormCustomFieldsEnabled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disable contact form custom fields if enabled in the Beacon config.</p>
+
+<p>This will not enable custom fields if disabled in the config.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormCustomFieldsEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconMessagingSettings(py)contactFormShowNameField"></a>
+                    <a name="//apple_ref/objc/Property/contactFormShowNameField" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconMessagingSettings(py)contactFormShowNameField">contactFormShowNameField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display an editable Name field.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowNameField</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconMessagingSettings(py)contactFormShowNameFieldSet"></a>
+                    <a name="//apple_ref/objc/Property/contactFormShowNameFieldSet" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconMessagingSettings(py)contactFormShowNameFieldSet">contactFormShowNameFieldSet</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Was contactFormShowNameField set with a local override.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowNameFieldSet</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconMessagingSettings(py)contactFormShowSubjectField"></a>
+                    <a name="//apple_ref/objc/Property/contactFormShowSubjectField" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconMessagingSettings(py)contactFormShowSubjectField">contactFormShowSubjectField</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display an editable Subject field.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowSubjectField</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconMessagingSettings(py)contactFormShowSubjectFieldSet"></a>
+                    <a name="//apple_ref/objc/Property/contactFormShowSubjectFieldSet" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconMessagingSettings(py)contactFormShowSubjectFieldSet">contactFormShowSubjectFieldSet</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Was contactFormShowSubjectFieldSet set with a local override.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowSubjectFieldSet</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconMessagingSettings(py)contactFormAllowAttachments"></a>
+                    <a name="//apple_ref/objc/Property/contactFormAllowAttachments" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconMessagingSettings(py)contactFormAllowAttachments">contactFormAllowAttachments</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enable or disable file attachments.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormAllowAttachments</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconMessagingSettings(py)contactFormAllowAttachmentsSet"></a>
+                    <a name="//apple_ref/objc/Property/contactFormAllowAttachmentsSet" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconMessagingSettings(py)contactFormAllowAttachmentsSet">contactFormAllowAttachmentsSet</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Was contactFormAllowAttachmentsSet set with a local override.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormAllowAttachmentsSet</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconMessagingSettings(py)showGetInTouch"></a>
+                    <a name="//apple_ref/objc/Property/showGetInTouch" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconMessagingSettings(py)showGetInTouch">showGetInTouch</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Show a contact link on the Beacon home screen.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showGetInTouch</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconMessagingSettings(py)showGetInTouchSet"></a>
+                    <a name="//apple_ref/objc/Property/showGetInTouchSet" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconMessagingSettings(py)showGetInTouchSet">showGetInTouchSet</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Was showGetInTouchSet set with a local override.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showGetInTouchSet</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconMessagingSettings(py)showPrefilledCustomFields"></a>
+                    <a name="//apple_ref/objc/Property/showPrefilledCustomFields" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconMessagingSettings(py)showPrefilledCustomFields">showPrefilledCustomFields</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When custom field values are pre-filled, set to true to make them visible.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showPrefilledCustomFields</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2018-10-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

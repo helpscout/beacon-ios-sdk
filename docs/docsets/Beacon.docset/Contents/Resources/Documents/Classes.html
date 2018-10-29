@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Classes  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Section/Classes" class="dashAnchor"></a>
+    <a title="Classes  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Beacon Docs</a> (96% documented)</p>
+        <p class="header-right"><a href="https://github.com/helpscout/beacon-ios-sdk"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Beacon Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Classes  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/HSBeacon.html">HSBeacon</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HSBeaconContactForm.html">HSBeaconContactForm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HSBeaconMessagingSettings.html">HSBeaconMessagingSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HSBeaconSettings.html">HSBeaconSettings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HSBeaconUser.html">HSBeaconUser</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:@HSBeaconMaximumUserAttributes">HSBeaconMaximumUserAttributes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/HSBeaconContactFormAttachment.html">HSBeaconContactFormAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/HSBeaconDelegate.html">HSBeaconDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Classes</h1>
+            <p>The following classes are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon"></a>
+                    <a name="//apple_ref/objc/Class/HSBeacon" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon">HSBeacon</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>HSBeacon</code> provides the APIs necessary to display the Beacon SDK. It allows you
+to open the Beacon from the current view controller on screen, or a specific
+view controller of your choice.</p>
+<h3 id='opening-the-beacon-from-the-current-view-controller' class='heading'>Opening the Beacon From The Current View Controller</h3>
+
+<p>The Beacon SDK requires an <code><a href="Classes/HSBeaconSettings.html">HSBeaconSettings</a></code> object, which can be initialized
+using your Beacon ID.</p>
+<pre class="highlight objective_c"><code><span class="n">HSBeaconSettings</span> <span class="o">*</span><span class="n">settings</span> <span class="o">=</span> <span class="p">[[</span><span class="n">HSBeaconSettings</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithBeaconId</span><span class="p">:</span><span class="s">@"beacon-id"</span><span class="p">];</span>
+<span class="p">[</span><span class="n">HSBeacon</span> <span class="nf">openBeacon</span><span class="p">:</span><span class="n">settings</span><span class="p">];</span>
+</code></pre>
+<h3 id='authenticating-users' class='heading'>Authenticating Users</h3>
+
+<p>Authenticating with Beacon is optional, but if you have information you&rsquo;d like
+to associate with users, you can do so using <code><a href="Classes/HSBeaconUser.html">HSBeaconUser</a></code> and the <code>login:</code>
+method before showing the Beacon.</p>
+<pre class="highlight objective_c"><code><span class="n">HSBeaconUser</span> <span class="o">*</span><span class="n">user</span> <span class="o">=</span> <span class="p">[[</span><span class="n">HSBeaconUser</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">init</span><span class="p">];</span>
+<span class="n">user</span><span class="p">.</span><span class="n">email</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">emailTextField</span><span class="p">.</span><span class="n">text</span><span class="p">;</span>
+<span class="n">user</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">nameTextField</span><span class="p">.</span><span class="n">text</span><span class="p">;</span>
+
+<span class="p">[</span><span class="n">HSBeacon</span> <span class="nf">login</span><span class="p">:</span><span class="n">user</span><span class="p">];</span>
+
+<span class="n">HSBeaconSettings</span> <span class="o">*</span><span class="n">settings</span> <span class="o">=</span> <span class="p">[[</span><span class="n">HSBeaconSettings</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithBeaconId</span><span class="p">:</span><span class="s">@"beacon-id"</span><span class="p">];</span>
+<span class="p">[</span><span class="n">HSBeacon</span> <span class="nf">openBeacon</span><span class="p">:</span><span class="n">settings</span><span class="p">];</span>
+</code></pre>
+
+                        <a href="Classes/HSBeacon.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">HSBeacon</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconContactForm"></a>
+                    <a name="//apple_ref/objc/Class/HSBeaconContactForm" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconContactForm">HSBeaconContactForm</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A model object representing a new conversation. Values set on this are prepopulated in the
+new conversation contact form.</p>
+
+                        <a href="Classes/HSBeaconContactForm.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">HSBeaconContactForm</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconMessagingSettings"></a>
+                    <a name="//apple_ref/objc/Class/HSBeaconMessagingSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconMessagingSettings">HSBeaconMessagingSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Classes/HSBeaconMessagingSettings.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">HSBeaconMessagingSettings</span> <span class="p">:</span> <span class="nc">NSObject</span>
+
+<span class="cm">/**
+ Disable contact form custom fields if enabled in the Beacon config.
+
+ This will not enable custom fields if disabled in the config.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormCustomFieldsEnabled</span><span class="p">;</span>
+
+<span class="cm">/**
+ Display an editable Name field.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowNameField</span><span class="p">;</span>
+
+<span class="cm">/**
+ Was contactFormShowNameField set with a local override.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowNameFieldSet</span><span class="p">;</span>
+
+<span class="cm">/**
+ Display an editable Subject field.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowSubjectField</span><span class="p">;</span>
+
+<span class="cm">/**
+ Was contactFormShowSubjectFieldSet set with a local override.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowSubjectFieldSet</span><span class="p">;</span>
+
+<span class="cm">/**
+ Enable or disable file attachments.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormAllowAttachments</span><span class="p">;</span>
+
+<span class="cm">/**
+ Was contactFormAllowAttachmentsSet set with a local override.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormAllowAttachmentsSet</span><span class="p">;</span>
+
+<span class="cm">/**
+ Show a contact link on the Beacon home screen.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showGetInTouch</span><span class="p">;</span>
+
+<span class="cm">/**
+ Was showGetInTouchSet set with a local override.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showGetInTouchSet</span><span class="p">;</span>
+
+<span class="cm">/**
+ When custom field values are pre-filled, set to true to make them visible.
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showPrefilledCustomFields</span><span class="p">;</span>
+
+
+<span class="k">@end</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconSettings"></a>
+                    <a name="//apple_ref/objc/Class/HSBeaconSettings" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconSettings">HSBeaconSettings</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>HSBeaconSettings</code> allows you to customize the Beacon SDK and provide the
+Beacon identifier to use.</p>
+<h3 id='initialization' class='heading'>Initialization</h3>
+<pre class="highlight objective_c"><code><span class="n">HSBeaconSettings</span> <span class="o">*</span><span class="n">settings</span> <span class="o">=</span> <span class="p">[[</span><span class="n">HSBeaconSettings</span> <span class="nf">alloc</span><span class="p">]</span> <span class="nf">initWithBeaconId</span><span class="p">:</span><span class="s">@"beacon-id"</span><span class="p">];</span>
+<span class="n">settings</span><span class="p">.</span><span class="n">useNavigationBarAppearance</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
+</code></pre>
+
+                        <a href="Classes/HSBeaconSettings.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">HSBeaconSettings</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeaconUser"></a>
+                    <a name="//apple_ref/objc/Class/HSBeaconUser" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconUser">HSBeaconUser</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>HSBeaconUser</code> represents a user identified with Help Scout, allowing you to
+match up support requests to your customer base.</p>
+
+<p>The current user may be identified by creating an <code>HSBeaconUser</code> object,
+configuring its properties, and then identifying them using <code>[HSBeacon identify:]</code>.</p>
+
+                        <a href="Classes/HSBeaconUser.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">HSBeaconUser</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2018-10-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
