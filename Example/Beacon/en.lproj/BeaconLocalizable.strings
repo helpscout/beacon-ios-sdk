@@ -45,18 +45,11 @@
 
 /* from Server translations */
 
-/* Message response time */
-"aDay"="a day";
-
 /* Reply to previous messages */
 "addReply"="Add Reply";
 
 /* Placeholder for message entry */
 "addYourMessageHere"="Add your message here...";
-
-/* message response time */
-"aFewHours"="a few hours";
-"aFewMinutes"="a few minutes";
 
 /* Label for docs tab */
 "answer"="Answers";
@@ -121,6 +114,8 @@
 /* Footer in article details*/
 "relatedArticles"="Related Articles";
 
+/* Response time for new message and previous message reply */
+"responseTime"="We usually respond in a few hours";
 
 /* Search bar placeholder */
 "searchLabel"="What do you need help with?";
@@ -145,9 +140,6 @@
 
 /* Header on message sent confirmation screen */
 "weAreOnIt"="We’re on it!";
-
-/* Message response time */
-"weUsuallyRespondIn"="We usually respond in";
 
 /* For previous messages sent by indicator */
 "you"="You";

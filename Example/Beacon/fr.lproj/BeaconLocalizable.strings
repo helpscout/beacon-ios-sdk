@@ -7,18 +7,11 @@
 
 /* from Server translations */
 
-/* Message response time */
-"aDay"="un jour";
-
 /* Reply to previous messages */
 "addReply"="Ajouter une réponse";
 
 /* Placeholder for message entry */
 "addYourMessageHere"="Saisissez votre message ici...";
-
-/* message response time */
-"aFewMinutes"="quelques minutes";
-"aFewHours"="quelques heures";
 
 /* Label for docs tab */
 "answer"="Réponse";
@@ -83,6 +76,9 @@
 /* Footer in article details*/
 "relatedArticles"="Articles Liés";
 
+/* Response time for new message and previous message reply */
+"responseTime"="Nous répondons habituellement dans quelques heures";
+
 /* Search bar placeholder */
 "searchLabel"="Sur quoi avez-vous besoin d'aide?";
 
@@ -106,9 +102,6 @@
 
 /* Header on message sent confirmation screen */
 "weAreOnIt"="Nous nous en occupons!";
-
-/* Message response time */
-"weUsuallyRespondIn"="Nous répondons habituellement en";
 
 /* For previous messages sent by indicator */
 "you"="Vous";
