@@ -37,29 +37,47 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Opens the Beacon SDK from the current view controller.
+
+ @param settings The Beacon settings from which to load Beacon.
+
+ @note Displays Beacon from the application delegate's window root view controller.
  */
-+ (void)openBeacon:(HSBeaconSettings *)beaconSettings;
++ (void)openBeacon:(HSBeaconSettings *)settings;
 
 /**
  Opens the Beacon SDK from the current view controller, using a signature.
+
+ @param settings The Beacon settings from which to load Beacon.
+ @param signature The signature to provide, if you are using secure mode.
+
+ @note Displays Beacon from the application delegate's window root view controller.
  */
-+ (void)openBeacon:(HSBeaconSettings *)beaconSettings signature:(NSString *)signature;
++ (void)openBeacon:(HSBeaconSettings *)settings signature:(NSString *)signature;
 
 /**
  Opens the Beacon SDK from a specific view controller. The Beacon view controller
  will be presented as a modal.
+
+ @param settings The Beacon settings from which to load Beacon.
+ @param viewController The view controller to display Beacon from.
  */
-+ (void)openBeacon:(HSBeaconSettings *)beaconSettings fromViewController:(UIViewController *)viewController;
++ (void)openBeacon:(HSBeaconSettings *)settings fromViewController:(UIViewController *)viewController;
 
 /**
  Opens the Beacon SDK from a specific view controller. The Beacon view controller
  will be presented as a modal.
+
+ @param settings The Beacon settings from which to load Beacon.
+ @param viewController The view controller to display Beacon from.
+ @param signature The signature to provide, if you are using secure mode.
  */
-+ (void)openBeacon:(HSBeaconSettings *)beaconSettings fromViewController:(UIViewController *)viewController signature:(NSString *)signature;
++ (void)openBeacon:(HSBeaconSettings *)settings fromViewController:(UIViewController *)viewController signature:(NSString *)signature;
 
 /**
  Signs in with a Beacon user. This gives Beacon access to the user's name, email
  address, and signature.
+
+ @param user The Beacon user to login
  */
 + (instancetype)login:(HSBeaconUser *)user;
 
@@ -149,6 +167,142 @@ NS_ASSUME_NONNULL_BEGIN
  @param signature The signature to provide, if you are using secure mode.
  */
 + (void)handlePushNotification:(NSDictionary *)userInfo beaconSettings:(HSBeaconSettings *)settings viewController:(UIViewController *)viewController signature:(NSString * _Nullable)signature;
+
+#pragma mark - Search
+/**
+ Opens the Beacon window to search results for the provided string.
+
+ @param text The text to search with
+ @param settings The Beacon settings from which to load Beacon.
+
+ @note Displays Beacon from the application delegate's window root view controller.
+ */
++ (void)search:(NSString *)text beaconSettings:(HSBeaconSettings *)settings;
+
+/**
+ Opens the Beacon window to search results for the provided string.
+
+ @param text The text to search with
+ @param settings The Beacon settings from which to load Beacon.
+ @param viewController The view controller to display Beacon from.
+ */
++ (void)search:(NSString *)text beaconSettings:(HSBeaconSettings *)settings viewController:(UIViewController *)viewController;
+
+/**
+ Opens the Beacon window to search results for the provided string.
+
+ @param text The text to search with
+ @param settings The Beacon settings from which to load Beacon.
+ @param signature The signature to provide, if you are using secure mode.
+
+ @note Displays Beacon from the application delegate's window root view controller.
+ */
++ (void)search:(NSString *)text beaconSettings:(HSBeaconSettings *)settings signature:(NSString * _Nullable)signature;
+
+/**
+ Opens the Beacon window to search results for the provided string.
+
+ @param text The text to search with
+ @param settings The Beacon settings from which to load Beacon.
+ @param viewController The view controller to display Beacon from.
+ @param signature The signature to provide, if you are using secure mode.
+ */
++ (void)search:(NSString *)text  beaconSettings:(HSBeaconSettings *)settings viewController:(UIViewController *)viewController signature:(NSString * _Nullable)signature;
+
+#pragma mark - Navigation
+/**
+ Navigates to a specific screen. Available routes are:
+ "/" - welcome screen
+ "/ask/message/" - message screen
+ "/docs/search?query=help" - this is the same as the HSBeacon search method
+
+ @param route The screen to navigate to - "/", "/ask/message", or "/docs/search?query=help"
+ @param settings The Beacon settings from which to load Beacon.
+
+ @note Displays Beacon from the application delegate's window root view controller.
+ */
++ (void)navigate:(NSString *)route beaconSettings:(HSBeaconSettings *)settings;
+
+/**
+ Navigates to a specific screen. Available routes are:
+ "/" - welcome screen
+ "/ask/message/" - message screen
+ "/docs/search?query=help" - this is the same as the HSBeacon search method
+
+ @param route The screen to navigate to - "/", "/ask/message", or "/docs/search?query=help"
+ @param settings The Beacon settings from which to load Beacon.
+ @param viewController The view controller to display Beacon from.
+ */
++ (void)navigate:(NSString *)route beaconSettings:(HSBeaconSettings *)settings viewController:(UIViewController *)viewController;
+
+/**
+ Navigates to a specific screen. Available routes are:
+ "/" - welcome screen
+ "/ask/message/" - message screen
+ "/docs/search?query=help" - this is the same as the HSBeacon search method
+
+ @param route The screen to navigate to - "/", "/ask/message", or "/docs/search?query=help"
+ @param settings The Beacon settings from which to load Beacon.
+ @param signature The signature to provide, if you are using secure mode.
+
+ @note Displays Beacon from the application delegate's window root view controller.
+ */
++ (void)navigate:(NSString *)route beaconSettings:(HSBeaconSettings *)settings signature:(NSString * _Nullable)signature;
+
+/**
+ Navigates to a specific screen. Available routes are:
+ "/" - welcome screen
+ "/ask/message/" - message screen
+ "/docs/search?query=help" - this is the same as the HSBeacon search method
+
+ @param route The screen to navigate to - "/", "/ask/message", or "/docs/search?query=help"
+ @param settings The Beacon settings from which to load Beacon.
+ @param viewController The view controller to display Beacon from.
+ @param signature The signature to provide, if you are using secure mode.
+ */
++ (void)navigate:(NSString *)route beaconSettings:(HSBeaconSettings *)settings viewController:(UIViewController *)viewController signature:(NSString * _Nullable)signature;
+
+
+#pragma mark - Open article
+/**
+You can use this method to open a specific Docs Article within Beacon, using the Article’s ID.
+
+ @param articleId The id of the article to open up
+ @param settings The Beacon settings from which to load Beacon.
+
+ @note Displays Beacon from the application delegate's window root view controller.
+ */
++ (void)openArticle:(NSString *)articleId beaconSettings:(HSBeaconSettings *)settings;
+
+/**
+ You can use this method to open a specific Docs Article within Beacon, using the Article’s ID.
+
+ @param articleId The id of the article to open up
+ @param settings The Beacon settings from which to load Beacon.
+ @param viewController The view controller to display Beacon from.
+ */
++ (void)openArticle:(NSString *)articleId beaconSettings:(HSBeaconSettings *)settings viewController:(UIViewController *)viewController;
+
+/**
+ You can use this method to open a specific Docs Article within Beacon, using the Article’s ID.
+
+ @param articleId The id of the article to open up
+ @param settings The Beacon settings from which to load Beacon.
+ @param signature The signature to provide, if you are using secure mode.
+
+ @note Displays Beacon from the application delegate's window root view controller.
+ */
++ (void)openArticle:(NSString *)articleId beaconSettings:(HSBeaconSettings *)settings signature:(NSString * _Nullable)signature;
+
+/**
+ You can use this method to open a specific Docs Article within Beacon, using the Article’s ID.
+
+ @param articleId The id of the article to open up
+ @param settings The Beacon settings from which to load Beacon.
+ @param viewController The view controller to display Beacon from.
+ @param signature The signature to provide, if you are using secure mode.
+ */
++ (void)openArticle:(NSString *)articleId beaconSettings:(HSBeaconSettings *)settings viewController:(UIViewController *)viewController signature:(NSString * _Nullable)signature;
 
 #pragma mark - Unavailable Methods
 

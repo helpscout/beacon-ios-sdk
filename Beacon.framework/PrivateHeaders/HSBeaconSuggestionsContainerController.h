@@ -35,4 +35,6 @@ typedef NS_ENUM (NSInteger, HSMessagingItem) {
 
 - (void)showAsk;
 
+- (void)runSearch:(NSString *)searchText;
+
 @end

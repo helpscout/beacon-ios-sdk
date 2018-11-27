@@ -1,6 +1,9 @@
 #import <Foundation/Foundation.h>
 
+/// :nodoc:
 FOUNDATION_EXPORT double BeaconVersionNumber;
+
+/// :nodoc:
 FOUNDATION_EXPORT const unsigned char BeaconVersionString[];
 
 #ifndef _BEACON_

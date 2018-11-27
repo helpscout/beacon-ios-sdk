@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface HSBeaconUser: NSObject
 
+/**
+ The total number of attributes accepted.
+ */
 extern const NSUInteger HSBeaconMaximumUserAttributes;
 
 /**

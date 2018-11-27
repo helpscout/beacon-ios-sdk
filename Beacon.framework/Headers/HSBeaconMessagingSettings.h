@@ -2,6 +2,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ `HSBeaconMessagingSettings` contains settings specific to the messaging portions
+ of Beacon. After creating and configuring a messaging settings object, you can
+ set `messagingSettings` on `HSBeaconSettings` with it.
+ */
 @interface HSBeaconMessagingSettings : NSObject
 
 /**

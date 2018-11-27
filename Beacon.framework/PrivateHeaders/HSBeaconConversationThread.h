@@ -3,6 +3,7 @@
 #import "HSBeaconAgent.h"
 #import "HSBeaconChatTranscript.h"
 #import "HSBeaconChatTranscriptEvent.h"
+#import "HSBeaconLocalizedStrings.h"
 
 typedef NS_ENUM (NSInteger, HSBeaconTheadType) {
     HSBeaconThreadMessage, HSBeaconThreadChat
@@ -17,8 +18,6 @@ typedef NS_ENUM (NSInteger, HSBeaconTheadType) {
 @property (readonly, nonatomic) NSString *body;
 
 @property (readonly, nonatomic) NSArray *attachments;
-
-@property (readonly, nonatomic) NSString *timeago;
 
 @property (readonly, nonatomic) NSString *createdByType;
 
@@ -35,5 +34,7 @@ typedef NS_ENUM (NSInteger, HSBeaconTheadType) {
 -(instancetype)initWithChatTranscriptEvent:(HSBeaconChatTranscriptEvent *)event;
 
 -(NSArray<HSBeaconConversationThread *> *)chatTranscriptAsThreads;
+
+-(NSString *)timeago:(HSBeaconLocalizedStrings *)localizedStrings;
 
 @end

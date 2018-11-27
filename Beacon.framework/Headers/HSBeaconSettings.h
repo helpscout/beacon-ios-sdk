@@ -86,12 +86,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 // also use translations from the API or local translation strings (maybe)
 
-// later will add settings here for push notifications
-// ex from Smooch https://docs.smooch.io/api/ios/Classes/SKTSettings.html
-//enableAppDelegateSwizzling
-//enableUserNotificationCenterDelegateOverride
-//requestPushPermissionOnFirstMessage
-
+/**
+ Initialize Beacon settings with a given Beacon ID.
+ */
 - (instancetype)initWithBeaconId:(NSString *)beaconId;
 
 @end

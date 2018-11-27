@@ -13,7 +13,10 @@
 
 @property (nonatomic, weak) id<HSBeaconNavigationControllerDelegate> beaconNavigationDelegate;
 @property (nonatomic, weak) HSBeaconContext *beaconContext;
+@property (copy) void (^postLoadCallback)(void) ;
 
 - (void)updateStatusBar;
+
+- (void)displayControllerInCard:(UIViewController *)details;
 
 @end

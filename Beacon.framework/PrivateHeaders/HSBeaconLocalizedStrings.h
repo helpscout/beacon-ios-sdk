@@ -4,7 +4,6 @@
 - (void)updateLocalizationStringDictionary:(NSDictionary<NSString *, NSString *> *)strings;
 @required
 - (NSString *)localizedStringForKey:(NSString *)key;
-- (NSString *)responseTimeText:(NSString *)expectedResponseTime;
 
 @end
 

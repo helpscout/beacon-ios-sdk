@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithNavigationController:(UINavigationController *)navigationController beaconContext:(HSBeaconContext *)context;
 
+- (void)showAsk;
+
 @end
 
 NS_ASSUME_NONNULL_END
