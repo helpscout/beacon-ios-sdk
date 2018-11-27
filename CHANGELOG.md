@@ -2,6 +2,18 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 1.0.0 beta (build 67)
+
+##### Enhancements
+
+* New methods on `HSBeacon` - `search`, `openArticle`, and `navigate`.
+* Our developer site now includes [Jazzy](https://github.com/realm/jazzy) generated API documentation.
+
+##### Bug Fixes
+
+* More translation fixes documented [here](https://github.com/helpscout/beacon-ios-sdk/issues/8#issuecomment-434243479) and [here](https://github.com/helpscout/beacon-ios-sdk/pull/11/files).
+
+
 ## 1.0.0 beta (build 58)
 
 ##### Bug Fixes
