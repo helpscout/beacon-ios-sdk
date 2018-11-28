@@ -1,24 +1,13 @@
-/* send button */
-"sendMessage"="Envoyer";
-
 /* attachments header label */
 "Attachments"="pièce jointe";
 
-/* Message response times */
-
-"weUsuallyRespondIn"="Nous répondons habituellement en";
-"aFewMinutes"="quelques minutes";
-"aFewHours"="quelques heures";
-"aDay"="un jour";
-
-/* Dropdown picker actions */
-
+/* Dropdown picker actions for custom fields */
 "dropdownPickerClear"="Vider";
 "dropdownPickerDone"="Valider";
 
 /* from Server translations */
 
-/* */
+/* Reply to previous messages */
 "addReply"="Ajouter une réponse";
 
 /* Placeholder for message entry */
@@ -30,73 +19,74 @@
 /* Label for messaging tab */
 "ask"="Demande";
 
-/* */
+/* Search results footer */
 "cantFindAnswer"="Vous ne trouvez pas de réponse?";
 
-/* */
+/* Error message on message composition */
 "customFieldsValidationLabel"="Remplissez tous les champs, s'il vous plaît";
 
+/* Network error on the initial Beacon load */
 "defaultMessageErrorText"= "Un problème est survenu lors de l'envoi de votre message. Veuillez réessayer dans un instant.";
 
-/* */
+/* Error loading an article */
 "docsArticleErrorText"="Un problème est survenu lors de la récupération de cet article. Veuillez vérifier votre connexion Internet et réessayer.";
 
-/* */
+/* Empty search results */
 "docsSearchEmptyText"="Nous n'avons trouvé aucun article correspondant à votre question. Essayez de chercher un terme plus large ou contactez-nous.";
 
-/* */
+/* Network error on search */
 "docsSearchErrorText"="Un problème est survenu lors de la récupération des articles. Veuillez vérifier votre connexion Internet et réessayer.";
 
-/* No Internet connection message in Previous Messages */
-"previousMessagesErrorText"="Un problème est survenu lors de la récupération des messages. Veuillez vérifier votre connexion Internet et réessayer.";
-
-/* */
+/* Email field */
 "emailLabel"="Adresse mail";
-
-/* */
-"firstAFewQuestions"="Tout d'abord, quelques questions";
 
 /* Table item on landing page */
 "getInTouch"="Rester en contact";
 
-/* */
+/* For tabs in messaging only mode */
+"history"="Historique";
+
+/* Header on message entry */
 "howCanWeHelp"="Comment pouvons nous vous aider?";
+
+/* For previous messages reply text */
+"justNow"="A l'instant";
+
+/* For previous messages */
+"lastUpdated"="Dernière mise à jour";
 
 /* Show after message sent */
 "messageConfirmationText"="Vous devriez recevoir une réponse par mail dans les prochaines heures.";
 
-/* */
-"messageLabel"="Comment pouvons nous vous aider?";
-
-/* */
-"sendAMessage"="Envoyer un message";
-
 /* Field label for send message */
 "nameLabel"="Nom";
 
-/* */
-"next"="Suivant";
-
-/* */
+/* Empty search results */
 "nothingFound"="Aucun résultat";
 
 /* Table item on landing page */
 "previousMessages"="Messages précédents";
 
+/* No Internet connection message in Previous Messages */
+"previousMessageErrorText"="Un problème est survenu lors de la récupération des messages. Veuillez vérifier votre connexion Internet et réessayer.";
+
 /* Shown in previous messages for messages pending a reply */
 "received"="Reçu";
 
-/* */
+/* Footer in article details*/
 "relatedArticles"="Articles Liés";
 
-/* Error message on send */
-"replyErrorText"="Un problème est survenu lors de l'envoi de votre message. Veuillez réessayer dans un instant.";
+/* Response time for new message and previous message reply */
+"responseTime"="Nous répondons habituellement dans quelques heures";
 
 /* Search bar placeholder */
 "searchLabel"="Sur quoi avez-vous besoin d'aide?";
 
-/* */
-"sendMessage"="Envoyer un message";
+/* Navigation bar title for message composition */
+"sendAMessage"="Envoyer un message";
+
+/* Send button */
+"sendMessage"="Envoyer";
 
 /* Field label on send message page */
 "subjectLabel"="Sujets";
@@ -104,14 +94,14 @@
 /* Group header in suggestions table */
 "suggestedForYou"="Suggestions pour vous";
 
-/* */
-"tryBroaderTerm"="Essayez de chercher un terme plus large ou";
-
-/* */
+/* Message sent confirmation */
 "viewAndUpdateMessage"="Voir et mettre à jour ce message dans";
 
-/* */
+/* Previous messages without a response*/
 "waitingForAnAnswer"="En attente d'un réponse";
 
 /* Header on message sent confirmation screen */
 "weAreOnIt"="Nous nous en occupons!";
+
+/* For previous messages sent by indicator */
+"you"="Vous";

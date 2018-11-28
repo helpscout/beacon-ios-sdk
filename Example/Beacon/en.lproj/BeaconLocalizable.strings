@@ -1,101 +1,129 @@
-/* send button */
-"sendMessage"="Send";
+/* SDK specific */
+/* title for Beacon landing page */
+"Support"="Support";
 
 /* attachments header label */
 "Attachments"="Attachments";
 
-/* Message response times */
-
-"weUsuallyRespondIn"="We usually respond in";
-"aFewMinutes"="a few minutes";
-"aFewHours"="a few hours";
-"aDay"="a day";
-
-/* Dropdown picker actions */
-
+/* Dropdown picker actions for custom fields */
 "dropdownPickerClear"="Clear";
 "dropdownPickerDone"="Done";
 
+/* Error message on message composition */
+"customFieldsMaximumLengthValidationLabel"="You have typed more characters than allowed";
+
+/* Invalid configuration */
+"invalidConfig"="Choose a Docs Site or Mailbox to see your Beacon in action!";
+
+/* Attachment Picker Menu Items */
+
+"Take Photo"="Take Photo";
+
+"Use Last Photo"="Use Last Photo";
+
+"Choose from Library"="Choose from Library";
+
+"Import File from"="Import File from";
+
+"Cancel"="Cancel";
+
+"OK"="OK";
+
+/* Attachment Picker Errors */
+
+"This application is not entitled to access iCloud"="This application is not entitled to access iCloud";
+
+"There doesn't seem to be a photo taken yet."="There doesn't seem to be a photo taken yet";
+
+"To give permissions tap on 'Change Settings' button"="To give permissions tap on 'Change Settings' button";
+
+"Unable to save video: %@"="Unable to save video: %@";
+
+"Unable to save photo: %@"="Unable to save photo: %@";
+
+"Selected media type is unsupported"="Selected media type is unsupported";
+
 /* from Server translations */
 
-/* */
+/* Reply to previous messages */
 "addReply"="Add Reply";
 
 /* Placeholder for message entry */
 "addYourMessageHere"="Add your message here...";
 
 /* Label for docs tab */
-"answer"="Answer";
+"answer"="Answers";
 
 /* Label for messaging tab */
 "ask"="Ask";
 
-/* */
+/* Search results footer */
 "cantFindAnswer"="Can’t find an answer?";
 
-/* */
+/* Error message on message composition */
 "customFieldsValidationLabel"="Please complete all fields";
 
+/* Network error on the initial Beacon load */
 "defaultMessageErrorText"= "There was a problem sending your message. Please try again in a moment.";
 
-/* */
+/* Error loading an article */
 "docsArticleErrorText"="There was a problem retrieving this article. Please double-check your internet connection and try again.";
 
-/* */
+/* Empty search results */
 "docsSearchEmptyText"="We couldn’t find any articles that match your question. Try searching a broader term or get in touch.";
 
-/* */
+/* Network error on search */
 "docsSearchErrorText"="There was a problem retrieving articles. Please double-check your internet connection and try again.";
 
-/* No Internet connection message in Previous Messages */
-"previousMessagesErrorText"="There was a problem retrieving messages. Please double-check your internet connection and try again.";
-
-/* */
+/* Email field */
 "emailLabel"="Email address";
-
-/* */
-"firstAFewQuestions"="First, a few questions";
 
 /* Table item on landing page */
 "getInTouch"="Get in Touch";
 
-/* */
+/* For tabs in messaging only mode */
+"history"="History";
+
+/* Header on message entry */
 "howCanWeHelp"="How can we help?";
+
+/* For previous messages reply text */
+"justNow"="Just Now";
+
+/* For previous messages */
+"lastUpdated"="Last updated";
 
 /* Show after message sent */
 "messageConfirmationText"="You can expect to receive a reply via email in the next few hours.";
 
-/* */
-"messageLabel"="How can we help?";
-
-/* */
-"sendAMessage"="Send a message";
-
 /* Field label for send message */
 "nameLabel"="Name";
 
-/* */
-"next"="Next";
-
-/* */
+/* Empty search results */
 "nothingFound"="Nothing Found";
 
 /* Table item on landing page */
 "previousMessages"="Previous Messages";
 
+/* No Internet connection message in Previous Messages */
+"previousMessageErrorText"="There was a problem retrieving messages. Please double-check your internet connection and try again.";
+
 /* Shown in previous messages for messages pending a reply */
 "received"="Received";
 
-/* */
+/* Footer in article details*/
 "relatedArticles"="Related Articles";
 
-/* Error message on send */
-"replyErrorText"="There was a problem sending your message. Please try again in a moment.";
+/* Response time for new message and previous message reply */
+"responseTime"="We usually respond in a few hours";
 
 /* Search bar placeholder */
 "searchLabel"="What do you need help with?";
 
-/* */
+/* Navigation bar title for message composition */
+"sendAMessage"="Send a message";
+
+/* Send button */
 "sendMessage"="Send Message";
 
 /* Field label on send message page */
@@ -104,14 +132,14 @@
 /* Group header in suggestions table */
 "suggestedForYou"="Suggested For You";
 
-/* */
-"tryBroaderTerm"="Try searching a broader term or";
-
-/* */
+/* Message sent confirmation */
 "viewAndUpdateMessage"="View and update this message in";
 
-/* */
+/* Previous messages without a response*/
 "waitingForAnAnswer"="Waiting for an answer";
 
 /* Header on message sent confirmation screen */
 "weAreOnIt"="We’re on it!";
+
+/* For previous messages sent by indicator */
+"you"="You";
