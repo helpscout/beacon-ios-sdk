@@ -1,4 +1,4 @@
-\**The Beacon SDK is currently in beta. For issues or questions, contact Help Scout support at help@helpscout.com.**
+**The Beacon SDK is currently in beta. For issues or questions, contact Help Scout support at help@helpscout.com.**
 
 API documentation is available [here](https://developer.helpscout.com/beacon-2/ios-api/index.html).
 
