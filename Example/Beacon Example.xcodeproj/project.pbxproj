@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B0C067221B04B03007046E7 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0C067121B04B02007046E7 /* QuickLook.framework */; };
 		4B2681DF2119E315002D2EC8 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681DE2119E315002D2EC8 /* UserNotifications.framework */; };
 		4B2681E12119E323002D2EC8 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E02119E323002D2EC8 /* SafariServices.framework */; };
 		4B2681E32119E383002D2EC8 /* Beacon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4B2681E22119E383002D2EC8 /* Beacon.bundle */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4B0C067121B04B02007046E7 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		4B2681DE2119E315002D2EC8 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		4B2681E02119E323002D2EC8 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		4B2681E22119E383002D2EC8 /* Beacon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Beacon.bundle; path = ../Beacon.framework/Beacon.bundle; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B0C067221B04B03007046E7 /* QuickLook.framework in Frameworks */,
 				4B2681E72119E3E3002D2EC8 /* MobileCoreServices.framework in Frameworks */,
 				4B2681E52119E3D1002D2EC8 /* WebKit.framework in Frameworks */,
 				4B2681E12119E323002D2EC8 /* SafariServices.framework in Frameworks */,
@@ -114,6 +117,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B0C067121B04B02007046E7 /* QuickLook.framework */,
 				4B2681E62119E3E3002D2EC8 /* MobileCoreServices.framework */,
 				4B2681E42119E3D1002D2EC8 /* WebKit.framework */,
 				4B2681E02119E323002D2EC8 /* SafariServices.framework */,
