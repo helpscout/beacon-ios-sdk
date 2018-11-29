@@ -17,7 +17,7 @@ The Beacon SDK requires iOS 9.0+.
 
 We've created an <a href="https://github.com/helpscout/beacon-ios-sdk/tree/master/Example" target="_blank">open source example application</a> that you can reference during your implementation.
 
-To run the example project, clone the Beacon repo and run `pod install` from the Example directory. Once the installation is complete, open `Beacon Example.xcworkspace` and run the `Beacon Example` scheme.
+To run the example project, clone the Beacon repo and open `Beacon Example.xcodeproj` in the Example directory. This project uses the `Beacon.framework` included in this repo, so you should be able to run the project out of the box.
 
 ## Installation
 
