@@ -2,6 +2,15 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 1.0.0 beta (build 69)
+
+##### Enhancements
+
+##### Bug Fixes
+
+* Fixed user attribute upload for unsecure users
+* Fixed a crash condition with the `navigate` method
+
 ## 1.0.0 beta (build 67)
 
 ##### Enhancements
