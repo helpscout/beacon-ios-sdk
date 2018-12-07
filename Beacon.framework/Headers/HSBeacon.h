@@ -96,16 +96,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Initializes push notifications for the Beacon SDK. This should be called if you
- intend to receive push notifications, whether they are handled automatically or
- manually.
+ intend to receive push notifications with a manual setup.
  */
 + (void)initializeBeaconPushNotificationSupport;
 
 /**
- Initializes automatic push notification handling for the Beacon SDK. This should
- be called if you do not have to handle any push notifications that aren't from
- Beacon.
-
+ Initializes automatic push notification handling for the Beacon SDK.
+ 
+ This will wrap the following methods on UIApplicationDelegage with method swizzling:
+ 
+ application:didReceiveRemoteNotification:
+ application:didRegisterForRemoteNotificationsWithDeviceToken:
+ application:didFailToRegisterForRemoteNotificationsWithError:
+ 
+ In addition, this wraps all of methods on UNUserNotificationCenterDelegate.
+ 
  @param methodSwizzling Whether to override push notification methods on the
  App Delegate.
  @param overrideDelegate Whether to override `UNUserNotificationCenter`'s delegate
@@ -114,7 +119,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)initializeAutomaticPushNotificationHandlingWithMethodSwizzling:(BOOL)methodSwizzling overrideUserNotificationCenterDelegate:(BOOL)overrideDelegate;
 
 /**
- Sets the push notification device token.
+ This lets Beacon know about the user's notification token, so the Beacon backend can
+ send push notifications on behalf of the app. You only need to call this for manual
+ push notification handling.
  */
 + (void)setDeviceToken:(NSData *)deviceToken;
 
