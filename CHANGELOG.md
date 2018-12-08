@@ -2,6 +2,13 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 1.0.0 beta (build 71)
+
+##### Bug Fixes
+
+* The main Beacon controller now implements `preferredStatusBarStyle` to try to resolve [issue #19](https://github.com/helpscout/beacon-ios-sdk/issues/19)
+* Article viewed activities will now link to the article in you Help Scout Beacon note, rather than the application in the App Store. Search activities will no longer show a link. This also resolves a crash with a missing `CFBundleName`. Long term, we'll add the Beacon name & platform to the note so you can more easily identify the source.
+
 ## 1.0.0 beta (build 69)
 
 ##### Enhancements
