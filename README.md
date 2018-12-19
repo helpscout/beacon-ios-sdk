@@ -55,3 +55,6 @@ To run the example project, clone the Beacon repo and run `pod install` from the
 ## Documentation
 
 See our [developer site](https://developer.helpscout.com/beacon-2/ios/) for more customization options available through the SDK.
+
+[1]:	http://cocoapods.org
+[2]:	https://github.com/Carthage/Carthage#adding-frameworks-to-an-application
