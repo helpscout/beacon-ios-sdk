@@ -40,6 +40,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic) BOOL customFieldsEnabled;
 @property (readonly, nonatomic) BOOL showGetInTouchEnabled;
 
+@property (strong, nonatomic) NSArray<NSString *> *suggestionArticleIds;
+
 @property (atomic) BOOL loadFailed;
 
 @property (nullable) HSBeaconEmailMessage *draftMessage;

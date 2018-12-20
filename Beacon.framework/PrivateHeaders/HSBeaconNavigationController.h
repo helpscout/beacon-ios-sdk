@@ -19,4 +19,6 @@
 
 - (void)displayControllerInCard:(UIViewController *)details;
 
+- (void)dismissCards:(void (^)(void))completion;
+
 @end

@@ -9,6 +9,8 @@
 
 -(instancetype)initWithDictionary: (NSDictionary *)dictionary;
 
+-(instancetype)initWithCustomArticleSuggestion: (NSDictionary *)dictionary;
+
 -(BOOL)isArticle;
 
 -(BOOL)isLink;

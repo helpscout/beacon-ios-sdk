@@ -74,6 +74,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)openBeacon:(HSBeaconSettings *)settings fromViewController:(UIViewController *)viewController signature:(NSString *)signature;
 
 /**
+ Hides the SDK modal window if present. Useful for when the app is returning from the background.
+ */
++ (void)dismissBeacon:(void (^ _Nullable)(void))completion;
+
+/**
  Signs in with a Beacon user. This gives Beacon access to the user's name, email
  address, and signature.
 
@@ -91,6 +96,19 @@ NS_ASSUME_NONNULL_BEGIN
  storage.
  */
 + (void)logout;
+
+#pragma mark - Suggestions
+
+/**
+ Programmatically change the suggestted articles displayed. If the Beacon is visible,
+ the change will take place right away. Otherwise, the article data will change on the
+ next open.
+ 
+ Passing in an empty array will restore the default list.
+ 
+ @param articleIds An array of article ids to override suggestions
+ */
++ (void)suggest:(NSArray <NSString *> *)articleIds;
 
 #pragma mark - Push Notifications
 

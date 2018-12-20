@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSURLSessionDataTask *)fetchArticle:(NSString *)articleId completionHandler: (void (^)(HSBeaconArticleDetails *_Nullable article, NSError *error))completion;
 
+- (NSURLSessionDataTask *)fetchCustomSuggestions:(NSArray<NSString *> *)articleIds completionHandler:(void (^)(NSArray<HSBeaconSuggestion *> *articles, NSError *error))completion;
+
 - (NSURLSessionDataTask *)fetchSearchResults:query page:(int)page completionHandler:(void (^)(HSBeaconPaginatedResponse *_Nullable results, NSError *error)) completion;
 
 @end

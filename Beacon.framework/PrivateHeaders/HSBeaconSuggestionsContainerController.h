@@ -37,4 +37,8 @@ typedef NS_ENUM (NSInteger, HSMessagingItem) {
 
 - (void)runSearch:(NSString *)searchText;
 
+- (void)loadDefaultSuggestions;
+
+- (void)loadCustomSuggestions:(NSArray<NSString *> *)articleIds;
+
 @end
