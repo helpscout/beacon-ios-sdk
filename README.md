@@ -48,9 +48,7 @@ Our [developer site](https://developer.helpscout.com/beacon-2/ios/#additional-se
 
 ## Sample Application
 
-We've created an <a href="https://github.com/helpscout/beacon-ios-sdk/tree/master/Example" target="_blank">open source example application</a> that you can reference during your implementation.
-
-To run the example project, clone the Beacon repo and run `pod install` from the Example directory. Once the installation is complete, open `Beacon Example.xcworkspace` and run the `Beacon Example` scheme.
+To run the example project in this repo, clone and run `pod install` from the Example directory. Once the installation is complete, open `Beacon Example.xcworkspace` and run the `Beacon Example` scheme.
 
 ## Documentation
 
