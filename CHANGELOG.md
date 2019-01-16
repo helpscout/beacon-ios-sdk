@@ -2,6 +2,10 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 1.0.0 beta (build 73)
+
+* We've fixed the message history for secure mode users that broke in build 0.69. Sorry for the trouble!
+
 ## 1.0.0 beta (build 72)
 
 ##### Enhancements
