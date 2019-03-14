@@ -29,6 +29,11 @@
 
 "OK"="OK";
 
+/* Accessibility labels for buttons */
+"backButtonAccessibilityLabel"="Back";
+"closeButtonAccessibilityLabel"="Close";
+"attachmentButtonAccessibilityLabel"="Attach File";
+
 /* Attachment Picker Errors */
 
 "This application is not entitled to access iCloud"="This application is not entitled to access iCloud";
