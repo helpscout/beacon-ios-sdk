@@ -1,5 +1,3 @@
-**The Beacon SDK is currently in beta. For issues or questions, contact Help Scout support at help@helpscout.com.**
-
 Help Scout's Beacon SDK allows you to embed the same Beacon functionality we have for the web inside your iOS app. Beacons provide a quick and simple way for customers to flip through your knowledge base or reach out to your team.
 
 
