@@ -1,9 +1,47 @@
+/* SDK specific */
+/* title for Beacon landing page */
+"Support"="Aide";
+
 /* attachments header label */
-"Attachments"="pièce jointe";
+"Attachments"="Pièces jointes";
 
 /* Dropdown picker actions for custom fields */
 "dropdownPickerClear"="Vider";
 "dropdownPickerDone"="Valider";
+
+/* Error message on message composition */
+"customFieldsMaximumLengthValidationLabel"="Vous avez tapé plus de caractères que permis";
+
+/* Invalid configuration */
+"invalidConfig"="Choisissez un site de Docs ou une Mailbox pour voir votre Beacon en action !";
+
+/* Attachment Picker Menu Items */
+
+"Take Photo"="Prendre une photo";
+
+"Use Last Photo"="Utiliser la dernière photo";
+
+"Choose from Library"="Photo de la bibliothèque";
+
+"Import File from"="Importer un fichier";
+
+"Cancel"="Annuler";
+
+"OK"="OK";
+
+/* Attachment Picker Errors */
+
+"This application is not entitled to access iCloud"="Cette application n'est pas autorisée à accéder à iCloud";
+
+"There doesn't seem to be a photo taken yet."="Il ne semble pas y avoir encore de photo prise";
+
+"To give permissions tap on 'Change Settings' button"="Pour modifier les autorisations, appuyez sur 'Modifier les paramètres'";
+
+"Unable to save video: %@"="Impossible d'enregistrer la vidéo : %@";
+
+"Unable to save photo: %@"="Impossible d'enregistrer la photo : %@";
+
+"Selected media type is unsupported"="Ce type de fichier n'est pas pris en charge";
 
 /* from Server translations */
 
@@ -14,16 +52,16 @@
 "addYourMessageHere"="Saisissez votre message ici...";
 
 /* Label for docs tab */
-"answer"="Réponse";
+"answer"="Résultat";
 
 /* Label for messaging tab */
-"ask"="Demande";
+"ask"="Contact";
 
 /* Search results footer */
-"cantFindAnswer"="Vous ne trouvez pas de réponse?";
+"cantFindAnswer"="Vous ne trouvez pas ?";
 
 /* Error message on message composition */
-"customFieldsValidationLabel"="Remplissez tous les champs, s'il vous plaît";
+"customFieldsValidationLabel"="Complétez votre message";
 
 /* Network error on the initial Beacon load */
 "defaultMessageErrorText"= "Un problème est survenu lors de l'envoi de votre message. Veuillez réessayer dans un instant.";
@@ -32,7 +70,7 @@
 "docsArticleErrorText"="Un problème est survenu lors de la récupération de cet article. Veuillez vérifier votre connexion Internet et réessayer.";
 
 /* Empty search results */
-"docsSearchEmptyText"="Nous n'avons trouvé aucun article correspondant à votre question. Essayez de chercher un terme plus large ou contactez-nous.";
+"docsSearchEmptyText"="Aucun article ne correspond à votre question. Cherchez un autre terme ou contactez-nous.";
 
 /* Network error on search */
 "docsSearchErrorText"="Un problème est survenu lors de la récupération des articles. Veuillez vérifier votre connexion Internet et réessayer.";
@@ -41,22 +79,22 @@
 "emailLabel"="Adresse mail";
 
 /* Table item on landing page */
-"getInTouch"="Rester en contact";
+"getInTouch"="Nous contacter";
 
 /* For tabs in messaging only mode */
 "history"="Historique";
 
 /* Header on message entry */
-"howCanWeHelp"="Comment pouvons nous vous aider?";
+"howCanWeHelp"="Comment vous aider ?";
 
 /* For previous messages reply text */
 "justNow"="A l'instant";
 
 /* For previous messages */
-"lastUpdated"="Dernière mise à jour";
+"lastUpdated"="Dernier échange :";
 
 /* Show after message sent */
-"messageConfirmationText"="Vous devriez recevoir une réponse par mail dans les prochaines heures.";
+"messageConfirmationText"="Vous recevrez une réponse par mail dès que nous l'aurons étudié.";
 
 /* Field label for send message */
 "nameLabel"="Nom";
@@ -74,13 +112,13 @@
 "received"="Reçu";
 
 /* Footer in article details*/
-"relatedArticles"="Articles Liés";
+"relatedArticles"="Articles liés";
 
 /* Response time for new message and previous message reply */
-"responseTime"="Nous répondons habituellement dans quelques heures";
+"responseTime"="Nous vous répondrons dès que possible";
 
 /* Search bar placeholder */
-"searchLabel"="Sur quoi avez-vous besoin d'aide?";
+"searchLabel"="Que cherchez-vous ?";
 
 /* Navigation bar title for message composition */
 "sendAMessage"="Envoyer un message";
@@ -89,19 +127,21 @@
 "sendMessage"="Envoyer";
 
 /* Field label on send message page */
-"subjectLabel"="Sujets";
+"subjectLabel"="Sujet";
 
 /* Group header in suggestions table */
-"suggestedForYou"="Suggestions pour vous";
+"suggestedForYou"="Suggestions";
 
 /* Message sent confirmation */
-"viewAndUpdateMessage"="Voir et mettre à jour ce message dans";
+"viewAndUpdateMessage"="Vous pouvez revoir votre message dans";
 
 /* Previous messages without a response*/
 "waitingForAnAnswer"="En attente d'un réponse";
 
 /* Header on message sent confirmation screen */
-"weAreOnIt"="Nous nous en occupons!";
+"weAreOnIt"="Message envoyé !";
 
 /* For previous messages sent by indicator */
 "you"="Vous";
+
+// Translation provided by Antonin MOLIERES (Ki-Lab)
