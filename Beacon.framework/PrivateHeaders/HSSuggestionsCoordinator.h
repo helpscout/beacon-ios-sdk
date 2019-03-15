@@ -1,6 +1,7 @@
-#import "HSBeaconCoordinator.h"
 #import "HSBeaconContext.h"
+#import "HSBeaconSuggestionItem.h"
 #import "HSBeaconSuggestionsContainerController.h"
+#import "HSContactCoordinator.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -29,7 +30,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)runSearch:(NSString *)text;
 
-- (void)updateSuggestions:(NSArray<NSString *> *)articleIds;
+- (void)updateSuggestions:(NSArray<id<HSBeaconSuggestionItem>> *)suggestions;
+
+- (HSContactCoordinator *)contactCoordinator;
 
 @end
 

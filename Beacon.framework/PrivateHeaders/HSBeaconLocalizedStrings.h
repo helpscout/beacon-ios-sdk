@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) NSDictionary<NSString *, NSString *> *configStrings;
 @property BOOL useLocalOverrides;
 
++ (NSString *)localizableStringFromApp:(NSString *)key;
+
 @end
 
 NS_ASSUME_NONNULL_END

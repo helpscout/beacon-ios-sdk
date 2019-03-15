@@ -14,10 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSURL *baseURL;
 @property (nonatomic, strong) NSString *beaconId;
+@property (nonatomic, strong) NSString *deviceId;
 @property (nonatomic, strong) NSURLSession *beaconSession;
 
-- (instancetype)initWithBeaconId:(NSString *)beaconId;
+- (instancetype)initWithBeaconId:(NSString *)beaconId deviceId: (NSString *)deviceId;
 
+/* this constructor is only used for testing */
 - (instancetype)initWithBeaconId:(NSString *)beaconId session:(NSURLSession *)session;
 
 - (NSURLSessionDataTask *)performGETRequestForURL:(NSURL *)url completion:(NetworkCompletionHandler)completion;

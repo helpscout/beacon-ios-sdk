@@ -8,4 +8,6 @@
 
 @property(weak, nonatomic) IBOutlet UILabel *messageSubtitle;
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *closeButton;
+
 @end

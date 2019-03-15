@@ -1,5 +1,7 @@
 #import <Foundation/Foundation.h>
 
+@class HSBeaconSettings;
+
 NS_ASSUME_NONNULL_BEGIN
 /**
  A file attached to the new conversation contact form.
@@ -23,6 +25,12 @@ NS_ASSUME_NONNULL_BEGIN
  new conversation contact form.
  */
 @interface HSBeaconContactForm : NSObject
+
+/**
+ The id of the Beacon that's being prefilled. Useful if you have multiple Beacons in your app
+ and need different prefill logic for each one.
+ */
+@property(strong, nonatomic, readonly) HSBeaconSettings *beaconSettings;
 
 /**
  The customer email. This will be ignored if secure mode is used or if the customer has previously
@@ -56,6 +64,13 @@ NS_ASSUME_NONNULL_BEGIN
  Read only array of the files attached to this object.
  */
 @property(readonly) NSArray<id<HSBeaconContactFormAttachment>> *attachments;
+
+/**
+ Create a contact form with the specified Beacon id. As a developer you won't need to
+ create a contact form, as the SDK will initialize the object and pass it to the delegate
+ method.
+ */
+- (instancetype)initWithBeaconSettings:(HSBeaconSettings *)beaconSettings;
 
 /**
  Adds a new attachment to this object. There is a maximum of 3 attachments allowed. Any calls

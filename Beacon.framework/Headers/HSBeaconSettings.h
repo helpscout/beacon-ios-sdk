@@ -2,6 +2,7 @@
 
 #import "HSBeaconContactForm.h"
 #import "HSBeaconMessagingSettings.h"
+#import "HSBeaconSettings.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -11,11 +12,42 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @protocol HSBeaconDelegate <NSObject>
 
+
+@optional
 /**
  The `prefill` method is called before showing the new conversation contact form. Any values
  set on the `form` object will be prepopulated for the customer.
  */
 - (void)prefill:(HSBeaconContactForm *)form;
+
+
+@optional
+/**
+ This method is called the first time the Beacon is displayed, after the configuration
+ has been successfully loaded over the network.
+ */
+- (void)onBeaconInitialOpen:(HSBeaconSettings *)beaconSettings;
+
+
+@optional
+/**
+ This method is called anytime the Beacon modal is displayed.
+ */
+- (void)onBeaconOpen:(HSBeaconSettings *)beaconSettings;
+
+
+@optional
+/**
+ This method is called the first time the Beacon is dismissed each session.
+ */
+- (void)onBeaconInitialClose:(HSBeaconSettings *)beaconSettings;
+
+
+@optional
+/**
+ This method is called every time the Beacon modal is dismissed.
+ */
+- (void)onBeaconClose:(HSBeaconSettings *)beaconSettings;
 
 @end
 
@@ -77,7 +109,7 @@ NS_ASSUME_NONNULL_BEGIN
  Override the color from the Beacon Builder. The `useNavigationBarAppearance` option
  will override this value.
  */
-@property (weak, nonatomic, nullable) UIColor *color;
+@property (strong, nonatomic, nullable) UIColor *color;
 
 /**
  Set different display options for messaging.

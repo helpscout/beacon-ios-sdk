@@ -2,6 +2,7 @@
 
 #import "HSBeaconContext.h"
 #import "HSBeaconSuggestion.h"
+#import "HSBeaconSuggestionItem.h"
 
 #pragma mark - HSBeaconSuggestionsControllerDelegate
 
@@ -39,6 +40,6 @@ typedef NS_ENUM (NSInteger, HSMessagingItem) {
 
 - (void)loadDefaultSuggestions;
 
-- (void)loadCustomSuggestions:(NSArray<NSString *> *)articleIds;
+- (void)loadCustomSuggestions:(NSArray<id<HSBeaconSuggestionItem>> *)articleIds;
 
 @end

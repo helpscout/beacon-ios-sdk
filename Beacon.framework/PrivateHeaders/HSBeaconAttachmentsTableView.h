@@ -27,6 +27,10 @@
 
 - (BOOL)sendPendingUploads;
 
+/* this is for resetting the form */
+- (void)deleteAttachments;
+
+/* this is for post-send */
 - (void)clearAttachments;
 
 @end

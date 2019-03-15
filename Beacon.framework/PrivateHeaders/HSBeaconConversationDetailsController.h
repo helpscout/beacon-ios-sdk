@@ -9,6 +9,8 @@
 
 - (void)conversationUpdated:(HSBeaconConversation *)conversation;
 
+- (void)conversationDismissed:(HSBeaconConversation *)conversation;
+
 @end
 
 @interface HSBeaconConversationDetailsController : UIViewController <HSCardStackEmbeddable>

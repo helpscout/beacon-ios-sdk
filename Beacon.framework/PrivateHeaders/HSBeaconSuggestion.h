@@ -11,6 +11,8 @@
 
 -(instancetype)initWithCustomArticleSuggestion: (NSDictionary *)dictionary;
 
+- (instancetype)initWithUrl:(NSURL *)url text:(NSString *)text;
+
 -(BOOL)isArticle;
 
 -(BOOL)isLink;

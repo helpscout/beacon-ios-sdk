@@ -13,6 +13,7 @@
 - (void)messageEntryComplete:(HSBeaconMessageEntryContainerController *)controller;
 - (void)messageCountRefreshRequired:(HSBeaconMessageEntryContainerController *)controller;
 - (void)showPreviousMessages:(HSBeaconMessageEntryContainerController *)controller;
+- (void)reloadEntryController:(HSBeaconMessageEntryContainerController *)controller;
 
 @end
 
@@ -41,8 +42,13 @@
 @property(weak, nonatomic) IBOutlet HSBeaconErrorView *errorContainer;
 @property(strong, nonatomic) IBOutlet NSLayoutConstraint *errorContainerHeight;
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *backButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *closeButton;
+
 - (void)sendMessage;
 
 - (void)showPreviousMessages;
+
+- (void)resetForm;
 
 @end

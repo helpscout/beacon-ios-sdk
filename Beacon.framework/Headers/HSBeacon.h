@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 
+@protocol HSBeaconSuggestionItem;
 @class HSBeaconUser;
 @class HSBeaconSettings;
 
@@ -109,6 +110,19 @@ NS_ASSUME_NONNULL_BEGIN
  @param articleIds An array of article ids to override suggestions
  */
 + (void)suggest:(NSArray <NSString *> *)articleIds;
+
+/**
+ Programmatically change the suggestted items displayed. This implementation accepts
+ either `HSBeaconArticleSuggestion` or `HSBeaconLinkSuggestion` objects in the array.
+
+ If the Beacon is visible the change will take place right away. Otherwise, the article
+ data will change on the next open.
+
+ Passing in an empty array will restore the default list.
+
+ @param suggestions An array of HSBeaconArticleSuggestion or HSBeaconLinkSuggestion objects
+ */
++ (void)suggestWithItems:(NSArray<id<HSBeaconSuggestionItem>> *)suggestions;
 
 #pragma mark - Push Notifications
 
@@ -328,6 +342,13 @@ You can use this method to open a specific Docs Article within Beacon, using the
  @param signature The signature to provide, if you are using secure mode.
  */
 + (void)openArticle:(NSString *)articleId beaconSettings:(HSBeaconSettings *)settings viewController:(UIViewController *)viewController signature:(NSString * _Nullable)signature;
+
+/**
+ Resets the contact form by clearing all of its fields, custom fields and attachments. If your Beacon is in Normal Mode, calling reset will clear all contact form fields, including name and email address.
+
+ If your Beacon is in Secure Mode, calling reset will not clear the customer’s name or email address. Those inputs will remain hidden.
+ */
++ (void)reset;
 
 #pragma mark - Unavailable Methods
 

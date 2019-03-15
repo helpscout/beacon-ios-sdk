@@ -4,6 +4,9 @@
 
 @interface HSBeaconPreviousMessagesController : UITableViewController
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *backButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *closeButton;
+
 @property (strong, nonatomic) HSBeaconContext *beaconContext;
 
 + (instancetype)instantiateViewController NS_SWIFT_NAME(instantiate());

@@ -1,7 +1,5 @@
 #import <Foundation/Foundation.h>
 
-@class HSBeaconUser;
-
 /*
  * This is the user info stored in the keychain for non-secure users.
  * It's stored after they send their first message and retrieved when the Beacon is opened
@@ -12,6 +10,8 @@
 @property (readonly, nonatomic) NSString *email;
 @property (readonly, nonatomic) NSString *name;
 
-- (instancetype)initWithUser:(HSBeaconUser *)user deviceId:(NSString *)deviceId;
+- (instancetype)initWithDeviceId:(NSString *)deviceId;
+
+- (instancetype)initWithEmail:(NSString *)email name:(NSString *)name deviceId:(NSString *)deviceId;
 
 @end

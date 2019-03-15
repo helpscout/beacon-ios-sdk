@@ -28,6 +28,8 @@
 
 - (void)setText:(NSString *)text;
 
+- (void)resetValue;
+
 - (void)setPlaceholder:(NSString *)placeholder;
 
 - (HSContactFieldValidationResult)validate:(BOOL)errorsDisplayed;

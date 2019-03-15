@@ -12,6 +12,7 @@ FOUNDATION_EXPORT const unsigned char BeaconVersionString[];
 #import "HSBeacon.h"
 #import "HSBeaconContactForm.h"
 #import "HSBeaconSettings.h"
+#import "HSBeaconSuggestionItem.h"
 #import "HSBeaconUser.h"
 
 #endif /* _BEACON_ */

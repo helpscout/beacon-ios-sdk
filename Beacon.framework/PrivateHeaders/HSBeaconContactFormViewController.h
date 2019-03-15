@@ -61,7 +61,9 @@
 
 - (HSBeaconEmailMessage *)constructMessage;
 
-- (void)clearForm;
+- (void)clearForm:(BOOL) forReset;
+
+- (void)populateSecurityInfo;
 
 - (void)setCustomFieldDefinitions:(NSArray<HSBeaconCustomFieldDefinition *> *)fieldDefinitions;
 
