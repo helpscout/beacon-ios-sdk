@@ -2,6 +2,18 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+
+## 1.0.0 Release
+
+* New `reset` method on `HSBeacon` to clear the current state
+* New `suggestWithItems` method that also allows for URL-based custom suggestions
+* New `HSBeaconDelegate` methods for intercepting Beacon open and close events
+* Improved VoiceOver support - translations for button accessibility labels and the navigation tabs now respond correctly in VoiceOver mode
+* The `HSBeaconSettings` object is now available on the `HSBeaconContactForm` object when calling `prefill`.
+* Fixes for layout bugs on iPad where UI elements would render offscreen.
+* The `color` attribute of `HSBeaconSettings` is now a strong reference.
+* The name and email fields are now always shown on the contact form unless the `login` method is called. This allows users who have manually entered these values to correct mistakes when sending a new email.
+
 ## 1.0.0 beta (build 73)
 
 * We've fixed the message history for secure mode users that broke in build 0.69. Sorry for the trouble!
