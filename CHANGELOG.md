@@ -2,6 +2,16 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 1.0.1 Release
+
+##### Enhancements
+
+* Added a `tintColorOverride` setting to allow for customization of the color of buttons and labels throughout the SDK
+
+##### Bug Fixes
+
+* Fixes for the Get In Touch & Messaging Enabled settings
+* Fixes for CSS issues with nested `ol` tags
 
 ## 1.0.0 Release
 
