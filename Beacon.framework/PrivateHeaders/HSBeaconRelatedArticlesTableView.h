@@ -1,5 +1,7 @@
 #import <UIKit/UIKit.h>
 
+#import "HSBeaconContext.h"
+
 @class HSBeaconArticleDetails;
 
 @protocol HSBeaconRelatedArticlesTableProtocol
@@ -8,6 +10,7 @@
 
 @interface HSBeaconRelatedArticlesTableView : UITableView
 
+@property (nonatomic, strong) HSBeaconContext *beaconContext;
 @property (nonatomic, weak) id<HSBeaconRelatedArticlesTableProtocol> relatedArticlesDelegate;
 
 @property (nonatomic) HSBeaconArticleDetails *articleDetails;

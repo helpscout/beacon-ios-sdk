@@ -43,6 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic) BOOL attachmentsEnabled;
 @property (readonly, nonatomic) BOOL customFieldsEnabled;
 @property (readonly, nonatomic) BOOL showGetInTouchEnabled;
+@property (readonly, nonatomic) UIColor *tintColor;
 
 @property (strong, nonatomic) NSArray<id<HSBeaconSuggestionItem>> *customSuggestions;
 

@@ -4,6 +4,6 @@
 
 @interface HSBeaconTimeagoFormatter : NSObject
 
-+ (NSString *)timeagoText:(NSDate *)date localizedStrings:(HSBeaconLocalizedStrings *)localizedStrings;
++ (NSString *)timeagoText:(NSDate *)date localizedStrings:(id<HSBeaconStringLocalizer>)localizedStrings;
 
 @end

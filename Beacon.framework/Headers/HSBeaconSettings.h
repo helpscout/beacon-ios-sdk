@@ -101,6 +101,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL docsEnabled;
 
 /**
+ This replaces the default blue color used for clickable text throughout Beacon. For example,
+ you may want to set this to the tintColor of your window to match the look and feel of the
+ rest of your app.
+ */
+@property UIColor *tintColorOverride;
+
+/**
  Used for customizing the runtime behavior of the Beacon SDK
  */
 @property (weak, nonatomic, nullable) id<HSBeaconDelegate> delegate;

@@ -35,6 +35,6 @@ typedef NS_ENUM (NSInteger, HSBeaconTheadType) {
 
 -(NSArray<HSBeaconConversationThread *> *)chatTranscriptAsThreads;
 
--(NSString *)timeago:(HSBeaconLocalizedStrings *)localizedStrings;
+-(NSString *)timeago:(id<HSBeaconStringLocalizer>)localizedStrings;
 
 @end

@@ -22,4 +22,6 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *nextButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *previousButton;
 
+- (void)updateButtons:(UIColor *)tintColor;
+
 @end
