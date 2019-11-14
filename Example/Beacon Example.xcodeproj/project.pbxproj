@@ -385,16 +385,12 @@
 				CODE_SIGN_ENTITLEMENTS = Beacon_Example.entitlements;
 				CURRENT_PROJECT_VERSION = 35;
 				DEVELOPMENT_TEAM = N86BPF5R67;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/../**",
-					"$(PROJECT_DIR)/Frameworks/**",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Beacon/Beacon Example-Prefix.pch";
 				INFOPLIST_FILE = "Beacon/Beacon Example-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/**";
+				LIBRARY_SEARCH_PATHS = "";
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = net.helpscout.beacondemo;
@@ -411,16 +407,12 @@
 				CODE_SIGN_ENTITLEMENTS = Beacon_Example.entitlements;
 				CURRENT_PROJECT_VERSION = 35;
 				DEVELOPMENT_TEAM = N86BPF5R67;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/../**",
-					"$(PROJECT_DIR)/Frameworks/**",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Beacon/Beacon Example-Prefix.pch";
 				INFOPLIST_FILE = "Beacon/Beacon Example-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks/**";
+				LIBRARY_SEARCH_PATHS = "";
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = net.helpscout.beacondemo;
