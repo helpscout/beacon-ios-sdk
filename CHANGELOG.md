@@ -2,6 +2,16 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 1.0.2 Release
+
+##### Bug Fixes
+
+* Fixes a crash reported in HSBeaconPreviousMessagesController. ([Issue 33](https://github.com/helpscout/beacon-ios-sdk/issues/33))
+* Improves prefill behavior when opening a contact form subsequent times. ([Issue 34](https://github.com/helpscout/beacon-ios-sdk/issues/34))
+* Fixes a crash when calling reset on a form with attachments. ([Issue 35](https://github.com/helpscout/beacon-ios-sdk/issues/35))
+* Fixes not being able to select an image from the Photo Library on iOS 13. ([Issue 39](https://github.com/helpscout/beacon-ios-sdk/issues/39) & [Issue 41](https://github.com/helpscout/beacon-ios-sdk/issues/41))
+* Fixes an issue that prevented some apps from supporting dark mode. ([Issue 32](https://github.com/helpscout/beacon-ios-sdk/issues/32))
+
 ## 1.0.1 Release
 
 ##### Enhancements
