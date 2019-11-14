@@ -1,8 +1,8 @@
 #import <UIKit/UIKit.h>
-
+#import "HSView.h"
 #import "HSBeaconFontIcons.h"
 
-@interface HSBeaconNavigationTabView : UIView
+@interface HSBeaconNavigationTabView : HSView
 
 - (void)addTab:(HSIcon)icon text:(NSString *)text pressed:(BOOL)pressed tabColor:(UIColor *)color;
 

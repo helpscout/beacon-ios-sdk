@@ -1,10 +1,11 @@
 #import <UIKit/UIKit.h>
+#import "HSViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class HSBorderedButton;
 
-@interface HSStatusMessageViewController : UIViewController
+@interface HSStatusMessageViewController : HSViewController
 
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
 @property (nonatomic, weak) IBOutlet UILabel *titleLabel;

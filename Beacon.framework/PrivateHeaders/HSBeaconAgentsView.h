@@ -1,8 +1,8 @@
 #import <UIKit/UIKit.h>
-
+#import "HSView.h"
 #import "HSBeaconAgent.h"
 
-@interface HSBeaconAgentsView : UIView
+@interface HSBeaconAgentsView : HSView
 
 @property (nonatomic, strong) UIColor *agentViewBackgroundColor;
 @property (nonatomic, strong) UIColor *agentViewBorderColor;

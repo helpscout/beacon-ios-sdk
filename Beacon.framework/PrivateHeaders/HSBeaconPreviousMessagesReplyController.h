@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-
+#import "HSViewController.h"
 #import "HSBeaconAttachmentsTableView.h"
 #import "HSBeaconContext.h"
 #import "HSBeaconErrorView.h"
@@ -12,7 +12,7 @@
 
 @end
 
-@interface HSBeaconPreviousMessagesReplyController : UIViewController
+@interface HSBeaconPreviousMessagesReplyController : HSViewController
 
 @property (weak, nonatomic) IBOutlet HSBeaconSubmitButton *sendButton;
 @property (weak, nonatomic) IBOutlet UIButton *attachButton;

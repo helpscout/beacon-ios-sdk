@@ -1,8 +1,8 @@
 #import <UIKit/UIKit.h>
-
+#import "HSTableViewController.h"
 #import "HSBeaconContext.h"
 
-@interface HSBeaconAskSelectionController: UITableViewController
+@interface HSBeaconAskSelectionController: HSTableViewController
 
 @property(strong, nonatomic) HSBeaconContext *beaconContext;
 

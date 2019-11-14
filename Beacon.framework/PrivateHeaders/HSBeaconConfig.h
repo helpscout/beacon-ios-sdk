@@ -10,6 +10,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (readonly, nonatomic) NSString *beaconId;
 
+@property (readonly, nonatomic) NSString *companyName;
+
 @property (readonly, nonatomic) NSString *name;
 
 @property (readonly, nonatomic) NSString *beaconColorHexValue;

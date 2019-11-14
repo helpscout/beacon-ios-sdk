@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-
+#import "HSViewController.h"
 #import "HSBeaconContext.h"
 #import "HSBeaconSuggestion.h"
 #import "HSBeaconSuggestionItem.h"
@@ -18,7 +18,7 @@ typedef NS_ENUM (NSInteger, HSMessagingItem) {
     HSGetInTouchItem, HSPreviousMessagesItem
 };
 
-@interface HSBeaconSuggestionsContainerController : UIViewController
+@interface HSBeaconSuggestionsContainerController : HSViewController
 
 @property (nonatomic, weak) id<HSBeaconSuggestionsContainerControllerDelegate> delegate;
 @property (nonatomic, strong) HSBeaconContext *beaconContext;

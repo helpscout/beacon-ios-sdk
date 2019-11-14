@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-
+#import "HSViewController.h"
 #import "HSBeaconContext.h"
 
 @class HSBeaconAttachmentsTableView;
@@ -17,7 +17,7 @@
 
 #pragma mark -
 
-@interface HSBeaconContactFormViewController: UIViewController
+@interface HSBeaconContactFormViewController: HSViewController
 
 @property (nonatomic, weak) id<HSBeaconContactFormControllerDelegate> delegate;
 @property (strong, nonatomic) HSBeaconContext *beaconContext;

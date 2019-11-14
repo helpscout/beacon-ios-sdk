@@ -1,4 +1,5 @@
 #import <UIKit/UIKit.h>
+#import "HSView.h"
 #import "HSBeaconContactFormValidator.h"
 
 @class HSBeaconContactFormField;
@@ -10,7 +11,7 @@
 
 @end
 
-@interface HSBeaconContactFormField : UIView
+@interface HSBeaconContactFormField : HSView
 
 @property (weak, nonatomic) IBOutlet UITextField *inputField;
 @property (weak, nonatomic) IBOutlet UIView *topErrorBar;

@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 
 @class HSBeaconSecurityInfo;
+@class HSBeaconConfig;
 
 typedef void (^CompletionHandler)(void);
 typedef void (^ErrorCompletionHandler)(NSError * _Nullable error);
@@ -17,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *deviceId;
 @property (nonatomic, strong) NSURLSession *beaconSession;
 
-- (instancetype)initWithBeaconId:(NSString *)beaconId deviceId: (NSString *)deviceId;
+- (instancetype)initWithBeaconId:(NSString *)beaconId deviceId: (NSString *)deviceId config: (nullable HSBeaconConfig *)config;
 
 /* this constructor is only used for testing */
 - (instancetype)initWithBeaconId:(NSString *)beaconId session:(NSURLSession *)session;
@@ -33,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSError * _Nullable)errorFor:(NSData *)data response:(NSHTTPURLResponse *)response error:(NSError *)connectionError;
 
 - (NSString *)apiRootOverride;
+
+- (void)configureWithConfig:(HSBeaconConfig *)config deviceId:(NSString *)deviceId;
 
 @end
 NS_ASSUME_NONNULL_END
