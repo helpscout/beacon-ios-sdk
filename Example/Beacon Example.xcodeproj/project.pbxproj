@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F92439B237DC3F300773547 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F92439A237DC3F300773547 /* Photos.framework */; };
 		4B0C067221B04B03007046E7 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0C067121B04B02007046E7 /* QuickLook.framework */; };
 		4B2681DF2119E315002D2EC8 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681DE2119E315002D2EC8 /* UserNotifications.framework */; };
 		4B2681E12119E323002D2EC8 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E02119E323002D2EC8 /* SafariServices.framework */; };
@@ -14,16 +15,14 @@
 		4B2681E52119E3D1002D2EC8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E42119E3D1002D2EC8 /* WebKit.framework */; };
 		4B2681E72119E3E3002D2EC8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E62119E3E3002D2EC8 /* MobileCoreServices.framework */; };
 		4B35C7D420BE0F26000C1573 /* Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; };
-		4B35C7D620BE1158000C1573 /* HSAttachmentPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D520BE1158000C1573 /* HSAttachmentPicker.framework */; };
 		4B35C7D820BE11C9000C1573 /* Beacon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4B35C7DA20BE11C9000C1573 /* HSAttachmentPicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D520BE1158000C1573 /* HSAttachmentPicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* HSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* HSAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* HSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* HSViewController.m */; };
+		6003F5A7195388D20070C39A /* HSExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* HSExampleViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
@@ -37,7 +36,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4B35C7DA20BE11C9000C1573 /* HSAttachmentPicker.framework in Embed Frameworks */,
 				4B35C7D820BE11C9000C1573 /* Beacon.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -46,6 +44,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3F92439A237DC3F300773547 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		4B0C067121B04B02007046E7 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		4B2681DE2119E315002D2EC8 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		4B2681E02119E323002D2EC8 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
@@ -53,7 +52,6 @@
 		4B2681E42119E3D1002D2EC8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		4B2681E62119E3E3002D2EC8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		4B35C7D320BE0F26000C1573 /* Beacon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beacon.framework; path = ../Beacon.framework; sourceTree = "<group>"; };
-		4B35C7D520BE1158000C1573 /* HSAttachmentPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HSAttachmentPicker.framework; path = Frameworks/HSAttachmentPicker.framework; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* BeaconExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,8 +62,8 @@
 		6003F59B195388D20070C39A /* Beacon Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Beacon Example-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* HSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* HSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* HSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* HSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSViewController.m; sourceTree = "<group>"; };
+		6003F5A5195388D20070C39A /* HSExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSExampleViewController.h; sourceTree = "<group>"; };
+		6003F5A6195388D20070C39A /* HSExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HSExampleViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,13 +77,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F92439B237DC3F300773547 /* Photos.framework in Frameworks */,
 				4B0C067221B04B03007046E7 /* QuickLook.framework in Frameworks */,
 				4B2681E72119E3E3002D2EC8 /* MobileCoreServices.framework in Frameworks */,
 				4B2681E52119E3D1002D2EC8 /* WebKit.framework in Frameworks */,
 				4B2681E12119E323002D2EC8 /* SafariServices.framework in Frameworks */,
 				4B2681DF2119E315002D2EC8 /* UserNotifications.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
-				4B35C7D620BE1158000C1573 /* HSAttachmentPicker.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				4B35C7D420BE0F26000C1573 /* Beacon.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -117,6 +115,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F92439A237DC3F300773547 /* Photos.framework */,
 				4B0C067121B04B02007046E7 /* QuickLook.framework */,
 				4B2681E62119E3E3002D2EC8 /* MobileCoreServices.framework */,
 				4B2681E42119E3D1002D2EC8 /* WebKit.framework */,
@@ -125,7 +124,6 @@
 				4B35C7D320BE0F26000C1573 /* Beacon.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
-				4B35C7D520BE1158000C1573 /* HSAttachmentPicker.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -137,8 +135,8 @@
 				6003F59C195388D20070C39A /* HSAppDelegate.h */,
 				6003F59D195388D20070C39A /* HSAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* HSViewController.h */,
-				6003F5A6195388D20070C39A /* HSViewController.m */,
+				6003F5A5195388D20070C39A /* HSExampleViewController.h */,
+				6003F5A6195388D20070C39A /* HSExampleViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				9F3C5B512180ABC60064E1A1 /* BeaconLocalizable.strings */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -205,6 +203,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				es,
@@ -242,7 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* HSAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* HSViewController.m in Sources */,
+				6003F5A7195388D20070C39A /* HSExampleViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,12 +1,12 @@
-#import "HSViewController.h"
+#import "HSExampleViewController.h"
 
 @import Beacon;
 
-@interface HSViewController ()
+@interface HSExampleViewController ()
 
 @end
 
-@implementation HSViewController
+@implementation HSExampleViewController
 
 #warning The Beacon ID should be replaced with a valid value: https://secure.helpscout.net/settings/beacons/
 static NSString *const DEFAULT_BEACON_ID = @""; // Add a Beacon ID here

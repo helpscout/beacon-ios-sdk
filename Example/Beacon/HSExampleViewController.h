@@ -1,6 +1,6 @@
 @import UIKit;
 
-@interface HSViewController: UIViewController
+@interface HSExampleViewController: UIViewController
 @property(weak, nonatomic) IBOutlet UITextView *beaconIdText;
 @property(weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property(weak, nonatomic) IBOutlet UITextField *nameTextField;
