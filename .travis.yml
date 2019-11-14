@@ -1,5 +1,14 @@
-osx_image: xcode9.2
+osx_image: xcode11.2
 language: objective-c
+
+before_install:
+- brew update
+- gem install xcpretty
 
 script:
 - set -o pipefail && xcodebuild build -project Example/Beacon\ Example.xcodeproj -scheme 'BeaconExample' -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.2' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -project Example/Beacon\ Example.xcodeproj -scheme 'BeaconExample' -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.3.1' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -project Example/Beacon\ Example.xcodeproj -scheme 'BeaconExample' -configuration Debug -destination 'platform=iOS Simulator,name=iPhone
+  6,OS=11.4' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -enableCodeCoverage YES -project Example/Beacon\ Example.xcodeproj -scheme 'BeaconExample' -configuration Debug -destination 'platform=iOS Simulator,name=iPhone
+  11,OS=13.2' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
