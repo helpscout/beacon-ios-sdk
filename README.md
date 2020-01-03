@@ -1,4 +1,4 @@
-Help Scout's Beacon SDK allows you to embed the same Beacon functionality we have for the web inside your iOS app. Beacons provide a quick and simple way for customers to flip through your knowledge base or reach out to your team.
+Help Scout's Beacon SDK allows you to embed the same Beacon functionality we have for the web inside your iOS app. Beacons provide a quick and straightforward way for customers to flip through your knowledge base or reach out to your team.
 
 
 ## Requirements
@@ -9,7 +9,7 @@ The Beacon SDK requires iOS 9.0+.
 
 ### CocoaPods
 
-Beacon is available through [CocoaPods][1]. To install it, simply add the following line to your `Podfile`:
+Beacon is available through [CocoaPods][1]. To install it, add the following line to your `Podfile`:
 
 ```ruby
 pod 'Beacon'
@@ -42,7 +42,7 @@ Finally, ensure your project includes `-all_load` in its `OTHER_LINKER_FLAGS` bu
 
 ## Additional Setup
 
-Our [developer site](https://developer.helpscout.com/beacon-2/ios/#additional-setup) has information on configuring up your application to work with Beacon's emails attachments and push notifications.
+Our [developer site](https://developer.helpscout.com/beacon-2/ios/#additional-setup) has information on configuring up your application to work with Beacon's email attachments and push notifications.
 
 ## Sample Application
 
@@ -52,5 +52,5 @@ To run the example project in this repo, clone and run `pod install` from the Ex
 
 See our [developer site](https://developer.helpscout.com/beacon-2/ios/) for more customization options available through the SDK.
 
-[1]:	http://cocoapods.org
-[2]:	https://github.com/Carthage/Carthage#adding-frameworks-to-an-application
+[1]:    http://cocoapods.org
+[2]:    https://github.com/Carthage/Carthage#adding-frameworks-to-an-application
