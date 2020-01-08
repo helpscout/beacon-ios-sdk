@@ -2,6 +2,15 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 1.0.3 Release
+
+##### Bug Fixes
+
+* Prevent the prefill method from being called multiple times ([Issue 42](https://github.com/helpscout/beacon-ios-sdk/issues/42))
+* Dismissing Beacon now prompts the user correctly on iOS 13 ([Issue 43](https://github.com/helpscout/beacon-ios-sdk/issues/43))
+* Fixed image picker warnings on the main thread ([Issue 46](https://github.com/helpscout/beacon-ios-sdk/issues/46))
+* Text prefill does not prevent message submission ([Issue 47](https://github.com/helpscout/beacon-ios-sdk/issues/47))
+
 ## 1.0.2 Release
 
 ##### Bug Fixes
