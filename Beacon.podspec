@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/helpscout/beacon-ios-sdk.git', :tag => s.version }
 
   s.source_files  = 'Beacon.framework/Headers/*.h'
+  s.dependency 'HSAttachmentPicker', '~> 1.0'
   s.module_map = 'Beacon.framework/Modules/module.modulemap'
   s.preserve_paths = 'Beacon.framework/*'
   s.vendored_frameworks = 'Beacon.framework'
