@@ -3,6 +3,9 @@ language: objective-c
 
 before_install:
 - brew update
+- brew outdated carthage || brew upgrade carthage
+- carthage update
+- carthage build --no-skip-current --platform iOS
 - gem install xcpretty
 
 script:
