@@ -16,6 +16,8 @@
 		4B2681E72119E3E3002D2EC8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E62119E3E3002D2EC8 /* MobileCoreServices.framework */; };
 		4B35C7D420BE0F26000C1573 /* Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; };
 		4B35C7D820BE11C9000C1573 /* Beacon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BF2C23323C6580500D3D2C9 /* HSAttachmentPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF2C23223C6580500D3D2C9 /* HSAttachmentPicker.framework */; };
+		4BF2C23423C6583200D3D2C9 /* HSAttachmentPicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF2C23223C6580500D3D2C9 /* HSAttachmentPicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -36,6 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4BF2C23423C6583200D3D2C9 /* HSAttachmentPicker.framework in Embed Frameworks */,
 				4B35C7D820BE11C9000C1573 /* Beacon.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -52,6 +55,7 @@
 		4B2681E42119E3D1002D2EC8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		4B2681E62119E3E3002D2EC8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		4B35C7D320BE0F26000C1573 /* Beacon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beacon.framework; path = ../Beacon.framework; sourceTree = "<group>"; };
+		4BF2C23223C6580500D3D2C9 /* HSAttachmentPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HSAttachmentPicker.framework; path = ../Carthage/Build/iOS/HSAttachmentPicker.framework; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* BeaconExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -80,6 +84,7 @@
 				3F92439B237DC3F300773547 /* Photos.framework in Frameworks */,
 				4B0C067221B04B03007046E7 /* QuickLook.framework in Frameworks */,
 				4B2681E72119E3E3002D2EC8 /* MobileCoreServices.framework in Frameworks */,
+				4BF2C23323C6580500D3D2C9 /* HSAttachmentPicker.framework in Frameworks */,
 				4B2681E52119E3D1002D2EC8 /* WebKit.framework in Frameworks */,
 				4B2681E12119E323002D2EC8 /* SafariServices.framework in Frameworks */,
 				4B2681DF2119E315002D2EC8 /* UserNotifications.framework in Frameworks */,
@@ -115,6 +120,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4BF2C23223C6580500D3D2C9 /* HSAttachmentPicker.framework */,
 				3F92439A237DC3F300773547 /* Photos.framework */,
 				4B0C067121B04B02007046E7 /* QuickLook.framework */,
 				4B2681E62119E3E3002D2EC8 /* MobileCoreServices.framework */,
