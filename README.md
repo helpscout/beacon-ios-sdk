@@ -3,7 +3,7 @@ Help Scout's Beacon SDK allows you to embed the same Beacon functionality we hav
 
 ## Requirements
 
-The Beacon SDK requires iOS 9.0+.
+The Beacon SDK requires iOS 9.0+. Xcode 11 is required to build with the Beacon SDK.
 
 ## Installation
 
