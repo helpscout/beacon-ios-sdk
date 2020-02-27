@@ -22,6 +22,7 @@ Beacon can be installed using Carthage by adding the following line to your `Car
 ```ruby
 github "helpscout/beacon-ios-sdk"
 ```
+_NOTE because of the way Beacon is distributed attempting to use the `--no-use-binaries` flag when building will fail_
 
 ### Manually
 
