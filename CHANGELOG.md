@@ -2,6 +2,15 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 1.0.4 Release
+
+##### Bug Fixes
+
+* Fix issue preventing adding attachments to reply from the previous messages screen on iPad ([Issue 52](https://github.com/helpscout/beacon-ios-sdk/issues/52))
+* Update our use of UIWebView to WKWebView ([Issue 37](https://github.com/helpscout/beacon-ios-sdk/issues/37))
+* Improved error messaging in cases where we failed to load the Beacon configuration ([Issue 38](https://github.com/helpscout/beacon-ios-sdk/issues/38))
+* Fix issue preventing replies from chats from being presented ([Issue 40](https://github.com/helpscout/beacon-ios-sdk/issues/40))
+
 ## 1.0.3 Release
 
 ##### Bug Fixes
