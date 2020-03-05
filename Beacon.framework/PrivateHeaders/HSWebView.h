@@ -1,8 +1,8 @@
-#import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HSWebView : UIWebView
+@interface HSWebView : WKWebView
 
 @end
 

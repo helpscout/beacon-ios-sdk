@@ -37,6 +37,7 @@
 @property (nonatomic) long conversationId;
 @property (nonatomic) HSBeaconContext *beaconContext;
 @property (nonatomic, weak) id<HSBeaconPreviousMessagesReplyDelegate> delegate;
+
 @property (nonatomic) HSBeaconReplyMessage *draft;
 
 -(void)setBottomPosition:(int)bottomPosition;

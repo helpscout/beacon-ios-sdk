@@ -21,7 +21,9 @@
 
 @property (weak, nonatomic) id<HSBeaconConversationDetailsControllerDelegate> delegate;
 
-@property (weak, nonatomic) IBOutlet HSBeaconConversationDetailsWebView *webView;
+@property (strong, nonatomic) HSBeaconConversationDetailsWebView *webView;
+
+@property (weak, nonatomic) IBOutlet UIView *footerView;
 
 @property (weak, nonatomic) IBOutlet UIButton *replyButton;
 
