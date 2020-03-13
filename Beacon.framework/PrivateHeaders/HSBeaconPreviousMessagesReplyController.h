@@ -6,6 +6,8 @@
 #import "HSBeaconReplyMessage.h"
 #import "HSBeaconSubmitButton.h"
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol HSBeaconPreviousMessagesReplyDelegate
 
 -(void)dismissWindow:(BOOL)reload draft:(nullable HSBeaconReplyMessage *)draft;
@@ -45,3 +47,5 @@
 -(void)startEditing;
 
 @end
+
+NS_ASSUME_NONNULL_END
