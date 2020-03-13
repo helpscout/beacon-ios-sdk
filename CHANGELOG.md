@@ -2,6 +2,13 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 1.0.5 Release
+
+##### Bug Fixes
+
+* Fixed the root cause of [issue 40](https://github.com/helpscout/beacon-ios-sdk/issues/40) where the Reply modal was not presented when attempting to respond via your Conversation history 
+* Push notifications will now successfully register for any messages delivered across all iOS versions
+
 ## 1.0.4 Release
 
 ##### Bug Fixes
