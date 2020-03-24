@@ -50,7 +50,7 @@ Our [developer site](https://developer.helpscout.com/beacon-2/ios/#additional-se
 
 ## Sample Application
 
-To run the example project in this repo, clone and run `pod install` from the Example directory. Once the installation is complete, open `Beacon Example.xcworkspace` and run the `Beacon Example` scheme.
+To run the example project in this repo, clone and run `carthage bootstrap` from the root directory. Once the bootstrap is complete, cd into the Example directory `cd Example`, open `Beacon Example.xcodeproj` and run the `BeaconExample` scheme.
 
 ## Documentation
 
