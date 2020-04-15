@@ -19,13 +19,14 @@ pod 'Beacon'
 ```
 
 ### Carthage
- 
+
 Beacon can be installed using Carthage by adding the following line to your `Cartfile` and then following the [Carthage installation instructions][2]:
- 
+
 ```ruby
 github "helpscout/beacon-ios-sdk"
 ```
-_NOTE because of the way Beacon is distributed attempting to use the `--no-use-binaries` flag when building will fail_
+
+_Because of the way Beacon is distributed, attempting to use the `--no-use-binaries` flag when building will fail._
 
 ### Manually
 
