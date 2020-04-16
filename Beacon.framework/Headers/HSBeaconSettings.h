@@ -101,6 +101,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL docsEnabled;
 
 /**
+ Disable the Chat integration manually if it's enabled in the Beacon config.
+
+ This will not enable Chat if it's disabled in the config.
+ */
+@property BOOL chatEnabled;
+
+/**
  This replaces the default blue color used for clickable text throughout Beacon. For example,
  you may want to set this to the tintColor of your window to match the look and feel of the
  rest of your app.

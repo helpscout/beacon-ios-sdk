@@ -2,11 +2,17 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 2.0.0 Beta 1 Release
+
+##### Enhancements
+
+* Live chat - Now customers can start a chat from your app on their iOS device, accessing great support no matter where they are.
+
 ## 1.0.5 Release
 
 ##### Bug Fixes
 
-* Fixed the root cause of [issue 40](https://github.com/helpscout/beacon-ios-sdk/issues/40) where the Reply modal was not presented when attempting to respond via your Conversation history 
+* Fixed the root cause of [issue 40](https://github.com/helpscout/beacon-ios-sdk/issues/40) where the Reply modal was not presented when attempting to respond via your Conversation history
 * Push notifications will now successfully register for any messages delivered across all iOS versions
 
 ## 1.0.4 Release
@@ -67,7 +73,7 @@ To install Beacon, see the [documentation](https://developer.helpscout.com/beaco
 
 ##### Enhancements
 
-* Added a new method `suggest` for custom suggestions 
+* Added a new method `suggest` for custom suggestions
 * Added `dismissBeacon` method to make sure Beacon isn't in the way of other code in your app
 * Carthage support is back!
 * A continued restructuring of [our developer documentation](https://developer.helpscout.com/beacon-2/ios/)
@@ -108,6 +114,7 @@ To install Beacon, see the [documentation](https://developer.helpscout.com/beaco
 ## 1.0.0 beta (build 57)
 
 ##### Enhancements
+
 * New local overrides added to `HSBeaconSettings`
   * Color
   * Docs enabled
@@ -123,7 +130,6 @@ To install Beacon, see the [documentation](https://developer.helpscout.com/beaco
 ##### Bug Fixes
 
 * Status bar color is restored when exiting Beacon
-
 
 ## 1.0.0 beta (build 52)
 
@@ -205,4 +211,3 @@ To install Beacon, see the [documentation](https://developer.helpscout.com/beaco
 ##### Bug Fixes
 
 * Initial framework release
-

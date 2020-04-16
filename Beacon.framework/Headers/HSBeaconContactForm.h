@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  The raw content of the attached file.
  */
-- (NSData *) data;
+- (nullable NSData *) data;
 
 @end
 

@@ -2,16 +2,11 @@ osx_image: xcode11.3
 language: objective-c
 
 before_install:
-- brew update
-- brew outdated carthage || brew upgrade carthage
 - carthage update
 - carthage build --no-skip-current --platform iOS
 - gem install xcpretty
 
 script:
-- set -o pipefail && xcodebuild build -project Example/Beacon\ Example.xcodeproj -scheme 'BeaconExample' -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.2' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
-- set -o pipefail && xcodebuild build -project Example/Beacon\ Example.xcodeproj -scheme 'BeaconExample' -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.3.1' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
-- set -o pipefail && xcodebuild build -project Example/Beacon\ Example.xcodeproj -scheme 'BeaconExample' -configuration Debug -destination 'platform=iOS Simulator,name=iPhone
-  6,OS=11.4' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
-- set -o pipefail && xcodebuild build -project Example/Beacon\ Example.xcodeproj -scheme 'BeaconExample' -configuration Debug -destination 'platform=iOS Simulator,name=iPhone
-  11,OS=latest' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild build -project Example/Beacon\ Example.xcodeproj -scheme 'BeaconExample' -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.4' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild build -project Example/Beacon\ Example.xcodeproj -scheme 'BeaconExample' -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 8,OS=12.4' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild build -project Example/Beacon\ Example.xcodeproj -scheme 'BeaconExample' -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 8,OS=latest' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty

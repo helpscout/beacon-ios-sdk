@@ -1,6 +1,7 @@
 #import <Foundation/Foundation.h>
 
 #import "HSBeaconActivityLog.h"
+#import "HSBeaconChatAPIClient.h"
 #import "HSBeaconCloudFrontAPIClient.h"
 #import "HSBeaconConfig.h"
 #import "HSBeaconDocsAPIClient.h"
@@ -25,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) HSBeaconDocsAPIClient *docsApiClient;
 @property (nonatomic) HSBeaconMessagingAPIClient *messagingApiClient;
 @property (nonatomic) HSBeaconCloudFrontAPIClient *cloudFrontApiClient;
+@property (nonatomic) HSBeaconChatAPIClient *chatApiClient;
 @property (nonatomic) id<HSBeaconStringLocalizer> localizedStrings;
 
 @property (readonly, nonatomic) HSBeaconActivityLog *activityLog;
@@ -36,6 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic) BOOL docsOnly;
 @property (readonly, nonatomic) BOOL docsEnabled;
 @property (readonly, nonatomic) BOOL messagingOnly;
+@property (readonly, nonatomic) BOOL chatEnabled;
 @property (readonly, nonatomic) BOOL validConfig;
 
 @property (readonly, nonatomic) BOOL showNameEnabled;

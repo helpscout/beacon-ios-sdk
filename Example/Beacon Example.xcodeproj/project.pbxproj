@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,10 +14,19 @@
 		4B2681E32119E383002D2EC8 /* Beacon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4B2681E22119E383002D2EC8 /* Beacon.bundle */; };
 		4B2681E52119E3D1002D2EC8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E42119E3D1002D2EC8 /* WebKit.framework */; };
 		4B2681E72119E3E3002D2EC8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E62119E3E3002D2EC8 /* MobileCoreServices.framework */; };
-		4B35C7D420BE0F26000C1573 /* Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; };
-		4B35C7D820BE11C9000C1573 /* Beacon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B35C7D420BE0F26000C1573 /* Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		4BD5B4162447E16D00C97AA3 /* PusherSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD5B4122447E16D00C97AA3 /* PusherSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		4BD5B4182447E16D00C97AA3 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD5B4132447E16D00C97AA3 /* Reachability.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		4BD5B41C2447E16D00C97AA3 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD5B4152447E16D00C97AA3 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		4BD5B4262447E93700C97AA3 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5B4252447E93700C97AA3 /* Dummy.swift */; };
+		4BD5B42724480D0800C97AA3 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD5B4142447E16D00C97AA3 /* Starscream.framework */; };
+		4BD5B42B2448106F00C97AA3 /* CryptoSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4BD5B4152447E16D00C97AA3 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BD5B42C2448106F00C97AA3 /* PusherSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4BD5B4122447E16D00C97AA3 /* PusherSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BD5B42D2448106F00C97AA3 /* Reachability.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4BD5B4132447E16D00C97AA3 /* Reachability.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BD5B42E2448106F00C97AA3 /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4BD5B4142447E16D00C97AA3 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BD5B42F2448106F00C97AA3 /* HSAttachmentPicker.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4BF2C23223C6580500D3D2C9 /* HSAttachmentPicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4BD5B4302448106F00C97AA3 /* Beacon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4BF2C23323C6580500D3D2C9 /* HSAttachmentPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF2C23223C6580500D3D2C9 /* HSAttachmentPicker.framework */; };
-		4BF2C23423C6583200D3D2C9 /* HSAttachmentPicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF2C23223C6580500D3D2C9 /* HSAttachmentPicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -32,16 +41,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4B35C7DB20BE11C9000C1573 /* Embed Frameworks */ = {
+		4BD5B42A2448106200C97AA3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4BF2C23423C6583200D3D2C9 /* HSAttachmentPicker.framework in Embed Frameworks */,
-				4B35C7D820BE11C9000C1573 /* Beacon.framework in Embed Frameworks */,
+				4BD5B42B2448106F00C97AA3 /* CryptoSwift.framework in CopyFiles */,
+				4BD5B42C2448106F00C97AA3 /* PusherSwift.framework in CopyFiles */,
+				4BD5B42D2448106F00C97AA3 /* Reachability.framework in CopyFiles */,
+				4BD5B42E2448106F00C97AA3 /* Starscream.framework in CopyFiles */,
+				4BD5B42F2448106F00C97AA3 /* HSAttachmentPicker.framework in CopyFiles */,
+				4BD5B4302448106F00C97AA3 /* Beacon.framework in CopyFiles */,
 			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -55,6 +67,14 @@
 		4B2681E42119E3D1002D2EC8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		4B2681E62119E3E3002D2EC8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		4B35C7D320BE0F26000C1573 /* Beacon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beacon.framework; path = ../Beacon.framework; sourceTree = "<group>"; };
+		4BD5B4122447E16D00C97AA3 /* PusherSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PusherSwift.framework; path = ../Carthage/Build/iOS/PusherSwift.framework; sourceTree = "<group>"; };
+		4BD5B4132447E16D00C97AA3 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = ../Carthage/Build/iOS/Reachability.framework; sourceTree = "<group>"; };
+		4BD5B4142447E16D00C97AA3 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = ../Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		4BD5B4152447E16D00C97AA3 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = ../Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
+		4BD5B41F2447E1EB00C97AA3 /* CarthageInput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageInput.xcfilelist; sourceTree = "<group>"; };
+		4BD5B4212447E30100C97AA3 /* CarthageOutput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageOutput.xcfilelist; sourceTree = "<group>"; };
+		4BD5B4222447E50400C97AA3 /* BeaconExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeaconExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		4BD5B4252447E93700C97AA3 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		4BF2C23223C6580500D3D2C9 /* HSAttachmentPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HSAttachmentPicker.framework; path = ../Carthage/Build/iOS/HSAttachmentPicker.framework; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* BeaconExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -83,14 +103,18 @@
 			files = (
 				3F92439B237DC3F300773547 /* Photos.framework in Frameworks */,
 				4B0C067221B04B03007046E7 /* QuickLook.framework in Frameworks */,
+				4BD5B41C2447E16D00C97AA3 /* CryptoSwift.framework in Frameworks */,
 				4B2681E72119E3E3002D2EC8 /* MobileCoreServices.framework in Frameworks */,
 				4BF2C23323C6580500D3D2C9 /* HSAttachmentPicker.framework in Frameworks */,
 				4B2681E52119E3D1002D2EC8 /* WebKit.framework in Frameworks */,
 				4B2681E12119E323002D2EC8 /* SafariServices.framework in Frameworks */,
 				4B2681DF2119E315002D2EC8 /* UserNotifications.framework in Frameworks */,
+				4BD5B4182447E16D00C97AA3 /* Reachability.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				4BD5B4162447E16D00C97AA3 /* PusherSwift.framework in Frameworks */,
 				4B35C7D420BE0F26000C1573 /* Beacon.framework in Frameworks */,
+				4BD5B42724480D0800C97AA3 /* Starscream.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,6 +144,10 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4BD5B4152447E16D00C97AA3 /* CryptoSwift.framework */,
+				4BD5B4122447E16D00C97AA3 /* PusherSwift.framework */,
+				4BD5B4132447E16D00C97AA3 /* Reachability.framework */,
+				4BD5B4142447E16D00C97AA3 /* Starscream.framework */,
 				4BF2C23223C6580500D3D2C9 /* HSAttachmentPicker.framework */,
 				3F92439A237DC3F300773547 /* Photos.framework */,
 				4B0C067121B04B02007046E7 /* QuickLook.framework */,
@@ -146,7 +174,10 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				9F3C5B512180ABC60064E1A1 /* BeaconLocalizable.strings */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				4BD5B41F2447E1EB00C97AA3 /* CarthageInput.xcfilelist */,
+				4BD5B4212447E30100C97AA3 /* CarthageOutput.xcfilelist */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				4BD5B4222447E50400C97AA3 /* BeaconExample-Bridging-Header.h */,
 			);
 			name = "Example for Beacon";
 			path = Beacon;
@@ -155,6 +186,7 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4BD5B4252447E93700C97AA3 /* Dummy.swift */,
 				6003F595195388D20070C39A /* Beacon Example-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -173,7 +205,8 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				4B35C7DB20BE11C9000C1573 /* Embed Frameworks */,
+				4BD5B41E2447E1A700C97AA3 /* Carthage */,
+				4BD5B42A2448106200C97AA3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -195,7 +228,7 @@
 				ORGANIZATIONNAME = "Help Scout";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = N86BPF5R67;
+						LastSwiftMigration = 1140;
 						SystemCapabilities = {
 							com.apple.iCloud = {
 								enabled = 1;
@@ -241,6 +274,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4BD5B41E2447E1A700C97AA3 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/Beacon/CarthageInput.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+				"$(SRCROOT)/Beacon/CarthageOutput.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6003F586195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -248,6 +304,7 @@
 			files = (
 				6003F59E195388D20070C39A /* HSAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* HSExampleViewController.m in Sources */,
+				4BD5B4262447E93700C97AA3 /* Dummy.swift in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,19 +445,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Beacon_Example.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 35;
-				DEVELOPMENT_TEAM = N86BPF5R67;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../**";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../",
+					"$(PROJECT_DIR)/../Carthage/Build/iOS/**",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Beacon/Beacon Example-Prefix.pch";
 				INFOPLIST_FILE = "Beacon/Beacon Example-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = net.helpscout.beacondemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Beacon/BeaconExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};
@@ -410,19 +481,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Beacon_Example.entitlements;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 35;
-				DEVELOPMENT_TEAM = N86BPF5R67;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../**";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../",
+					"$(PROJECT_DIR)/../Carthage/Build/iOS/**",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Beacon/Beacon Example-Prefix.pch";
 				INFOPLIST_FILE = "Beacon/Beacon Example-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = net.helpscout.beacondemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Beacon/BeaconExample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = app;
 			};

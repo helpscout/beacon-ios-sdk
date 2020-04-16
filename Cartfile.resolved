@@ -1,1 +1,5 @@
+github "ashleymills/Reachability.swift" "v4.3.0"
+github "daltoniam/Starscream" "3.0.6"
 github "helpscout/HSAttachmentPicker" "1.0.11"
+github "krzyzanowskim/CryptoSwift" "0.15.0"
+github "pusher/pusher-websocket-swift" "7.2.0"

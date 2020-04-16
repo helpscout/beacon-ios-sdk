@@ -7,7 +7,7 @@ typedef void (^CompletionHandler)(void);
 typedef void (^ErrorCompletionHandler)(NSError * _Nullable error);
 typedef void (^BooleanCompletionHandler)(BOOL result, NSError * _Nullable error);
 typedef void (^StringCompletionHandler)(NSString * _Nullable result, NSError * _Nullable error);
-typedef void (^NetworkResponseCompletionHandler)(NSURLResponse *response, NSError * _Nullable error);
+typedef void (^NetworkResponseCompletionHandler)(NSURLResponse * _Nonnull response, NSError * _Nullable error);
 typedef void (^NetworkCompletionHandler)(NSDictionary * _Nullable result, NSError * _Nullable error);
 
 NS_ASSUME_NONNULL_BEGIN
@@ -36,6 +36,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)apiRootOverride;
 
 - (void)configureWithConfig:(HSBeaconConfig *)config deviceId:(NSString *)deviceId;
+
++ (NSString *)appUserAgentWithConfig:(nullable HSBeaconConfig *)config;
+
++ (NSString *)sdkVersion;
 
 @end
 NS_ASSUME_NONNULL_END
