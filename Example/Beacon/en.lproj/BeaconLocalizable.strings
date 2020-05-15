@@ -29,6 +29,84 @@
 
 "OK"="OK";
 
+/* Ask Selection Screen */
+
+/* Context: Title Label on Ask Screen */
+"askSelectionStartAConvo"="Start a conversation";
+/* Context: Subtitle Label on Ask Screen */
+"askSelectionChannelPreference"="What channel do you prefer?";
+/* Context: Alternative Title Label on Ask Screen when only email is available */
+"askSelectionHowCanWeHelp"="How can we help?";
+/* Context: Subtitle Label on Ask Screen when only email is available */
+"askSelectionWellGetBackShortly"="We'll get back to you shortly";
+/* Context: Email Card Title Label on Ask Screen */
+"email"="Email";
+/* Context: Email Card Subtitle Label on Ask Screen */
+"askSelectionEmailSubtitle"="No time to wait around? We usually respond within a few hours";
+/* Context: Chat Card Title Label on Ask Screen */
+"chat"="Chat";
+/* Context: Chat Card Subtitle Label on Ask Screen */
+"askSelectionChatSubtitle"="We're online right now, talk with our team in real-time";
+/* Context: Previous Conversations button on Ask Screen */
+"previousConversations"="Previous conversations";
+
+/* CHAT */
+
+/* Placeholder text for chat input */
+"reply"="Reply";
+
+/* Placeholder text for chat input expecting an email address */
+"genericEmailAddress"="email@address.com";
+
+"chatMessageSendingFailed"="Message failed to send. Tap to try again";
+
+/* Post-Chat Status */
+
+"chatEndedTitle"="Chat Ended";
+
+"chatEndedSuccessTitle"="All done!";
+
+"chatEndedSuccessMessage"="A copy of this conversation will land in your inbox shortly.";
+
+"chatEndedInactivityTitle" = "​​Sorry about that";
+
+"chatEndedInactivityMessage" = "​​​​It looks like nobody made it to your chat. We'll send you an email response as soon as possible.";
+
+"backToHome"="Back to Home";
+"viewConversation"="View Conversation";
+
+/* Help Bot strings */
+
+/* Context: Chat has been created, waiting on agent assigned */
+"chatbotConfirmationMessage"="Thanks! Someone from our team will jump into the chat soon.";
+
+/* Context: Chat bot's name */
+"chatbotName"="Help Bot";
+
+/* Context: Error message */
+"chatbotGenericErrorMessage"="Something went wrong sending your message, please try again in a few minutes.";
+
+/* Context: Welcome message when chat is opened */
+"chatbotGreet"="Hi there! You can begin by asking your question below. Someone will be with you shortly.";
+
+/* Context: Prompt for email address */
+"chatbotPromptEmail"="Got it. Real quick, what's your email address? We’ll use it for any follow-up messages.";
+
+/* Context: Invalid email */
+"chatbotInvalidEmailMessage"="Looks like you've entered an invalid email address. Want to try again?";
+
+/* Context: Inactivity prompt */
+"chatbotInactivityPrompt"="Since the chat has gone idle, I'll end this chat in a few minutes.";
+
+/* Context: Agent disconnected */
+"chatbotAgentDisconnectedMessage"="%@ has disconnected from the chat. It’s possible they lost their internet connection, so I’m looking for someone else to take over. Sorry for the delay!";
+
+/* Context: Agent connected */
+"chatbotAgentConnectedMessage"="Connected with %@";
+
+/* Context: Default name for an Agent used with "chatbotAgentConnectedMessage" to read "Connected with an agent" */
+"chatbotAgentDefaultAgent"="an agent";
+
 /* Accessibility labels for buttons */
 "backButtonAccessibilityLabel"="Back";
 "closeButtonAccessibilityLabel"="Close";
@@ -48,13 +126,15 @@
 
 "Selected media type is unsupported"="Selected media type is unsupported";
 
+"retry"="Retry";
+
 /* from Server translations */
 
 /* Reply to previous messages */
 "addReply"="Add Reply";
 
 /* Placeholder for message entry */
-"addYourMessageHere"="Add your message here...";
+"addYourMessageHere"="How can we help?";
 
 /* Label for docs tab */
 "answer"="Answers";
@@ -69,7 +149,10 @@
 "customFieldsValidationLabel"="Please complete all fields";
 
 /* Network error on the initial Beacon load */
-"defaultMessageErrorText"= "There was a problem sending your message. Please try again in a moment.";
+"defaultNetworkErrorText"="Something went wrong. Please check your internet connection and try again.";
+
+/* Network error on sending a message */
+"defaultMessageErrorText"="There was a problem sending your message. Please try again in a moment.";
 
 /* Error loading an article */
 "docsArticleErrorText"="There was a problem retrieving this article. Please double-check your internet connection and try again.";
@@ -127,9 +210,6 @@
 
 /* Navigation bar title for message composition */
 "sendAMessage"="Send a message";
-
-/* Send button */
-"sendMessage"="Send Message";
 
 /* Field label on send message page */
 "subjectLabel"="Subject";
