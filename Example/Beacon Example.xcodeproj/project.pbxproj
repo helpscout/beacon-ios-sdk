@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3F92439B237DC3F300773547 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F92439A237DC3F300773547 /* Photos.framework */; };
+		4B0A6463247D6394000D9D3C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0A6462247D6394000D9D3C /* CoreServices.framework */; };
 		4B0C067221B04B03007046E7 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0C067121B04B02007046E7 /* QuickLook.framework */; };
 		4B2681DF2119E315002D2EC8 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681DE2119E315002D2EC8 /* UserNotifications.framework */; };
 		4B2681E12119E323002D2EC8 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E02119E323002D2EC8 /* SafariServices.framework */; };
 		4B2681E32119E383002D2EC8 /* Beacon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4B2681E22119E383002D2EC8 /* Beacon.bundle */; };
 		4B2681E52119E3D1002D2EC8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E42119E3D1002D2EC8 /* WebKit.framework */; };
-		4B2681E72119E3E3002D2EC8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E62119E3E3002D2EC8 /* MobileCoreServices.framework */; };
 		4B35C7D420BE0F26000C1573 /* Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4BD5B4162447E16D00C97AA3 /* PusherSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD5B4122447E16D00C97AA3 /* PusherSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4BD5B4182447E16D00C97AA3 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD5B4132447E16D00C97AA3 /* Reachability.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -60,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		3F92439A237DC3F300773547 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		4B0A6462247D6394000D9D3C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		4B0C067121B04B02007046E7 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		4B2681DE2119E315002D2EC8 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		4B2681E02119E323002D2EC8 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
@@ -104,7 +105,6 @@
 				3F92439B237DC3F300773547 /* Photos.framework in Frameworks */,
 				4B0C067221B04B03007046E7 /* QuickLook.framework in Frameworks */,
 				4BD5B41C2447E16D00C97AA3 /* CryptoSwift.framework in Frameworks */,
-				4B2681E72119E3E3002D2EC8 /* MobileCoreServices.framework in Frameworks */,
 				4BF2C23323C6580500D3D2C9 /* HSAttachmentPicker.framework in Frameworks */,
 				4B2681E52119E3D1002D2EC8 /* WebKit.framework in Frameworks */,
 				4B2681E12119E323002D2EC8 /* SafariServices.framework in Frameworks */,
@@ -116,6 +116,7 @@
 				4B35C7D420BE0F26000C1573 /* Beacon.framework in Frameworks */,
 				4BD5B42724480D0800C97AA3 /* Starscream.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				4B0A6463247D6394000D9D3C /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +145,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B0A6462247D6394000D9D3C /* CoreServices.framework */,
 				4BD5B4152447E16D00C97AA3 /* CryptoSwift.framework */,
 				4BD5B4122447E16D00C97AA3 /* PusherSwift.framework */,
 				4BD5B4132447E16D00C97AA3 /* Reachability.framework */,
@@ -224,7 +226,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = HS;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Help Scout";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
@@ -239,10 +241,9 @@
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "Beacon Example" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 				es,
@@ -436,6 +437,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
