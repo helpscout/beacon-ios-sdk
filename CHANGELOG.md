@@ -2,6 +2,12 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 2.0.0 Beta 2 Release
+
+##### Bug Fixes
+
+* Many bugs with the new Chat feature have been fixed.
+
 ## 2.0.0 Beta 1 Release
 
 ##### Enhancements
