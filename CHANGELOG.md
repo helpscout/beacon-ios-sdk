@@ -2,6 +2,20 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 2.0.0 (August 17, 2020)
+
+##### Features
+* Live chat - Customers can now start a chat within your app on their iOS device, accessing great support no matter where they are.
+* We have added support for session attributes. ([Issue 70](https://github.com/helpscout/beacon-ios-sdk/issues/70))
+##### Bug Fixes
+Custom Suggestion URLs no longer crash when tapped on iPad. ([Issue 59](https://github.com/helpscout/beacon-ios-sdk/issues/59))
+Users can now continue to the next field in the contact form by using the return key. ([Issue 69](https://github.com/helpscout/beacon-ios-sdk/issues/69))
+We no longer duplicate prefilled attachments on subsequent presentations of the contact form. ([Issue 68](https://github.com/helpscout/beacon-ios-sdk/issues/68))
+Email-only Beacons will now go straight to the contact form instead of an intermediary screen. ([Issue 74](https://github.com/helpscout/beacon-ios-sdk/issues/74))
+We now build the Beacon SDK as a library for distribution. ([Issue 75]( )) & ([Issue 78](https://github.com/helpscout/beacon-ios-sdk/issues/78)) 
+The 'Send a Message' screen now properly uses localization overrides from the Beacon Web UI. ([Issue 79](https://github.com/helpscout/beacon-ios-sdk/issues/79))
+We have removed all external dependencies. ([Issue 60](https://github.com/helpscout/beacon-ios-sdk/issues/60))
+
 ## 2.0.0 Beta 2 Release (May 26, 2020)
 
 ##### Bug Fixes
