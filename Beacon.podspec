@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'Beacon'
-  s.version      = '2.0.0-beta.2'
+  s.version      = '2.0.0'
+  s.swift_version = '5.0'
   s.summary      = 'The Help Scout Beacon SDK'
   s.license      = { :type => 'Commercial', :text => 'Help Scout. All rights reserved.' }
 
@@ -18,8 +19,5 @@ Pod::Spec.new do |s|
   s.preserve_paths = 'Beacon.framework/*'
   s.vendored_frameworks = 'Beacon.framework'
   s.resources = 'Beacon.framework/Beacon.bundle'
-  s.frameworks = 'UIKit', 'Photos', 'UserNotifications', 'WebKit', 'MobileCoreServices', 'SafariServices', 'QuickLook'
-
-  s.dependency 'HSAttachmentPicker', '~> 1.0'
-  s.dependency 'PusherSwift', '~> 7.2'
+  s.frameworks = 'UIKit', 'Photos', 'UserNotifications', 'WebKit', 'MobileCoreServices', 'SafariServices', 'QuickLook', 'CoreData'
 end
