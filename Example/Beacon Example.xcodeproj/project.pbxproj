@@ -15,15 +15,7 @@
 		4B2681E32119E383002D2EC8 /* Beacon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4B2681E22119E383002D2EC8 /* Beacon.bundle */; };
 		4B2681E52119E3D1002D2EC8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E42119E3D1002D2EC8 /* WebKit.framework */; };
 		4B35C7D420BE0F26000C1573 /* Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		4BD5B4162447E16D00C97AA3 /* PusherSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD5B4122447E16D00C97AA3 /* PusherSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		4BD5B4182447E16D00C97AA3 /* Reachability.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD5B4132447E16D00C97AA3 /* Reachability.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		4BD5B41C2447E16D00C97AA3 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD5B4152447E16D00C97AA3 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4BD5B4262447E93700C97AA3 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5B4252447E93700C97AA3 /* Dummy.swift */; };
-		4BD5B42724480D0800C97AA3 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD5B4142447E16D00C97AA3 /* Starscream.framework */; };
-		4BD5B42B2448106F00C97AA3 /* CryptoSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4BD5B4152447E16D00C97AA3 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BD5B42C2448106F00C97AA3 /* PusherSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4BD5B4122447E16D00C97AA3 /* PusherSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BD5B42D2448106F00C97AA3 /* Reachability.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4BD5B4132447E16D00C97AA3 /* Reachability.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4BD5B42E2448106F00C97AA3 /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4BD5B4142447E16D00C97AA3 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4BD5B42F2448106F00C97AA3 /* HSAttachmentPicker.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4BF2C23223C6580500D3D2C9 /* HSAttachmentPicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4BD5B4302448106F00C97AA3 /* Beacon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4BF2C23323C6580500D3D2C9 /* HSAttachmentPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BF2C23223C6580500D3D2C9 /* HSAttachmentPicker.framework */; };
@@ -47,10 +39,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4BD5B42B2448106F00C97AA3 /* CryptoSwift.framework in CopyFiles */,
-				4BD5B42C2448106F00C97AA3 /* PusherSwift.framework in CopyFiles */,
-				4BD5B42D2448106F00C97AA3 /* Reachability.framework in CopyFiles */,
-				4BD5B42E2448106F00C97AA3 /* Starscream.framework in CopyFiles */,
 				4BD5B42F2448106F00C97AA3 /* HSAttachmentPicker.framework in CopyFiles */,
 				4BD5B4302448106F00C97AA3 /* Beacon.framework in CopyFiles */,
 			);
@@ -68,10 +56,6 @@
 		4B2681E42119E3D1002D2EC8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		4B2681E62119E3E3002D2EC8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		4B35C7D320BE0F26000C1573 /* Beacon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beacon.framework; path = ../Beacon.framework; sourceTree = "<group>"; };
-		4BD5B4122447E16D00C97AA3 /* PusherSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PusherSwift.framework; path = ../Carthage/Build/iOS/PusherSwift.framework; sourceTree = "<group>"; };
-		4BD5B4132447E16D00C97AA3 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = ../Carthage/Build/iOS/Reachability.framework; sourceTree = "<group>"; };
-		4BD5B4142447E16D00C97AA3 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = ../Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
-		4BD5B4152447E16D00C97AA3 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = ../Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
 		4BD5B41F2447E1EB00C97AA3 /* CarthageInput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageInput.xcfilelist; sourceTree = "<group>"; };
 		4BD5B4212447E30100C97AA3 /* CarthageOutput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageOutput.xcfilelist; sourceTree = "<group>"; };
 		4BD5B4222447E50400C97AA3 /* BeaconExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeaconExample-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -104,17 +88,13 @@
 			files = (
 				3F92439B237DC3F300773547 /* Photos.framework in Frameworks */,
 				4B0C067221B04B03007046E7 /* QuickLook.framework in Frameworks */,
-				4BD5B41C2447E16D00C97AA3 /* CryptoSwift.framework in Frameworks */,
 				4BF2C23323C6580500D3D2C9 /* HSAttachmentPicker.framework in Frameworks */,
 				4B2681E52119E3D1002D2EC8 /* WebKit.framework in Frameworks */,
 				4B2681E12119E323002D2EC8 /* SafariServices.framework in Frameworks */,
 				4B2681DF2119E315002D2EC8 /* UserNotifications.framework in Frameworks */,
-				4BD5B4182447E16D00C97AA3 /* Reachability.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
-				4BD5B4162447E16D00C97AA3 /* PusherSwift.framework in Frameworks */,
 				4B35C7D420BE0F26000C1573 /* Beacon.framework in Frameworks */,
-				4BD5B42724480D0800C97AA3 /* Starscream.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				4B0A6463247D6394000D9D3C /* CoreServices.framework in Frameworks */,
 			);
@@ -146,10 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				4B0A6462247D6394000D9D3C /* CoreServices.framework */,
-				4BD5B4152447E16D00C97AA3 /* CryptoSwift.framework */,
-				4BD5B4122447E16D00C97AA3 /* PusherSwift.framework */,
-				4BD5B4132447E16D00C97AA3 /* Reachability.framework */,
-				4BD5B4142447E16D00C97AA3 /* Starscream.framework */,
 				4BF2C23223C6580500D3D2C9 /* HSAttachmentPicker.framework */,
 				3F92439A237DC3F300773547 /* Photos.framework */,
 				4B0C067121B04B02007046E7 /* QuickLook.framework */,
