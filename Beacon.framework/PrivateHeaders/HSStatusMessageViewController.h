@@ -36,6 +36,7 @@ typedef void(^VoidBlock)(void);
 - (void)showStatusInViewController:(UIViewController *)viewController;
 
 - (void)removeStatus;
+- (void)updateForStatus:(HSStatus *)status;
 
 @end
 

@@ -9,7 +9,7 @@
 #import "HSBeaconKeychainWrapper.h"
 #import "HSBeaconLocalizedStrings.h"
 #import "HSBeaconMessagingAPIClient.h"
-#import "HSBeaconReplyNotificationPayload.h"
+#import "HSBeaconNotificationPayload.h"
 #import "HSBeaconSecurityInfo.h"
 #import "HSBeaconSuggestionItem.h"
 #import "HSBeaconTintColor.h"
@@ -40,7 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic) BOOL messagingOnly;
 @property (readonly, nonatomic) BOOL chatEnabled;
 @property (readonly, nonatomic) BOOL validConfig;
-
+@property (readonly, nonatomic) BOOL previousMessagesEnabled;
 @property (readonly, nonatomic) BOOL showNameEnabled;
 @property (readonly, nonatomic) BOOL showSubjectEnabled;
 @property (readonly, nonatomic) BOOL attachmentsEnabled;

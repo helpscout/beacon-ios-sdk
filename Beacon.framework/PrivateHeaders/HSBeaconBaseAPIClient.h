@@ -18,6 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *deviceId;
 @property (nonatomic, strong) NSURLSession *beaconSession;
 
++ (NSString *)normalizedOSVersion;
+
++ (NSString *)normalizedOSVersion:(NSString *)version;
+
 - (instancetype)initWithBeaconId:(NSString *)beaconId deviceId: (NSString *)deviceId config: (nullable HSBeaconConfig *)config;
 
 /* this constructor is only used for testing */

@@ -22,7 +22,7 @@
 
 @property (readwrite, nonatomic) NSArray<HSBeaconCustomFieldDefinition *> *fieldDefinitions;
 @property (readonly, nonatomic) NSArray<HSBeaconCustomFieldValue *> *fieldValues;
-@property (nonatomic) id<HSBeaconCustomFieldsEntryControllerDelegate> delegate;
+@property (nonatomic, weak) id<HSBeaconCustomFieldsEntryControllerDelegate> delegate;
 
 - (BOOL)validateFieldsWithErrorsDisplayed:(BOOL)showErrors;
 

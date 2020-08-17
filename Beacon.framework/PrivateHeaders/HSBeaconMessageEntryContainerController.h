@@ -22,6 +22,7 @@
 @interface HSBeaconMessageEntryContainerController: HSViewController
 
 @property(strong, nonatomic) HSBeaconContext *beaconContext;
+@property(nonatomic) BOOL showNoAgentsAvailabilityMessage;
 @property (nonatomic, weak) id<HSBeaconMessageEntryContainerControllerDelegate> delegate;
 
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *headerHeight;
@@ -50,5 +51,7 @@
 - (void)showPreviousMessages;
 
 - (void)resetForm;
+
+- (void)showHeader;
 
 @end

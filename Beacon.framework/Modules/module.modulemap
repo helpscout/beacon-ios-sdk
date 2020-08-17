@@ -4,6 +4,7 @@ framework module Beacon {
     module * { export * }
     
     explicit module Private {
+        header "HSAttachmentPicker.h"
         header "HSBeaconBundleUtils.h"
         header "HSViewController.h"
         header "HSView.h"
@@ -15,6 +16,11 @@ framework module Beacon {
         header "HSBeaconAgent.h"
         header "HSBeaconBaseAPIClient.h"
         header "HSBeaconChatEndedDelegate.h"
+        header "HSBeaconAgentsView.h"
+        header "HSBeaconNavigationBarAppearanceUpdater.h"
+        header "HSBeaconTintColor.h"
+        header "HSBeaconPushNotificationSupport.h"
+        header "HSBeaconSerializationUtilities.h"
     }
 
 }

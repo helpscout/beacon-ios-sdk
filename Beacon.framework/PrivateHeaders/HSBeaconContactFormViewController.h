@@ -9,8 +9,6 @@
 
 @protocol HSBeaconContactFormControllerDelegate
 @required
-- (void)contactFormControllerDidChangeAttachmentCount:(HSBeaconContactFormViewController *)controller;
-- (void)contactFormControllerEnableSubmit:(BOOL)enabled;
 - (void)showErrorMessage:(NSString *)errorMessage;
 - (void)clearErrorMessage;
 @end
@@ -23,7 +21,11 @@
 @property (strong, nonatomic) HSBeaconContext *beaconContext;
 @property (nonatomic) BOOL sendQueued;
 @property (nonatomic) HSBeaconContactForm *prefilledForm;
+@property (nonatomic, strong) NSDictionary<NSString*, NSString*> *sessionAttributes;
+@property(nonatomic) BOOL showNoAgentsAvailabilityMessage;
 
+@property (weak, nonatomic) IBOutlet UILabel *chatAvailabilityLabel;
+@property (weak, nonatomic) IBOutlet UIView *chatAvailabilityMessageView;
 @property (weak, nonatomic) IBOutlet HSBeaconContactFormField *nameField;
 @property (weak, nonatomic) IBOutlet HSBeaconContactFormField *subjectField;
 @property (weak, nonatomic) IBOutlet HSBeaconContactFormField *emailField;
@@ -34,7 +36,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *attachmentsToggleLabel;
 @property (weak, nonatomic) IBOutlet HSBeaconAttachmentsTableView *attachmentsTable;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *attachmentsContainerHeight;
+@property (weak, nonatomic) IBOutlet UIImageView *messageBodyErrorIcon;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *chatAvailabilityMessageHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *nameHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *subjectHeight;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *emailHeight;

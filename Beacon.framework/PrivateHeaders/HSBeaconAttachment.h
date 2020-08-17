@@ -1,4 +1,4 @@
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import <Beacon/HSBeaconContactForm.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) BOOL uploadStarted;
 
 - (nonnull instancetype)initWithData:(NSData *_Nonnull)data filename:(NSString *_Nonnull)filename image:(UIImage *_Nullable)image;
+
++ (NSData *)dataForAttachmentWithFilename:(NSString *)filename data:(NSData *)data image:(UIImage *_Nullable)image;
 
 @end
 

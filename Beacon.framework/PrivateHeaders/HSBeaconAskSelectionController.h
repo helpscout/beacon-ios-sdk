@@ -1,12 +1,14 @@
 #import <UIKit/UIKit.h>
 #import "HSViewController.h"
 #import "HSBeaconContext.h"
+#import "HSBeaconPreviousMessagesEnabler.h"
+#import "HSBeaconPreviousMessagesPresenter.h"
 
 @class HSBeaconAgentsView;
 @class HSBeaconAskSelectionCardView;
 @class HSBeaconPreviousConversationsButton;
 
-@interface HSBeaconAskSelectionController: HSViewController
+@interface HSBeaconAskSelectionController: HSViewController <HSBeaconPreviousMessagesEnabler, HSBeaconPreviousMessagesPresenter>
 
 @property(strong, nonatomic) HSBeaconContext *beaconContext;
 
@@ -21,5 +23,11 @@
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *backButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *closeButton;
+
+@property (nonatomic, assign) BOOL routeToChat;
+
+- (void)enablePreviousMessages;
+- (void)showPreviousMessages;
+- (void)presentChat;
 
 @end
