@@ -14,7 +14,7 @@
     <a title="Protocols  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">Beacon Docs</a> (96% documented)</p>
+        <p><a href="index.html">Beacon 2.0.0 Docs</a> (97% documented)</p>
         <p class="header-right"><a href="https://github.com/helpscout/beacon-ios-sdk"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -35,7 +35,13 @@
                 <a href="Classes/HSBeacon.html">HSBeacon</a>
               </li>
               <li class="nav-group-task">
+                <a href="Classes/HSBeaconArticleSuggestion.html">HSBeaconArticleSuggestion</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/HSBeaconContactForm.html">HSBeaconContactForm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/HSBeaconLinkSuggestion.html">HSBeaconLinkSuggestion</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/HSBeaconMessagingSettings.html">HSBeaconMessagingSettings</a>
@@ -54,6 +60,15 @@
               <li class="nav-group-task">
                 <a href="Constants.html#/c:@HSBeaconMaximumUserAttributes">HSBeaconMaximumUserAttributes</a>
               </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTES">MAX_SESSION_ATTRIBUTES</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTE_LABEL">MAX_SESSION_ATTRIBUTE_LABEL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTE_VALUE">MAX_SESSION_ATTRIBUTE_VALUE</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -64,6 +79,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Protocols/HSBeaconDelegate.html">HSBeaconDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols.html#/c:objc(pl)HSBeaconSuggestionItem">HSBeaconSuggestionItem</a>
               </li>
             </ul>
           </li>
@@ -103,14 +121,15 @@
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HSBeaconContactFormAttachment</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HSBeaconContactFormAttachment</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -136,6 +155,44 @@ the runtime behavior of the Beacon SDK.</p>
                           <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HSBeaconDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HSBeaconDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)HSBeaconSuggestionItem"></a>
+                    <a name="//apple_ref/objc/Protocol/HSBeaconSuggestionItem" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)HSBeaconSuggestionItem">HSBeaconSuggestionItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This protocol indicates an object can be passed into suggesiton overides via the
+<code><a href="Classes/HSBeacon.html">HSBeacon</a></code> <code>suggestWithItems:</code> method.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HSBeaconSuggestionItem</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HSBeaconSuggestionItem</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -145,8 +202,8 @@ the runtime behavior of the Beacon SDK.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2018-10-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://helpscout.com" target="_blank" rel="external">Help</a>. All rights reserved. (Last updated: 2020-08-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

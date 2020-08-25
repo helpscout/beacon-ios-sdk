@@ -14,7 +14,7 @@
     <a title="HSBeaconUser Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">Beacon Docs</a> (96% documented)</p>
+        <p><a href="../index.html">Beacon 2.0.0 Docs</a> (97% documented)</p>
         <p class="header-right"><a href="https://github.com/helpscout/beacon-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -35,7 +35,13 @@
                 <a href="../Classes/HSBeacon.html">HSBeacon</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/HSBeaconArticleSuggestion.html">HSBeaconArticleSuggestion</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/HSBeaconContactForm.html">HSBeaconContactForm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeaconLinkSuggestion.html">HSBeaconLinkSuggestion</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/HSBeaconMessagingSettings.html">HSBeaconMessagingSettings</a>
@@ -54,6 +60,15 @@
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:@HSBeaconMaximumUserAttributes">HSBeaconMaximumUserAttributes</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTES">MAX_SESSION_ATTRIBUTES</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTE_LABEL">MAX_SESSION_ATTRIBUTE_LABEL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTE_VALUE">MAX_SESSION_ATTRIBUTE_VALUE</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -64,6 +79,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/HSBeaconDelegate.html">HSBeaconDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)HSBeaconSuggestionItem">HSBeaconSuggestionItem</a>
               </li>
             </ul>
           </li>
@@ -109,7 +127,12 @@ configuring its properties, and then identifying them using <code>[HSBeacon iden
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">email</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">email</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -136,7 +159,12 @@ configuring its properties, and then identifying them using <code>[HSBeacon iden
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nullable</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -165,7 +193,12 @@ will be sent to Help Scout to help identify the current user. You may add up to
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">attributes</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">attributes</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -177,7 +210,7 @@ will be sent to Help Scout to help identify the current user. You may add up to
                     <code>
                     <a name="/c:objc(cs)HSBeaconUser(im)addAttributeWithKey:value:"></a>
                     <a name="//apple_ref/objc/Method/-addAttributeWithKey:value:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeaconUser(im)addAttributeWithKey:value:">-addAttributeWithKey:value:</a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconUser(im)addAttributeWithKey:value:">-addAttributeWithKey:<wbr>value:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -199,6 +232,11 @@ dictionary is limited to 30 entries.</p>
                       <span class="nf">value</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">value</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">addAttribute</span><span class="p">(</span><span class="n">withKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -208,7 +246,7 @@ dictionary is limited to 30 entries.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeaconUser(im)removeAttributeWithKey:"></a>
                     <a name="//apple_ref/objc/Method/-removeAttributeWithKey:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeaconUser(im)removeAttributeWithKey:">-removeAttributeWithKey:</a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconUser(im)removeAttributeWithKey:">-removeAttributeWithKey:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -224,6 +262,11 @@ dictionary is limited to 30 entries.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">removeAttributeWithKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">removeAttribute</span><span class="p">(</span><span class="n">withKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -253,6 +296,11 @@ dictionary is limited to 30 entries.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">clearAttributes</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">clearAttributes</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -262,7 +310,7 @@ dictionary is limited to 30 entries.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeaconUser(im)isEqualToBeaconUser:"></a>
                     <a name="//apple_ref/objc/Method/-isEqualToBeaconUser:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeaconUser(im)isEqualToBeaconUser:">-isEqualToBeaconUser:</a>
+                    <a class="token" href="#/c:objc(cs)HSBeaconUser(im)isEqualToBeaconUser:">-isEqualToBeaconUser:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -280,6 +328,11 @@ dictionary is limited to 30 entries.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">isEqualToBeaconUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">HSBeaconUser</span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isEqual</span><span class="p">(</span><span class="n">to</span> <span class="nv">user</span><span class="p">:</span> <span class="kt">HSBeaconUser</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -289,8 +342,8 @@ dictionary is limited to 30 entries.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2018-10-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://helpscout.com" target="_blank" rel="external">Help</a>. All rights reserved. (Last updated: 2020-08-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

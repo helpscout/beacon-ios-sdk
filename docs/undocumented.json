@@ -1,19 +1,26 @@
 {
   "warnings": [
     {
-      "file": "../Beacon/Classes/HSBeaconMessagingSettings.h",
-      "line": 5,
-      "symbol": "HSBeaconMessagingSettings",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "file": "/Users/scottpetit/Code/beacon-ios-sdk/Beacon.framework/Headers/HSBeaconConstants.h",
+      "line": 1,
+      "symbol": "MAX_SESSION_ATTRIBUTES",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     },
     {
-      "file": "../Beacon/Classes/HSBeaconSettings.h",
-      "line": 95,
-      "symbol": "HSBeaconSettings.-initWithBeaconId:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "file": "/Users/scottpetit/Code/beacon-ios-sdk/Beacon.framework/Headers/HSBeaconConstants.h",
+      "line": 2,
+      "symbol": "MAX_SESSION_ATTRIBUTE_LABEL",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottpetit/Code/beacon-ios-sdk/Beacon.framework/Headers/HSBeaconConstants.h",
+      "line": 3,
+      "symbol": "MAX_SESSION_ATTRIBUTE_VALUE",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/samsymons/Code/HelpScout/Beacon/fastlane"
+  "source_directory": "/Users/scottpetit/Code/beacon-ios-sdk"
 }

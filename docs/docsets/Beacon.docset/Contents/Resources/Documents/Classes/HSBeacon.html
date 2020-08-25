@@ -14,7 +14,7 @@
     <a title="HSBeacon Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">Beacon Docs</a> (96% documented)</p>
+        <p><a href="../index.html">Beacon 2.0.0 Docs</a> (97% documented)</p>
         <p class="header-right"><a href="https://github.com/helpscout/beacon-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -35,7 +35,13 @@
                 <a href="../Classes/HSBeacon.html">HSBeacon</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Classes/HSBeaconArticleSuggestion.html">HSBeaconArticleSuggestion</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Classes/HSBeaconContactForm.html">HSBeaconContactForm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HSBeaconLinkSuggestion.html">HSBeaconLinkSuggestion</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/HSBeaconMessagingSettings.html">HSBeaconMessagingSettings</a>
@@ -54,6 +60,15 @@
               <li class="nav-group-task">
                 <a href="../Constants.html#/c:@HSBeaconMaximumUserAttributes">HSBeaconMaximumUserAttributes</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTES">MAX_SESSION_ATTRIBUTES</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTE_LABEL">MAX_SESSION_ATTRIBUTE_LABEL</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTE_VALUE">MAX_SESSION_ATTRIBUTE_VALUE</a>
+              </li>
             </ul>
           </li>
           <li class="nav-group-name">
@@ -64,6 +79,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Protocols/HSBeaconDelegate.html">HSBeaconDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:objc(pl)HSBeaconSuggestionItem">HSBeaconSuggestionItem</a>
               </li>
             </ul>
           </li>
@@ -113,7 +131,7 @@ method before showing the Beacon.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeacon(cm)openBeacon:"></a>
                     <a name="//apple_ref/objc/Method/+openBeacon:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)openBeacon:">+openBeacon:</a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)openBeacon:">+openBeacon:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -122,15 +140,44 @@ method before showing the Beacon.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Opens the Beacon SDK from the current view controller.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Displays Beacon from the application delegate&rsquo;s window root view controller.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openBeacon</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">beaconSettings</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openBeacon</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">open</span><span class="p">(</span><span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -140,7 +187,7 @@ method before showing the Beacon.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeacon(cm)openBeacon:signature:"></a>
                     <a name="//apple_ref/objc/Method/+openBeacon:signature:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)openBeacon:signature:">+openBeacon:signature:</a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)openBeacon:signature:">+openBeacon:<wbr>signature:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -149,16 +196,57 @@ method before showing the Beacon.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Opens the Beacon SDK from the current view controller, using a signature.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Displays Beacon from the application delegate&rsquo;s window root view controller.</p>
+
+</div>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openBeacon</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">beaconSettings</span>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openBeacon</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
          <span class="nf">signature</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">open</span><span class="p">(</span><span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signature</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signature to provide, if you are using secure mode.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -168,7 +256,7 @@ method before showing the Beacon.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeacon(cm)openBeacon:fromViewController:"></a>
                     <a name="//apple_ref/objc/Method/+openBeacon:fromViewController:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)openBeacon:fromViewController:">+openBeacon:fromViewController:</a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)openBeacon:fromViewController:">+openBeacon:<wbr>fromViewController:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -184,10 +272,46 @@ will be presented as a modal.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openBeacon</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">beaconSettings</span>
-    <span class="nf">fromViewController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openBeacon</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
+    <span class="nf">fromViewController</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">open</span><span class="p">(</span><span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="n">fromViewController</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view controller to display Beacon from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -197,7 +321,7 @@ will be presented as a modal.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeacon(cm)openBeacon:fromViewController:signature:"></a>
                     <a name="//apple_ref/objc/Method/+openBeacon:fromViewController:signature:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)openBeacon:fromViewController:signature:">+openBeacon:fromViewController:signature:</a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)openBeacon:fromViewController:signature:">+openBeacon:<wbr>fromViewController:<wbr>signature:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -213,9 +337,89 @@ will be presented as a modal.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openBeacon</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">beaconSettings</span>
-    <span class="nf">fromViewController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openBeacon</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
+    <span class="nf">fromViewController</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">viewController</span>
              <span class="nf">signature</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">open</span><span class="p">(</span><span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="n">fromViewController</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view controller to display Beacon from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signature</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signature to provide, if you are using secure mode.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)dismissBeacon:"></a>
+                    <a name="//apple_ref/objc/Method/+dismissBeacon:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)dismissBeacon:">+dismissBeacon:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Hides the SDK modal window if present. Useful for when the app is returning from the background.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">dismissBeacon</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="kt">void</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">dismiss</span><span class="p">(</span><span class="n">_</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -227,7 +431,7 @@ will be presented as a modal.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeacon(cm)login:"></a>
                     <a name="//apple_ref/objc/Method/+login:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)login:">+login:</a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)login:">+login:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -246,6 +450,30 @@ address, and signature.</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">login</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconUser.html">HSBeaconUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">login</span><span class="p">(</span><span class="n">_</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconUser.html">HSBeaconUser</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon user to login</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -271,6 +499,11 @@ address, and signature.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n"><a href="../Classes/HSBeaconUser.html">HSBeaconUser</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="n">currentUser</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">currentUser</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/HSBeaconUser.html">HSBeaconUser</a></span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -301,6 +534,132 @@ storage.</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">logout</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">logout</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Suggestions"></a>
+                <a name="//apple_ref/objc/Section/Suggestions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Suggestions"></a>
+                  <h3 class="section-name"><p>Suggestions</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)suggest:"></a>
+                    <a name="//apple_ref/objc/Method/+suggest:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)suggest:">+suggest:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Programmatically change the suggestted articles displayed. If the Beacon is visible,
+the change will take place right away. Otherwise, the article data will change on the
+next open.</p>
+
+<p>Passing in an empty array will restore the default list.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">suggest</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">articleIds</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">suggest</span><span class="p">(</span><span class="n">_</span> <span class="nv">articleIds</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>articleIds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of article ids to override suggestions</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)suggestWithItems:"></a>
+                    <a name="//apple_ref/objc/Method/+suggestWithItems:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)suggestWithItems:">+suggestWithItems:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Programmatically change the suggestted items displayed. This implementation accepts
+either <code><a href="../Classes/HSBeaconArticleSuggestion.html">HSBeaconArticleSuggestion</a></code> or <code><a href="../Classes/HSBeaconLinkSuggestion.html">HSBeaconLinkSuggestion</a></code> objects in the array.</p>
+
+<p>If the Beacon is visible the change will take place right away. Otherwise, the article
+data will change on the next open.</p>
+
+<p>Passing in an empty array will restore the default list.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">suggestWithItems</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols.html#/c:objc(pl)HSBeaconSuggestionItem">HSBeaconSuggestionItem</a></span><span class="o">&gt;&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">suggestions</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>suggestions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of HSBeaconArticleSuggestion or HSBeaconLinkSuggestion objects</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -311,9 +670,11 @@ storage.</p>
               <div class="task-name-container">
                 <a name="/Push%20Notifications"></a>
                 <a name="//apple_ref/objc/Section/Push Notifications" class="dashAnchor"></a>
-                <a href="#/Push%20Notifications">
-                  <h3 class="section-name">Push Notifications</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Push%20Notifications"></a>
+                  <h3 class="section-name"><p>Push Notifications</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -330,8 +691,7 @@ storage.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Initializes push notifications for the Beacon SDK. This should be called if you
-intend to receive push notifications, whether they are handled automatically or
-manually.</p>
+intend to receive push notifications with a manual setup.</p>
 
                       </div>
                       <div class="declaration">
@@ -339,6 +699,11 @@ manually.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">initializeBeaconPushNotificationSupport</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">initializeBeaconPushNotificationSupport</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -350,7 +715,7 @@ manually.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeacon(cm)initializeAutomaticPushNotificationHandlingWithMethodSwizzling:overrideUserNotificationCenterDelegate:"></a>
                     <a name="//apple_ref/objc/Method/+initializeAutomaticPushNotificationHandlingWithMethodSwizzling:overrideUserNotificationCenterDelegate:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)initializeAutomaticPushNotificationHandlingWithMethodSwizzling:overrideUserNotificationCenterDelegate:">+initializeAutomaticPushNotificationHandlingWithMethodSwizzling:overrideUserNotificationCenterDelegate:</a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)initializeAutomaticPushNotificationHandlingWithMethodSwizzling:overrideUserNotificationCenterDelegate:">+initializeAutomaticPushNotificationHandlingWithMethodSwizzling:<wbr>overrideUserNotificationCenterDelegate:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -358,9 +723,15 @@ manually.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Initializes automatic push notification handling for the Beacon SDK. This should
-be called if you do not have to handle any push notifications that aren&rsquo;t from
-Beacon.</p>
+                        <p>Initializes automatic push notification handling for the Beacon SDK.</p>
+
+<p>This will wrap the following methods on UIApplicationDelegage with method swizzling:</p>
+
+<p>application:didReceiveRemoteNotification:
+application:didRegisterForRemoteNotificationsWithDeviceToken:
+application:didFailToRegisterForRemoteNotificationsWithError:</p>
+
+<p>In addition, this wraps all of methods on UNUserNotificationCenterDelegate.</p>
 
                       </div>
                       <div class="declaration">
@@ -371,6 +742,11 @@ Beacon.</p>
             <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">methodSwizzling</span>
                                 <span class="nf">overrideUserNotificationCenterDelegate</span><span class="p">:</span>
                                     <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">overrideDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">initializeAutomaticPushNotificationHandling</span><span class="p">(</span><span class="n">withMethodSwizzling</span> <span class="nv">methodSwizzling</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">overrideUserNotificationCenterDelegate</span> <span class="nv">overrideDelegate</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -415,7 +791,7 @@ method for automatic handling of push notifications.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeacon(cm)setDeviceToken:"></a>
                     <a name="//apple_ref/objc/Method/+setDeviceToken:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)setDeviceToken:">+setDeviceToken:</a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)setDeviceToken:">+setDeviceToken:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -423,7 +799,9 @@ method for automatic handling of push notifications.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Sets the push notification device token.</p>
+                        <p>This lets Beacon know about the user&rsquo;s notification token, so the Beacon backend can
+send push notifications on behalf of the app. You only need to call this for manual
+push notification handling.</p>
 
                       </div>
                       <div class="declaration">
@@ -431,6 +809,45 @@ method for automatic handling of push notifications.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDeviceToken</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">deviceToken</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setDeviceToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">deviceToken</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)failedToRegisterForRemoteNotificationsWithError:"></a>
+                    <a name="//apple_ref/objc/Method/+failedToRegisterForRemoteNotificationsWithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)failedToRegisterForRemoteNotificationsWithError:">+failedToRegisterForRemoteNotificationsWithError:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This lets Beacon know that a potential device token is not forthcoming, so dependent processes can continue.
+You only need to call this for manual push notification handling.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">failedToRegisterForRemoteNotificationsWithError</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">failedToRegisterForRemoteNotificationsWithError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -442,7 +859,7 @@ method for automatic handling of push notifications.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeacon(cm)isBeaconPushNotification:"></a>
                     <a name="//apple_ref/objc/Method/+isBeaconPushNotification:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)isBeaconPushNotification:">+isBeaconPushNotification:</a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)isBeaconPushNotification:">+isBeaconPushNotification:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -461,6 +878,11 @@ this method before calling <code>handlePushNotification:</code>.</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">isBeaconPushNotification</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">userInfo</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">isBeaconPushNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -470,7 +892,7 @@ this method before calling <code>handlePushNotification:</code>.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeacon(cm)handlePushNotification:beaconSettings:"></a>
                     <a name="//apple_ref/objc/Method/+handlePushNotification:beaconSettings:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)handlePushNotification:beaconSettings:">+handlePushNotification:beaconSettings:</a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)handlePushNotification:beaconSettings:">+handlePushNotification:<wbr>beaconSettings:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -493,6 +915,11 @@ the expected format, this method does nothing.</p>
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">handlePushNotification</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">userInfo</span>
                 <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">handlePushNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -535,7 +962,7 @@ the expected format, this method does nothing.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeacon(cm)handlePushNotification:beaconSettings:viewController:"></a>
                     <a name="//apple_ref/objc/Method/+handlePushNotification:beaconSettings:viewController:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)handlePushNotification:beaconSettings:viewController:">+handlePushNotification:beaconSettings:viewController:</a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)handlePushNotification:beaconSettings:viewController:">+handlePushNotification:<wbr>beaconSettings:<wbr>viewController:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -553,7 +980,12 @@ the expected format, this method does nothing.</p>
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">handlePushNotification</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">userInfo</span>
                 <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
-                <span class="nf">viewController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
+                <span class="nf">viewController</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">handlePushNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -608,7 +1040,7 @@ the expected format, this method does nothing.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeacon(cm)handlePushNotification:beaconSettings:signature:"></a>
                     <a name="//apple_ref/objc/Method/+handlePushNotification:beaconSettings:signature:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)handlePushNotification:beaconSettings:signature:">+handlePushNotification:beaconSettings:signature:</a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)handlePushNotification:beaconSettings:signature:">+handlePushNotification:<wbr>beaconSettings:<wbr>signature:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -632,6 +1064,11 @@ the expected format, this method does nothing.</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">handlePushNotification</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">userInfo</span>
                 <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
                      <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">handlePushNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -686,7 +1123,7 @@ the expected format, this method does nothing.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeacon(cm)handlePushNotification:beaconSettings:viewController:signature:"></a>
                     <a name="//apple_ref/objc/Method/+handlePushNotification:beaconSettings:viewController:signature:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)handlePushNotification:beaconSettings:viewController:signature:">+handlePushNotification:beaconSettings:viewController:signature:</a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)handlePushNotification:beaconSettings:viewController:signature:">+handlePushNotification:<wbr>beaconSettings:<wbr>viewController:<wbr>signature:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -704,8 +1141,13 @@ the expected format, this method does nothing.</p>
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">handlePushNotification</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">userInfo</span>
                 <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
-                <span class="nf">viewController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span>
+                <span class="nf">viewController</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">viewController</span>
                      <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">handlePushNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -767,15 +1209,1123 @@ the expected format, this method does nothing.</p>
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)handleWillPresentNotification:withCompletionHandler:"></a>
+                    <a name="//apple_ref/objc/Method/+handleWillPresentNotification:withCompletionHandler:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)handleWillPresentNotification:withCompletionHandler:">+handleWillPresentNotification:<wbr>withCompletionHandler:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Determines whether or not a push notification should be shown to the user. The <code>completionHandler
+ will only be called in the case that</code>UNNotfication` is a Beacon notification.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">handleWillPresentNotification</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UNNotification</span> <span class="o">*</span><span class="p">)</span><span class="nv">notification</span>
+                <span class="nf">withCompletionHandler</span><span class="p">:</span>
+                    <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">UNNotificationPresentationOptions</span><span class="p">))</span>
+                        <span class="n">completionHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">handleWillPresent</span><span class="p">(</span><span class="n">_</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">UNNotification</span><span class="p">,</span> <span class="n">withCompletionHandler</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">UNNotificationPresentationOptions</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>notification</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The UNNotification received by the UNUserNotificationCenterDelegate</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The completion block passed to the UNUnserNotificationCenterDelegate</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Search"></a>
+                <a name="//apple_ref/objc/Section/Search" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Search"></a>
+                  <h3 class="section-name"><p>Search</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)search:beaconSettings:"></a>
+                    <a name="//apple_ref/objc/Method/+search:beaconSettings:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)search:beaconSettings:">+search:<wbr>beaconSettings:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Opens the Beacon window to search results for the provided string.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Displays Beacon from the application delegate&rsquo;s window root view controller.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">search</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">text</span>
+    <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">search</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>text</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text to search with</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)search:beaconSettings:viewController:"></a>
+                    <a name="//apple_ref/objc/Method/+search:beaconSettings:viewController:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)search:beaconSettings:viewController:">+search:<wbr>beaconSettings:<wbr>viewController:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Opens the Beacon window to search results for the provided string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">search</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">text</span>
+    <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
+    <span class="nf">viewController</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">search</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>text</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text to search with</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view controller to display Beacon from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)search:beaconSettings:signature:"></a>
+                    <a name="//apple_ref/objc/Method/+search:beaconSettings:signature:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)search:beaconSettings:signature:">+search:<wbr>beaconSettings:<wbr>signature:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Opens the Beacon window to search results for the provided string.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Displays Beacon from the application delegate&rsquo;s window root view controller.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">search</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">text</span>
+    <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
+         <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">search</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>text</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text to search with</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signature</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signature to provide, if you are using secure mode.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)search:beaconSettings:viewController:signature:"></a>
+                    <a name="//apple_ref/objc/Method/+search:beaconSettings:viewController:signature:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)search:beaconSettings:viewController:signature:">+search:<wbr>beaconSettings:<wbr>viewController:<wbr>signature:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Opens the Beacon window to search results for the provided string.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">search</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">text</span>
+    <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
+    <span class="nf">viewController</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">viewController</span>
+         <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">search</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>text</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The text to search with</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view controller to display Beacon from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signature</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signature to provide, if you are using secure mode.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Navigation"></a>
+                <a name="//apple_ref/objc/Section/Navigation" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Navigation"></a>
+                  <h3 class="section-name"><p>Navigation</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)navigate:beaconSettings:"></a>
+                    <a name="//apple_ref/objc/Method/+navigate:beaconSettings:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)navigate:beaconSettings:">+navigate:<wbr>beaconSettings:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Navigates to a specific screen. Available routes are:
+&ldquo;/&rdquo; - welcome screen
+&ldquo;/ask/message/&rdquo; - message screen
+&ldquo;/docs/search?query=help&rdquo; - this is the same as the HSBeacon search method</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Displays Beacon from the application delegate&rsquo;s window root view controller.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">navigate</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">route</span>
+    <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">navigate</span><span class="p">(</span><span class="n">_</span> <span class="nv">route</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>route</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The screen to navigate to - &ldquo;/&rdquo;, &ldquo;/ask/message&rdquo;, &ldquo;/previous-messages&rdquo;, or &ldquo;/docs/search?query=help&rdquo;</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)navigate:beaconSettings:viewController:"></a>
+                    <a name="//apple_ref/objc/Method/+navigate:beaconSettings:viewController:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)navigate:beaconSettings:viewController:">+navigate:<wbr>beaconSettings:<wbr>viewController:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Navigates to a specific screen. Available routes are:
+&ldquo;/&rdquo; - welcome screen
+&ldquo;/ask/message/&rdquo; - message screen
+&ldquo;/docs/search?query=help&rdquo; - this is the same as the HSBeacon search method</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">navigate</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">route</span>
+    <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
+    <span class="nf">viewController</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">navigate</span><span class="p">(</span><span class="n">_</span> <span class="nv">route</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>route</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The screen to navigate to - &ldquo;/&rdquo;, &ldquo;/ask/message&rdquo;, &ldquo;/previous-messages&rdquo;, or &ldquo;/docs/search?query=help&rdquo;</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view controller to display Beacon from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)navigate:beaconSettings:signature:"></a>
+                    <a name="//apple_ref/objc/Method/+navigate:beaconSettings:signature:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)navigate:beaconSettings:signature:">+navigate:<wbr>beaconSettings:<wbr>signature:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Navigates to a specific screen. Available routes are:
+&ldquo;/&rdquo; - welcome screen
+&ldquo;/ask/message/&rdquo; - message screen
+&ldquo;/docs/search?query=help&rdquo; - this is the same as the HSBeacon search method</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Displays Beacon from the application delegate&rsquo;s window root view controller.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">navigate</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">route</span>
+    <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
+         <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">navigate</span><span class="p">(</span><span class="n">_</span> <span class="nv">route</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>route</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The screen to navigate to - &ldquo;/&rdquo;, &ldquo;/ask/message&rdquo;, &ldquo;/previous-messages&rdquo;, or &ldquo;/docs/search?query=help&rdquo;</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signature</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signature to provide, if you are using secure mode.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)navigate:beaconSettings:viewController:signature:"></a>
+                    <a name="//apple_ref/objc/Method/+navigate:beaconSettings:viewController:signature:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)navigate:beaconSettings:viewController:signature:">+navigate:<wbr>beaconSettings:<wbr>viewController:<wbr>signature:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Navigates to a specific screen. Available routes are:
+&ldquo;/&rdquo; - welcome screen
+&ldquo;/ask/message/&rdquo; - message screen
+&ldquo;/docs/search?query=help&rdquo; - this is the same as the HSBeacon search method</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">navigate</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">route</span>
+    <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
+    <span class="nf">viewController</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">viewController</span>
+         <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">navigate</span><span class="p">(</span><span class="n">_</span> <span class="nv">route</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>route</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The screen to navigate to - &ldquo;/&rdquo;, &ldquo;/ask/message&rdquo;, &ldquo;/previous-messages&rdquo;, or &ldquo;/docs/search?query=help&rdquo;</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view controller to display Beacon from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signature</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signature to provide, if you are using secure mode.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Open%20article"></a>
+                <a name="//apple_ref/objc/Section/Open article" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Open%20article"></a>
+                  <h3 class="section-name"><p>Open article</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)openArticle:beaconSettings:"></a>
+                    <a name="//apple_ref/objc/Method/+openArticle:beaconSettings:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)openArticle:beaconSettings:">+openArticle:<wbr>beaconSettings:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>You can use this method to open a specific Docs Article within Beacon, using the Article’s ID.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Displays Beacon from the application delegate&rsquo;s window root view controller.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openArticle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">articleId</span>
+     <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">openArticle</span><span class="p">(</span><span class="n">_</span> <span class="nv">articleId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>articleId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The id of the article to open up</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)openArticle:beaconSettings:viewController:"></a>
+                    <a name="//apple_ref/objc/Method/+openArticle:beaconSettings:viewController:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)openArticle:beaconSettings:viewController:">+openArticle:<wbr>beaconSettings:<wbr>viewController:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>You can use this method to open a specific Docs Article within Beacon, using the Article’s ID.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openArticle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">articleId</span>
+     <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
+     <span class="nf">viewController</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">openArticle</span><span class="p">(</span><span class="n">_</span> <span class="nv">articleId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>articleId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The id of the article to open up</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view controller to display Beacon from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)openArticle:beaconSettings:signature:"></a>
+                    <a name="//apple_ref/objc/Method/+openArticle:beaconSettings:signature:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)openArticle:beaconSettings:signature:">+openArticle:<wbr>beaconSettings:<wbr>signature:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>You can use this method to open a specific Docs Article within Beacon, using the Article’s ID.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <p>Displays Beacon from the application delegate&rsquo;s window root view controller.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openArticle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">articleId</span>
+     <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
+          <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">openArticle</span><span class="p">(</span><span class="n">_</span> <span class="nv">articleId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>articleId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The id of the article to open up</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signature</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signature to provide, if you are using secure mode.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)openArticle:beaconSettings:viewController:signature:"></a>
+                    <a name="//apple_ref/objc/Method/+openArticle:beaconSettings:viewController:signature:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)openArticle:beaconSettings:viewController:signature:">+openArticle:<wbr>beaconSettings:<wbr>viewController:<wbr>signature:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>You can use this method to open a specific Docs Article within Beacon, using the Article’s ID.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openArticle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">articleId</span>
+     <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
+     <span class="nf">viewController</span><span class="p">:(</span><span class="n">id</span><span class="p">)</span><span class="nv">viewController</span>
+          <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">openArticle</span><span class="p">(</span><span class="n">_</span> <span class="nv">articleId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">Any</span><span class="o">!</span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>articleId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The id of the article to open up</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>settings</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon settings from which to load Beacon.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>viewController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The view controller to display Beacon from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signature</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The signature to provide, if you are using secure mode.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)reset"></a>
+                    <a name="//apple_ref/objc/Method/+reset" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)reset">+reset</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Resets the contact form by clearing all of its fields, custom fields and attachments. If your Beacon is in Normal Mode, calling reset will clear all contact form fields, including name and email address.</p>
+
+<p>If your Beacon is in Secure Mode, calling reset will not clear the customer’s name or email address. Those inputs will remain hidden.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">reset</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
               <div class="task-name-container">
                 <a name="/Unavailable%20Methods"></a>
                 <a name="//apple_ref/objc/Section/Unavailable Methods" class="dashAnchor"></a>
-                <a href="#/Unavailable%20Methods">
-                  <h3 class="section-name">Unavailable Methods</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Unavailable%20Methods"></a>
+                  <h3 class="section-name"><p>Unavailable Methods</p>
+</h3>
+                </div>
               </div>
               <ul>
                 <li class="item">
@@ -783,13 +2333,18 @@ the expected format, this method does nothing.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeacon(im)init"></a>
                     <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeacon(im)init">-init</a>
+                    <a class="token discouraged" href="#/c:objc(cs)HSBeacon(im)init">-init</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-unavailable">
+                        <p class="aside-title">Unavailable</p>
+                        <p>HSBeacon cannot be created directly</p>
+
+                      </div>
                       <div class="abstract">
                         <p><code>-[HSBeacon init]</code> is not available because <code>HSBeacon</code> cannot be created directly.
 Use the <code>openBeacon:</code> methods to display the Beacon SDK.</p>
@@ -811,8 +2366,8 @@ Use the <code>openBeacon:</code> methods to display the Beacon SDK.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2018-10-29)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://helpscout.com" target="_blank" rel="external">Help</a>. All rights reserved. (Last updated: 2020-08-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
