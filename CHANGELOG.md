@@ -2,19 +2,29 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 2.0.1 (August 31, 2020)
+
+##### Bug Fixes
+* We have addressed the unwanted navigation color change issues. ([Issue 85](https://github.com/helpscout/beacon-ios-sdk/issues/85) & [Issue 73](https://github.com/helpscout/beacon-ios-sdk/issues/73)))
+* If `emailTranscriptionEnabled` is false, we won't display a message saying we will send your chat transcript to you in an email when the chat ends. ([Issue 87](https://github.com/helpscout/beacon-ios-sdk/issues/87))).
+* If `enablePreviousMessages` is set to false on your `HSBeaconSettings` object, Beacon will no longer display a message about viewing previous conversations when a chat ends.
+* Beacon will now notify the `HSBeaconDelegate` when it was closed due to being swiped away on iOS 13+.  ([Issue 88](https://github.com/helpscout/beacon-ios-sdk/issues/88)))
+* Beacon will present push notifications for conversation replies while the user has your app in the foreground.
+* `HSBeaconSettings` now has a single designated initializer that takes the Beacon ID to prevent problems down the line.
+
 ## 2.0.0 (August 17, 2020)
 
 ##### Features
 * Live chat - Customers can now start a chat within your app on their iOS device, accessing great support no matter where they are.
 * We have added support for session attributes. ([Issue 70](https://github.com/helpscout/beacon-ios-sdk/issues/70))
 ##### Bug Fixes
-Custom Suggestion URLs no longer crash when tapped on iPad. ([Issue 59](https://github.com/helpscout/beacon-ios-sdk/issues/59))
-Users can now continue to the next field in the contact form by using the return key. ([Issue 69](https://github.com/helpscout/beacon-ios-sdk/issues/69))
-We no longer duplicate prefilled attachments on subsequent presentations of the contact form. ([Issue 68](https://github.com/helpscout/beacon-ios-sdk/issues/68))
-Email-only Beacons will now go straight to the contact form instead of an intermediary screen. ([Issue 74](https://github.com/helpscout/beacon-ios-sdk/issues/74))
-We now build the Beacon SDK as a library for distribution. ([Issue 75]( )) & ([Issue 78](https://github.com/helpscout/beacon-ios-sdk/issues/78)) 
-The 'Send a Message' screen now properly uses localization overrides from the Beacon Web UI. ([Issue 79](https://github.com/helpscout/beacon-ios-sdk/issues/79))
-We have removed all external dependencies. ([Issue 60](https://github.com/helpscout/beacon-ios-sdk/issues/60))
+* Custom Suggestion URLs no longer crash when tapped on iPad. ([Issue 59](https://github.com/helpscout/beacon-ios-sdk/issues/59))
+* Users can now continue to the next field in the contact form by using the return key. ([Issue 69](https://github.com/helpscout/beacon-ios-sdk/issues/69))
+* We no longer duplicate prefilled attachments on subsequent presentations of the contact form. ([Issue 68](https://github.com/helpscout/beacon-ios-sdk/issues/68))
+* Email-only Beacons will now go straight to the contact form instead of an intermediary screen. ([Issue 74](https://github.com/helpscout/beacon-ios-sdk/issues/74))
+* We now build the Beacon SDK as a library for distribution. ([Issue 75](https://github.com/helpscout/beacon-ios-sdk/issues/75)) & ([Issue 78](https://github.com/helpscout/beacon-ios-sdk/issues/78)) 
+* The 'Send a Message' screen now properly uses localization overrides from the Beacon Web UI. ([Issue 79](https://github.com/helpscout/beacon-ios-sdk/issues/79))
+* We have removed all external dependencies. ([Issue 60](https://github.com/helpscout/beacon-ios-sdk/issues/60))
 
 ## 2.0.0 Beta 2 Release (May 26, 2020)
 
