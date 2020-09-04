@@ -1,26 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/scottpetit/Code/beacon-ios-sdk/Beacon.framework/Headers/HSBeaconConstants.h",
-      "line": 1,
-      "symbol": "MAX_SESSION_ATTRIBUTES",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottpetit/Code/beacon-ios-sdk/Beacon.framework/Headers/HSBeaconConstants.h",
-      "line": 2,
-      "symbol": "MAX_SESSION_ATTRIBUTE_LABEL",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottpetit/Code/beacon-ios-sdk/Beacon.framework/Headers/HSBeaconConstants.h",
-      "line": 3,
-      "symbol": "MAX_SESSION_ATTRIBUTE_VALUE",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
-      "warning": "undocumented"
-    }
+
   ],
-  "source_directory": "/Users/scottpetit/Code/beacon-ios-sdk"
+  "source_directory": "/Users/scottpetit/Code/beacon-ios-sdk-private/fastlane"
 }

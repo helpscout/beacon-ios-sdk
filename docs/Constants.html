@@ -14,7 +14,7 @@
     <a title="Constants  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">Beacon 2.0.0 Docs</a> (97% documented)</p>
+        <p><a href="index.html">Beacon Docs</a> (100% documented)</p>
         <p class="header-right"><a href="https://github.com/helpscout/beacon-ios-sdk"><img src="img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -58,16 +58,16 @@
             <a href="Constants.html">Constants</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxSessionAttributesCount">HSBeaconMaxSessionAttributesCount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxSessionLabelLength">HSBeaconMaxSessionLabelLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxSessionValueLength">HSBeaconMaxSessionValueLength</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Constants.html#/c:@HSBeaconMaximumUserAttributes">HSBeaconMaximumUserAttributes</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Constants.html#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTES">MAX_SESSION_ATTRIBUTES</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Constants.html#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTE_LABEL">MAX_SESSION_ATTRIBUTE_LABEL</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Constants.html#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTE_VALUE">MAX_SESSION_ATTRIBUTE_VALUE</a>
               </li>
             </ul>
           </li>
@@ -100,9 +100,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTES"></a>
-                    <a name="//apple_ref/objc/Constant/MAX_SESSION_ATTRIBUTES" class="dashAnchor"></a>
-                    <a class="token" href="#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTES">MAX_SESSION_ATTRIBUTES</a>
+                    <a name="/c:HSBeaconConstants.h@HSBeaconMaxSessionAttributesCount"></a>
+                    <a name="//apple_ref/objc/Constant/HSBeaconMaxSessionAttributesCount" class="dashAnchor"></a>
+                    <a class="token" href="#/c:HSBeaconConstants.h@HSBeaconMaxSessionAttributesCount">HSBeaconMaxSessionAttributesCount</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -110,19 +110,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The maximum number of session attributes</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">static</span> <span class="n">NSInteger</span> <span class="k">const</span> <span class="n">MAX_SESSION_ATTRIBUTES</span> <span class="o">=</span> <span class="mi">20</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">MAX_SESSION_ATTRIBUTES</span><span class="p">:</span> <span class="kt">Int32</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">static</span> <span class="k">const</span> <span class="n">NSInteger</span> <span class="n">HSBeaconMaxSessionAttributesCount</span> <span class="o">=</span> <span class="mi">20</span></code></pre>
 
                         </div>
                       </div>
@@ -132,9 +127,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTE_LABEL"></a>
-                    <a name="//apple_ref/objc/Constant/MAX_SESSION_ATTRIBUTE_LABEL" class="dashAnchor"></a>
-                    <a class="token" href="#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTE_LABEL">MAX_SESSION_ATTRIBUTE_LABEL</a>
+                    <a name="/c:HSBeaconConstants.h@HSBeaconMaxSessionLabelLength"></a>
+                    <a name="//apple_ref/objc/Constant/HSBeaconMaxSessionLabelLength" class="dashAnchor"></a>
+                    <a class="token" href="#/c:HSBeaconConstants.h@HSBeaconMaxSessionLabelLength">HSBeaconMaxSessionLabelLength</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -142,19 +137,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The maximum length of a key used with session attributes</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">static</span> <span class="n">NSInteger</span> <span class="k">const</span> <span class="n">MAX_SESSION_ATTRIBUTE_LABEL</span> <span class="o">=</span> <span class="mi">100</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">MAX_SESSION_ATTRIBUTE_LABEL</span><span class="p">:</span> <span class="kt">Int32</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">static</span> <span class="k">const</span> <span class="n">NSInteger</span> <span class="n">HSBeaconMaxSessionLabelLength</span> <span class="o">=</span> <span class="mi">100</span></code></pre>
 
                         </div>
                       </div>
@@ -164,9 +154,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTE_VALUE"></a>
-                    <a name="//apple_ref/objc/Constant/MAX_SESSION_ATTRIBUTE_VALUE" class="dashAnchor"></a>
-                    <a class="token" href="#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTE_VALUE">MAX_SESSION_ATTRIBUTE_VALUE</a>
+                    <a name="/c:HSBeaconConstants.h@HSBeaconMaxSessionValueLength"></a>
+                    <a name="//apple_ref/objc/Constant/HSBeaconMaxSessionValueLength" class="dashAnchor"></a>
+                    <a class="token" href="#/c:HSBeaconConstants.h@HSBeaconMaxSessionValueLength">HSBeaconMaxSessionValueLength</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -174,19 +164,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>The maximum length of a value used with session attributes</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">static</span> <span class="n">NSInteger</span> <span class="k">const</span> <span class="n">MAX_SESSION_ATTRIBUTE_VALUE</span> <span class="o">=</span> <span class="mi">10000</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">MAX_SESSION_ATTRIBUTE_VALUE</span><span class="p">:</span> <span class="kt">Int32</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">static</span> <span class="k">const</span> <span class="n">NSInteger</span> <span class="n">HSBeaconMaxSessionValueLength</span> <span class="o">=</span> <span class="mi">10000</span></code></pre>
 
                         </div>
                       </div>
@@ -216,11 +201,6 @@
                           <pre class="highlight objective_c"><code><span class="k">extern</span> <span class="k">const</span> <span class="n">NSUInteger</span> <span class="n">HSBeaconMaximumUserAttributes</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">HSBeaconMaximumUserAttributes</span><span class="p">:</span> <span class="kt">UInt</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -230,7 +210,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://helpscout.com" target="_blank" rel="external">Help</a>. All rights reserved. (Last updated: 2020-08-18)</p>
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2020-08-31)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>

@@ -14,7 +14,7 @@
     <a title="HSBeaconDelegate Protocol Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">Beacon 2.0.0 Docs</a> (97% documented)</p>
+        <p><a href="../index.html">Beacon Docs</a> (100% documented)</p>
         <p class="header-right"><a href="https://github.com/helpscout/beacon-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
       </div>
     </header>
@@ -58,16 +58,16 @@
             <a href="../Constants.html">Constants</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxSessionAttributesCount">HSBeaconMaxSessionAttributesCount</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxSessionLabelLength">HSBeaconMaxSessionLabelLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxSessionValueLength">HSBeaconMaxSessionValueLength</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Constants.html#/c:@HSBeaconMaximumUserAttributes">HSBeaconMaximumUserAttributes</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTES">MAX_SESSION_ATTRIBUTES</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTE_LABEL">MAX_SESSION_ATTRIBUTE_LABEL</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Constants.html#/c:HSBeaconConstants.h@MAX_SESSION_ATTRIBUTE_VALUE">MAX_SESSION_ATTRIBUTE_VALUE</a>
               </li>
             </ul>
           </li>
@@ -133,11 +133,6 @@ set on the <code>form</code> object will be prepopulated for the customer.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">prefill</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconContactForm.html">HSBeaconContactForm</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">form</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">prefill</span><span class="p">(</span><span class="n">_</span> <span class="nv">form</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconContactForm.html">HSBeaconContactForm</a></span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -172,11 +167,6 @@ profile or the Beacon Sidebar app.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="n">sessionAttributes</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">sessionAttributes</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -203,11 +193,6 @@ has been successfully loaded over the network.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">onBeaconInitialOpen</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">beaconSettings</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">onBeaconInitialOpen</span><span class="p">(</span><span class="n">_</span> <span class="nv">beaconSettings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -237,11 +222,6 @@ has been successfully loaded over the network.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">onBeaconOpen</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">beaconSettings</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">onBeaconOpen</span><span class="p">(</span><span class="n">_</span> <span class="nv">beaconSettings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -267,11 +247,6 @@ has been successfully loaded over the network.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">onBeaconInitialClose</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">beaconSettings</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">onBeaconInitialClose</span><span class="p">(</span><span class="n">_</span> <span class="nv">beaconSettings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -301,11 +276,6 @@ has been successfully loaded over the network.</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">onBeaconClose</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">beaconSettings</span><span class="p">;</span></code></pre>
 
                         </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">onBeaconClose</span><span class="p">(</span><span class="n">_</span> <span class="nv">beaconSettings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">)</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -315,7 +285,7 @@ has been successfully loaded over the network.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="https://helpscout.com" target="_blank" rel="external">Help</a>. All rights reserved. (Last updated: 2020-08-18)</p>
+          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2020-08-31)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
