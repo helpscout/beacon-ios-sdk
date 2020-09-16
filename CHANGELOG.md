@@ -2,6 +2,18 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 2.0.2 (September 16, 2020)
+
+##### Bug Fixes
+* We no longer show the incorrect email error when pressing the send message button the first time. This resolves the following issues:
+  * [Issue 111](https://github.com/helpscout/beacon-ios-sdk/issues/111)
+  * [Issue 109](https://github.com/helpscout/beacon-ios-sdk/issues/109)
+  * [Issue 94](https://github.com/helpscout/beacon-ios-sdk/issues/94)
+* We have addressed the crash observed when attempting to add a video from your camera roll to an in-progress chat session. ([Issue 100](https://github.com/helpscout/beacon-ios-sdk/issues/100))
+* Beacon now respects the messaging setting allowAttachments in both the contact form and chat. ([Issue 101](https://github.com/helpscout/beacon-ios-sdk/issues/101))
+* We have fixed the crash caused by suggesting articles to a user with a previously opened Beacon.  ([Issue 102](https://github.com/helpscout/beacon-ios-sdk/issues/102))
+* We have remediated a threading violation when minimizing an active chat.  ([Issue 105](https://github.com/helpscout/beacon-ios-sdk/issues/105))
+
 ## 2.0.1 (August 31, 2020)
 
 ##### Bug Fixes
