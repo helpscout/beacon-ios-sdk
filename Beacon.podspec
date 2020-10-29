@@ -1,23 +1,23 @@
 Pod::Spec.new do |s|
-  s.name         = 'Beacon'
-  s.version      = '2.0.2'
+  s.name          = 'Beacon'
   s.swift_version = '5.0'
-  s.summary      = 'The Help Scout Beacon SDK'
-  s.license      = { :type => 'Commercial', :text => 'Help Scout. All rights reserved.' }
+  s.version       = '2.1.0'
+  s.summary       = 'The Help Scout Beacon SDK'
+  s.license       = { :type => 'Commercial', :text => 'Help Scout. All rights reserved.' }
 
-  s.description  = <<-DESC
+  s.description   = <<-DESC
                    The Help Scout Beacon SDK. Learn more at https://developer.helpscout.com/beacon-2/.
                    DESC
 
-  s.homepage     = 'http://github.com/helpscout/beacon-ios-sdk'
-  s.author       = { 'Help Scout' => 'help@helpscout.com' }
-  s.platform     = :ios, '11.0'
-  s.source       = { :git => 'https://github.com/helpscout/beacon-ios-sdk.git', :tag => s.version }
+  s.homepage      = 'http://github.com/helpscout/beacon-ios-sdk'
+  s.author        = { 'Help Scout' => 'help@helpscout.com' }
+  s.platform      = :ios, '11.0'
+  s.source        = { :git => 'https://github.com/helpscout/beacon-ios-sdk.git', :tag => s.version }
 
-  s.source_files  = 'Beacon.framework/Headers/*.h'
-  s.module_map = 'Beacon.framework/Modules/module.modulemap'
-  s.preserve_paths = 'Beacon.framework/*'
-  s.vendored_frameworks = 'Beacon.framework'
-  s.resources = 'Beacon.framework/Beacon.bundle'
-  s.frameworks = 'UIKit', 'Photos', 'UserNotifications', 'WebKit', 'MobileCoreServices', 'SafariServices', 'QuickLook', 'CoreData'
+  s.source_files  = 'Beacon.xcframework/ios-arm64/Beacon.framework/Headers/*.h'
+  s.module_map    = 'Beacon.xcframework/ios-arm64/Beacon.framework/Modules/module.modulemap'  
+  s.preserve_paths = 'Beacon.xcframework', 'Beacon.dSYMs/Beacon.framework.ios-arm64.dSYM', 'Beacon.dSYMs/Beacon.framework.ios-arm64_x86_64-simulator.dSYM'
+  s.vendored_frameworks = 'Beacon.xcframework'
+  s.resources     = 'Beacon.xcframework/ios-arm64/Beacon.framework/Beacon.bundle'
+  s.frameworks    = 'UIKit', 'Photos', 'UserNotifications', 'WebKit', 'MobileCoreServices', 'SafariServices', 'QuickLook', 'CoreData'
 end
