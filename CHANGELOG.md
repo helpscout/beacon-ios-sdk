@@ -11,14 +11,14 @@ To install Beacon, see the [documentation](https://developer.helpscout.com/beaco
 
 ##### Bug Fixes
 * User attributes are now set for all logged-in users, even if they haven't sent an email. [Issue 115](https://github.com/helpscout/beacon-ios-sdk/issues/115)
-* Non-logged-in users are now able to change their email address after sending a message.  [Issue 120](https://github.com/helpscout/beacon-ios-sdk/issues/120)
+* Non-logged-in users are now able to change their email address after sending a message. [Issue 120](https://github.com/helpscout/beacon-ios-sdk/issues/120)
 * Selecting the previous conversations button on the sent message screen will now redirect you to the appropriate place. [Issue 108](https://github.com/helpscout/beacon-ios-sdk/issues/108)
-* SwiftUI previews now work as we distribute Beacon 2.1.0 as an XCFramework.  [Issue 112](https://github.com/helpscout/beacon-ios-sdk/issues/112)
+* SwiftUI previews now work as we distribute Beacon 2.1.0 as an XCFramework. [Issue 112](https://github.com/helpscout/beacon-ios-sdk/issues/112)
 * Users will no longer experience a crash when trying to preview chat attachments on iOS 11 and 12.
 
 ##### Deprecations
-* HSBeaconMessagingSettings.showGetInTouch & HSBeaconMessagingSettings.showGetInTouchSet have been deprecated as they're no longer applicable in Beacon 2.1.
-* HSBeacon.login has been deprecated in favor of HSBeacon.identify. The method parameters have not changed, so replacing calls to login with identify is the only necessary change.
+* `HSBeaconMessagingSettings.showGetInTouch` & `HSBeaconMessagingSettings.showGetInTouchSet` have been deprecated as they're no longer applicable in Beacon 2.1.
+* `HSBeacon.login` has been deprecated in favor of `HSBeacon.identify`. The method parameters have not changed, so replacing calls to login with identify is the only necessary change.
 
 
 ## 2.0.2 (September 16, 2020)
