@@ -1,0 +1,16 @@
+PODS:
+  - Beacon (2.1.0)
+
+DEPENDENCIES:
+  - Beacon
+
+SPEC REPOS:
+  trunk:
+    - Beacon
+
+SPEC CHECKSUMS:
+  Beacon: 123da0b58247817ed94e05ecc5e4b74e04474aa8
+
+PODFILE CHECKSUM: 0e7f493633c9a5cc4511771adf3ad58a68932708
+
+COCOAPODS: 1.10.0

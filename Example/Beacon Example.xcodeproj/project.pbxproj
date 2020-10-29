@@ -3,20 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3F92439B237DC3F300773547 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F92439A237DC3F300773547 /* Photos.framework */; };
+		3FCB4197254B18AF00BC51D7 /* Beacon.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCB4196254B18AF00BC51D7 /* Beacon.xcframework */; };
 		4B0A6463247D6394000D9D3C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0A6462247D6394000D9D3C /* CoreServices.framework */; };
 		4B0C067221B04B03007046E7 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0C067121B04B02007046E7 /* QuickLook.framework */; };
 		4B2681DF2119E315002D2EC8 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681DE2119E315002D2EC8 /* UserNotifications.framework */; };
 		4B2681E12119E323002D2EC8 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E02119E323002D2EC8 /* SafariServices.framework */; };
-		4B2681E32119E383002D2EC8 /* Beacon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4B2681E22119E383002D2EC8 /* Beacon.bundle */; };
 		4B2681E52119E3D1002D2EC8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2681E42119E3D1002D2EC8 /* WebKit.framework */; };
-		4B35C7D420BE0F26000C1573 /* Beacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		4BD5B4262447E93700C97AA3 /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD5B4252447E93700C97AA3 /* Dummy.swift */; };
-		4BD5B4302448106F00C97AA3 /* Beacon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4B35C7D320BE0F26000C1573 /* Beacon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4D72BB991A6E41D45AEB9105 /* libPods-BeaconExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B808031A2557C7FBC55470C8 /* libPods-BeaconExample.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -37,7 +36,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4BD5B4302448106F00C97AA3 /* Beacon.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,16 +43,13 @@
 
 /* Begin PBXFileReference section */
 		3F92439A237DC3F300773547 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		3FCB4196254B18AF00BC51D7 /* Beacon.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Beacon.xcframework; path = Pods/Beacon/Beacon.xcframework; sourceTree = "<group>"; };
 		4B0A6462247D6394000D9D3C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		4B0C067121B04B02007046E7 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
 		4B2681DE2119E315002D2EC8 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		4B2681E02119E323002D2EC8 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		4B2681E22119E383002D2EC8 /* Beacon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Beacon.bundle; path = ../Beacon.framework/Beacon.bundle; sourceTree = "<group>"; };
 		4B2681E42119E3D1002D2EC8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		4B2681E62119E3E3002D2EC8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		4B35C7D320BE0F26000C1573 /* Beacon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Beacon.framework; path = ../Beacon.framework; sourceTree = "<group>"; };
-		4BD5B41F2447E1EB00C97AA3 /* CarthageInput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageInput.xcfilelist; sourceTree = "<group>"; };
-		4BD5B4212447E30100C97AA3 /* CarthageOutput.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = CarthageOutput.xcfilelist; sourceTree = "<group>"; };
 		4BD5B4222447E50400C97AA3 /* BeaconExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeaconExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		4BD5B4252447E93700C97AA3 /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* BeaconExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,8 +68,11 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9611A9001FFBF8B000516839 /* Beacon_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Beacon_Example.entitlements; sourceTree = "<group>"; };
+		986EE6E84D13E1FEE1D57D6F /* Pods-BeaconExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeaconExample.release.xcconfig"; path = "Target Support Files/Pods-BeaconExample/Pods-BeaconExample.release.xcconfig"; sourceTree = "<group>"; };
 		9F3C5B502180ABC60064E1A1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/BeaconLocalizable.strings; sourceTree = "<group>"; };
 		9F3C5B522180ABCA0064E1A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BeaconLocalizable.strings; sourceTree = "<group>"; };
+		B808031A2557C7FBC55470C8 /* libPods-BeaconExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeaconExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F683917B6A084AD1E52C2769 /* Pods-BeaconExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeaconExample.debug.xcconfig"; path = "Target Support Files/Pods-BeaconExample/Pods-BeaconExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FCB4197254B18AF00BC51D7 /* Beacon.xcframework in Frameworks */,
 				3F92439B237DC3F300773547 /* Photos.framework in Frameworks */,
 				4B0C067221B04B03007046E7 /* QuickLook.framework in Frameworks */,
 				4B2681E52119E3D1002D2EC8 /* WebKit.framework in Frameworks */,
@@ -89,23 +88,32 @@
 				4B2681DF2119E315002D2EC8 /* UserNotifications.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
-				4B35C7D420BE0F26000C1573 /* Beacon.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				4B0A6463247D6394000D9D3C /* CoreServices.framework in Frameworks */,
+				4D72BB991A6E41D45AEB9105 /* libPods-BeaconExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A93F7B8CA83D210F679F276 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F683917B6A084AD1E52C2769 /* Pods-BeaconExample.debug.xcconfig */,
+				986EE6E84D13E1FEE1D57D6F /* Pods-BeaconExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				4B2681E22119E383002D2EC8 /* Beacon.bundle */,
 				9611A9001FFBF8B000516839 /* Beacon_Example.entitlements */,
 				6003F593195388D20070C39A /* Example for Beacon */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
+				2A93F7B8CA83D210F679F276 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +128,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3FCB4196254B18AF00BC51D7 /* Beacon.xcframework */,
 				4B0A6462247D6394000D9D3C /* CoreServices.framework */,
 				3F92439A237DC3F300773547 /* Photos.framework */,
 				4B0C067121B04B02007046E7 /* QuickLook.framework */,
@@ -127,10 +136,10 @@
 				4B2681E42119E3D1002D2EC8 /* WebKit.framework */,
 				4B2681E02119E323002D2EC8 /* SafariServices.framework */,
 				4B2681DE2119E315002D2EC8 /* UserNotifications.framework */,
-				4B35C7D320BE0F26000C1573 /* Beacon.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
+				B808031A2557C7FBC55470C8 /* libPods-BeaconExample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -146,8 +155,6 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				9F3C5B512180ABC60064E1A1 /* BeaconLocalizable.strings */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
-				4BD5B41F2447E1EB00C97AA3 /* CarthageInput.xcfilelist */,
-				4BD5B4212447E30100C97AA3 /* CarthageOutput.xcfilelist */,
 				6003F594195388D20070C39A /* Supporting Files */,
 				4BD5B4222447E50400C97AA3 /* BeaconExample-Bridging-Header.h */,
 			);
@@ -174,11 +181,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "BeaconExample" */;
 			buildPhases = (
+				928AE71823BEE4EC6F5F1336 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				4BD5B41E2447E1A700C97AA3 /* Carthage */,
 				4BD5B42A2448106200C97AA3 /* CopyFiles */,
+				363614930B9A4DECB38A5802 /* [CP] Embed Pods Frameworks */,
+				3975B6A65D26EC9A282B8C3B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,6 +210,7 @@
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
 						LastSwiftMigration = 1140;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.iCloud = {
 								enabled = 1;
@@ -239,32 +249,69 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
-				4B2681E32119E383002D2EC8 /* Beacon.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4BD5B41E2447E1A700C97AA3 /* Carthage */ = {
+		363614930B9A4DECB38A5802 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeaconExample/Pods-BeaconExample-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Beacon/Beacon.framework/Beacon",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Beacon.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeaconExample/Pods-BeaconExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3975B6A65D26EC9A282B8C3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BeaconExample/Pods-BeaconExample-resources.sh",
+				"${PODS_ROOT}/Beacon/Beacon.xcframework/ios-arm64/Beacon.framework/Beacon.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Beacon.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BeaconExample/Pods-BeaconExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		928AE71823BEE4EC6F5F1336 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"$(SRCROOT)/Beacon/CarthageInput.xcfilelist",
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = Carthage;
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"$(SRCROOT)/Beacon/CarthageOutput.xcfilelist",
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BeaconExample-checkManifestLockResult.txt",
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -415,6 +462,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F683917B6A084AD1E52C2769 /* Pods-BeaconExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_CODE_COVERAGE = NO;
@@ -451,6 +499,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 986EE6E84D13E1FEE1D57D6F /* Pods-BeaconExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_CODE_COVERAGE = NO;

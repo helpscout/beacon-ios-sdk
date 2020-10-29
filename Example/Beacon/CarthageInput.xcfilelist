@@ -1,5 +1,0 @@
-$(SRCROOT)/../Carthage/Build/iOS/CryptoSwift.framework
-$(SRCROOT)/../Carthage/Build/iOS/HSAttachmentPicker.framework
-$(SRCROOT)/../Carthage/Build/iOS/PusherSwift.framework
-$(SRCROOT)/../Carthage/Build/iOS/Reachability.framework
-$(SRCROOT)/../Carthage/Build/iOS/Starscream.framework

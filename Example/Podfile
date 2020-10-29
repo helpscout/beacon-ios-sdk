@@ -1,0 +1,7 @@
+source 'https://cdn.cocoapods.org/'
+
+platform :ios, '11.0'
+
+target 'BeaconExample' do
+  pod 'Beacon'
+end
