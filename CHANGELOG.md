@@ -2,24 +2,9 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
-## 2.1.0 Release (October 29, 2020)
+## 2.1.0 Release (October 29, 2020) - Removed
 
-##### Features
-* Customers now have a similar experience with Beacon on all platforms: web, Android, or iOS. [Issue 67](https://github.com/helpscout/beacon-ios-sdk/issues/67)
-* Customizing the [focusMode](https://docs.helpscout.com/article/1296-work-with-beacon-modes) configuration value at the SDK or the Beacon config level allows you to change the SDK's behavior and appearance for your users.
-* Beacon now uses the PHPicker when attaching images and videos on iOS 14. Beacon no longer requests permission to the user's photo library when attempting to attach photos or videos. [Issue 119](https://github.com/helpscout/beacon-ios-sdk/issues/119)
-
-##### Bug Fixes
-* User attributes are now set for all logged-in users, even if they haven't sent an email. [Issue 115](https://github.com/helpscout/beacon-ios-sdk/issues/115)
-* Non-logged-in users are now able to change their email address after sending a message. [Issue 120](https://github.com/helpscout/beacon-ios-sdk/issues/120)
-* Selecting the previous conversations button on the sent message screen will now redirect you to the appropriate place. [Issue 108](https://github.com/helpscout/beacon-ios-sdk/issues/108)
-* SwiftUI previews now work as we distribute Beacon 2.1.0 as an XCFramework. [Issue 112](https://github.com/helpscout/beacon-ios-sdk/issues/112)
-* Users will no longer experience a crash when trying to preview chat attachments on iOS 11 and 12.
-
-##### Deprecations
-* `HSBeaconMessagingSettings.showGetInTouch` & `HSBeaconMessagingSettings.showGetInTouchSet` have been deprecated as they're no longer applicable in Beacon 2.1.
-* `HSBeacon.login` has been deprecated in favor of `HSBeacon.identify`. The method parameters have not changed, so replacing calls to login with identify is the only necessary change.
-
+We discovered an issue where under some Beacon configurations the Beacon SDK could not be dismissed.  Because of this we have removed 2.1.0 and will resolve those issues before publishing a new release. Please use 2.0.2 in the mean time, thank you for your patience.
 
 ## 2.0.2 (September 16, 2020)
 
