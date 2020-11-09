@@ -2,8 +2,7 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
-## 2.1.0 Release (November 9, 2020)
-*Version 2.1.0 was originally released on October 29th, but rolled back shortly after we discovered an issue in certain Beacon configurations.  This release fixes that issue.*
+## 2.1.1 Release (November 9, 2020)
 
 ##### Features
 * Customers now have a similar experience with Beacon on all platforms: web, Android, or iOS. [Issue 67](https://github.com/helpscout/beacon-ios-sdk/issues/67)
@@ -20,6 +19,11 @@ To install Beacon, see the [documentation](https://developer.helpscout.com/beaco
 ##### Deprecations
 * `HSBeaconMessagingSettings.showGetInTouch` & `HSBeaconMessagingSettings.showGetInTouchSet` have been deprecated as they're no longer applicable in Beacon 2.1.
 * `HSBeacon.login` has been deprecated in favor of `HSBeacon.identify`. The method parameters have not changed, so replacing calls to login with identify is the only necessary change.
+
+
+## 2.1.0 Release (October 29, 2020) - Removed
+
+We discovered an issue where under some Beacon configurations the Beacon SDK could not be dismissed.  Because of this we have removed 2.1.0 and will resolve those issues before publishing a new release. Please use 2.0.2 in the mean time, thank you for your patience.
 
 ## 2.0.2 (September 16, 2020)
 
