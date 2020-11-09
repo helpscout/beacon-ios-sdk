@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Class/HSBeacon" class="dashAnchor"></a>
     <a title="HSBeacon Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">Beacon Docs</a> (100% documented)</p>
+        <p><a href="../index.html">Beacon 2.1.0 Docs</a> (100% documented)</p>
         <p class="header-right"><a href="https://github.com/helpscout/beacon-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -67,7 +75,24 @@
                 <a href="../Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxSessionValueLength">HSBeaconMaxSessionValueLength</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxUserAvatarLength">HSBeaconMaxUserAvatarLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxUserCompanyLength">HSBeaconMaxUserCompanyLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxUserJobTitleLength">HSBeaconMaxUserJobTitleLength</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Constants.html#/c:@HSBeaconMaximumUserAttributes">HSBeaconMaximumUserAttributes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HSBeaconFocusMode.html">HSBeaconFocusMode</a>
               </li>
             </ul>
           </li>
@@ -93,7 +118,13 @@
             <h1>HSBeacon</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">HSBeacon</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">HSBeacon</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
@@ -154,6 +185,11 @@ method before showing the Beacon.</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openBeacon</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">open</span><span class="p">(</span><span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -204,6 +240,11 @@ method before showing the Beacon.</p>
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openBeacon</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
          <span class="nf">signature</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">open</span><span class="p">(</span><span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -266,6 +307,11 @@ will be presented as a modal.</p>
     <span class="nf">fromViewController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">open</span><span class="p">(</span><span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="n">from</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -325,6 +371,11 @@ will be presented as a modal.</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openBeacon</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
     <span class="nf">fromViewController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span>
              <span class="nf">signature</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">open</span><span class="p">(</span><span class="n">_</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="n">from</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -397,6 +448,11 @@ will be presented as a modal.</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">dismissBeacon</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">_Nullable</span><span class="p">)(</span><span class="kt">void</span><span class="p">))</span><span class="nv">completion</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">dismiss</span><span class="p">(</span><span class="n">_</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -406,13 +462,18 @@ will be presented as a modal.</p>
                     <code>
                     <a name="/c:objc(cs)HSBeacon(cm)login:"></a>
                     <a name="//apple_ref/objc/Method/+login:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)login:">+login:<wbr></a>
+                    <a class="token discouraged" href="#/c:objc(cs)HSBeacon(cm)login:">+login:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Please use HSBeacon.identify instead</p>
+
+                      </div>
                       <div class="abstract">
                         <p>Signs in with a Beacon user. This gives Beacon access to the user&rsquo;s name, email
 address, and signature.</p>
@@ -423,6 +484,11 @@ address, and signature.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">login</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconUser.html">HSBeaconUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">login</span><span class="p">(</span><span class="n">_</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconUser.html">HSBeaconUser</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="k">Self</span></code></pre>
 
                         </div>
                       </div>
@@ -439,6 +505,58 @@ address, and signature.</p>
                               <td>
                                 <div>
                                   <p>The Beacon user to login</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)HSBeacon(cm)identify:"></a>
+                    <a name="//apple_ref/objc/Method/+identify:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)HSBeacon(cm)identify:">+identify:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Signs in with a Beacon user. This gives Beacon access to the user&rsquo;s name, email
+address, and signature.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">identify</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconUser.html">HSBeaconUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">identify</span><span class="p">(</span><span class="n">_</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconUser.html">HSBeaconUser</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>user</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Beacon user to identify</p>
                                 </div>
                               </td>
                             </tr>
@@ -471,6 +589,11 @@ address, and signature.</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n"><a href="../Classes/HSBeaconUser.html">HSBeaconUser</a></span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="n">currentUser</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">currentUser</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/HSBeaconUser.html">HSBeaconUser</a></span><span class="p">?</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -499,23 +622,15 @@ storage.</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">logout</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">logout</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Suggestions"></a>
-                <a name="//apple_ref/objc/Section/Suggestions" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Suggestions"></a>
-                  <h3 class="section-name"><p>Suggestions</p>
-</h3>
-                </div>
-              </div>
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -541,6 +656,11 @@ next open.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">suggest</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSArray</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">articleIds</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">suggest</span><span class="p">(</span><span class="n">_</span> <span class="nv">articleIds</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
 
                         </div>
                       </div>
@@ -619,19 +739,6 @@ data will change on the next open.</p>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Push%20Notifications"></a>
-                <a name="//apple_ref/objc/Section/Push Notifications" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Push%20Notifications"></a>
-                  <h3 class="section-name"><p>Push Notifications</p>
-</h3>
-                </div>
-              </div>
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -654,6 +761,11 @@ intend to receive push notifications with a manual setup.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">initializeBeaconPushNotificationSupport</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">initializeBeaconPushNotificationSupport</span><span class="p">()</span></code></pre>
 
                         </div>
                       </div>
@@ -692,6 +804,11 @@ application:didFailToRegisterForRemoteNotificationsWithError:</p>
             <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">methodSwizzling</span>
                                 <span class="nf">overrideUserNotificationCenterDelegate</span><span class="p">:</span>
                                     <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nv">overrideDelegate</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">initializeAutomaticPushNotificationHandling</span><span class="p">(</span><span class="n">withMethodSwizzling</span> <span class="nv">methodSwizzling</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">overrideUserNotificationCenterDelegate</span> <span class="nv">overrideDelegate</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -756,6 +873,11 @@ push notification handling.</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">setDeviceToken</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSData</span> <span class="o">*</span><span class="p">)</span><span class="nv">deviceToken</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">setDeviceToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">deviceToken</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -785,6 +907,11 @@ You only need to call this for manual push notification handling.</p>
     <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">failedToRegisterForRemoteNotificationsWithError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -811,6 +938,11 @@ this method before calling <code>handlePushNotification:</code>.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">isBeaconPushNotification</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">userInfo</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">isBeaconPushNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -845,6 +977,11 @@ the expected format, this method does nothing.</p>
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">handlePushNotification</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">userInfo</span>
                 <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">handlePushNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -906,6 +1043,11 @@ the expected format, this method does nothing.</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">handlePushNotification</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">userInfo</span>
                 <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
                 <span class="nf">viewController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">handlePushNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -986,6 +1128,11 @@ the expected format, this method does nothing.</p>
                      <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">handlePushNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -1058,6 +1205,11 @@ the expected format, this method does nothing.</p>
                 <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
                 <span class="nf">viewController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span>
                      <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">handlePushNotification</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -1141,7 +1293,14 @@ the expected format, this method does nothing.</p>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">handleWillPresentNotification</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UNNotification</span> <span class="o">*</span><span class="p">)</span><span class="nv">notification</span>
-                <span class="nf">withCompletionHandler</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="kt">int</span><span class="p">))</span><span class="nv">completionHandler</span><span class="p">;</span></code></pre>
+                <span class="nf">withCompletionHandler</span><span class="p">:</span>
+                    <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">UNNotificationPresentationOptions</span><span class="p">))</span>
+                        <span class="n">completionHandler</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">handleWillPresent</span><span class="p">(</span><span class="n">_</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">UNNotification</span><span class="p">,</span> <span class="n">withCompletionHandler</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">UNNotificationPresentationOptions</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1179,19 +1338,6 @@ the expected format, this method does nothing.</p>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Search"></a>
-                <a name="//apple_ref/objc/Section/Search" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Search"></a>
-                  <h3 class="section-name"><p>Search</p>
-</h3>
-                </div>
-              </div>
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -1219,6 +1365,11 @@ the expected format, this method does nothing.</p>
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">search</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">text</span>
     <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">search</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1279,6 +1430,11 @@ the expected format, this method does nothing.</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">search</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">text</span>
     <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
     <span class="nf">viewController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">search</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1358,6 +1514,11 @@ the expected format, this method does nothing.</p>
          <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">search</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -1431,6 +1592,11 @@ the expected format, this method does nothing.</p>
          <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">search</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -1490,19 +1656,6 @@ the expected format, this method does nothing.</p>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Navigation"></a>
-                <a name="//apple_ref/objc/Section/Navigation" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Navigation"></a>
-                  <h3 class="section-name"><p>Navigation</p>
-</h3>
-                </div>
-              </div>
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -1533,6 +1686,11 @@ the expected format, this method does nothing.</p>
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">navigate</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">route</span>
     <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">navigate</span><span class="p">(</span><span class="n">_</span> <span class="nv">route</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1596,6 +1754,11 @@ the expected format, this method does nothing.</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">navigate</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">route</span>
     <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
     <span class="nf">viewController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">navigate</span><span class="p">(</span><span class="n">_</span> <span class="nv">route</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1678,6 +1841,11 @@ the expected format, this method does nothing.</p>
          <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">navigate</span><span class="p">(</span><span class="n">_</span> <span class="nv">route</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -1754,6 +1922,11 @@ the expected format, this method does nothing.</p>
          <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">navigate</span><span class="p">(</span><span class="n">_</span> <span class="nv">route</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -1813,19 +1986,6 @@ the expected format, this method does nothing.</p>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Open%20article"></a>
-                <a name="//apple_ref/objc/Section/Open article" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Open%20article"></a>
-                  <h3 class="section-name"><p>Open article</p>
-</h3>
-                </div>
-              </div>
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -1853,6 +2013,11 @@ the expected format, this method does nothing.</p>
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openArticle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">articleId</span>
      <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">openArticle</span><span class="p">(</span><span class="n">_</span> <span class="nv">articleId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1913,6 +2078,11 @@ the expected format, this method does nothing.</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">openArticle</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">articleId</span>
      <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
      <span class="nf">viewController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">openArticle</span><span class="p">(</span><span class="n">_</span> <span class="nv">articleId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -1992,6 +2162,11 @@ the expected format, this method does nothing.</p>
           <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">openArticle</span><span class="p">(</span><span class="n">_</span> <span class="nv">articleId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
                       </div>
                       <div>
                         <h4>Parameters</h4>
@@ -2063,6 +2238,11 @@ the expected format, this method does nothing.</p>
      <span class="nf">beaconSettings</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">settings</span>
      <span class="nf">viewController</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">UIViewController</span> <span class="o">*</span><span class="p">)</span><span class="nv">viewController</span>
           <span class="nf">signature</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="nv">signature</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">openArticle</span><span class="p">(</span><span class="n">_</span> <span class="nv">articleId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">beaconSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt"><a href="../Classes/HSBeaconSettings.html">HSBeaconSettings</a></span><span class="p">,</span> <span class="nv">viewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nv">signature</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
 
                         </div>
                       </div>
@@ -2149,23 +2329,15 @@ the expected format, this method does nothing.</p>
                           <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">reset</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">reset</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Unavailable%20Methods"></a>
-                <a name="//apple_ref/objc/Section/Unavailable Methods" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Unavailable%20Methods"></a>
-                  <h3 class="section-name"><p>Unavailable Methods</p>
-</h3>
-                </div>
-              </div>
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -2204,8 +2376,8 @@ Use the <code>openBeacon:</code> methods to display the Beacon SDK.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2020-08-31)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/helpscout" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2020-10-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

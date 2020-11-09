@@ -8,14 +8,22 @@
     <script src="js/jquery.min.js" defer></script>
     <script src="js/jazzy.js" defer></script>
     
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Section/Constants" class="dashAnchor"></a>
     <a title="Constants  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">Beacon Docs</a> (100% documented)</p>
+        <p><a href="index.html">Beacon 2.1.0 Docs</a> (100% documented)</p>
         <p class="header-right"><a href="https://github.com/helpscout/beacon-ios-sdk"><img src="img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -67,7 +75,24 @@
                 <a href="Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxSessionValueLength">HSBeaconMaxSessionValueLength</a>
               </li>
               <li class="nav-group-task">
+                <a href="Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxUserAvatarLength">HSBeaconMaxUserAvatarLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxUserCompanyLength">HSBeaconMaxUserCompanyLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxUserJobTitleLength">HSBeaconMaxUserJobTitleLength</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Constants.html#/c:@HSBeaconMaximumUserAttributes">HSBeaconMaximumUserAttributes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/HSBeaconFocusMode.html">HSBeaconFocusMode</a>
               </li>
             </ul>
           </li>
@@ -120,6 +145,11 @@
                           <pre class="highlight objective_c"><code><span class="k">static</span> <span class="k">const</span> <span class="n">NSInteger</span> <span class="n">HSBeaconMaxSessionAttributesCount</span> <span class="o">=</span> <span class="mi">20</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">HSBeaconMaxSessionAttributesCount</span><span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -145,6 +175,11 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">static</span> <span class="k">const</span> <span class="n">NSInteger</span> <span class="n">HSBeaconMaxSessionLabelLength</span> <span class="o">=</span> <span class="mi">100</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">HSBeaconMaxSessionLabelLength</span><span class="p">:</span> <span class="kt">Int32</span></code></pre>
 
                         </div>
                       </div>
@@ -174,6 +209,107 @@
                           <pre class="highlight objective_c"><code><span class="k">static</span> <span class="k">const</span> <span class="n">NSInteger</span> <span class="n">HSBeaconMaxSessionValueLength</span> <span class="o">=</span> <span class="mi">10000</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">HSBeaconMaxSessionValueLength</span><span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:HSBeaconConstants.h@HSBeaconMaxUserCompanyLength"></a>
+                    <a name="//apple_ref/objc/Constant/HSBeaconMaxUserCompanyLength" class="dashAnchor"></a>
+                    <a class="token" href="#/c:HSBeaconConstants.h@HSBeaconMaxUserCompanyLength">HSBeaconMaxUserCompanyLength</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The maximum length of the <code>compamy</code> value on HSBeaconUser</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">static</span> <span class="k">const</span> <span class="n">NSInteger</span> <span class="n">HSBeaconMaxUserCompanyLength</span> <span class="o">=</span> <span class="mi">60</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">HSBeaconMaxUserCompanyLength</span><span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:HSBeaconConstants.h@HSBeaconMaxUserJobTitleLength"></a>
+                    <a name="//apple_ref/objc/Constant/HSBeaconMaxUserJobTitleLength" class="dashAnchor"></a>
+                    <a class="token" href="#/c:HSBeaconConstants.h@HSBeaconMaxUserJobTitleLength">HSBeaconMaxUserJobTitleLength</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The maximum length of the <code>jobTitle</code> value on HSBeaconUser</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">static</span> <span class="k">const</span> <span class="n">NSInteger</span> <span class="n">HSBeaconMaxUserJobTitleLength</span> <span class="o">=</span> <span class="mi">60</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">HSBeaconMaxUserJobTitleLength</span><span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:HSBeaconConstants.h@HSBeaconMaxUserAvatarLength"></a>
+                    <a name="//apple_ref/objc/Constant/HSBeaconMaxUserAvatarLength" class="dashAnchor"></a>
+                    <a class="token" href="#/c:HSBeaconConstants.h@HSBeaconMaxUserAvatarLength">HSBeaconMaxUserAvatarLength</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The maximum length of the <code>avatar</code> value on HSBeaconUser</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">static</span> <span class="k">const</span> <span class="n">NSInteger</span> <span class="n">HSBeaconMaxUserAvatarLength</span> <span class="o">=</span> <span class="mi">200</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">HSBeaconMaxUserAvatarLength</span><span class="p">:</span> <span class="kt">Int32</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -201,6 +337,11 @@
                           <pre class="highlight objective_c"><code><span class="k">extern</span> <span class="k">const</span> <span class="n">NSUInteger</span> <span class="n">HSBeaconMaximumUserAttributes</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">HSBeaconMaximumUserAttributes</span><span class="p">:</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -210,8 +351,8 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2020-08-31)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/helpscout" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2020-10-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

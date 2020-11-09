@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Class/HSBeaconMessagingSettings" class="dashAnchor"></a>
     <a title="HSBeaconMessagingSettings Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">Beacon Docs</a> (100% documented)</p>
+        <p><a href="../index.html">Beacon 2.1.0 Docs</a> (100% documented)</p>
         <p class="header-right"><a href="https://github.com/helpscout/beacon-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -67,7 +75,24 @@
                 <a href="../Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxSessionValueLength">HSBeaconMaxSessionValueLength</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxUserAvatarLength">HSBeaconMaxUserAvatarLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxUserCompanyLength">HSBeaconMaxUserCompanyLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxUserJobTitleLength">HSBeaconMaxUserJobTitleLength</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Constants.html#/c:@HSBeaconMaximumUserAttributes">HSBeaconMaximumUserAttributes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HSBeaconFocusMode.html">HSBeaconFocusMode</a>
               </li>
             </ul>
           </li>
@@ -93,7 +118,13 @@
             <h1>HSBeaconMessagingSettings</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">HSBeaconMessagingSettings</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">HSBeaconMessagingSettings</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
@@ -130,6 +161,11 @@ set <code>messagingSettings</code> on <code><a href="../Classes/HSBeaconSettings
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormCustomFieldsEnabled</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">contactFormCustomFieldsEnabled</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -155,6 +191,11 @@ set <code>messagingSettings</code> on <code><a href="../Classes/HSBeaconSettings
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowNameField</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">contactFormShowNameField</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -184,6 +225,11 @@ set <code>messagingSettings</code> on <code><a href="../Classes/HSBeaconSettings
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowNameFieldSet</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">contactFormShowNameFieldSet</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -211,6 +257,11 @@ set <code>messagingSettings</code> on <code><a href="../Classes/HSBeaconSettings
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowSubjectField</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">contactFormShowSubjectField</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -228,7 +279,7 @@ set <code>messagingSettings</code> on <code><a href="../Classes/HSBeaconSettings
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Was contactFormShowSubjectFieldSet set with a local override.</p>
+                        <p>Was contactFormShowSubjectField set with a local override.</p>
 
                       </div>
                       <div class="declaration">
@@ -236,6 +287,11 @@ set <code>messagingSettings</code> on <code><a href="../Classes/HSBeaconSettings
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormShowSubjectFieldSet</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">contactFormShowSubjectFieldSet</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -265,6 +321,11 @@ set <code>messagingSettings</code> on <code><a href="../Classes/HSBeaconSettings
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormAllowAttachments</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">contactFormAllowAttachments</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -292,6 +353,11 @@ set <code>messagingSettings</code> on <code><a href="../Classes/HSBeaconSettings
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">contactFormAllowAttachmentsSet</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">contactFormAllowAttachmentsSet</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -301,13 +367,18 @@ set <code>messagingSettings</code> on <code><a href="../Classes/HSBeaconSettings
                     <code>
                     <a name="/c:objc(cs)HSBeaconMessagingSettings(py)showGetInTouch"></a>
                     <a name="//apple_ref/objc/Property/showGetInTouch" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeaconMessagingSettings(py)showGetInTouch">showGetInTouch</a>
+                    <a class="token discouraged" href="#/c:objc(cs)HSBeaconMessagingSettings(py)showGetInTouch">showGetInTouch</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Beacon 2.1 no longer shows contact links on the home screen.  To customize the home screen experience take a look at <code><a href="../Classes/HSBeaconSettings.html#/c:objc(cs)HSBeaconSettings(py)focusModeOverride">HSBeaconSettings.focusModeOverride</a></code></p>
+
+                      </div>
                       <div class="abstract">
                         <p>Show a contact link on the Beacon home screen.</p>
 
@@ -319,6 +390,11 @@ set <code>messagingSettings</code> on <code><a href="../Classes/HSBeaconSettings
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showGetInTouch</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">showGetInTouch</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -328,13 +404,18 @@ set <code>messagingSettings</code> on <code><a href="../Classes/HSBeaconSettings
                     <code>
                     <a name="/c:objc(cs)HSBeaconMessagingSettings(py)showGetInTouchSet"></a>
                     <a name="//apple_ref/objc/Property/showGetInTouchSet" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeaconMessagingSettings(py)showGetInTouchSet">showGetInTouchSet</a>
+                    <a class="token discouraged" href="#/c:objc(cs)HSBeaconMessagingSettings(py)showGetInTouchSet">showGetInTouchSet</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
+                      <div class="aside aside-deprecated">
+                        <p class="aside-title">Deprecated</p>
+                        <p>Beacon 2.1 no longer shows contact links on the home screen.  To customize the home screen experience take a look at <code><a href="../Classes/HSBeaconSettings.html#/c:objc(cs)HSBeaconSettings(py)focusModeOverride">HSBeaconSettings.focusModeOverride</a></code></p>
+
+                      </div>
                       <div class="abstract">
                         <p>Returns whether <code><a href="../Classes/HSBeaconMessagingSettings.html#/c:objc(cs)HSBeaconMessagingSettings(py)showGetInTouch">showGetInTouch</a></code> was set with a local override.</p>
 
@@ -344,6 +425,11 @@ set <code>messagingSettings</code> on <code><a href="../Classes/HSBeaconSettings
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showGetInTouchSet</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">showGetInTouchSet</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
 
                         </div>
                       </div>
@@ -378,6 +464,11 @@ set <code>messagingSettings</code> on <code><a href="../Classes/HSBeaconSettings
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">showPrefilledCustomFields</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">showPrefilledCustomFields</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -387,8 +478,8 @@ set <code>messagingSettings</code> on <code><a href="../Classes/HSBeaconSettings
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2020-08-31)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/helpscout" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2020-10-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>

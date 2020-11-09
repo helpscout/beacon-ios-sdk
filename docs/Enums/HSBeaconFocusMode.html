@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>HSBeaconArticleSuggestion Class Reference</title>
+    <title>HSBeaconFocusMode Enumeration Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Class/HSBeaconArticleSuggestion" class="dashAnchor"></a>
-    <a title="HSBeaconArticleSuggestion Class Reference"></a>
+    <a name="//apple_ref/objc/Enum/HSBeaconFocusMode" class="dashAnchor"></a>
+    <a title="HSBeaconFocusMode Enumeration Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">Beacon 2.1.0 Docs</a> (100% documented)</p>
@@ -30,7 +30,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">Beacon Reference</a>
         <img id="carat" src="../img/carat.png" />
-        HSBeaconArticleSuggestion Class Reference
+        HSBeaconFocusMode Enumeration Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -115,21 +115,22 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>HSBeaconArticleSuggestion</h1>
+            <h1>HSBeaconFocusMode</h1>
               <div class="declaration">
                 <div class="language">
                   <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">HSBeaconArticleSuggestion</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols.html#/c:objc(pl)HSBeaconSuggestionItem">HSBeaconSuggestionItem</a></span><span class="o">&gt;</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">HSBeaconFocusMode</span> <span class="p">{}</span></code></pre>
 
                 </div>
                 <div class="language">
                   <p class="aside-title">Swift</p>
-                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">HSBeaconArticleSuggestion</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols.html#/c:objc(pl)HSBeaconSuggestionItem">HSBeaconSuggestionItem</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">HSBeaconFocusMode</span> <span class="p">:</span> <span class="kt">UInt</span></code></pre>
 
                 </div>
               </div>
-            <p>Provide an article id for suggestion overrides. The article title and url is looked
-up from Help Scout before rendering the suggestion.</p>
+            <p>HSBeaconFocusMode represents various configuration modes of Beacon.
+Allowing you to customize the experience your users have, from getting in contact
+right away, to a more self service approach.  More info is available AT <a href="https://docs.helpscout.com/article/1296-work-with-beacon-modes">https://docs.helpscout.com/article/1296-work-with-beacon-modes</a></p>
 
           </section>
           <section class="section task-group-section">
@@ -138,9 +139,9 @@ up from Help Scout before rendering the suggestion.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)HSBeaconArticleSuggestion(im)initWithId:"></a>
-                    <a name="//apple_ref/objc/Method/-initWithId:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeaconArticleSuggestion(im)initWithId:">-initWithId:<wbr></a>
+                    <a name="/c:@E@HSBeaconFocusMode@HSBeaconFocusModeNeutral"></a>
+                    <a name="//apple_ref/objc/Case/HSBeaconFocusModeNeutral" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@HSBeaconFocusMode@HSBeaconFocusModeNeutral">HSBeaconFocusModeNeutral</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -148,23 +149,19 @@ up from Help Scout before rendering the suggestion.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Initialize with the specified article id.</p>
-
-<p>Article IDs can be found in Help Scout by navigating to the article and copying the
-article ID from the URL. The URL is structured like this:
-<a href="https://secure.helpscout.net/docs/%5BCOLLECTION">https://secure.helpscout.net/docs/[COLLECTION</a> ID]/article/[ARTICLE ID]/</p>
+                        <p>An option to see both help articles and contact options side by side</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">articleId</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">HSBeaconFocusModeNeutral</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">id</span> <span class="nv">articleId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">neutral</span> <span class="o">=</span> <span class="mi">0</span></code></pre>
 
                         </div>
                       </div>
@@ -174,9 +171,9 @@ article ID from the URL. The URL is structured like this:
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)HSBeaconArticleSuggestion(py)articleId"></a>
-                    <a name="//apple_ref/objc/Property/articleId" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(cs)HSBeaconArticleSuggestion(py)articleId">articleId</a>
+                    <a name="/c:@E@HSBeaconFocusMode@HSBeaconFocusModeSelfService"></a>
+                    <a name="//apple_ref/objc/Case/HSBeaconFocusModeSelfService" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@HSBeaconFocusMode@HSBeaconFocusModeSelfService">HSBeaconFocusModeSelfService</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -184,19 +181,19 @@ article ID from the URL. The URL is structured like this:
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The article id to look up and show in the suggestions table.</p>
+                        <p>An option to see help articles first and contact options after interacting with content</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">articleId</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">HSBeaconFocusModeSelfService</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">articleId</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">selfService</span> <span class="o">=</span> <span class="mi">1</span></code></pre>
 
                         </div>
                       </div>
@@ -206,28 +203,29 @@ article ID from the URL. The URL is structured like this:
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(cs)HSBeaconArticleSuggestion(im)init"></a>
-                    <a name="//apple_ref/objc/Method/-init" class="dashAnchor"></a>
-                    <a class="token discouraged" href="#/c:objc(cs)HSBeaconArticleSuggestion(im)init">-init</a>
+                    <a name="/c:@E@HSBeaconFocusMode@HSBeaconFocusModeAskFirst"></a>
+                    <a name="//apple_ref/objc/Case/HSBeaconFocusModeAskFirst" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@HSBeaconFocusMode@HSBeaconFocusModeAskFirst">HSBeaconFocusModeAskFirst</a>
                     </code>
                   </div>
                   <div class="height-container">
                     <div class="pointer-container"></div>
                     <section class="section">
                       <div class="pointer"></div>
-                      <div class="aside aside-unavailable">
-                        <p class="aside-title">Unavailable</p>
-                        
-                      </div>
                       <div class="abstract">
-                        <p>HSBeaconArticleSuggestion objects are immutable, so always initialze with the articleId constructor.</p>
+                        <p>An option to see contact options first and help articles second</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="n">init</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="n">HSBeaconFocusModeAskFirst</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">case</span> <span class="n">askFirst</span> <span class="o">=</span> <span class="mi">2</span></code></pre>
 
                         </div>
                       </div>

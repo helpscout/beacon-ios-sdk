@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Protocols  Reference</title>
+    <title>Enumerations  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Section/Protocols" class="dashAnchor"></a>
-    <a title="Protocols  Reference"></a>
+    <a name="//apple_ref/objc/Section/Enumerations" class="dashAnchor"></a>
+    <a title="Enumerations  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html">Beacon 2.1.0 Docs</a> (100% documented)</p>
@@ -30,7 +30,7 @@
       <p id="breadcrumbs">
         <a href="index.html">Beacon Reference</a>
         <img id="carat" src="img/carat.png" />
-        Protocols  Reference
+        Enumerations  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -115,8 +115,8 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Protocols</h1>
-            <p>The following protocols are available globally.</p>
+            <h1>Enumerations</h1>
+            <p>The following enumerations are available globally.</p>
 
           </section>
           <section class="section task-group-section">
@@ -125,9 +125,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(pl)HSBeaconContactFormAttachment"></a>
-                    <a name="//apple_ref/objc/Protocol/HSBeaconContactFormAttachment" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)HSBeaconContactFormAttachment">HSBeaconContactFormAttachment</a>
+                    <a name="/c:@E@HSBeaconFocusMode"></a>
+                    <a name="//apple_ref/objc/Enum/HSBeaconFocusMode" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@E@HSBeaconFocusMode">HSBeaconFocusMode</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -135,87 +135,22 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A file attached to the new conversation contact form.</p>
+                        <p>HSBeaconFocusMode represents various configuration modes of Beacon.
+Allowing you to customize the experience your users have, from getting in contact
+right away, to a more self service approach.  More info is available AT <a href="https://docs.helpscout.com/article/1296-work-with-beacon-modes">https://docs.helpscout.com/article/1296-work-with-beacon-modes</a></p>
 
-                        <a href="Protocols/HSBeaconContactFormAttachment.html" class="slightly-smaller">See more</a>
+                        <a href="Enums/HSBeaconFocusMode.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HSBeaconContactFormAttachment</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">enum</span> <span class="n">HSBeaconFocusMode</span> <span class="p">{}</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HSBeaconContactFormAttachment</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(pl)HSBeaconDelegate"></a>
-                    <a name="//apple_ref/objc/Protocol/HSBeaconDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)HSBeaconDelegate">HSBeaconDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><code>HSBeaconDelegate</code> can optionally be set on your <code><a href="Classes/HSBeaconSettings.html">HSBeaconSettings</a></code> object to customize
-the runtime behavior of the Beacon SDK.</p>
-
-                        <a href="Protocols/HSBeaconDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HSBeaconDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HSBeaconDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(pl)HSBeaconSuggestionItem"></a>
-                    <a name="//apple_ref/objc/Protocol/HSBeaconSuggestionItem" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)HSBeaconSuggestionItem">HSBeaconSuggestionItem</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>This protocol indicates an object can be passed into suggesiton overides via the
-<code><a href="Classes/HSBeacon.html">HSBeacon</a></code> <code>suggestWithItems:</code> method.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">HSBeaconSuggestionItem</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">HSBeaconSuggestionItem</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">enum</span> <span class="kt">HSBeaconFocusMode</span> <span class="p">:</span> <span class="kt">UInt</span></code></pre>
 
                         </div>
                       </div>

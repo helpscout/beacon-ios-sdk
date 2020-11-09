@@ -8,14 +8,22 @@
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
     <a name="//apple_ref/objc/Class/HSBeaconArticleSuggestion" class="dashAnchor"></a>
     <a title="HSBeaconArticleSuggestion Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">Beacon Docs</a> (100% documented)</p>
+        <p><a href="../index.html">Beacon 2.1.0 Docs</a> (100% documented)</p>
         <p class="header-right"><a href="https://github.com/helpscout/beacon-ios-sdk"><img src="../img/gh.png"/>View on GitHub</a></p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -67,7 +75,24 @@
                 <a href="../Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxSessionValueLength">HSBeaconMaxSessionValueLength</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxUserAvatarLength">HSBeaconMaxUserAvatarLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxUserCompanyLength">HSBeaconMaxUserCompanyLength</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:HSBeaconConstants.h@HSBeaconMaxUserJobTitleLength">HSBeaconMaxUserJobTitleLength</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Constants.html#/c:@HSBeaconMaximumUserAttributes">HSBeaconMaximumUserAttributes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/HSBeaconFocusMode.html">HSBeaconFocusMode</a>
               </li>
             </ul>
           </li>
@@ -93,7 +118,13 @@
             <h1>HSBeaconArticleSuggestion</h1>
               <div class="declaration">
                 <div class="language">
+                  <p class="aside-title">Objective-C</p>
                   <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">HSBeaconArticleSuggestion</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n"><a href="../Protocols.html#/c:objc(pl)HSBeaconSuggestionItem">HSBeaconSuggestionItem</a></span><span class="o">&gt;</span></code></pre>
+
+                </div>
+                <div class="language">
+                  <p class="aside-title">Swift</p>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">HSBeaconArticleSuggestion</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols.html#/c:objc(pl)HSBeaconSuggestionItem">HSBeaconSuggestionItem</a></span></code></pre>
 
                 </div>
               </div>
@@ -131,6 +162,11 @@ article ID from the URL. The URL is structured like this:
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">initWithId</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">articleId</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">id</span> <span class="nv">articleId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -158,23 +194,15 @@ article ID from the URL. The URL is structured like this:
                           <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">_Nonnull</span> <span class="n">articleId</span><span class="p">;</span></code></pre>
 
                         </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">articleId</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <div class="task-name-container">
-                <a name="/Unavailable%20Methods"></a>
-                <a name="//apple_ref/objc/Section/Unavailable Methods" class="dashAnchor"></a>
-                <div class="section-name-container">
-                  <a class="section-name-link" href="#/Unavailable%20Methods"></a>
-                  <h3 class="section-name"><p>Unavailable Methods</p>
-</h3>
-                </div>
-              </div>
-              <ul>
                 <li class="item">
                   <div>
                     <code>
@@ -211,8 +239,8 @@ article ID from the URL. The URL is structured like this:
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2020 <a class="link" href="" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2020-08-31)</p>
-          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+          <p>&copy; 2020 <a class="link" href="https://github.com/helpscout" target="_blank" rel="external">Help Scout</a>. All rights reserved. (Last updated: 2020-10-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
     </div>
