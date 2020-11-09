@@ -37,7 +37,7 @@ _Because of the way Beacon is distributed, attempting to use the `--no-use-binar
 
 ### Manually
 
-Beacon can be installed manually by linking the `Beacon.xcframework`. To do so, download the `Beacon.xcframework.zip` from [here](https://github.com/helpscout/beacon-ios-sdk/releases) and integrate it similar to [how Carthage integrates frameworks](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application).
+Beacon can be installed manually by linking the `Beacon.xcframework`. To do so, download the `Beacon.xcframework.zip` from [here](https://github.com/helpscout/beacon-ios-sdk/releases) and [add Beacon.xcframework to your Xcode project](https://developer.apple.com/library/archive/technotes/tn2435/_index.html).
 
 ## Additional Setup
 
