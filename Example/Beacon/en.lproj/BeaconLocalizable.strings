@@ -1,4 +1,4 @@
-/* SDK specific */
+/*** SDK specific ***/
 /* title for Beacon landing page */
 "Support"="Support";
 
@@ -32,23 +32,21 @@
 /* Ask Selection Screen */
 
 /* Context: Title Label on Ask Screen */
-"askSelectionStartAConvo"="Start a conversation";
+"wereHereToHelp"="Start a conversation";
 /* Context: Subtitle Label on Ask Screen */
-"askSelectionChannelPreference"="What channel do you prefer?";
-/* Context: Alternative Title Label on Ask Screen when only email is available */
-"askSelectionHowCanWeHelp"="How can we help?";
-/* Context: Subtitle Label on Ask Screen when only email is available */
-"askSelectionWellGetBackShortly"="We'll get back to you shortly";
+"whatMethodWorks"="What channel do you prefer?";
 /* Context: Email Card Title Label on Ask Screen */
-"email"="Email";
+"messageButtonLabel"="Email";
 /* Context: Email Card Subtitle Label on Ask Screen */
-"askSelectionEmailSubtitle"="No time to wait around? We usually respond within a few hours";
+"noTimeToWaitAround"="No time to wait around? We usually respond within a few hours";
 /* Context: Chat Card Title Label on Ask Screen */
-"chat"="Chat";
+"chatButtonLabel"="Chat";
 /* Context: Chat Card Subtitle Label on Ask Screen */
-"askSelectionChatSubtitle"="We're online right now, talk with our team in real-time";
+"chatButtonDescription"="We're online right now, talk with our team in real-time";
 /* Context: Previous Conversations button on Ask Screen */
-"previousConversations"="Previous conversations";
+"previousMessages"="Previous conversations";
+/* Context: Previous Conversations button `New` badge on ask screen */
+"newCount"="%@ New";
 
 /* CHAT */
 
@@ -58,22 +56,38 @@
 /* Placeholder text for chat input expecting an email address */
 "genericEmailAddress"="email@address.com";
 
-"chatMessageSendingFailed"="Message failed to send. Tap to try again";
+"chatMessageSendingFailed"="Message failed to send. Tap to try again.";
+"chatAttachmentSendingFailed"="Attachment failed to send. Tap to try again.";
+"chatAttachmentUnsupportedFile"="Unsupported file. Message not sent.";
+"chatAttachmentSending"="Sending...";
+"chatAttachmentDownloading"="Downloading";
+"chatAttachmentDownloadFailed"="Download failed";
+"chatAttachmentTryAgain"="Tap to try again";
+"attachmentSizeErrorText"="Attachments may be no larger than 10MB";
+"chatMaxAttachmentsReached"="Sorry, you can’t send more than %@ attachments.";
+"chatHeadingTitle" = "Chat with our team";
+"chatPleaseWait"="Hang on in there";
+"chatHeadingSublabel"="We'll be with you soon";
+"chatAgentTitle"="Customer Champ";
 
 /* Post-Chat Status */
 
 "chatEndedTitle"="Chat Ended";
 
-"chatEndedSuccessTitle"="All done!";
+"chatEndCalloutHeading"="All done!";
 
-"chatEndedSuccessMessage"="A copy of this conversation will land in your inbox shortly.";
+"chatEndCalloutMessage"="A copy of this conversation will land in your inbox shortly.";
 
-"chatEndedInactivityTitle" = "​​Sorry about that";
+"chatEndWaitingCustomerHeading" = "​​Sorry about that";
 
-"chatEndedInactivityMessage" = "​​​​It looks like nobody made it to your chat. We'll send you an email response as soon as possible.";
+"chatEndUnassignedCalloutMessage" = "​​​​It looks like nobody made it to your chat. We'll send you an email response as soon as possible.";
+
+"chatAvailabilityChangeMessage" = "Our team's availability has changed and there's no longer anyone available to chat. Send us a message instead and we'll get back to you.";
 
 "backToHome"="Back to Home";
 "viewConversation"="View Conversation";
+
+"chatMinimizeOrEndSessionMessage" = "Minimize or end your chat session";
 
 /* Help Bot strings */
 
@@ -102,15 +116,16 @@
 "chatbotAgentDisconnectedMessage"="%@ has disconnected from the chat. It’s possible they lost their internet connection, so I’m looking for someone else to take over. Sorry for the delay!";
 
 /* Context: Agent connected */
-"chatbotAgentConnectedMessage"="Connected with %@";
+"chatConnected"="Connected to %@";
 
-/* Context: Default name for an Agent used with "chatbotAgentConnectedMessage" to read "Connected with an agent" */
+/* Context: Default name for an Agent used with "chatConnected" to read "Connected to an agent" */
 "chatbotAgentDefaultAgent"="an agent";
 
 /* Accessibility labels for buttons */
 "backButtonAccessibilityLabel"="Back";
 "closeButtonAccessibilityLabel"="Close";
 "attachmentButtonAccessibilityLabel"="Attach File";
+"exitChatButtonAccessibilityLabel"="Exit Chat";
 
 /* Attachment Picker Errors */
 
@@ -136,6 +151,9 @@
 /* Placeholder for message entry */
 "addYourMessageHere"="How can we help?";
 
+/* Nav bar title for docs only search */
+"suggestedForYou"="Instant Answers";
+
 /* Label for docs tab */
 "answer"="Answers";
 
@@ -151,6 +169,16 @@
 /* Network error on the initial Beacon load */
 "defaultNetworkErrorText"="Something went wrong. Please check your internet connection and try again.";
 
+/* Invalid configuration on the initial Beacon load */
+"configurationErrorText"="Choose a Docs site or Mailbox to see your beacon in action!";
+
+/* Invalid navigation routing error on the initial Beacon load */
+"searchNavigationRoutingErrorText"="Choose a Docs site to see your search in action!";
+"messagingNavigationRoutingErrorText"="Choose a Mailbox to see your beacon in action!";
+"chatNavigationRoutingErrorText"="Choose to enable Chat to see your beacon in action!";
+"articleNavigationRoutingErrorText"="Choose a Docs site to see your beacon in action!";
+"askNavigationRoutingErrorText"="Choose a Mailbox and enable Chat or Previous messages to see your beacon in action!";
+
 /* Network error on sending a message */
 "defaultMessageErrorText"="There was a problem sending your message. Please try again in a moment.";
 
@@ -165,6 +193,9 @@
 
 /* Email field */
 "emailLabel"="Email address";
+
+/* Email max 3 attachments error message */
+"emailMaxAttachmentsReached"="There is a limit of three file attachments per message.";
 
 /* Table item on landing page */
 "getInTouch"="Get in Touch";
@@ -196,8 +227,19 @@
 /* No Internet connection message in Previous Messages */
 "previousMessageErrorText"="There was a problem retrieving messages. Please double-check your internet connection and try again.";
 
+"previousMessagesEmptyTitle"="Hmm...";
+
+"previousMessagesEmptyText"="No messages found";
+
+"previousMessagesConfirmEmailToViewConversations"="Please confirm your email address to see previous conversations";
+
+"continue"="Continue";
+
 /* Shown in previous messages for messages pending a reply */
 "received"="Received";
+
+/* Shown in previous messages when conversation has more than 20 threads */
+"showMore"="Show more";
 
 /* Footer in article details*/
 "relatedArticles"="Related Articles";
@@ -214,9 +256,6 @@
 /* Field label on send message page */
 "subjectLabel"="Subject";
 
-/* Group header in suggestions table */
-"suggestedForYou"="Suggested For You";
-
 /* Message sent confirmation */
 "viewAndUpdateMessage"="View and update this message in";
 
@@ -228,3 +267,26 @@
 
 /* For previous messages sent by indicator */
 "you"="You";
+
+/* Article Ratings */
+
+/* Shown at the top of the escalation path */
+"escalationWhatNext"="What next?";
+
+/* The title of the searching option on the escalation path */
+"escalationSearchTitle"="Keep searching";
+
+/* The title of the contact option on the escalation path */
+"escalationTalkTitle"="Talk to us";
+
+/* The body of the search option on the escalation path */
+"escalationSearchText"="Browse our help docs for an answer to your question";
+
+/* The body of the contact option on the escalation path */
+"escalationTalkText"="Talk with a friendly member of our support team";
+
+/* Shown at the bottom of article details, to get article ratings */
+"escalationQuestionFeedback" = "Did this answer your question?";
+
+/* A message shown at the bottom of article details after a user submits feedback */
+"escalationThanksFeedback" = "Thanks for the feedback";
