@@ -2,6 +2,21 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
 
+## 2.1.2 Release (November 19, 2020)
+
+##### Features
+* Customers can now rate articles on the iOS SDK.
+* Beacon now attaches sessionAttributes when a customer starts a chat in addition to starting a conversation. [Issue 103](https://github.com/helpscout/beacon-ios-sdk/issues/103)
+* Customers can now have anonymous chats if the "Require email?" option in the Beacon config is set to false.
+
+##### Bug Fixes
+* Beacon can now be distributed to the App Store when the host application has Bitcode enabled. [Issue 124](https://github.com/helpscout/beacon-ios-sdk/issues/124)
+* Beacon no longer crashes when chat agents become unavailable after the customer attempted to start a chat. [Issue 132](https://github.com/helpscout/beacon-ios-sdk/issues/132)
+
+##### Improvements
+* You can now integrate Beacon into your project using the Swift Package Manager. [Issue 114](https://github.com/helpscout/beacon-ios-sdk/issues/114)
+* [HSBeacon handleWillPresentNotification: completion:] now returns a BOOL to indicate if Beacon called the completionHandler. [Issue 104](https://github.com/helpscout/beacon-ios-sdk/issues/104)
+
 ## 2.1.1 Release (November 9, 2020)
 
 ##### Features
