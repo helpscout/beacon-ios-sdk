@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name          = 'Beacon'
   s.swift_version = '5.0'
-  s.version       = '2.1.1'
+  s.version       = '2.1.2'
   s.summary       = 'The Help Scout Beacon SDK'
   s.license       = { :type => 'Commercial', :text => 'Help Scout. All rights reserved.' }
 
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = 'Beacon.xcframework/ios-arm64/Beacon.framework/Headers/*.h'
   s.module_map    = 'Beacon.xcframework/ios-arm64/Beacon.framework/Modules/module.modulemap'  
-  s.preserve_paths = 'Beacon.xcframework', 'Beacon.dSYMs/Beacon.framework.ios-arm64.dSYM', 'Beacon.dSYMs/Beacon.framework.ios-arm64_x86_64-simulator.dSYM'
+  s.preserve_paths = 'Beacon.xcframework'
   s.vendored_frameworks = 'Beacon.xcframework'
   s.resources     = 'Beacon.xcframework/ios-arm64/Beacon.framework/Beacon.bundle'
   s.frameworks    = 'UIKit', 'Photos', 'UserNotifications', 'WebKit', 'MobileCoreServices', 'SafariServices', 'QuickLook', 'CoreData'
