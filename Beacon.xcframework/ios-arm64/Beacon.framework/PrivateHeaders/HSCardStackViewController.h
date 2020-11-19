@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-#import <HSViewController.h>
+#import <Beacon/HSViewController.h>
 
 @class HSCardStackViewController;
 

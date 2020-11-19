@@ -21,7 +21,7 @@ typedef void(^VoidBlock)(void);
 
 - (void)configurePushNotificationHandlingWithSwizzling:(BOOL)swizzling overrideUserNotificationDelegate:(BOOL)overrideDelegate;
 
-- (void)handleWillPresentNotification:(UNNotification *_Nonnull)notification withCompletionHandler:(void(^_Nonnull)(UNNotificationPresentationOptions options))completionHandler;
+- (BOOL)handleWillPresentNotification:(UNNotification *_Nonnull)notification withCompletionHandler:(void(^_Nonnull)(UNNotificationPresentationOptions options))completionHandler;
 
 /**
  When we need to subscribe to a conversation for the first time, we need to ask

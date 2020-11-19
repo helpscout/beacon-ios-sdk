@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Beacon
 @_exported import Beacon
 import CommonCrypto
@@ -20,6 +20,34 @@ import zlib
 @objc public protocol Authorizer {
   @objc func fetchAuthValue(socketID: Swift.String, channelName: Swift.String, completionHandler: @escaping (Beacon.PusherAuth?) -> ())
 }
+@_hasMissingDesignatedInitializers @objc(HSBeaconArticleEscalationViewController) public class BeaconArticleEscalationViewController : UIKit.UIViewController {
+  @objc public init(stringLocalizer: Beacon.HSBeaconStringLocalizer, settings: Beacon.HSBeaconSettings, tintColorSettings: Beacon.HSBeaconTintColor, messagingEnabled: Swift.Bool)
+  @objc override dynamic public func viewDidLoad()
+  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+  @objc deinit
+  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+}
+@objc(HSBeaconArticleRating) public enum BeaconArticleRating : Swift.UInt {
+  case positive
+  case negative
+  public typealias RawValue = Swift.UInt
+  public init?(rawValue: Swift.UInt)
+  public var rawValue: Swift.UInt {
+    get
+  }
+}
+@objc(HSBeaconArticleRatingViewDelegate) public protocol BeaconArticleRatingViewDelegate : AnyObject {
+  @objc func articleRatingView(_ view: Beacon.BeaconArticleRatingView, ratedArticle rating: Beacon.BeaconArticleRating)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(HSBeaconArticleRatingView) public class BeaconArticleRatingView : UIKit.UIView {
+  @objc public static var contentHeight: CoreGraphics.CGFloat
+  @objc weak public var delegate: Beacon.BeaconArticleRatingViewDelegate?
+  @objc public var stringLocalizer: Beacon.HSBeaconStringLocalizer? {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
 public enum BeaconRoute {
   case home
   case ask
@@ -35,6 +63,13 @@ public enum BeaconRoute {
 }
 extension HSBeacon {
   public class func navigate(_ route: Beacon.BeaconRoute, settings: Beacon.HSBeaconSettings, viewController: UIKit.UIViewController? = nil, signature: Swift.String? = nil)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(HSBeaconThanksFeedbackView) public class BeaconThanksFeedbackView : UIKit.UIView {
+  @objc public var stringLocalizer: Beacon.HSBeaconStringLocalizer? {
+    @objc get
+    @objc set
+  }
+  @objc deinit
 }
 public protocol CancelableOperation {
   func cancel()
@@ -82,15 +117,19 @@ extension Tagged : Swift.Encodable where RawValue : Swift.Encodable {
   @objc public class func setBeaconConfig(_ config: Beacon.HSBeaconConfig)
   @objc public class func setBeaconID(_ beaconID: Swift.String)
   @objc public class func setDeviceID(_ deviceID: Swift.String)
+  @objc public class func setSignature(_ signature: Swift.String?)
+  @objc public class func setSignatureVerified(_ verified: Swift.Bool)
   @objc public class func setChatEndedDelegate(_ delegate: Beacon.HSBeaconChatEndedDelegate?)
   @objc public class func setBeaconAgents(_ agents: [Beacon.HSBeaconAgent])
   @objc public class func setEnablePreviousMessages(_ enabled: Swift.Bool)
   @objc public class func setAttachmentsEnabled(_ enabled: Swift.Bool)
-  @objc public class func setPushNotficationSupport(_ support: Beacon.HSBeaconPushNotificationSupport)
+  @objc public class func setPushNotificationSupport(_ support: Beacon.HSBeaconPushNotificationSupport)
   @objc public class func hasPausedChat() -> Swift.Bool
   @objc public class func chatViewControllerClass() -> Swift.AnyClass
   @objc public class func endChat()
   @objc public class func didChatGenerateConversationWithId(_ id: Swift.String) -> Swift.Bool
+  @objc public class func setRequiresEmail(_ requiresEmail: Swift.Bool)
+  @objc public class func setBeaconDelegate(_ delegate: Beacon.HSBeaconDelegate)
   @objc deinit
   @objc override dynamic public init()
 }
@@ -549,6 +588,9 @@ open class SSLSecurity : Beacon.SSLTrustValidator {
   @objc deinit
 }
 extension UITraitCollection {
+  @objc dynamic public var isRegularRegular: Swift.Bool {
+    @objc get
+  }
   @objc dynamic public func hasDifferentSizeClass(comparedTo traitCollection: UIKit.UITraitCollection?) -> Swift.Bool
 }
 public let WebsocketDidConnectNotification: Swift.String
@@ -722,6 +764,9 @@ public protocol WebSocketAdvancedDelegate : AnyObject {
   @objc deinit
   @objc override dynamic public init()
 }
+extension Beacon.BeaconArticleRating : Swift.Equatable {}
+extension Beacon.BeaconArticleRating : Swift.Hashable {}
+extension Beacon.BeaconArticleRating : Swift.RawRepresentable {}
 extension Beacon.HSBeaconRoute : Swift.Equatable {}
 extension Beacon.HSBeaconRoute : Swift.Hashable {}
 extension Beacon.PusherChannelType : Swift.Equatable {}

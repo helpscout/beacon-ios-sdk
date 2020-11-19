@@ -25,8 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 /**
- The `sessionAttributes` method is called before showing the new conversation contact form. Keys (labels) and values in this dictionary (up to 20)
- will be added into the Beacon visitor activity note that’s only relevant to a specific conversation. We do not sync this data to either the customer
+ The `sessionAttributes` method is called before showing the new conversation contact form or before starting a chat. Keys (labels) and values in this dictionary (up to 20)
+ will be added into the Beacon visitor activity note that’s only relevant to a specific conversation or chat. We do not sync this data to either the customer
  profile or the Beacon Sidebar app.
 
  @note Each attribute label can contain up to 100 characters, and each value can contain up to 10,000 characters.

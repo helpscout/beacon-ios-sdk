@@ -1,11 +1,13 @@
 #import <UIKit/UIKit.h>
-#import <HSViewController.h>
-#import <HSBeaconContext.h>
-#import <HSBeaconSuggestion.h>
-#import <HSBeaconRelatedArticlesTableView.h>
-#import <HSCardStackViewController.h>
+#import <Beacon/HSViewController.h>
+#import <Beacon/HSBeaconContext.h>
+#import <Beacon/HSBeaconSuggestion.h>
+#import <Beacon/HSBeaconRelatedArticlesTableView.h>
+#import <Beacon/HSCardStackViewController.h>
 
 @interface HSBeaconArticleViewController : HSViewController <HSCardStackEmbeddable>
+
++ (instancetype)instantiate;
 
 @property (nonatomic, strong) IBOutlet UIScrollView *containerScrollView;
 @property (weak, nonatomic) IBOutlet HSBeaconRelatedArticlesTableView *relatedArticlesTableView;

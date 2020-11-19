@@ -40,6 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic) BOOL docsEnabled;
 @property (readonly, nonatomic) BOOL messagingOnly;
 @property (readonly, nonatomic) BOOL chatEnabled;
+@property (readonly, nonatomic) BOOL chatRequiresEmail;
 @property (readonly, nonatomic) BOOL validConfig;
 @property (readonly, nonatomic) BOOL previousMessagesEnabled;
 @property (readonly, nonatomic) BOOL showNameEnabled;

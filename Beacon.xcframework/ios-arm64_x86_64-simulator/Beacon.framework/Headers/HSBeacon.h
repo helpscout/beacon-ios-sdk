@@ -228,8 +228,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @param notification The UNNotification received by the UNUserNotificationCenterDelegate
 @param completionHandler The completion block passed to the UNUnserNotificationCenterDelegate
+@return A BOOL indicating if the completionHandler was called by Beacon. This will only return `true` if the push notification was a Beacon notification, otherwise `false`.
 */
-+ (void)handleWillPresentNotification:(UNNotification *)notification withCompletionHandler:(void(^)(UNNotificationPresentationOptions options))completionHandler;
++ (BOOL)handleWillPresentNotification:(UNNotification *)notification withCompletionHandler:(void(^)(UNNotificationPresentationOptions options))completionHandler;
 
 //MARK: - Search
 /**

@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic, nullable) NSURL *url;
 @property (readonly, nonatomic, nonnull) NSDictionary *linkedArticleIdentifiers;
 @property (readonly, nonatomic, nonnull) NSArray<HSBeaconArticleDetails *> *relatedArticles;
+@property (readonly, nonatomic, assign) BOOL hasLeftFeedback;
 
 - (instancetype _Nonnull)initWithDictionary: (NSDictionary *_Nonnull)dictionary;
 

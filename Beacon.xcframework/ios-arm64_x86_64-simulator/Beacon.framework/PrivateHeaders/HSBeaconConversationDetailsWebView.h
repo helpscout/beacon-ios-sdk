@@ -5,18 +5,20 @@
 
 @interface HSBeaconConversationDetailsWebView : HSWebView
 
+extern NSString *const ShowMorePath;
+
 @property (nonatomic) HSBeaconContext *beaconContext;
 
 - (void)setup;
 
 - (void)addHeader:(NSString *)header;
 
-- (void)addThreads:(NSArray <HSBeaconConversationThread *> *)threads;
+- (void)addThreads:(NSArray <HSBeaconConversationThread *> *)threads oldestThread:(HSBeaconConversationThread *_Nullable)oldestThread;
 
 - (void)scrollToLast;
 
 - (void)clearThreads;
 
-- (void)showWaiting:(NSString *)recievedText waitingText:(NSString *)waitingText;
+- (void)showWaiting:(NSString *)receivedText waitingText:(NSString *)waitingText;
 
 @end
