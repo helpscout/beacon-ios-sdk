@@ -11,6 +11,7 @@ Thank you for taking the time to submit an issue with the details requested belo
 - Beacon install method: 
     [ ] Carthage, 
     [ ] CocoaPods, 
+    [ ] Swift Package Manager,
     [ ] Manual
 - SDK version:
 - iOS OS version:
