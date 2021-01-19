@@ -1,12 +1,8 @@
 #import <UIKit/UIKit.h>
 #import <Beacon/HSViewController.h>
 #import <Beacon/HSBeaconAgentsView.h>
-#import <Beacon/HSBeaconContext.h>
-#import <Beacon/HSBeaconCustomFieldsEntryController.h>
-#import <Beacon/HSBeaconErrorView.h>
-#import <Beacon/HSBeaconSubmitButton.h>
 
-@class HSBeaconMessageEntryContainerController;
+@class HSBeaconContext, HSBeaconCustomFieldsEntryController, HSBeaconErrorView, HSBeaconSubmitButton, HSBeaconMessageEntryContainerController;
 
 @protocol HSBeaconMessageEntryContainerControllerDelegate <NSObject>
 

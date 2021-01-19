@@ -38,6 +38,8 @@
  */
 - (UIColor * _Nonnull)barTintColor;
 
+- (UIColor * _Nonnull)barTintColorWithContrastToColor:(UIColor * _Nonnull)color;
+
 - (UIBarStyle)barStyle;
 
 - (UIStatusBarStyle)statusBarStyle;

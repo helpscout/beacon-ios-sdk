@@ -1,13 +1,10 @@
 #import <UIKit/UIKit.h>
 #import <Beacon/HSViewController.h>
-#import <Beacon/HSBeaconContext.h>
 #import <Beacon/HSBeaconPreviousMessagesEnabler.h>
 #import <Beacon/HSBeaconPreviousMessagesPresenter.h>
 #import <Beacon/HSBeaconRoutingFulfilling.h>
 
-@class HSBeaconAgentsView;
-@class HSBeaconAskSelectionCardView;
-@class HSBeaconPreviousConversationsButton;
+@class HSBeaconContext, HSBeaconAgentsView, HSBeaconAskSelectionCardView, HSBeaconPreviousConversationsButton;
 
 @interface HSBeaconAskSelectionController: HSViewController <HSBeaconPreviousMessagesEnabler, HSBeaconPreviousMessagesPresenter, HSBeaconRoutingFulfilling>
 
@@ -25,13 +22,11 @@
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *emailCardLeadingAndTrailing;
 @property (strong, nonatomic) IBOutletCollection(NSLayoutConstraint) NSArray *emailCardCompactHeightLeadingAndTrailing;
 
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *backButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *closeButton;
 
 /// If set to to YES then subviews will only be transitioned after calling `animateForAppearance`
 /// Defaults to NO
 @property (nonatomic, assign) BOOL shouldDelayTransitionForAppearance;
-@property (nonatomic, assign) BOOL routeToChat;
 
 - (void)enablePreviousMessages;
 - (void)animateForAppearance;

@@ -1,6 +1,7 @@
 #import <UIKit/UIKit.h>
 #import <Beacon/HSTableViewController.h>
-#import <Beacon/HSBeaconContext.h>
+
+@class HSBeaconContext;
 
 @interface HSBeaconPreviousMessagesController : HSTableViewController
 

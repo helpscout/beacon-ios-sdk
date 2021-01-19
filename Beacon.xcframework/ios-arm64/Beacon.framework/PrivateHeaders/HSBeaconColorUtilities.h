@@ -17,8 +17,6 @@ FOUNDATION_EXPORT CGFloat const HSShadowOverlayOpacity;
 
 + (UIColor * _Nonnull)errorRedColor;
 
-+ (UIColor * _Nonnull)darkSkyBlueColor;
-
 + (UIColor * _Nonnull)blackColorWithAlpha:(CGFloat)alpha;
 
 + (HSBeaconColorShade)optimalShadeForColor:(nonnull UIColor *)color;

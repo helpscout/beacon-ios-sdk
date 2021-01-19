@@ -21,7 +21,7 @@ import zlib
   @objc func fetchAuthValue(socketID: Swift.String, channelName: Swift.String, completionHandler: @escaping (Beacon.PusherAuth?) -> ())
 }
 @_hasMissingDesignatedInitializers @objc(HSBeaconArticleEscalationViewController) public class BeaconArticleEscalationViewController : UIKit.UIViewController {
-  @objc public init(stringLocalizer: Beacon.HSBeaconStringLocalizer, settings: Beacon.HSBeaconSettings, tintColorSettings: Beacon.HSBeaconTintColor, messagingEnabled: Swift.Bool)
+  @objc public init(stringLocalizer: Beacon.HSBeaconStringLocalizer, settings: Beacon.HSBeaconSettings, tintColorSettings: Beacon.HSBeaconTintColor, actionColor: UIKit.UIColor, messagingEnabled: Swift.Bool)
   @objc override dynamic public func viewDidLoad()
   @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @objc deinit
@@ -129,7 +129,9 @@ extension Tagged : Swift.Encodable where RawValue : Swift.Encodable {
   @objc public class func endChat()
   @objc public class func didChatGenerateConversationWithId(_ id: Swift.String) -> Swift.Bool
   @objc public class func setRequiresEmail(_ requiresEmail: Swift.Bool)
+  @objc public class func setRatingsEnabled(_ enabled: Swift.Bool)
   @objc public class func setBeaconDelegate(_ delegate: Beacon.HSBeaconDelegate)
+  @objc public class func setActionColor(_ color: UIKit.UIColor)
   @objc deinit
   @objc override dynamic public init()
 }
@@ -171,6 +173,7 @@ public struct Effect<A> {
 @objc public class HSBeaconRouting : ObjectiveC.NSObject {
   @objc final public let route: Beacon.HSBeaconRoute
   @objc public var fulfilled: Swift.Bool
+  @objc public var animated: Swift.Bool
   @objc public var articleId: Swift.String {
     @objc get
   }
@@ -219,6 +222,10 @@ public enum HTTPMethod : Swift.Equatable {
     get
   }
   public static func == (a: Beacon.HTTPMethod, b: Beacon.HTTPMethod) -> Swift.Bool
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(HSBeaconLoadingView) public class LoadingView : UIKit.UIView {
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc deinit
 }
 @objc extension Pusher {
   @objc dynamic public func subscribe(channelName: Swift.String) -> Beacon.PusherChannel
@@ -587,11 +594,63 @@ open class SSLSecurity : Beacon.SSLTrustValidator {
   public func publicKeyChain(_ trust: Security.SecTrust) -> [Security.SecKey]
   @objc deinit
 }
+@objc extension UIColor {
+  @objc public static func beaconBackground() -> UIKit.UIColor
+  @objc public static func secondaryBeaconBackground() -> UIKit.UIColor
+  @objc public static func tertiaryBeaconBackground() -> UIKit.UIColor
+  @objc public static func disabledAction() -> UIKit.UIColor
+  @objc public static func primaryText() -> UIKit.UIColor
+  @objc public static func primaryAccent() -> UIKit.UIColor
+  @objc public static func chatBubbleText() -> UIKit.UIColor
+  @objc public static func chatBorder() -> UIKit.UIColor
+  @objc public static func chatErrorBorder() -> UIKit.UIColor
+  @objc public static func brightOrange() -> UIKit.UIColor
+  @objc public static func chatErrorBackground() -> UIKit.UIColor
+  @objc public static func agentAvatarBackground() -> UIKit.UIColor
+  @objc public static func agentTextColor() -> UIKit.UIColor
+  @objc public static func unfurledMediaBodyColor() -> UIKit.UIColor
+  @objc public static func chatProgressColor() -> UIKit.UIColor
+  @objc public static func grey400() -> UIKit.UIColor
+  @objc public static func grey500() -> UIKit.UIColor
+  @objc public static func placeholderText() -> UIKit.UIColor
+  @objc public static func toolbarButton() -> UIKit.UIColor
+  @objc public static func borderButton() -> UIKit.UIColor
+  @objc public static func yellow800() -> UIKit.UIColor
+  @objc public static func escalationThanksBackground() -> UIKit.UIColor
+  @objc public static func green600() -> UIKit.UIColor
+  @objc public static func hsTertiaryText() -> UIKit.UIColor
+  @objc public static func primaryAction() -> UIKit.UIColor
+  @objc public static func hsSecondaryText() -> UIKit.UIColor
+  @objc public static func badge() -> UIKit.UIColor
+  @objc public static func goodGlow() -> UIKit.UIColor
+  @objc public static func badGlow() -> UIKit.UIColor
+  @objc public static func neutralGlow() -> UIKit.UIColor
+  @objc public static func defaultBeacon() -> UIKit.UIColor
+  @objc public static func lightBeacon() -> UIKit.UIColor
+  @objc dynamic public func exceedsMinimumContrast(with color: UIKit.UIColor) -> Swift.Bool
+  @objc dynamic public func contrasting(_ color: UIKit.UIColor) -> UIKit.UIColor
+}
+extension UINavigationController {
+  @objc dynamic public func pushViewController(_ viewController: UIKit.UIViewController, animated: Swift.Bool, completion: ((Swift.Bool) -> Swift.Void)?)
+  @objc dynamic public func popToRootViewControllerAnimated(_ animated: Swift.Bool, completion: ((Swift.Bool) -> Swift.Void)?)
+  @objc dynamic public func popToRootViewControllerAnimated(_ animated: Swift.Bool, completedToRootVC: ((UIKit.UIViewController?) -> Swift.Void)?)
+  @objc dynamic public func popToViewController(_ viewController: UIKit.UIViewController, animated: Swift.Bool, completion: ((Swift.Bool) -> Swift.Void)?)
+  public func perform(_ action: () -> (), animated: Swift.Bool, with completion: ((Swift.Bool) -> Swift.Void)?)
+}
 extension UITraitCollection {
   @objc dynamic public var isRegularRegular: Swift.Bool {
     @objc get
   }
   @objc dynamic public func hasDifferentSizeClass(comparedTo traitCollection: UIKit.UITraitCollection?) -> Swift.Bool
+}
+@_inheritsConvenienceInitializers @objc(HSBeaconViewControllerFactory) public class ViewControllerFactory : ObjectiveC.NSObject {
+  @objc public class func articleViewController() -> Beacon.HSBeaconArticleViewController
+  @objc public class func askSelectionViewController() -> Beacon.HSBeaconAskSelectionController
+  @objc public class func chatViewController() -> UIKit.UIViewController
+  @objc public class func messageEntryViewController() -> Beacon.HSBeaconMessageEntryContainerController
+  @objc public class func previousMessagesViewController() -> Beacon.HSBeaconPreviousMessagesController
+  @objc deinit
+  @objc override dynamic public init()
 }
 public let WebsocketDidConnectNotification: Swift.String
 public let WebsocketDidDisconnectNotification: Swift.String

@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-#import <HSNavigationController.h>
+#import <Beacon/HSNavigationController.h>
 @class HSBeaconContext;
 @class HSBeaconNavigationController;
 
@@ -9,6 +9,8 @@
 
 @end
 
+typedef void(^FinishedBlock)(BOOL finished);
+
 @interface HSBeaconNavigationController : HSNavigationController
 
 @property (nonatomic, weak) id<HSBeaconNavigationControllerDelegate> beaconNavigationDelegate;
@@ -17,7 +19,10 @@
 
 - (void)updateStatusBar;
 
-- (void)displayControllerInCard:(UIViewController *)details;
+- (void)startLoading;
+- (void)stopLoading;
+
+- (void)displayControllerInCard:(UIViewController *)details animated:(BOOL)animated completion:(FinishedBlock)completion;
 
 - (void)dismissCards:(void (^)(void))completion;
 

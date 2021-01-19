@@ -40,6 +40,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic) BOOL docsEnabled;
 @property (readonly, nonatomic) BOOL messagingOnly;
 @property (readonly, nonatomic) BOOL chatEnabled;
+@property (readonly, nonatomic) BOOL chatRatingsEnabled;
 @property (readonly, nonatomic) BOOL chatRequiresEmail;
 @property (readonly, nonatomic) BOOL validConfig;
 @property (readonly, nonatomic) BOOL previousMessagesEnabled;
@@ -49,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly, nonatomic) BOOL customFieldsEnabled;
 @property (readonly, nonatomic) BOOL showPreviousMessagesEnabled;
 @property (readonly, nonatomic) HSBeaconFocusMode focusMode;
-@property (readonly, nonatomic) UIColor *tintColor;
+@property (readonly, nonatomic) UIColor *actionColor;
 
 @property (strong, nonatomic) NSArray<id<HSBeaconSuggestionItem>> *customSuggestions;
 

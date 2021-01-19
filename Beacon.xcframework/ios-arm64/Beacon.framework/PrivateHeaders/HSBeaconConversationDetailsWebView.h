@@ -3,9 +3,11 @@
 #import <HSBeaconContext.h>
 #import <HSBeaconConversationThread.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface HSBeaconConversationDetailsWebView : HSWebView
 
-extern NSString *const ShowMorePath;
+extern NSString * _Nonnull const ShowMorePath;
 
 @property (nonatomic) HSBeaconContext *beaconContext;
 
@@ -22,3 +24,5 @@ extern NSString *const ShowMorePath;
 - (void)showWaiting:(NSString *)receivedText waitingText:(NSString *)waitingText;
 
 @end
+
+NS_ASSUME_NONNULL_END

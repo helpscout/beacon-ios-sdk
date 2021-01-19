@@ -228,12 +228,13 @@ SWIFT_PROTOCOL("_TtP6Beacon10Authorizer_")
 @protocol HSBeaconStringLocalizer;
 @class HSBeaconSettings;
 @class HSBeaconTintColor;
+@class UIColor;
 @class NSCoder;
 @class NSBundle;
 
 SWIFT_CLASS_NAMED("BeaconArticleEscalationViewController")
 @interface HSBeaconArticleEscalationViewController : UIViewController
-- (nonnull instancetype)initWithStringLocalizer:(id <HSBeaconStringLocalizer> _Nonnull)stringLocalizer settings:(HSBeaconSettings * _Nonnull)settings tintColorSettings:(HSBeaconTintColor * _Nonnull)tintColorSettings messagingEnabled:(BOOL)messagingEnabled OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithStringLocalizer:(id <HSBeaconStringLocalizer> _Nonnull)stringLocalizer settings:(HSBeaconSettings * _Nonnull)settings tintColorSettings:(HSBeaconTintColor * _Nonnull)tintColorSettings actionColor:(UIColor * _Nonnull)actionColor messagingEnabled:(BOOL)messagingEnabled OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
@@ -297,7 +298,9 @@ SWIFT_CLASS("_TtC6Beacon16ChatDependencies")
 + (void)endChat;
 + (BOOL)didChatGenerateConversationWithId:(NSString * _Nonnull)id SWIFT_WARN_UNUSED_RESULT;
 + (void)setRequiresEmail:(BOOL)requiresEmail;
++ (void)setRatingsEnabled:(BOOL)enabled;
 + (void)setBeaconDelegate:(id <HSBeaconDelegate> _Nonnull)delegate;
++ (void)setActionColor:(UIColor * _Nonnull)color;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -417,6 +420,7 @@ SWIFT_CLASS("_TtC6Beacon15HSBeaconRouting")
 @interface HSBeaconRouting : NSObject
 @property (nonatomic, readonly) enum HSBeaconRoute route;
 @property (nonatomic) BOOL fulfilled;
+@property (nonatomic) BOOL animated;
 @property (nonatomic, readonly, copy) NSString * _Nonnull articleId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull searchQuery;
 - (nonnull instancetype)initWithNavigation:(NSString * _Nonnull)navigation OBJC_DESIGNATED_INITIALIZER;
@@ -455,6 +459,13 @@ SWIFT_PROTOCOL("_TtP6Beacon34HSEnterEmailViewControllerDelegate_")
 @end
 
 
+
+
+SWIFT_CLASS_NAMED("LoadingView")
+@interface HSBeaconLoadingView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
 
 @class NSString;
 
@@ -801,6 +812,53 @@ SWIFT_CLASS("_TtC6Beacon27PusherPresenceChannelMember")
 
 
 
+@interface UIColor (SWIFT_EXTENSION(Beacon))
++ (UIColor * _Nonnull)beaconBackground SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)secondaryBeaconBackground SWIFT_WARN_UNUSED_RESULT;
+/// The color for content layered on top of secondary backgrounds.
++ (UIColor * _Nonnull)tertiaryBeaconBackground SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)disabledAction SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)primaryText SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)primaryAccent SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)chatBubbleText SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)chatBorder SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)chatErrorBorder SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)brightOrange SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)chatErrorBackground SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)agentAvatarBackground SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)agentTextColor SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)unfurledMediaBodyColor SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)chatProgressColor SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)grey400 SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)grey500 SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)placeholderText SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)toolbarButton SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)borderButton SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)yellow800 SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)escalationThanksBackground SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)green600 SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)hsTertiaryText SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)primaryAction SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)hsSecondaryText SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)badge SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)goodGlow SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)badGlow SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)neutralGlow SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)defaultBeacon SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)lightBeacon SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)exceedsMinimumContrastWith:(UIColor * _Nonnull)color SWIFT_WARN_UNUSED_RESULT;
+- (UIColor * _Nonnull)contrasting:(UIColor * _Nonnull)color SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
+
+@interface UINavigationController (SWIFT_EXTENSION(Beacon))
+- (void)pushViewController:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completion:(void (^ _Nullable)(BOOL))completion;
+- (void)popToRootViewControllerAnimated:(BOOL)animated completion:(void (^ _Nullable)(BOOL))completion;
+- (void)popToRootViewControllerAnimated:(BOOL)animated completedToRootVC:(void (^ _Nullable)(UIViewController * _Nullable))completedToRootVC;
+- (void)popToViewController:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completion:(void (^ _Nullable)(BOOL))completion;
+@end
 
 
 
@@ -809,6 +867,21 @@ SWIFT_CLASS("_TtC6Beacon27PusherPresenceChannelMember")
 - (BOOL)hasDifferentSizeClassWithComparedTo:(UITraitCollection * _Nullable)traitCollection SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+@class HSBeaconArticleViewController;
+@class HSBeaconAskSelectionController;
+@class HSBeaconMessageEntryContainerController;
+@class HSBeaconPreviousMessagesController;
+
+SWIFT_CLASS_NAMED("ViewControllerFactory")
+@interface HSBeaconViewControllerFactory : NSObject
++ (HSBeaconArticleViewController * _Nonnull)articleViewController SWIFT_WARN_UNUSED_RESULT;
++ (HSBeaconAskSelectionController * _Nonnull)askSelectionViewController SWIFT_WARN_UNUSED_RESULT;
++ (UIViewController * _Nonnull)chatViewController SWIFT_WARN_UNUSED_RESULT;
++ (HSBeaconMessageEntryContainerController * _Nonnull)messageEntryViewController SWIFT_WARN_UNUSED_RESULT;
++ (HSBeaconPreviousMessagesController * _Nonnull)previousMessagesViewController SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC6Beacon9WebSocket")
@@ -1052,12 +1125,13 @@ SWIFT_PROTOCOL("_TtP6Beacon10Authorizer_")
 @protocol HSBeaconStringLocalizer;
 @class HSBeaconSettings;
 @class HSBeaconTintColor;
+@class UIColor;
 @class NSCoder;
 @class NSBundle;
 
 SWIFT_CLASS_NAMED("BeaconArticleEscalationViewController")
 @interface HSBeaconArticleEscalationViewController : UIViewController
-- (nonnull instancetype)initWithStringLocalizer:(id <HSBeaconStringLocalizer> _Nonnull)stringLocalizer settings:(HSBeaconSettings * _Nonnull)settings tintColorSettings:(HSBeaconTintColor * _Nonnull)tintColorSettings messagingEnabled:(BOOL)messagingEnabled OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithStringLocalizer:(id <HSBeaconStringLocalizer> _Nonnull)stringLocalizer settings:(HSBeaconSettings * _Nonnull)settings tintColorSettings:(HSBeaconTintColor * _Nonnull)tintColorSettings actionColor:(UIColor * _Nonnull)actionColor messagingEnabled:(BOOL)messagingEnabled OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
@@ -1121,7 +1195,9 @@ SWIFT_CLASS("_TtC6Beacon16ChatDependencies")
 + (void)endChat;
 + (BOOL)didChatGenerateConversationWithId:(NSString * _Nonnull)id SWIFT_WARN_UNUSED_RESULT;
 + (void)setRequiresEmail:(BOOL)requiresEmail;
++ (void)setRatingsEnabled:(BOOL)enabled;
 + (void)setBeaconDelegate:(id <HSBeaconDelegate> _Nonnull)delegate;
++ (void)setActionColor:(UIColor * _Nonnull)color;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1241,6 +1317,7 @@ SWIFT_CLASS("_TtC6Beacon15HSBeaconRouting")
 @interface HSBeaconRouting : NSObject
 @property (nonatomic, readonly) enum HSBeaconRoute route;
 @property (nonatomic) BOOL fulfilled;
+@property (nonatomic) BOOL animated;
 @property (nonatomic, readonly, copy) NSString * _Nonnull articleId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull searchQuery;
 - (nonnull instancetype)initWithNavigation:(NSString * _Nonnull)navigation OBJC_DESIGNATED_INITIALIZER;
@@ -1279,6 +1356,13 @@ SWIFT_PROTOCOL("_TtP6Beacon34HSEnterEmailViewControllerDelegate_")
 @end
 
 
+
+
+SWIFT_CLASS_NAMED("LoadingView")
+@interface HSBeaconLoadingView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@end
 
 @class NSString;
 
@@ -1625,6 +1709,53 @@ SWIFT_CLASS("_TtC6Beacon27PusherPresenceChannelMember")
 
 
 
+@interface UIColor (SWIFT_EXTENSION(Beacon))
++ (UIColor * _Nonnull)beaconBackground SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)secondaryBeaconBackground SWIFT_WARN_UNUSED_RESULT;
+/// The color for content layered on top of secondary backgrounds.
++ (UIColor * _Nonnull)tertiaryBeaconBackground SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)disabledAction SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)primaryText SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)primaryAccent SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)chatBubbleText SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)chatBorder SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)chatErrorBorder SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)brightOrange SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)chatErrorBackground SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)agentAvatarBackground SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)agentTextColor SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)unfurledMediaBodyColor SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)chatProgressColor SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)grey400 SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)grey500 SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)placeholderText SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)toolbarButton SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)borderButton SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)yellow800 SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)escalationThanksBackground SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)green600 SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)hsTertiaryText SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)primaryAction SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)hsSecondaryText SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)badge SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)goodGlow SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)badGlow SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)neutralGlow SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)defaultBeacon SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nonnull)lightBeacon SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)exceedsMinimumContrastWith:(UIColor * _Nonnull)color SWIFT_WARN_UNUSED_RESULT;
+- (UIColor * _Nonnull)contrasting:(UIColor * _Nonnull)color SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+
+
+@interface UINavigationController (SWIFT_EXTENSION(Beacon))
+- (void)pushViewController:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completion:(void (^ _Nullable)(BOOL))completion;
+- (void)popToRootViewControllerAnimated:(BOOL)animated completion:(void (^ _Nullable)(BOOL))completion;
+- (void)popToRootViewControllerAnimated:(BOOL)animated completedToRootVC:(void (^ _Nullable)(UIViewController * _Nullable))completedToRootVC;
+- (void)popToViewController:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completion:(void (^ _Nullable)(BOOL))completion;
+@end
 
 
 
@@ -1633,6 +1764,21 @@ SWIFT_CLASS("_TtC6Beacon27PusherPresenceChannelMember")
 - (BOOL)hasDifferentSizeClassWithComparedTo:(UITraitCollection * _Nullable)traitCollection SWIFT_WARN_UNUSED_RESULT;
 @end
 
+
+@class HSBeaconArticleViewController;
+@class HSBeaconAskSelectionController;
+@class HSBeaconMessageEntryContainerController;
+@class HSBeaconPreviousMessagesController;
+
+SWIFT_CLASS_NAMED("ViewControllerFactory")
+@interface HSBeaconViewControllerFactory : NSObject
++ (HSBeaconArticleViewController * _Nonnull)articleViewController SWIFT_WARN_UNUSED_RESULT;
++ (HSBeaconAskSelectionController * _Nonnull)askSelectionViewController SWIFT_WARN_UNUSED_RESULT;
++ (UIViewController * _Nonnull)chatViewController SWIFT_WARN_UNUSED_RESULT;
++ (HSBeaconMessageEntryContainerController * _Nonnull)messageEntryViewController SWIFT_WARN_UNUSED_RESULT;
++ (HSBeaconPreviousMessagesController * _Nonnull)previousMessagesViewController SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_CLASS("_TtC6Beacon9WebSocket")

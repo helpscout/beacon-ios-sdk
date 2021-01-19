@@ -1,11 +1,6 @@
 #import <UIKit/UIKit.h>
 #import <Beacon/HSViewController.h>
-
-@class HSCardStackViewController;
-
-@protocol HSCardStackEmbeddable
-@property (nonatomic, weak) HSCardStackViewController * _Nullable cardViewController;
-@end
+#import <Beacon/HSCardStackEmbeddable.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -13,7 +8,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithCard:(UIViewController<HSCardStackEmbeddable> *)card;
 
-- (void)presentCard:(UIViewController<HSCardStackEmbeddable> *)card;
+@property (nonatomic, assign) BOOL animateCardPresentation;
+
+- (void)presentCard:(UIViewController<HSCardStackEmbeddable> *)card animated:(BOOL)animated;
 
 @end
 

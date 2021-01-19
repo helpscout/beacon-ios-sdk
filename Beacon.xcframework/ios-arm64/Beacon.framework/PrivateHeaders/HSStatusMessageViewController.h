@@ -4,6 +4,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class HSBorderedButton;
+@class HSBeaconContext;
 
 typedef void(^VoidBlock)(void);
 
@@ -32,7 +33,7 @@ typedef void(^VoidBlock)(void);
 @property (nonatomic, weak) IBOutlet HSBorderedButton *actionButton;
 @property (nonatomic) BOOL shouldSuppressCloseButton;
 
-- (instancetype)initWithStatus:(HSStatus *)status;
+- (instancetype)initWithStatus:(HSStatus *)status context:(HSBeaconContext *)context;
 
 - (void)showStatusInViewController:(UIViewController *)viewController;
 

@@ -13,6 +13,4 @@
 
 - (void)setupSearch:(HSBeaconArticleSearchResultsDelegate *)searchDelegate;
 
-- (void)enablePreviousMessages;
-
 @end

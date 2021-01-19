@@ -7,6 +7,7 @@ framework module Beacon {
         header "HSAttachmentPicker.h"
         header "HSBeaconBundleUtils.h"
         header "HSViewController.h"
+        header "HSTableViewController.h"
         header "HSView.h"
         header "HSBeaconColorUtilities.h"
         header "HSBeaconConfig.h"
@@ -20,7 +21,16 @@ framework module Beacon {
         header "HSBeaconTintColor.h"
         header "HSBeaconPushNotificationSupport.h"
         header "HSBeaconSerializationUtilities.h"
-        header "HSBeaconConversation.h"        
+        header "HSBeaconConversation.h"
+        header "HSBeaconArticleViewController.h"
+        header "HSBeaconAskSelectionController.h"
+        header "HSBeaconMessageEntryContainerController.h"
+        header "HSBeaconPreviousMessagesController.h"
+        header "HSBeaconPreviousMessagesEnabler.h"
+        header "HSBeaconPreviousMessagesPresenter.h"
+        header "HSBeaconRoutingFulfilling.h"
+        header "HSCardStackEmbeddable.h"
+        header "UIColor+Image.h"
     }
 
 }
