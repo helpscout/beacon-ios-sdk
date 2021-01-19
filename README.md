@@ -23,6 +23,10 @@ pod 'Beacon'
 
 Beacon is currently distributed as a dynamic framework so the `use_frameworks!` flag will also need to be present in your Podfile.
 
+### Swift Package Manager
+
+Beacon is available through [Swift Package Manager](https://swiftpackageregistry.com/helpscout/beacon-ios-sdk). To install it, simply follow [Apple’s guidance](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app) for adding the Beacon-iOS package dependency in Xcode.
+
 ### Carthage 🛑
 
 **As of Beacon 2.1.0, Beacon is (temporarily 🤞) no longer available to be distributed via Carthage.  This is because Beacon is now distributed as an XCFramework which is (as of October 29th, 2020) not supported by Carthage.  More info about the progress the Carthage team is making can be found on this [issue](https://github.com/Carthage/Carthage/issues/3019) or the following Pull Requests [1](https://github.com/Carthage/Carthage/pull/3071), [2](https://github.com/Carthage/Carthage/pull/2881).**
