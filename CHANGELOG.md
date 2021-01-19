@@ -1,6 +1,21 @@
 # Installation & Update
 
-To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/).
+To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/mobile/).
+
+## 2.2.0 Release (January 19, 2021)
+
+##### Features
+Customers can now rate their chat experience after completion (for mailboxes with chat satisfaction ratings enabled).
+
+##### Bug Fixes
+* We smoothed out the transitions when following a deep link into the app. [Issue 131](https://github.com/helpscout/beacon-ios-sdk/issues/131) 
+* We enhanced our color selection logic to ensure all text provides suitable contrast to be easily read. [Issue 139](https://github.com/helpscout/beacon-ios-sdk/issues/139)
+* Added tint color override and beacon color override settings to the Beacon Example app. [Issue 143](https://github.com/helpscout/beacon-ios-sdk/issues/143)
+* Beacon no longer experiences intermittent crashes when rotating a chat that includes an attachment. 
+* Beacon now does a better job of wrapping text. [Issue 83](https://github.com/helpscout/beacon-ios-sdk/issues/83)
+* We made the chat back button a bit easier to tap on an iPad. [Issue 133](https://github.com/helpscout/beacon-ios-sdk/issues/133)
+* We show previous messages when they are available from the first time Beacon is launched. [Issue 140](https://github.com/helpscout/beacon-ios-sdk/issues/140)
+* We restored the ability to print to console when integrating Beacon using SPM. [Issue 145](https://github.com/helpscout/beacon-ios-sdk/issues/145)
 
 ## 2.1.2 Release (November 19, 2020)
 
