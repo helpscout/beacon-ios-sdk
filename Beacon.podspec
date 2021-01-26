@@ -18,6 +18,5 @@ Pod::Spec.new do |s|
   s.module_map    = 'Beacon.xcframework/ios-arm64/Beacon.framework/Modules/module.modulemap'  
   s.preserve_paths = 'Beacon.xcframework'
   s.vendored_frameworks = 'Beacon.xcframework'
-  s.resources     = 'Beacon.xcframework/ios-arm64/Beacon.framework/Beacon.bundle'
   s.frameworks    = 'UIKit', 'Photos', 'UserNotifications', 'WebKit', 'MobileCoreServices', 'SafariServices', 'QuickLook', 'CoreData'
 end
