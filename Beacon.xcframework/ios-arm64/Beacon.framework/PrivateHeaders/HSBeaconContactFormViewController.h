@@ -63,7 +63,7 @@
 
 - (HSBeaconEmailMessage *)constructMessage;
 
-- (void)clearForm:(BOOL) forReset;
+- (void)clearForm:(BOOL)forReset;
 
 - (void)populateSecurityInfo;
 

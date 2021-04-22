@@ -30,5 +30,6 @@
 
 - (void)enablePreviousMessages;
 - (void)animateForAppearance;
+- (void)resetForm;
 
 @end

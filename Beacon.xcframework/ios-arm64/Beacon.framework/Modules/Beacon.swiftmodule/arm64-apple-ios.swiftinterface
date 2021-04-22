@@ -498,20 +498,7 @@ extension NSNotification.Name {
 public class Reachability {
   public typealias NetworkReachable = (Beacon.Reachability) -> ()
   public typealias NetworkUnreachable = (Beacon.Reachability) -> ()
-  @available(*, unavailable, renamed: "Connection")
-  public enum NetworkStatus : Swift.CustomStringConvertible {
-    case notReachable, reachableViaWiFi, reachableViaWWAN
-    public var description: Swift.String {
-      get
-    }
-    public static func == (a: Beacon.Reachability.NetworkStatus, b: Beacon.Reachability.NetworkStatus) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-    public func hash(into hasher: inout Swift.Hasher)
-  }
   public enum Connection : Swift.CustomStringConvertible {
-    @available(*, deprecated, renamed: "unavailable")
     case none
     case unavailable, wifi, cellular
     public var description: Swift.String {
@@ -833,10 +820,6 @@ extension Beacon.PusherChannelType : Swift.Hashable {}
 extension Beacon.ConnectionState : Swift.Equatable {}
 extension Beacon.ConnectionState : Swift.Hashable {}
 extension Beacon.ConnectionState : Swift.RawRepresentable {}
-@available(*, unavailable, renamed: "Connection")
-extension Beacon.Reachability.NetworkStatus : Swift.Equatable {}
-@available(*, unavailable, renamed: "Connection")
-extension Beacon.Reachability.NetworkStatus : Swift.Hashable {}
 extension Beacon.Reachability.Connection : Swift.Equatable {}
 extension Beacon.Reachability.Connection : Swift.Hashable {}
 extension Beacon.CloseCode : Swift.Equatable {}
