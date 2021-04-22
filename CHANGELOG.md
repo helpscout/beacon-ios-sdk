@@ -2,6 +2,12 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/mobile/).
 
+## 2.2.1 Release (April 22, 2021)
+
+##### Bug Fixes
+* We now call prefill: on subsequent opens of the contact form in Secure Mode. [Issue 34](https://github.com/helpscout/beacon-ios-sdk/issues/34)
+* Beacon now builds successfully when using Xcode 12.5. [Issue 153](https://github.com/helpscout/beacon-ios-sdk/issues/153)
+
 ## 2.2.0 Release (January 19, 2021)
 
 ##### Features
