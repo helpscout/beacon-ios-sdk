@@ -2,6 +2,11 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/mobile/).
 
+## 2.2.2 Release (June 3, 2021)
+
+##### Bug Fixes
+* We've resolved an issue where Beacon assets would not load; this happened most frequently with Flutter apps. [Issue 91](https://github.com/helpscout/beacon-ios-sdk/issues/91)
+
 ## 2.2.1 Release (April 22, 2021)
 
 ##### Bug Fixes
