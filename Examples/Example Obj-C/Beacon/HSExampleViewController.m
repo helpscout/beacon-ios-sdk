@@ -39,7 +39,7 @@ static NSString *const SIGNATURE_KEY = @"signature";
         user.email = self.emailTextField.text;
         user.name = self.nameTextField.text;
         
-        [HSBeacon login:user];
+        [HSBeacon identify:user];
     }
 
     HSBeaconSettings *settings = [[HSBeaconSettings alloc] initWithBeaconId:_beaconIdText.text];
