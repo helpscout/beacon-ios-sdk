@@ -6,8 +6,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIWindow * _Nullable)keyWindow;
 
-+ (UIWindow *)createWindow;
-
 @end
 
 NS_ASSUME_NONNULL_END

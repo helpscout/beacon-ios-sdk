@@ -1,5 +1,7 @@
 /** The maximum number of session attributes */
 static NSInteger const HSBeaconMaxSessionAttributesCount = 20;
+/** The maximum number of customer properties */
+static NSInteger const HSBeaconMaxCustomerPropertiesCount = 50;
 /** The maximum length of a key used with session attributes */
 static NSInteger const HSBeaconMaxSessionLabelLength = 100;
 /** The maximum length of a value used with session attributes */

@@ -8,12 +8,12 @@
 
 - (id<UITextInput>)last;
 
-- (long)indexOf:(id<UITextInput>)input;
+- (NSUInteger)indexOf:(id<UITextInput>)input;
 
-- (void)next:(long)index;
+- (void)next:(NSUInteger)index;
 
-- (void)prev:(long)index;
+- (void)prev:(NSUInteger)index;
 
-- (long)count;
+- (NSUInteger)count;
 
 @end
