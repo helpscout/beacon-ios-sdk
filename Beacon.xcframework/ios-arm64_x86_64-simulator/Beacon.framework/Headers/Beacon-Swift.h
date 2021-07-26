@@ -266,6 +266,14 @@ SWIFT_PROTOCOL_NAMED("BeaconArticleRatingViewDelegate")
 @end
 
 
+SWIFT_CLASS_NAMED("BeaconSearchPlaceholderView")
+@interface HSBeaconSearchPlaceholderView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)setPlaceholder:(NSString * _Nonnull)string;
+@end
+
+
 SWIFT_CLASS_NAMED("BeaconThanksFeedbackView")
 @interface HSBeaconThanksFeedbackView : UIView
 @property (nonatomic, strong) id <HSBeaconStringLocalizer> _Nullable stringLocalizer;
@@ -320,6 +328,22 @@ SWIFT_CLASS("_TtC6Beacon16FoundationStream")
 /// Delegate for the stream methods. Processes incoming bytes
 - (void)stream:(NSStream * _Nonnull)aStream handleEvent:(NSStreamEvent)eventCode;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CALayer;
+@class UIImage;
+
+/// Example class that conforms to <code>GIFAnimatable</code>. Uses default values for the animator frame buffer count and resize behavior. You can either use it directly in your code or use it as a blueprint for your own subclass.
+SWIFT_CLASS("_TtC6Beacon12GIFImageView")
+@interface GIFImageView : UIImageView
+/// Layer delegate method called periodically by the layer. <em>Should not</em> be called manually.
+/// \param layer The delegated layer.
+///
+- (void)displayLayer:(CALayer * _Nonnull)layer;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class PusherConnection;
@@ -853,6 +877,7 @@ SWIFT_CLASS("_TtC6Beacon27PusherPresenceChannelMember")
 
 
 
+
 @interface UINavigationController (SWIFT_EXTENSION(Beacon))
 - (void)pushViewController:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completion:(void (^ _Nullable)(BOOL))completion;
 - (void)popToRootViewControllerAnimated:(BOOL)animated completion:(void (^ _Nullable)(BOOL))completion;
@@ -865,6 +890,11 @@ SWIFT_CLASS("_TtC6Beacon27PusherPresenceChannelMember")
 @interface UITraitCollection (SWIFT_EXTENSION(Beacon))
 @property (nonatomic, readonly) BOOL isRegularRegular;
 - (BOOL)hasDifferentSizeClassWithComparedTo:(UITraitCollection * _Nullable)traitCollection SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface UIWindow (SWIFT_EXTENSION(Beacon))
+@property (nonatomic, readonly, strong) UIViewController * _Nullable topViewController;
 @end
 
 
@@ -1163,6 +1193,14 @@ SWIFT_PROTOCOL_NAMED("BeaconArticleRatingViewDelegate")
 @end
 
 
+SWIFT_CLASS_NAMED("BeaconSearchPlaceholderView")
+@interface HSBeaconSearchPlaceholderView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)setPlaceholder:(NSString * _Nonnull)string;
+@end
+
+
 SWIFT_CLASS_NAMED("BeaconThanksFeedbackView")
 @interface HSBeaconThanksFeedbackView : UIView
 @property (nonatomic, strong) id <HSBeaconStringLocalizer> _Nullable stringLocalizer;
@@ -1217,6 +1255,22 @@ SWIFT_CLASS("_TtC6Beacon16FoundationStream")
 /// Delegate for the stream methods. Processes incoming bytes
 - (void)stream:(NSStream * _Nonnull)aStream handleEvent:(NSStreamEvent)eventCode;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class CALayer;
+@class UIImage;
+
+/// Example class that conforms to <code>GIFAnimatable</code>. Uses default values for the animator frame buffer count and resize behavior. You can either use it directly in your code or use it as a blueprint for your own subclass.
+SWIFT_CLASS("_TtC6Beacon12GIFImageView")
+@interface GIFImageView : UIImageView
+/// Layer delegate method called periodically by the layer. <em>Should not</em> be called manually.
+/// \param layer The delegated layer.
+///
+- (void)displayLayer:(CALayer * _Nonnull)layer;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class PusherConnection;
@@ -1750,6 +1804,7 @@ SWIFT_CLASS("_TtC6Beacon27PusherPresenceChannelMember")
 
 
 
+
 @interface UINavigationController (SWIFT_EXTENSION(Beacon))
 - (void)pushViewController:(UIViewController * _Nonnull)viewController animated:(BOOL)animated completion:(void (^ _Nullable)(BOOL))completion;
 - (void)popToRootViewControllerAnimated:(BOOL)animated completion:(void (^ _Nullable)(BOOL))completion;
@@ -1762,6 +1817,11 @@ SWIFT_CLASS("_TtC6Beacon27PusherPresenceChannelMember")
 @interface UITraitCollection (SWIFT_EXTENSION(Beacon))
 @property (nonatomic, readonly) BOOL isRegularRegular;
 - (BOOL)hasDifferentSizeClassWithComparedTo:(UITraitCollection * _Nullable)traitCollection SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface UIWindow (SWIFT_EXTENSION(Beacon))
+@property (nonatomic, readonly, strong) UIViewController * _Nullable topViewController;
 @end
 
 

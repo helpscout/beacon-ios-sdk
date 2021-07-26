@@ -6,6 +6,7 @@ import CommonCrypto
 import CoreData
 import CoreFoundation
 import Foundation
+import ImageIO
 import MobileCoreServices
 import Beacon.Private
 import QuickLook
@@ -14,6 +15,10 @@ import Swift
 import SystemConfiguration
 import UIKit
 import zlib
+public class Animator {
+  public init(withDelegate delegate: Beacon.GIFAnimatable)
+  @objc deinit
+}
 @objc public protocol AuthRequestBuilderProtocol {
   @objc optional func requestFor(socketID: Swift.String, channelName: Swift.String) -> Foundation.URLRequest?
 }
@@ -63,6 +68,10 @@ public enum BeaconRoute {
 }
 extension HSBeacon {
   public class func navigate(_ route: Beacon.BeaconRoute, settings: Beacon.HSBeaconSettings, viewController: UIKit.UIViewController? = nil, signature: Swift.String? = nil)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(HSBeaconSearchPlaceholderView) public class BeaconSearchPlaceholderView : UIKit.UIView {
+  @objc public func setPlaceholder(_ string: Swift.String)
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(HSBeaconThanksFeedbackView) public class BeaconThanksFeedbackView : UIKit.UIView {
   @objc public var stringLocalizer: Beacon.HSBeaconStringLocalizer? {
@@ -141,6 +150,59 @@ public struct Effect<A> {
   public let run: (@escaping (A) -> Swift.Void) -> Swift.Void
   public init(run: @escaping (@escaping (A) -> Swift.Void) -> Swift.Void)
   public func map<B>(_ f: @escaping (A) -> B) -> Beacon.Effect<B>
+}
+public protocol GIFAnimatable : AnyObject {
+  var animator: Beacon.Animator? { get set }
+  var layer: QuartzCore.CALayer { get }
+  var frame: CoreGraphics.CGRect { get set }
+  var contentMode: UIKit.UIView.ContentMode { get set }
+}
+public protocol ImageContainer {
+  var image: UIKit.UIImage? { get set }
+}
+extension GIFAnimatable where Self : Beacon.ImageContainer {
+  public var intrinsicContentSize: CoreGraphics.CGSize {
+    get
+  }
+}
+extension GIFAnimatable {
+  public var gifLoopDuration: Foundation.TimeInterval {
+    get
+  }
+  public var activeFrame: UIKit.UIImage? {
+    get
+  }
+  public var frameCount: Swift.Int {
+    get
+  }
+  public var isAnimatingGIF: Swift.Bool {
+    get
+  }
+  public func animate(withGIFNamed imageName: Swift.String, loopCount: Swift.Int = 0, preparationBlock: (() -> Swift.Void)? = nil, animationBlock: (() -> Swift.Void)? = nil)
+  public func animate(withGIFData imageData: Foundation.Data, loopCount: Swift.Int = 0, preparationBlock: (() -> Swift.Void)? = nil, animationBlock: (() -> Swift.Void)? = nil)
+  public func animate(withGIFURL imageURL: Foundation.URL, loopCount: Swift.Int = 0, preparationBlock: (() -> Swift.Void)? = nil, animationBlock: (() -> Swift.Void)? = nil)
+  public func prepareForAnimation(withGIFNamed imageName: Swift.String, loopCount: Swift.Int = 0, completionHandler: (() -> Swift.Void)? = nil)
+  public func prepareForAnimation(withGIFData imageData: Foundation.Data, loopCount: Swift.Int = 0, completionHandler: (() -> Swift.Void)? = nil)
+  public func prepareForAnimation(withGIFURL imageURL: Foundation.URL, loopCount: Swift.Int = 0, completionHandler: (() -> Swift.Void)? = nil)
+  public func prepareForReuse()
+  public func startAnimatingGIF()
+  public func stopAnimatingGIF()
+  public func setShouldResizeFrames(_ resize: Swift.Bool)
+  public func setFrameBufferCount(_ frames: Swift.Int)
+  public func updateImageIfNeeded()
+}
+@objc @_inheritsConvenienceInitializers public class GIFImageView : UIKit.UIImageView, Beacon.GIFAnimatable {
+  public var animator: Beacon.Animator? {
+    get
+    set
+  }
+  @objc override dynamic public func display(_ layer: QuartzCore.CALayer)
+  @objc override dynamic public init(image: UIKit.UIImage?)
+  @available(iOS 3.0, *)
+  @objc override dynamic public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
 }
 @objc extension NSNotification {
   @objc public static var beaconUnreadCountDidChangeNotification: Foundation.NSString {
@@ -617,6 +679,8 @@ open class SSLSecurity : Beacon.SSLTrustValidator {
   @objc dynamic public func exceedsMinimumContrast(with color: UIKit.UIColor) -> Swift.Bool
   @objc dynamic public func contrasting(_ color: UIKit.UIColor) -> UIKit.UIColor
 }
+extension UIImageView : Beacon.ImageContainer {
+}
 extension UINavigationController {
   @objc dynamic public func pushViewController(_ viewController: UIKit.UIViewController, animated: Swift.Bool, completion: ((Swift.Bool) -> Swift.Void)?)
   @objc dynamic public func popToRootViewControllerAnimated(_ animated: Swift.Bool, completion: ((Swift.Bool) -> Swift.Void)?)
@@ -629,6 +693,11 @@ extension UITraitCollection {
     @objc get
   }
   @objc dynamic public func hasDifferentSizeClass(comparedTo traitCollection: UIKit.UITraitCollection?) -> Swift.Bool
+}
+@objc extension UIWindow {
+  @objc dynamic public var topViewController: UIKit.UIViewController? {
+    @objc get
+  }
 }
 @_inheritsConvenienceInitializers @objc(HSBeaconViewControllerFactory) public class ViewControllerFactory : ObjectiveC.NSObject {
   @objc public class func articleViewController() -> Beacon.HSBeaconArticleViewController

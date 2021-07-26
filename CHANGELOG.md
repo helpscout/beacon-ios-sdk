@@ -2,6 +2,21 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/mobile/).
 
+## 2.2.3 Release (July 26, 2021)
+
+#### Bug Fixes
+
+* We now correctly respect safe areas in all Beacon configurations. [Issue 142](https://github.com/helpscout/beacon-ios-sdk/issues/142)
+* We've removed our icon font that led to crashes on some devices running older iOS versions. [Issue 146](https://github.com/helpscout/beacon-ios-sdk/issues/146)
+* Addressed some crashes related to modifying UI from a background thread. [Issue 157](https://github.com/helpscout/beacon-ios-sdk/issues/157)
+* Improved GIF rendering to be much less resource and memory-intensive. [Issue 158](https://github.com/helpscout/beacon-ios-sdk/issues/158)
+* Resolved an issue where the chat send button could appear hidden in Beacons with white or near-white colors. [Issue 160](https://github.com/helpscout/beacon-ios-sdk/issues/160)
+* Fixed a rare case where restored chats could lead to chats having duplicate identifiers.
+
+#### Improvements
+
+* Beacon more accurately determines the UIViewController to open from, improving the ergonomics of opening in SwiftUI and UIKit.
+
 ## 2.2.2 Release (June 3, 2021)
 
 ##### Bug Fixes
