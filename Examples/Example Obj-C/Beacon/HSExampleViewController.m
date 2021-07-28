@@ -1,6 +1,5 @@
 #import "HSExampleViewController.h"
-
-@import Beacon;
+#import <Beacon/Beacon.h>
 
 @interface HSExampleViewController ()
 
