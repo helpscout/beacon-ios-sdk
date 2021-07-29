@@ -2,8 +2,8 @@ osx_image: xcode12
 language: objective-c
 
 before_install:
-- gem install xcpretty cocoapods
-- cd Example; pod install; cd ..;
+- gem install xcpretty
+- cd Examples/Obj-C\ Example;
 
 script:
 - set -o pipefail && xcodebuild build -workspace Example/Beacon\ Example.xcworkspace -scheme 'BeaconExample' -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 8,OS=11.4' -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
