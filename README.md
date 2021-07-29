@@ -53,9 +53,13 @@ Beacon can be installed manually by linking the `Beacon.xcframework`. To do so, 
 
 Our [developer site](https://developer.helpscout.com/beacon-2/ios/#additional-setup) has information on configuring up your application to work with Beacon's email attachments and push notifications.
 
-## Sample Application
+## Sample Applications
 
-To run the example project in this repo, cd into the Example directory `cd Example`, run `pod install`, open `Beacon Example.xcworkspace` and run the `BeaconExample` scheme.
+This repository includes two sample applications, one written in Objective-C and one written with SwiftUI.  
+
+To run the Objective-C example you can cd into the Examples/Obj-C Example directory `cd Examples/Obj-C\ Example`, open `Beacon Example.xcodeproj` and run the `BeaconExample` scheme.
+
+To run the SwiftUI example you can cd into the Examples/SwiftUI Example directory `cd Examples/SwiftUI\ Example`, open `Beacon SwiftUI Example.xcodeproj` and run the `Beacon SwiftUI Example` scheme.  For it to run properly you'll need to provide a valid Beacon identifer on Line 10 of `SettingsView.swift`.
 
 ## Documentation
 
