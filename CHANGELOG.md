@@ -2,6 +2,13 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/mobile/).
 
+## 2.2.4 Release (September 27, 2021)
+
+#### Bug Fixes
+
+* We now correctly configure the navigation bar when replying to a conversation, allowing the close button to be visible in all configurations. [Issue 168](https://github.com/helpscout/beacon-ios-sdk/issues/168)
+* Fixed a namespace collision when integrating more recent versions of PusherSwift.  [Issue 167](https://github.com/helpscout/beacon-ios-sdk/issues/167)
+
 ## 2.2.3 Release (July 26, 2021)
 
 #### Bug Fixes
