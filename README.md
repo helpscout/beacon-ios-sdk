@@ -67,3 +67,7 @@ See our [developer site](https://developer.helpscout.com/beacon-2/ios/) for more
 
 [1]:    http://cocoapods.org
 [2]:    https://github.com/Carthage/Carthage#adding-frameworks-to-an-application
+
+## Support
+
+For issues or questions, contact Help Scout support at help@helpscout.com
