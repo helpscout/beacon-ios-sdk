@@ -67,3 +67,7 @@ See our [developer site](https://developer.helpscout.com/beacon-2/ios/) for more
 
 [1]:    http://cocoapods.org
 [2]:    https://github.com/Carthage/Carthage#adding-frameworks-to-an-application
+
+## Support
+
+For issues or questions, contact Help Scout support at For issues or questions, contact Help Scout support at [help@helpscout.com](mailto:help@helpscout.com?subject=%5BiOS%20Beacon%20SDK%5D%20Issue%20report&body=Technical%20details%0A%0A-%20Beacon%20version%3A%0A-%20iOS%20OS%20version%3A%0A-%20Device%20make%2Fmodel%3A%0A-%20Impacted%20user%20count%3A%0A%0AActual%20outcome%0A%0A%20%20%20%20Beacon%20did%20or%20did%20not...%0A%0AExpected%20outcome%0A%0A%20%20%20%20Beacon%20should...%0A%0ASteps%20to%20reproduce%0A%0A%20%20%20%201.%20%E2%80%A6%0A%20%20%20%202.%20%E2%80%A6%0A%20%20%20%203.%20%E2%80%A6%0A%0AScreenshots%2FScreen%20Recording%0A%0A%20%20%20%20Please%20add%20any%20images%20or%20videos%20to%20support%20your%20report.%0A%0AAdditional%20Information%0A%0A%20%20%20%20Please%20attach%20any%20crash%20logs)
