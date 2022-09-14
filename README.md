@@ -13,7 +13,7 @@ Beacon 2.0.x requires Xcode 11.4
 
 ### Supported platform and language versions
 
-* iOS 11 to 14
+* iOS 14 to 16
 * Swift 5
 * Xcode 12
 
