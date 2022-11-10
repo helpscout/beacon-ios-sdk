@@ -36,6 +36,6 @@ framework module Beacon {
 }
 
 module Beacon.Swift {
-    header "Beacon-Swift.h"
-    requires objc
+  header "Beacon-Swift.h"
+  requires objc
 }

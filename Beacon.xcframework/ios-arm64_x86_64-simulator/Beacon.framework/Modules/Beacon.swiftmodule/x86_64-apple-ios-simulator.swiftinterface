@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Beacon
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import Beacon
 import CommonCrypto
 import CoreData
@@ -14,34 +15,35 @@ import Security
 import Swift
 import SystemConfiguration
 import UIKit
+import _Concurrency
+import _StringProcessing
 import zlib
 public class Animator {
   public init(withDelegate delegate: Beacon.GIFAnimatable)
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc(HSBeaconArticleEscalationViewController) public class BeaconArticleEscalationViewController : UIKit.UIViewController {
-  @objc public init(stringLocalizer: Beacon.HSBeaconStringLocalizer, settings: Beacon.HSBeaconSettings, tintColorSettings: Beacon.HSBeaconTintColor, actionColor: UIKit.UIColor, messagingEnabled: Swift.Bool)
-  @objc override dynamic public func viewDidLoad()
-  @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
+@_hasMissingDesignatedInitializers @objc(HSBeaconArticleEscalationViewController) @_Concurrency.MainActor(unsafe) public class BeaconArticleEscalationViewController : UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) public init(stringLocalizer: Beacon.HSBeaconStringLocalizer, settings: Beacon.HSBeaconSettings, tintColorSettings: Beacon.HSBeaconTintColor, actionColor: UIKit.UIColor, messagingEnabled: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
 }
 @objc(HSBeaconArticleRating) public enum BeaconArticleRating : Swift.UInt {
   case positive
   case negative
-  public typealias RawValue = Swift.UInt
   public init?(rawValue: Swift.UInt)
+  public typealias RawValue = Swift.UInt
   public var rawValue: Swift.UInt {
     get
   }
 }
-@objc(HSBeaconArticleRatingViewDelegate) public protocol BeaconArticleRatingViewDelegate : AnyObject {
+@objc(HSBeaconArticleRatingViewDelegate) public protocol BeaconArticleRatingViewDelegate {
   @objc func articleRatingView(_ view: Beacon.BeaconArticleRatingView, ratedArticle rating: Beacon.BeaconArticleRating)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(HSBeaconArticleRatingView) public class BeaconArticleRatingView : UIKit.UIView {
-  @objc public static var contentHeight: CoreGraphics.CGFloat
-  @objc weak public var delegate: Beacon.BeaconArticleRatingViewDelegate?
-  @objc public var stringLocalizer: Beacon.HSBeaconStringLocalizer? {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(HSBeaconArticleRatingView) @_Concurrency.MainActor(unsafe) public class BeaconArticleRatingView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public static var contentHeight: CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: Beacon.BeaconArticleRatingViewDelegate?
+  @objc @_Concurrency.MainActor(unsafe) public var stringLocalizer: Beacon.HSBeaconStringLocalizer? {
     @objc get
     @objc set
   }
@@ -60,15 +62,15 @@ public enum BeaconRoute {
     get
   }
 }
-extension HSBeacon {
+extension Beacon.HSBeacon {
   public class func navigate(_ route: Beacon.BeaconRoute, settings: Beacon.HSBeaconSettings, viewController: UIKit.UIViewController? = nil, signature: Swift.String? = nil)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(HSBeaconSearchPlaceholderView) public class BeaconSearchPlaceholderView : UIKit.UIView {
-  @objc public func setPlaceholder(_ string: Swift.String)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(HSBeaconSearchPlaceholderView) @_Concurrency.MainActor(unsafe) public class BeaconSearchPlaceholderView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public func setPlaceholder(_ string: Swift.String)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(HSBeaconThanksFeedbackView) public class BeaconThanksFeedbackView : UIKit.UIView {
-  @objc public var stringLocalizer: Beacon.HSBeaconStringLocalizer? {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(HSBeaconThanksFeedbackView) @_Concurrency.MainActor(unsafe) public class BeaconThanksFeedbackView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var stringLocalizer: Beacon.HSBeaconStringLocalizer? {
     @objc get
     @objc set
   }
@@ -77,42 +79,7 @@ extension HSBeacon {
 public protocol CancelableOperation {
   func cancel()
 }
-extension URLSessionDataTask : Beacon.CancelableOperation {
-}
-public typealias Reducer<Value, Action> = (inout Value, Action) -> [Beacon.Effect<Action>]
-public func logging<Value, Action>(_ reducer: @escaping Beacon.Reducer<Value, Action>) -> Beacon.Reducer<Value, Action>
-public func combine<State, Action>(_ reducers: Beacon.Reducer<State, Action>...) -> Beacon.Reducer<State, Action>
-public struct Tagged<Tag, RawValue> {
-  public var rawValue: RawValue
-  public init(rawValue: RawValue)
-  public func map<B>(_ f: (RawValue) -> B) -> Beacon.Tagged<Tag, B>
-}
-extension Tagged : Swift.CustomStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-}
-extension Tagged : Swift.RawRepresentable {
-}
-extension Tagged : Swift.Equatable where RawValue : Swift.Equatable {
-}
-extension Tagged : Swift.ExpressibleByExtendedGraphemeClusterLiteral where RawValue : Swift.ExpressibleByExtendedGraphemeClusterLiteral {
-  public typealias ExtendedGraphemeClusterLiteralType = RawValue.ExtendedGraphemeClusterLiteralType
-  public init(extendedGraphemeClusterLiteral: Beacon.Tagged<Tag, RawValue>.ExtendedGraphemeClusterLiteralType)
-}
-extension Tagged : Swift.ExpressibleByStringLiteral where RawValue : Swift.ExpressibleByStringLiteral {
-  public typealias StringLiteralType = RawValue.StringLiteralType
-  public init(stringLiteral: Beacon.Tagged<Tag, RawValue>.StringLiteralType)
-}
-extension Tagged : Swift.ExpressibleByUnicodeScalarLiteral where RawValue : Swift.ExpressibleByUnicodeScalarLiteral {
-  public typealias UnicodeScalarLiteralType = RawValue.UnicodeScalarLiteralType
-  public init(unicodeScalarLiteral: Beacon.Tagged<Tag, RawValue>.UnicodeScalarLiteralType)
-}
-extension Tagged : Swift.Decodable where RawValue : Swift.Decodable {
-  public init(from decoder: Swift.Decoder) throws
-}
-extension Tagged : Swift.Encodable where RawValue : Swift.Encodable {
-  public func encode(to encoder: Swift.Encoder) throws
+extension Foundation.URLSessionDataTask : Beacon.CancelableOperation {
 }
 @objc @_inheritsConvenienceInitializers public class ChatDependencies : ObjectiveC.NSObject {
   @objc public class func setTintColorSettings(_ tintColor: Beacon.HSBeaconTintColor)
@@ -135,31 +102,26 @@ extension Tagged : Swift.Encodable where RawValue : Swift.Encodable {
   @objc public class func setRatingsEnabled(_ enabled: Swift.Bool)
   @objc public class func setBeaconDelegate(_ delegate: Beacon.HSBeaconDelegate)
   @objc public class func setActionColor(_ color: UIKit.UIColor)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public func decode<A>(_ data: Foundation.Data) -> Swift.Result<A, Swift.DecodingError> where A : Swift.Decodable
 public func decode<A>(_ data: Foundation.Data, with decoder: Foundation.JSONDecoder) -> Swift.Result<A, Swift.DecodingError> where A : Swift.Decodable
-public struct Effect<A> {
-  public let run: (@escaping (A) -> Swift.Void) -> Swift.Void
-  public init(run: @escaping (@escaping (A) -> Swift.Void) -> Swift.Void)
-  public func map<B>(_ f: @escaping (A) -> B) -> Beacon.Effect<B>
-}
 public protocol GIFAnimatable : AnyObject {
   var animator: Beacon.Animator? { get set }
   var layer: QuartzCore.CALayer { get }
-  var frame: CoreGraphics.CGRect { get set }
+  var frame: CoreFoundation.CGRect { get set }
   var contentMode: UIKit.UIView.ContentMode { get set }
 }
 public protocol ImageContainer {
   var image: UIKit.UIImage? { get set }
 }
-extension GIFAnimatable where Self : Beacon.ImageContainer {
-  public var intrinsicContentSize: CoreGraphics.CGSize {
+extension Beacon.GIFAnimatable where Self : Beacon.ImageContainer {
+  public var intrinsicContentSize: CoreFoundation.CGSize {
     get
   }
 }
-extension GIFAnimatable {
+extension Beacon.GIFAnimatable {
   public var gifLoopDuration: Foundation.TimeInterval {
     get
   }
@@ -185,20 +147,20 @@ extension GIFAnimatable {
   public func setFrameBufferCount(_ frames: Swift.Int)
   public func updateImageIfNeeded()
 }
-@objc @_inheritsConvenienceInitializers public class GIFImageView : UIKit.UIImageView, Beacon.GIFAnimatable {
-  public var animator: Beacon.Animator? {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class GIFImageView : UIKit.UIImageView, Beacon.GIFAnimatable {
+  @_Concurrency.MainActor(unsafe) public var animator: Beacon.Animator? {
     get
     set
   }
-  @objc override dynamic public func display(_ layer: QuartzCore.CALayer)
-  @objc override dynamic public init(image: UIKit.UIImage?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func display(_ layer: QuartzCore.CALayer)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(image: UIKit.UIImage?)
   @available(iOS 3.0, *)
-  @objc override dynamic public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(image: UIKit.UIImage?, highlightedImage: UIKit.UIImage?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
-@objc extension NSNotification {
+@objc extension Foundation.NSNotification {
   @objc public static var beaconUnreadCountDidChangeNotification: Foundation.NSString {
     @objc get
   }
@@ -220,8 +182,8 @@ extension GIFAnimatable {
     get
   }
   public init(navString: Swift.String)
-  public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
@@ -243,23 +205,22 @@ extension GIFAnimatable {
   @objc public func isValidWith(docsEnabled: Swift.Bool, messagingEnabled: Swift.Bool, chatEnabled: Swift.Bool, previousMessagesEnabled: Swift.Bool) -> Swift.Bool
   @objc public func invalidRouteMessage(stringLocalizer: Beacon.HSBeaconStringLocalizer) -> Swift.String
   @objc deinit
-  @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers public class HSBeaconUnreadMessageCountGenerator : ObjectiveC.NSObject {
   @objc public class func unreadMessageCount(with previousMessages: [Beacon.HSBeaconConversation]) -> Swift.Int
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc public protocol HSEnterEmailViewControllerDelegate {
   @objc func enterEmailController(_ controller: Beacon.HSEnterEmailViewController, didEnter email: Swift.String)
 }
-@_inheritsConvenienceInitializers @objc public class HSEnterEmailViewController : UIKit.UIViewController {
-  @objc weak public var delegate: Beacon.HSEnterEmailViewControllerDelegate?
-  @objc public static func instantiateViewController() -> Beacon.HSEnterEmailViewController
-  @objc override dynamic public func viewDidLoad()
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class HSEnterEmailViewController : UIKit.UIViewController {
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: Beacon.HSEnterEmailViewControllerDelegate?
+  @objc @_Concurrency.MainActor(unsafe) public static func instantiateViewController() -> Beacon.HSEnterEmailViewController
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
-  @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 public enum HTTPMethod : Swift.Equatable {
   case options
@@ -279,8 +240,8 @@ public enum HTTPMethod : Swift.Equatable {
   }
   public static func == (a: Beacon.HTTPMethod, b: Beacon.HTTPMethod) -> Swift.Bool
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(HSBeaconLoadingView) public class LoadingView : UIKit.UIView {
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(HSBeaconLoadingView) @_Concurrency.MainActor(unsafe) public class LoadingView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @objc deinit
 }
 public enum ReachabilityError : Swift.Error {
@@ -292,7 +253,7 @@ public enum ReachabilityError : Swift.Error {
 }
 @available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
 public let ReachabilityChangedNotification: Foundation.NSNotification.Name
-extension NSNotification.Name {
+extension Foundation.NSNotification.Name {
   public static let reachabilityChanged: Foundation.Notification.Name
 }
 public class Reachability {
@@ -305,10 +266,10 @@ public class Reachability {
       get
     }
     public static func == (a: Beacon.Reachability.Connection, b: Beacon.Reachability.Connection) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   public var whenReachable: Beacon.Reachability.NetworkReachable?
   public var whenUnreachable: Beacon.Reachability.NetworkUnreachable?
@@ -332,7 +293,7 @@ public class Reachability {
   convenience public init(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
   @objc deinit
 }
-extension Reachability {
+extension Beacon.Reachability {
   public func startNotifier() throws
   public func stopNotifier()
   @available(*, deprecated, message: "Please use `connection != .none`")
@@ -381,7 +342,7 @@ open class SSLSecurity : Beacon.SSLTrustValidator {
   public func publicKeyChain(_ trust: Security.SecTrust) -> [Security.SecKey]
   @objc deinit
 }
-@objc extension UIColor {
+@objc extension UIKit.UIColor {
   @objc public static func beaconBackground() -> UIKit.UIColor
   @objc public static func secondaryBeaconBackground() -> UIKit.UIColor
   @objc public static func tertiaryBeaconBackground() -> UIKit.UIColor
@@ -417,24 +378,24 @@ open class SSLSecurity : Beacon.SSLTrustValidator {
   @objc dynamic public func exceedsMinimumContrast(with color: UIKit.UIColor) -> Swift.Bool
   @objc dynamic public func contrasting(_ color: UIKit.UIColor) -> UIKit.UIColor
 }
-extension UIImageView : Beacon.ImageContainer {
+extension UIKit.UIImageView : Beacon.ImageContainer {
 }
-extension UINavigationController {
-  @objc dynamic public func pushViewController(_ viewController: UIKit.UIViewController, animated: Swift.Bool, completion: ((Swift.Bool) -> Swift.Void)?)
-  @objc dynamic public func popToRootViewControllerAnimated(_ animated: Swift.Bool, completion: ((Swift.Bool) -> Swift.Void)?)
-  @objc dynamic public func popToRootViewControllerAnimated(_ animated: Swift.Bool, completedToRootVC: ((UIKit.UIViewController?) -> Swift.Void)?)
-  @objc dynamic public func popToViewController(_ viewController: UIKit.UIViewController, animated: Swift.Bool, completion: ((Swift.Bool) -> Swift.Void)?)
-  @objc dynamic public func configure(with tintColorSettings: Beacon.HSBeaconTintColor)
-  public func perform(_ action: () -> (), animated: Swift.Bool, with completion: ((Swift.Bool) -> Swift.Void)?)
+extension UIKit.UINavigationController {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func pushViewController(_ viewController: UIKit.UIViewController, animated: Swift.Bool, completion: ((Swift.Bool) -> Swift.Void)?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func popToRootViewControllerAnimated(_ animated: Swift.Bool, completion: ((Swift.Bool) -> Swift.Void)?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func popToRootViewControllerAnimated(_ animated: Swift.Bool, completedToRootVC: ((UIKit.UIViewController?) -> Swift.Void)?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func popToViewController(_ viewController: UIKit.UIViewController, animated: Swift.Bool, completion: ((Swift.Bool) -> Swift.Void)?)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func configure(with tintColorSettings: Beacon.HSBeaconTintColor)
+  @_Concurrency.MainActor(unsafe) public func perform(_ action: () -> (), animated: Swift.Bool, with completion: ((Swift.Bool) -> Swift.Void)?)
 }
-extension UITraitCollection {
+extension UIKit.UITraitCollection {
   @objc dynamic public var isRegularRegular: Swift.Bool {
     @objc get
   }
   @objc dynamic public func hasDifferentSizeClass(comparedTo traitCollection: UIKit.UITraitCollection?) -> Swift.Bool
 }
-@objc extension UIWindow {
-  @objc dynamic public var topViewController: UIKit.UIViewController? {
+@objc extension UIKit.UIWindow {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public var topViewController: UIKit.UIViewController? {
     @objc get
   }
 }
@@ -444,8 +405,8 @@ extension UITraitCollection {
   @objc public class func chatViewController() -> UIKit.UIViewController
   @objc public class func messageEntryViewController() -> Beacon.HSBeaconMessageEntryContainerController
   @objc public class func previousMessagesViewController() -> Beacon.HSBeaconPreviousMessagesController
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public let WebsocketDidConnectNotification: Swift.String
 public let WebsocketDidDisconnectNotification: Swift.String
@@ -459,8 +420,8 @@ public enum CloseCode : Swift.UInt16 {
   case encoding
   case policyViolated
   case messageTooBig
-  public typealias RawValue = Swift.UInt16
   public init?(rawValue: Swift.UInt16)
+  public typealias RawValue = Swift.UInt16
   public var rawValue: Swift.UInt16 {
     get
   }
@@ -474,10 +435,10 @@ public enum ErrorType : Swift.Error {
   case upgradeError
   case closeError
   public static func == (a: Beacon.ErrorType, b: Beacon.ErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public struct WSError : Swift.Error {
   public let type: Beacon.ErrorType
@@ -501,7 +462,7 @@ public protocol WebSocketClient : AnyObject {
   func write(ping: Foundation.Data, completion: (() -> ())?)
   func write(pong: Foundation.Data, completion: (() -> ())?)
 }
-extension WebSocketClient {
+extension Beacon.WebSocketClient {
   public func write(string: Swift.String)
   public func write(data: Foundation.Data)
   public func write(ping: Foundation.Data)
@@ -537,8 +498,8 @@ public protocol WSStream {
   public func cleanup()
   public func sslTrust() -> (trust: Security.SecTrust?, domain: Swift.String?)
   @objc open func stream(_ aStream: Foundation.Stream, handle eventCode: Foundation.Stream.Event)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public protocol WebSocketDelegate : AnyObject {
   func websocketDidConnect(socket: Beacon.WebSocketClient)
@@ -565,8 +526,8 @@ public protocol WebSocketAdvancedDelegate : AnyObject {
     case connectionClose
     case ping
     case pong
-    public typealias RawValue = Swift.UInt8
     public init?(rawValue: Swift.UInt8)
+    public typealias RawValue = Swift.UInt8
     public var rawValue: Swift.UInt8 {
       get
     }
@@ -616,7 +577,6 @@ public protocol WebSocketAdvancedDelegate : AnyObject {
   public func newBytesInStream()
   public func streamDidError(error: Swift.Error?)
   @objc deinit
-  @objc override dynamic public init()
 }
 extension Beacon.BeaconArticleRating : Swift.Equatable {}
 extension Beacon.BeaconArticleRating : Swift.Hashable {}
