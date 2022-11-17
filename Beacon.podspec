@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name          = 'Beacon'
   s.swift_version = '5.0'
-  s.version       = '2.2.5'
+  s.version       = '2.2.6'
   s.summary       = 'The Help Scout Beacon SDK'
   s.license       = { :type => 'Commercial', :text => 'Help Scout. All rights reserved.' }
 
