@@ -2,6 +2,12 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/mobile/).
 
+## 2.2.7 Release (November 29, 2022)
+
+#### Bug Fixes
+
+* Fixes edge case issue when opening Beacon from a push notification in certain configurations.
+
 ## 2.2.6 Release (November 17, 2022)
 
 #### Bug Fixes
