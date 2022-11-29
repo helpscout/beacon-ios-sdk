@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		zdvWqUVjjD4tqVKRu3HTLCWPAL4=
+		Va76OIOGKk3GrP4YMbftRtwv2rI=
 		</data>
 		<key>Beacon.storyboardc/6c5-Ng-CAT-view-EQA-n2-1Dc.nib/objects-13.0+.nib</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>BeaconDatePicker.nib/runtime.nib</key>
 		<data>
-		xOyZID1wfRWmjY54DqP5uMg7FY0=
+		EKvJ73ngfk8EyfvpGNPdkOWE/Ug=
 		</data>
 		<key>BeaconDropdownCustomField.nib</key>
 		<data>
@@ -346,7 +346,7 @@
 		</data>
 		<key>Headers/HSBeaconConstants.h</key>
 		<data>
-		32vmmZFUBrxcjYzDP7hRb3LRbFE=
+		JrH4+YmathV7aE/PRHdZk8l/yFk=
 		</data>
 		<key>Headers/HSBeaconContactForm.h</key>
 		<data>
@@ -374,7 +374,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iPAzWqutocQB+bH73REx/n14nH8=
+		DsFxaB/36cesAMPMEE7ZxoJWzTk=
 		</data>
 		<key>Modules/Beacon.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -1032,7 +1032,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VDUfIouiJWGuIPTLYtPQveB6Phe7SB5aQGskLyEgV98=
+			Rd9GDHJFneHut8tNazU3u1PNUw8s/rKPV2iKDP33vNg=
 			</data>
 		</dict>
 		<key>Beacon.storyboardc/6c5-Ng-CAT-view-EQA-n2-1Dc.nib/objects-13.0+.nib</key>
@@ -1158,7 +1158,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rdnKmEAVRbkb8g9grda+8S/9WRnkkL/MyM17EDsL9/8=
+			OQciB6xGd2Sc27b1ILJcTKovtRnrcNiBbDrcEHui4kM=
 			</data>
 		</dict>
 		<key>BeaconDropdownCustomField.nib</key>
@@ -1627,7 +1627,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VBrPonl+K9hFZS6BEz/axgUzGxMshhJIsTb1llwC/dc=
+			oT55lSdqeFxPH7YbTNbtivYJWLvHgQUeEZl5GacxcG0=
 			</data>
 		</dict>
 		<key>Headers/HSBeaconContactForm.h</key>
