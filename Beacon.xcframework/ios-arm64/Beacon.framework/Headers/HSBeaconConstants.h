@@ -13,4 +13,4 @@ static NSInteger const HSBeaconMaxUserJobTitleLength = 60;
 /** The maximum length of the `avatar` value on HSBeaconUser */
 static NSInteger const HSBeaconMaxUserAvatarLength = 200;
 /** The current version of the Beacon SDK */
-static NSString * const HSBeaconVersion = @"2.2.7";
+static NSString * const HSBeaconVersion = @"2.2.8";

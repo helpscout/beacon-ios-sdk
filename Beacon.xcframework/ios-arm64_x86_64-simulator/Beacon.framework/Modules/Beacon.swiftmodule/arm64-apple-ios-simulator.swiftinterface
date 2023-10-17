@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Beacon
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import Beacon
@@ -19,11 +19,11 @@ import _Concurrency
 import _StringProcessing
 import zlib
 public class Animator {
-  public init(withDelegate delegate: Beacon.GIFAnimatable)
+  public init(withDelegate delegate: any Beacon.GIFAnimatable)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(HSBeaconArticleEscalationViewController) @_Concurrency.MainActor(unsafe) public class BeaconArticleEscalationViewController : UIKit.UIViewController {
-  @objc @_Concurrency.MainActor(unsafe) public init(stringLocalizer: Beacon.HSBeaconStringLocalizer, settings: Beacon.HSBeaconSettings, tintColorSettings: Beacon.HSBeaconTintColor, actionColor: UIKit.UIColor, messagingEnabled: Swift.Bool)
+  @objc @_Concurrency.MainActor(unsafe) public init(stringLocalizer: any Beacon.HSBeaconStringLocalizer, settings: Beacon.HSBeaconSettings, tintColorSettings: Beacon.HSBeaconTintColor, actionColor: UIKit.UIColor, messagingEnabled: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @objc deinit
@@ -42,8 +42,8 @@ public class Animator {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(HSBeaconArticleRatingView) @_Concurrency.MainActor(unsafe) public class BeaconArticleRatingView : UIKit.UIView {
   @objc @_Concurrency.MainActor(unsafe) public static var contentHeight: CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: Beacon.BeaconArticleRatingViewDelegate?
-  @objc @_Concurrency.MainActor(unsafe) public var stringLocalizer: Beacon.HSBeaconStringLocalizer? {
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any Beacon.BeaconArticleRatingViewDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) public var stringLocalizer: (any Beacon.HSBeaconStringLocalizer)? {
     @objc get
     @objc set
   }
@@ -70,7 +70,7 @@ extension Beacon.HSBeacon {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(HSBeaconThanksFeedbackView) @_Concurrency.MainActor(unsafe) public class BeaconThanksFeedbackView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public var stringLocalizer: Beacon.HSBeaconStringLocalizer? {
+  @objc @_Concurrency.MainActor(unsafe) public var stringLocalizer: (any Beacon.HSBeaconStringLocalizer)? {
     @objc get
     @objc set
   }
@@ -83,13 +83,13 @@ extension Foundation.URLSessionDataTask : Beacon.CancelableOperation {
 }
 @objc @_inheritsConvenienceInitializers public class ChatDependencies : ObjectiveC.NSObject {
   @objc public class func setTintColorSettings(_ tintColor: Beacon.HSBeaconTintColor)
-  @objc public class func setStringLocalizer(_ stringLocalizer: Beacon.HSBeaconStringLocalizer)
+  @objc public class func setStringLocalizer(_ stringLocalizer: any Beacon.HSBeaconStringLocalizer)
   @objc public class func setBeaconConfig(_ config: Beacon.HSBeaconConfig)
   @objc public class func setBeaconID(_ beaconID: Swift.String)
   @objc public class func setDeviceID(_ deviceID: Swift.String)
   @objc public class func setSignature(_ signature: Swift.String?)
   @objc public class func setSignatureVerified(_ verified: Swift.Bool)
-  @objc public class func setChatEndedDelegate(_ delegate: Beacon.HSBeaconChatEndedDelegate?)
+  @objc public class func setChatEndedDelegate(_ delegate: (any Beacon.HSBeaconChatEndedDelegate)?)
   @objc public class func setBeaconAgents(_ agents: [Beacon.HSBeaconAgent])
   @objc public class func setEnablePreviousMessages(_ enabled: Swift.Bool)
   @objc public class func setAttachmentsEnabled(_ enabled: Swift.Bool)
@@ -100,7 +100,7 @@ extension Foundation.URLSessionDataTask : Beacon.CancelableOperation {
   @objc public class func didChatGenerateConversationWithId(_ id: Swift.String) -> Swift.Bool
   @objc public class func setRequiresEmail(_ requiresEmail: Swift.Bool)
   @objc public class func setRatingsEnabled(_ enabled: Swift.Bool)
-  @objc public class func setBeaconDelegate(_ delegate: Beacon.HSBeaconDelegate)
+  @objc public class func setBeaconDelegate(_ delegate: any Beacon.HSBeaconDelegate)
   @objc public class func setActionColor(_ color: UIKit.UIColor)
   @objc override dynamic public init()
   @objc deinit
@@ -203,7 +203,7 @@ extension Beacon.GIFAnimatable {
   @objc public init(searchText: Swift.String)
   @objc public init(route: Beacon.HSBeaconRoute, routeData: Swift.String? = nil)
   @objc public func isValidWith(docsEnabled: Swift.Bool, messagingEnabled: Swift.Bool, chatEnabled: Swift.Bool, previousMessagesEnabled: Swift.Bool) -> Swift.Bool
-  @objc public func invalidRouteMessage(stringLocalizer: Beacon.HSBeaconStringLocalizer) -> Swift.String
+  @objc public func invalidRouteMessage(stringLocalizer: any Beacon.HSBeaconStringLocalizer) -> Swift.String
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class HSBeaconUnreadMessageCountGenerator : ObjectiveC.NSObject {
@@ -215,7 +215,7 @@ extension Beacon.GIFAnimatable {
   @objc func enterEmailController(_ controller: Beacon.HSEnterEmailViewController, didEnter email: Swift.String)
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class HSEnterEmailViewController : UIKit.UIViewController {
-  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: Beacon.HSEnterEmailViewControllerDelegate?
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any Beacon.HSEnterEmailViewControllerDelegate)?
   @objc @_Concurrency.MainActor(unsafe) public static func instantiateViewController() -> Beacon.HSEnterEmailViewController
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
@@ -446,13 +446,13 @@ public struct WSError : Swift.Error {
   public let code: Swift.Int
 }
 public protocol WebSocketClient : AnyObject {
-  var delegate: Beacon.WebSocketDelegate? { get set }
-  var pongDelegate: Beacon.WebSocketPongDelegate? { get set }
+  var delegate: (any Beacon.WebSocketDelegate)? { get set }
+  var pongDelegate: (any Beacon.WebSocketPongDelegate)? { get set }
   var disableSSLCertValidation: Swift.Bool { get set }
   var overrideTrustHostname: Swift.Bool { get set }
   var desiredTrustHostname: Swift.String? { get set }
   var sslClientCertificate: Beacon.SSLClientCertificate? { get set }
-  var security: Beacon.SSLTrustValidator? { get set }
+  var security: (any Beacon.SSLTrustValidator)? { get set }
   var enabledSSLCipherSuites: [Security.SSLCipherSuite]? { get set }
   var isConnected: Swift.Bool { get }
   func connect()
@@ -479,20 +479,20 @@ public struct SSLSettings {
 }
 public protocol WSStreamDelegate : AnyObject {
   func newBytesInStream()
-  func streamDidError(error: Swift.Error?)
+  func streamDidError(error: (any Swift.Error)?)
 }
 public protocol WSStream {
-  var delegate: Beacon.WSStreamDelegate? { get set }
-  func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: Beacon.SSLSettings, completion: @escaping ((Swift.Error?) -> Swift.Void))
+  var delegate: (any Beacon.WSStreamDelegate)? { get set }
+  func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: Beacon.SSLSettings, completion: @escaping (((any Swift.Error)?) -> Swift.Void))
   func write(data: Foundation.Data) -> Swift.Int
   func read() -> Foundation.Data?
   func cleanup()
   func sslTrust() -> (trust: Security.SecTrust?, domain: Swift.String?)
 }
 @objc @_inheritsConvenienceInitializers open class FoundationStream : ObjectiveC.NSObject, Beacon.WSStream, Foundation.StreamDelegate {
-  weak public var delegate: Beacon.WSStreamDelegate?
+  weak public var delegate: (any Beacon.WSStreamDelegate)?
   public var enableSOCKSProxy: Swift.Bool
-  public func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: Beacon.SSLSettings, completion: @escaping ((Swift.Error?) -> Swift.Void))
+  public func connect(url: Foundation.URL, port: Swift.Int, timeout: Foundation.TimeInterval, ssl: Beacon.SSLSettings, completion: @escaping (((any Swift.Error)?) -> Swift.Void))
   public func write(data: Foundation.Data) -> Swift.Int
   public func read() -> Foundation.Data?
   public func cleanup()
@@ -502,17 +502,17 @@ public protocol WSStream {
   @objc deinit
 }
 public protocol WebSocketDelegate : AnyObject {
-  func websocketDidConnect(socket: Beacon.WebSocketClient)
-  func websocketDidDisconnect(socket: Beacon.WebSocketClient, error: Swift.Error?)
-  func websocketDidReceiveMessage(socket: Beacon.WebSocketClient, text: Swift.String)
-  func websocketDidReceiveData(socket: Beacon.WebSocketClient, data: Foundation.Data)
+  func websocketDidConnect(socket: any Beacon.WebSocketClient)
+  func websocketDidDisconnect(socket: any Beacon.WebSocketClient, error: (any Swift.Error)?)
+  func websocketDidReceiveMessage(socket: any Beacon.WebSocketClient, text: Swift.String)
+  func websocketDidReceiveData(socket: any Beacon.WebSocketClient, data: Foundation.Data)
 }
 public protocol WebSocketPongDelegate : AnyObject {
-  func websocketDidReceivePong(socket: Beacon.WebSocketClient, data: Foundation.Data?)
+  func websocketDidReceivePong(socket: any Beacon.WebSocketClient, data: Foundation.Data?)
 }
 public protocol WebSocketAdvancedDelegate : AnyObject {
   func websocketDidConnect(socket: Beacon.WebSocket)
-  func websocketDidDisconnect(socket: Beacon.WebSocket, error: Swift.Error?)
+  func websocketDidDisconnect(socket: Beacon.WebSocket, error: (any Swift.Error)?)
   func websocketDidReceiveMessage(socket: Beacon.WebSocket, text: Swift.String, response: Beacon.WebSocket.WSResponse)
   func websocketDidReceiveData(socket: Beacon.WebSocket, data: Foundation.Data, response: Beacon.WebSocket.WSResponse)
   func websocketHttpUpgrade(socket: Beacon.WebSocket, request: Swift.String)
@@ -541,11 +541,11 @@ public protocol WebSocketAdvancedDelegate : AnyObject {
     final public let firstFrame: Foundation.Date
     @objc deinit
   }
-  weak public var delegate: Beacon.WebSocketDelegate?
-  weak public var advancedDelegate: Beacon.WebSocketAdvancedDelegate?
-  weak public var pongDelegate: Beacon.WebSocketPongDelegate?
+  weak public var delegate: (any Beacon.WebSocketDelegate)?
+  weak public var advancedDelegate: (any Beacon.WebSocketAdvancedDelegate)?
+  weak public var pongDelegate: (any Beacon.WebSocketPongDelegate)?
   public var onConnect: (() -> Swift.Void)?
-  public var onDisconnect: ((Swift.Error?) -> Swift.Void)?
+  public var onDisconnect: (((any Swift.Error)?) -> Swift.Void)?
   public var onText: ((Swift.String) -> Swift.Void)?
   public var onData: ((Foundation.Data) -> Swift.Void)?
   public var onPong: ((Foundation.Data?) -> Swift.Void)?
@@ -555,7 +555,7 @@ public protocol WebSocketAdvancedDelegate : AnyObject {
   public var desiredTrustHostname: Swift.String?
   public var sslClientCertificate: Beacon.SSLClientCertificate?
   public var enableCompression: Swift.Bool
-  public var security: Beacon.SSLTrustValidator?
+  public var security: (any Beacon.SSLTrustValidator)?
   public var enabledSSLCipherSuites: [Security.SSLCipherSuite]?
   public var isConnected: Swift.Bool {
     get
@@ -565,7 +565,7 @@ public protocol WebSocketAdvancedDelegate : AnyObject {
     get
   }
   public var respondToPingWithPong: Swift.Bool
-  public init(request: Foundation.URLRequest, protocols: [Swift.String]? = nil, stream: Beacon.WSStream = FoundationStream())
+  public init(request: Foundation.URLRequest, protocols: [Swift.String]? = nil, stream: any Beacon.WSStream = FoundationStream())
   convenience public init(url: Foundation.URL, protocols: [Swift.String]? = nil)
   convenience public init(url: Foundation.URL, writeQueueQOS: Foundation.QualityOfService, protocols: [Swift.String]? = nil)
   open func connect()
@@ -575,7 +575,7 @@ public protocol WebSocketAdvancedDelegate : AnyObject {
   open func write(ping: Foundation.Data, completion: (() -> ())? = nil)
   open func write(pong: Foundation.Data, completion: (() -> ())? = nil)
   public func newBytesInStream()
-  public func streamDidError(error: Swift.Error?)
+  public func streamDidError(error: (any Swift.Error)?)
   @objc deinit
 }
 extension Beacon.BeaconArticleRating : Swift.Equatable {}

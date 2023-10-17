@@ -6,15 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Va76OIOGKk3GrP4YMbftRtwv2rI=
+		M/S7YUUkYm0sURkjOZqkvPi2pp0=
 		</data>
 		<key>Beacon.storyboardc/6c5-Ng-CAT-view-EQA-n2-1Dc.nib/objects-13.0+.nib</key>
 		<data>
-		1QFwkFnPdqurER3BF+N943h8c04=
+		zF9w5BsVwtevp32pNSQ8rqcMDrw=
 		</data>
 		<key>Beacon.storyboardc/6c5-Ng-CAT-view-EQA-n2-1Dc.nib/runtime.nib</key>
 		<data>
-		1QFwkFnPdqurER3BF+N943h8c04=
+		zF9w5BsVwtevp32pNSQ8rqcMDrw=
 		</data>
 		<key>Beacon.storyboardc/HSBeaconSuggestionsTableViewController.nib/objects-13.0+.nib</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Beacon.storyboardc/mj4-T3-NOI-view-ViE-YK-GCb.nib/objects-13.0+.nib</key>
 		<data>
-		qAwemGqrUgZUqwXI7cyPD5P4GXU=
+		pX0V2zNMaPf/qdkym1gDKx8n1v8=
 		</data>
 		<key>Beacon.storyboardc/mj4-T3-NOI-view-ViE-YK-GCb.nib/runtime.nib</key>
 		<data>
-		qAwemGqrUgZUqwXI7cyPD5P4GXU=
+		pX0V2zNMaPf/qdkym1gDKx8n1v8=
 		</data>
 		<key>Beacon.storyboardc/o4n-Q2-Vx0-view-cEh-1V-avv.nib/objects-13.0+.nib</key>
 		<data>
@@ -62,15 +62,15 @@
 		</data>
 		<key>BeaconAttachmentCell.nib</key>
 		<data>
-		PitrQSqEG8mX2SwLp14b56J96V0=
+		F0uk9dbiPTUPxgwC1gAlFis9tLY=
 		</data>
 		<key>BeaconContactFormField.nib</key>
 		<data>
-		Zyb4ki/W5elfDypiewTnU95zET0=
+		hbr2AGg0MLejrRQDYp1W+WZ4hss=
 		</data>
 		<key>BeaconDateCustomField.nib</key>
 		<data>
-		2BKImzOu97ZyWU1Gfu9i8FvLWak=
+		XWdVJqFHjad9nJUW6zCm1fhV9go=
 		</data>
 		<key>BeaconDatePicker.nib/objects-14.0+.nib</key>
 		<data>
@@ -78,11 +78,11 @@
 		</data>
 		<key>BeaconDatePicker.nib/runtime.nib</key>
 		<data>
-		EKvJ73ngfk8EyfvpGNPdkOWE/Ug=
+		rXczQFu93dPYvvgWco66NoWwe/c=
 		</data>
 		<key>BeaconDropdownCustomField.nib</key>
 		<data>
-		nTIbSEYGPDpwEb1PHwJKkaT+kkg=
+		ylw4+U+514WerW9jCz3eEC3nqW4=
 		</data>
 		<key>BeaconDropdownPicker.nib</key>
 		<data>
@@ -90,11 +90,11 @@
 		</data>
 		<key>BeaconMessaging.storyboardc/0zs-tX-GPv-view-mvw-eZ-jQf.nib/objects-13.0+.nib</key>
 		<data>
-		/EMjBPpN0fJRKEJ6O7wPGd80NrE=
+		0Ffw0p6orD894U9imkuQiW8SbAU=
 		</data>
 		<key>BeaconMessaging.storyboardc/0zs-tX-GPv-view-mvw-eZ-jQf.nib/runtime.nib</key>
 		<data>
-		/EMjBPpN0fJRKEJ6O7wPGd80NrE=
+		0Ffw0p6orD894U9imkuQiW8SbAU=
 		</data>
 		<key>BeaconMessaging.storyboardc/HQ3-Fq-XWz-view-ICe-81-Pce.nib/objects-13.0+.nib</key>
 		<data>
@@ -150,11 +150,11 @@
 		</data>
 		<key>BeaconMessaging.storyboardc/WOD-d5-LBC-view-sCh-37-iWd.nib/objects-13.0+.nib</key>
 		<data>
-		iPumjQL5z5XiMeOsZOWmWyv8W3M=
+		kakr5uL8gDsKObi92nXLgoG2TNg=
 		</data>
 		<key>BeaconMessaging.storyboardc/WOD-d5-LBC-view-sCh-37-iWd.nib/runtime.nib</key>
 		<data>
-		iPumjQL5z5XiMeOsZOWmWyv8W3M=
+		kakr5uL8gDsKObi92nXLgoG2TNg=
 		</data>
 		<key>BeaconMessaging.storyboardc/beaconMessageSentController.nib/objects-13.0+.nib</key>
 		<data>
@@ -198,19 +198,19 @@
 		</data>
 		<key>BeaconMessaging.storyboardc/qez-J8-8f4-view-0R2-KR-Ehz.nib/objects-13.0+.nib</key>
 		<data>
-		5VFenU3rUi+gvNTfofB8sJby1e4=
+		DCZAE96Wq+lYh7G2TmtiNiLdcwA=
 		</data>
 		<key>BeaconMessaging.storyboardc/qez-J8-8f4-view-0R2-KR-Ehz.nib/runtime.nib</key>
 		<data>
-		5VFenU3rUi+gvNTfofB8sJby1e4=
+		DCZAE96Wq+lYh7G2TmtiNiLdcwA=
 		</data>
 		<key>BeaconMultilineCustomField.nib</key>
 		<data>
-		DXHbBMezwrPeQCC3SjR1vn8ucYU=
+		uLaBc0ufJNuJFNTmmn8Oa1mj2bQ=
 		</data>
 		<key>BeaconNumberCustomField.nib</key>
 		<data>
-		j29NOv/hIwfAncFDcIIdl8HR41Q=
+		nUFSn2E+76hjF0++LpPK4qtBV/Y=
 		</data>
 		<key>BeaconPreviousMessages.storyboardc/Info.plist</key>
 		<data>
@@ -226,11 +226,11 @@
 		</data>
 		<key>BeaconPreviousMessages.storyboardc/g5s-lp-VXS-view-KIt-2p-RmR.nib/objects-13.0+.nib</key>
 		<data>
-		pb/6qFb0ihC9z8dpugCC0MAIVjw=
+		wchtEiefl57LNmvvRHi3SZM4IHQ=
 		</data>
 		<key>BeaconPreviousMessages.storyboardc/g5s-lp-VXS-view-KIt-2p-RmR.nib/runtime.nib</key>
 		<data>
-		pb/6qFb0ihC9z8dpugCC0MAIVjw=
+		wchtEiefl57LNmvvRHi3SZM4IHQ=
 		</data>
 		<key>BeaconPreviousMessages.storyboardc/hsBeaconConversationDetailsViewController.nib/objects-13.0+.nib</key>
 		<data>
@@ -258,27 +258,27 @@
 		</data>
 		<key>BeaconPreviousMessages.storyboardc/npr-HW-vLp-view-4Sb-xi-VRn.nib/objects-13.0+.nib</key>
 		<data>
-		cNHzp2uKs5krVySB7idZl9mqySI=
+		D8S6Xl0+8nUI7+uSRGgJyBGe5OE=
 		</data>
 		<key>BeaconPreviousMessages.storyboardc/npr-HW-vLp-view-4Sb-xi-VRn.nib/runtime.nib</key>
 		<data>
-		cNHzp2uKs5krVySB7idZl9mqySI=
+		D8S6Xl0+8nUI7+uSRGgJyBGe5OE=
 		</data>
 		<key>BeaconPreviousMessages.storyboardc/oln-wY-xqg-view-9vW-36-2OC.nib/objects-13.0+.nib</key>
 		<data>
-		lury9UxjLaNu1afFZeZfXY3l258=
+		W6/kxUoD16WvQIGnUg8rXbMWCkU=
 		</data>
 		<key>BeaconPreviousMessages.storyboardc/oln-wY-xqg-view-9vW-36-2OC.nib/runtime.nib</key>
 		<data>
-		n/93V1PM/vlKVcER5X5vLn8xg88=
+		nWBNJfw4LfrtMtNcRt25Ln4hd00=
 		</data>
 		<key>BeaconSinglelineCustomField.nib</key>
 		<data>
-		/Ix/NJhfCOb4fG/FDj96sm5tkM8=
+		UwbQgKLhRoSn21Mh4P8nX5vH6w0=
 		</data>
 		<key>Chat.momd/Chat.mom</key>
 		<data>
-		36OofQYrWo27iu6da9yw/3ur4NI=
+		xHpcSqGVsOzqkJFTIJpD2JVH08A=
 		</data>
 		<key>Chat.momd/VersionInfo.plist</key>
 		<data>
@@ -286,15 +286,15 @@
 		</data>
 		<key>ChatHeaderView.nib</key>
 		<data>
-		XxosIOJmLkabUvBiqA+2pDavrWA=
+		SfMXe3UnhxJnG4+Bty+fS7X/bmM=
 		</data>
 		<key>HSBeaconArticlesFooterCell.nib/objects-13.0+.nib</key>
 		<data>
-		78X0W3ogBkroOVr4YaH3pcMxDiY=
+		HILNjmiUDlxahErdRKb9GlIsH2Q=
 		</data>
 		<key>HSBeaconArticlesFooterCell.nib/runtime.nib</key>
 		<data>
-		/1N3BdzlcMawkKt5ASrBY5VZ6MA=
+		bT+EUcCh9T4zHcRG7YM5ZGXE4Uo=
 		</data>
 		<key>HSBeaconArticlesLoadingView.nib</key>
 		<data>
@@ -314,15 +314,15 @@
 		</data>
 		<key>HSEnterEmailViewController.nib/objects-13.0+.nib</key>
 		<data>
-		oCqIe2bicJnPPlOQhzGUkUDkLLo=
+		oqOs8mjrSnizlvEn3+3RwmkP5Js=
 		</data>
 		<key>HSEnterEmailViewController.nib/runtime.nib</key>
 		<data>
-		zf/gdVygr+ceQrOCHsRbn/eAQag=
+		oDq7Az9aXWLpgLceWzLoDG+blQY=
 		</data>
 		<key>HSShimmerArticleView.nib</key>
 		<data>
-		2FLBWyCZLZ+F/b6bblvLps1XkZY=
+		XXhHSlKZQSs0OqfjpslVocAk+fM=
 		</data>
 		<key>HSStatusMessageViewController.nib/objects-13.0+.nib</key>
 		<data>
@@ -334,7 +334,7 @@
 		</data>
 		<key>Headers/Beacon-Swift.h</key>
 		<data>
-		4ZX/GGaP6SDhLfbSoN6qJYJvHHY=
+		xbYASBm6anA2C3Sv4twQFEtop64=
 		</data>
 		<key>Headers/Beacon.h</key>
 		<data>
@@ -346,7 +346,7 @@
 		</data>
 		<key>Headers/HSBeaconConstants.h</key>
 		<data>
-		JrH4+YmathV7aE/PRHdZk8l/yFk=
+		mvrSN5Db/YlPHMkOoW+tJ4Z9xks=
 		</data>
 		<key>Headers/HSBeaconContactForm.h</key>
 		<data>
@@ -374,47 +374,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DsFxaB/36cesAMPMEE7ZxoJWzTk=
+		+h46k59Eyh0EthsQAExWCYOEdQg=
 		</data>
 		<key>Modules/Beacon.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		LT/Iwm/vMV98/w3oa6pdhOCQFbI=
+		Rc/iiNtedSTm5kP1wxfHWsHAN8k=
 		</data>
 		<key>Modules/Beacon.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		E7W3Iq2uoIPPorhuq9skHcl0mr4=
+		v5XS1j0Wxc8JZmwh1lvhs6wF8Zc=
 		</data>
 		<key>Modules/Beacon.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		uKsC1ztKZY92JAh29qR8CPslBWk=
+		IFLi8T45saqHzd7zkNbk4pwr7kw=
 		</data>
 		<key>Modules/Beacon.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		E7W3Iq2uoIPPorhuq9skHcl0mr4=
+		v5XS1j0Wxc8JZmwh1lvhs6wF8Zc=
 		</data>
 		<key>Modules/Beacon.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		laOj9VLqwRzPaG+NoafFiBqF0/g=
+		jAyvptmCTyBhpOYmt/2RhORhOhk=
 		</data>
 		<key>Modules/Beacon.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		LT/Iwm/vMV98/w3oa6pdhOCQFbI=
+		Rc/iiNtedSTm5kP1wxfHWsHAN8k=
 		</data>
 		<key>Modules/Beacon.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		j/473H4StY/Y7HrHf3MtXq82xHc=
+		mTIHcL4i9bGssSCEtqxpnoCi7pw=
 		</data>
 		<key>Modules/Beacon.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		qnk0gZP62QWpcjMY5RwRjdPvXMQ=
+		BPFehbYvV0sKaD+4Kt1vtoEeY0A=
 		</data>
 		<key>Modules/Beacon.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		j/473H4StY/Y7HrHf3MtXq82xHc=
+		mTIHcL4i9bGssSCEtqxpnoCi7pw=
 		</data>
 		<key>Modules/Beacon.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GJotRhf9B6jaI0vk9pvjOZ3Vr1E=
+		96ggyODkb7DH1zFn2v0xduRtWcc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1020,7 +1020,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aHNiCuGDpADVFWN0fRCwAX+oANY=
+			P2KDTzB5lSz6CqJd51K7UhlR7KE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -1032,21 +1032,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Rd9GDHJFneHut8tNazU3u1PNUw8s/rKPV2iKDP33vNg=
+			kI5uhdod/M5uZDGQ07NUvz587J/eTJeK7ekoBdPGJvY=
 			</data>
 		</dict>
 		<key>Beacon.storyboardc/6c5-Ng-CAT-view-EQA-n2-1Dc.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jT23EiJmL/NTs4eDMCtF0tkrYQxUPzr8xS9E8TRiwL4=
+			G1XzoPJIuckWXJtRhrr8Rg8DBwgnMDAXeTRudy4QBII=
 			</data>
 		</dict>
 		<key>Beacon.storyboardc/6c5-Ng-CAT-view-EQA-n2-1Dc.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jT23EiJmL/NTs4eDMCtF0tkrYQxUPzr8xS9E8TRiwL4=
+			G1XzoPJIuckWXJtRhrr8Rg8DBwgnMDAXeTRudy4QBII=
 			</data>
 		</dict>
 		<key>Beacon.storyboardc/HSBeaconSuggestionsTableViewController.nib/objects-13.0+.nib</key>
@@ -1102,14 +1102,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			K3bwZRtqLxNgyEgriBu8kdr3p1RmEf8M+fmS2gKWPgY=
+			wTtd1VMMX7Nhw34s/9hGGEazb+N+Ifcstl8kql/6hT0=
 			</data>
 		</dict>
 		<key>Beacon.storyboardc/mj4-T3-NOI-view-ViE-YK-GCb.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K3bwZRtqLxNgyEgriBu8kdr3p1RmEf8M+fmS2gKWPgY=
+			wTtd1VMMX7Nhw34s/9hGGEazb+N+Ifcstl8kql/6hT0=
 			</data>
 		</dict>
 		<key>Beacon.storyboardc/o4n-Q2-Vx0-view-cEh-1V-avv.nib/objects-13.0+.nib</key>
@@ -1130,21 +1130,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EJov5825wuJE6+oB4qnlz5QcCZm1BBo/NxWwu50se2E=
+			2yYg6Bdlg9eywpvgyJI0LjhA/GIev8iPZUK6KXlKNWs=
 			</data>
 		</dict>
 		<key>BeaconContactFormField.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZIxKYV9mtcaL+6GnzttYgurOuX9wAjgsYe/yRHrLehY=
+			qetN1QYEYiJngJVYdbNJn2g/2BOKfysljZmhJsJkIa0=
 			</data>
 		</dict>
 		<key>BeaconDateCustomField.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wyWm6uS7WUL87HMHEZ4Syv9NmcFTlhtpG5jiLpYfbK0=
+			rQajm2iRR2MMtlmEvZPXXwNWl1AoD3+JNcFyh/U799A=
 			</data>
 		</dict>
 		<key>BeaconDatePicker.nib/objects-14.0+.nib</key>
@@ -1158,14 +1158,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OQciB6xGd2Sc27b1ILJcTKovtRnrcNiBbDrcEHui4kM=
+			XmW6NOKiSnu3ce7ANpLdDwAAQWjsIBfrJSBThkO85zw=
 			</data>
 		</dict>
 		<key>BeaconDropdownCustomField.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zswn26txwlDfsY9KG1LHvykf1DLEEskexlrpkBfu/pI=
+			SprMJMOapPBfjMlrLdLR8c5k4hWaE8W2prs7DMz+9bk=
 			</data>
 		</dict>
 		<key>BeaconDropdownPicker.nib</key>
@@ -1179,14 +1179,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GZk98dcC/S4gMQGCl+ceE8ZbcVXzMhujAUxQszLBPs4=
+			L620lk3DmmZQdih6lKQfD+gXZ29yxM1Bn7WeEgv0EHE=
 			</data>
 		</dict>
 		<key>BeaconMessaging.storyboardc/0zs-tX-GPv-view-mvw-eZ-jQf.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GZk98dcC/S4gMQGCl+ceE8ZbcVXzMhujAUxQszLBPs4=
+			L620lk3DmmZQdih6lKQfD+gXZ29yxM1Bn7WeEgv0EHE=
 			</data>
 		</dict>
 		<key>BeaconMessaging.storyboardc/HQ3-Fq-XWz-view-ICe-81-Pce.nib/objects-13.0+.nib</key>
@@ -1284,14 +1284,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c3qVava72uEcpc25VteRSZvI975SEYO2r2QEzMBzyic=
+			Tk/4O4YAvGxBaicPWHTfzR5MvkmjKRd4lLgsfmhoeZc=
 			</data>
 		</dict>
 		<key>BeaconMessaging.storyboardc/WOD-d5-LBC-view-sCh-37-iWd.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c3qVava72uEcpc25VteRSZvI975SEYO2r2QEzMBzyic=
+			Tk/4O4YAvGxBaicPWHTfzR5MvkmjKRd4lLgsfmhoeZc=
 			</data>
 		</dict>
 		<key>BeaconMessaging.storyboardc/beaconMessageSentController.nib/objects-13.0+.nib</key>
@@ -1368,28 +1368,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TUhyaXkjvh339qiKcZ6+9LCgJSiSnfpKTm+qmWlAEd0=
+			3GHxyU7fQcS9jOazmb+OhpLgkbl4YTiNyW3Nwtup2ng=
 			</data>
 		</dict>
 		<key>BeaconMessaging.storyboardc/qez-J8-8f4-view-0R2-KR-Ehz.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TUhyaXkjvh339qiKcZ6+9LCgJSiSnfpKTm+qmWlAEd0=
+			3GHxyU7fQcS9jOazmb+OhpLgkbl4YTiNyW3Nwtup2ng=
 			</data>
 		</dict>
 		<key>BeaconMultilineCustomField.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KNzKpN3eMAZrbfFbJ3uflwKXREotXTfyMZbDparUuS0=
+			DM+eTX6a71MNX2isXJyKjGDM3wSkikqKIQB4eQf3CEI=
 			</data>
 		</dict>
 		<key>BeaconNumberCustomField.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jnJyOGWojfBTl4o392K3Ibl2xx94rZ6A+3pxjtAspRI=
+			+W/0ZG58tKmL+oiszOw5+JB5ZMHfBM7b1Bf1SekKUGA=
 			</data>
 		</dict>
 		<key>BeaconPreviousMessages.storyboardc/Info.plist</key>
@@ -1417,14 +1417,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A8TDv06iDqndYmt24Iu3XnaVSNb3vI6uT6Ce+Du4Omw=
+			z4nuMmbUqI6mHI2sfaud4ZnLFECBAQnC1Oppva/sWoY=
 			</data>
 		</dict>
 		<key>BeaconPreviousMessages.storyboardc/g5s-lp-VXS-view-KIt-2p-RmR.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A8TDv06iDqndYmt24Iu3XnaVSNb3vI6uT6Ce+Du4Omw=
+			z4nuMmbUqI6mHI2sfaud4ZnLFECBAQnC1Oppva/sWoY=
 			</data>
 		</dict>
 		<key>BeaconPreviousMessages.storyboardc/hsBeaconConversationDetailsViewController.nib/objects-13.0+.nib</key>
@@ -1473,42 +1473,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CLMDlftp8riEpx85HLjiUHo+ILCHYNMIT/fCPWuYURQ=
+			fBgniOP2m/8egSFKwi19wjLaspBcPoBNG3xmGI51tIw=
 			</data>
 		</dict>
 		<key>BeaconPreviousMessages.storyboardc/npr-HW-vLp-view-4Sb-xi-VRn.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CLMDlftp8riEpx85HLjiUHo+ILCHYNMIT/fCPWuYURQ=
+			fBgniOP2m/8egSFKwi19wjLaspBcPoBNG3xmGI51tIw=
 			</data>
 		</dict>
 		<key>BeaconPreviousMessages.storyboardc/oln-wY-xqg-view-9vW-36-2OC.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8KQDZbe+ZhZsSPWL/ChTP7HVu2tzFRBUHxlw0yQ0usk=
+			qI9no2Uhi0CecoUfshhYaaTSKvSngPtq5UJF44AUGIg=
 			</data>
 		</dict>
 		<key>BeaconPreviousMessages.storyboardc/oln-wY-xqg-view-9vW-36-2OC.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			inK/EsnbK0CM7e6MMzPWSsSiS635oprl31wPApLxIPc=
+			OW2Aq4OpuM4Ir0twcrEU8jWrO87QIUZiKsRwpgeMEtI=
 			</data>
 		</dict>
 		<key>BeaconSinglelineCustomField.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			twG6gkSmm2O0DV+qCPMvKrVDmYWgZehF6E9vKe7tyC0=
+			E5aKoURY1RUJMVXAuVd3zt9zVwN6SQb005G0i7sX+bE=
 			</data>
 		</dict>
 		<key>Chat.momd/Chat.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XfpkF44mW3YNYoacolA1zDZqHYrWzuCXCj7F36gYboo=
+			JkeZVgR9wE1bzgSclSx7YpO27GjjECEQplj5da57K24=
 			</data>
 		</dict>
 		<key>Chat.momd/VersionInfo.plist</key>
@@ -1522,21 +1522,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gXWQPoRxGoFyy7WqNE3XswyKGFlzddB+em08oGHQxDo=
+			5ymDaeJ1xTi4YTQVsc9V/AH7jDTw9TAdtXbMqxuPHks=
 			</data>
 		</dict>
 		<key>HSBeaconArticlesFooterCell.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fxUhonGDrDam3jQlX0gS9uNJOdn2ufnWGCV6z/48kXc=
+			wxhfQc5CV8m8ASqiYFV3jZ+qkMvvTjE2HlowV2SrkHs=
 			</data>
 		</dict>
 		<key>HSBeaconArticlesFooterCell.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bvvfytga2ebIluSQvh1aF32Mf62la+HaPBHAhB0Cgmo=
+			xCpiCcJ0dvemLIUaYyzT8Syqyxib5ofVEAULyd0tZHo=
 			</data>
 		</dict>
 		<key>HSBeaconArticlesLoadingView.nib</key>
@@ -1571,21 +1571,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4EUqNflleRhrXZqdlM5BCNoDPBZwZHRIgteRixd46+M=
+			u6OhZErWQ73MJWOflZVXTrLYD82Hhvo6yi5NTq6SPnw=
 			</data>
 		</dict>
 		<key>HSEnterEmailViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			N0+KxS25ieVIbAA371bo5q8oo8q8gFkkYzZ3Ojlyf8g=
+			Qk6D237j3zML0Q/MEDWxwsbZWuDGATDRdEl2MMvVaeU=
 			</data>
 		</dict>
 		<key>HSShimmerArticleView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nqGoHTvZo7BhFqt12d8am8d0dCIOU/y8pXYPXq1zw2E=
+			vPL7uZWQsOMyujfRoHgsEnjY3scsSVUk/3UjFl8UtDk=
 			</data>
 		</dict>
 		<key>HSStatusMessageViewController.nib/objects-13.0+.nib</key>
@@ -1606,7 +1606,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J4uC9pltDti7muuf0S4e1WFkhdpp3aRUiCmKJdsCmEQ=
+			xcou1EDOwLPJ6LrY805VYXHsyYTXAAHxoQsgV5TGEtQ=
 			</data>
 		</dict>
 		<key>Headers/Beacon.h</key>
@@ -1627,7 +1627,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oT55lSdqeFxPH7YbTNbtivYJWLvHgQUeEZl5GacxcG0=
+			/iA37TsYjA6VR2IYFSAosVfX3fM6GjEQBvEifcESoRw=
 			</data>
 		</dict>
 		<key>Headers/HSBeaconContactForm.h</key>
@@ -1676,70 +1676,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w6+uig2Y8mA/7XBfB91bQhS9bALsHgENcl3aWiluwKs=
+			qPBcgW0WMd+aHJvT5Oxk6QQk2W2WvAUJbldB8v2VkOU=
 			</data>
 		</dict>
 		<key>Modules/Beacon.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vcj4rUyaeVAWvtOQOgEVTr5bTj4YZij39ZG5Q+WW2E8=
+			g8gcn+h/9yXafPDrXO1WJa+My0TIlWAXtKrWwyuWYfY=
 			</data>
 		</dict>
 		<key>Modules/Beacon.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XVVlP4B021aQo2H9KtSEmUHBmGmpgUA6GPndRaqqvb8=
+			n8q9Ygq63q4sgnN4hzUCfPQrs81xn52S28wgbWCm9Kg=
 			</data>
 		</dict>
 		<key>Modules/Beacon.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vcj4rUyaeVAWvtOQOgEVTr5bTj4YZij39ZG5Q+WW2E8=
+			g8gcn+h/9yXafPDrXO1WJa+My0TIlWAXtKrWwyuWYfY=
 			</data>
 		</dict>
 		<key>Modules/Beacon.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qa47ZFyuX8CmZR2y8JYVqN7JQ1obqhLIPkfico433OY=
+			Lfi+VbiEwda3mqrQYyk1IptyHA3kwFDBNrizTnY+UU4=
 			</data>
 		</dict>
 		<key>Modules/Beacon.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w6+uig2Y8mA/7XBfB91bQhS9bALsHgENcl3aWiluwKs=
+			qPBcgW0WMd+aHJvT5Oxk6QQk2W2WvAUJbldB8v2VkOU=
 			</data>
 		</dict>
 		<key>Modules/Beacon.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Oyr+s0y4k0MNqScavTMibqWuztnn6ZVW1C7ELzNnUQ=
+			Eqb7NlENWLYr/f9ZRdtrkDyWxO63Ld38DvcJA1SRc9o=
 			</data>
 		</dict>
 		<key>Modules/Beacon.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1/zZziUsA15bCfGrgBQQk7H496olrJECJPX8Q240Iss=
+			tc0XiXPIK6BgHEfnU3zb4mwnxZpLaRmA0qlBYiqLC+M=
 			</data>
 		</dict>
 		<key>Modules/Beacon.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Oyr+s0y4k0MNqScavTMibqWuztnn6ZVW1C7ELzNnUQ=
+			Eqb7NlENWLYr/f9ZRdtrkDyWxO63Ld38DvcJA1SRc9o=
 			</data>
 		</dict>
 		<key>Modules/Beacon.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lfO4OUp9uThrtM+kCx7DwBUo6NXww5+qZ1u8j77pbuE=
+			Rcp0gws/0yW4Mqx948ZNtLqX4CBc/vztJR7nc8Y1CKY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2796,7 +2796,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OQr4kAll7MYp3qSLbAdS144rmtVGKw2aShjQT3uHHek=
+			BeAkRSqLDURRBhV2IT+ZV2LbCkFaL/KDcfxNWoIeOrU=
 			</data>
 			<key>optional</key>
 			<true/>
