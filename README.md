@@ -13,7 +13,7 @@ Beacon 2.0.x requires Xcode 11.4
 
 ### Supported platform and language versions
 
-* iOS 11 to 16
+* iOS 11 to 17
 * Swift 5
 * Xcode 12+
 
@@ -35,7 +35,7 @@ Beacon is available through [Swift Package Manager](https://swiftpackageregistry
 
 ### Carthage 🛑
 
-**As of Beacon 2.1.0, Beacon is (temporarily 🤞) no longer available to be distributed via Carthage.  This is because Beacon is now distributed as an XCFramework which is (as of October 29th, 2020) not supported by Carthage.  More info about the progress the Carthage team is making can be found on this [issue](https://github.com/Carthage/Carthage/issues/3019) or the following Pull Requests [1](https://github.com/Carthage/Carthage/pull/3071), [2](https://github.com/Carthage/Carthage/pull/2881).**
+**As of Beacon 2.1.0, Beacon is (temporarily 🤞) no longer available to be distributed via Carthage. This is because Beacon is now distributed as an XCFramework which is (as of October 29th, 2020) not supported by Carthage. More info about the progress the Carthage team is making can be found on this [issue](https://github.com/Carthage/Carthage/issues/3019) or the following Pull Requests [1](https://github.com/Carthage/Carthage/pull/3071), [2](https://github.com/Carthage/Carthage/pull/2881).**
 
 Beacons up to version 2.0.2 can be installed using Carthage by adding the following line to your `Cartfile` and then following the [Carthage installation instructions][2]:
 

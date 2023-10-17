@@ -2,6 +2,12 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/mobile/).
 
+## 2.2.8 Release (October 17, 2023) 
+
+#### Bug fixes
+
+* Resolved `NSInternalInconsistencyException` linked to `UIGraphicsBeginImageContext` by transitioning to using `UIGraphicsImageRenderer` instead.
+
 ## 2.2.7 Release (November 29, 2022)
 
 #### Bug Fixes
