@@ -1,6 +1,6 @@
 # Beacon SDK
 
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Beacon.svg)](https://img.shields.io/cocoapods/v/Beacon.svg)
+![Cocoapods Version](https://img.shields.io/cocoapods/v/Beacon)
 
 Help Scout's Beacon SDK allows you to embed the same Beacon functionality we have for the web inside your iOS app. Beacons provide a quick and straightforward way for customers to flip through your knowledge base or reach out to your team.
 
