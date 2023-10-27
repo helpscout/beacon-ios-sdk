@@ -6,16 +6,11 @@ Help Scout's Beacon SDK allows you to embed the same Beacon functionality we hav
 
 ## Requirements
 
-The Beacon SDK 2.0 requires iOS 11.0+.
-
-As of Beacon 2.1.0 Xcode 12 is required to build with the Beacon SDK.
-Beacon 2.0.x requires Xcode 11.4
-
 ### Supported platform and language versions
 
-* iOS 11 to 17
+* iOS/iPadOS 12.0 to 17
 * Swift 5
-* Xcode 12+
+* Xcode 14.1+
 
 ## Installation
 

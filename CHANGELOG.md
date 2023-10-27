@@ -2,6 +2,16 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/mobile/).
 
+## 3.0.0 Release (TBD) 
+
+#### Bug fixes
+
+* Xcode 15 Support.
+
+#### Deprecations
+
+* iOS/iPadOS 11 is no longer supported.
+
 ## 2.2.8 Release (October 17, 2023) 
 
 #### Bug fixes
