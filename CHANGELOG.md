@@ -4,7 +4,7 @@ To install Beacon, see the [documentation](https://developer.helpscout.com/beaco
 
 ## 3.0.0 Release (TBD) 
 
-#### Bug fixes
+#### Features
 
 * Xcode 15 Support.
 
