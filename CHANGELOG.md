@@ -8,7 +8,7 @@ To install Beacon, see the [documentation](https://developer.helpscout.com/beaco
 
 * Xcode 15 Support.
 
-#### Deprecations
+#### Breaking changes
 
 * **iOS/iPadOS 11 is no longer supported** because Xcode 15 requires iOS 12 or greater. For more info, [see the Xcode 15 Release Notes](https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes).
 
