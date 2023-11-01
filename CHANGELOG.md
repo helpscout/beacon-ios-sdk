@@ -6,7 +6,7 @@ To install Beacon, see the [documentation](https://developer.helpscout.com/beaco
 
 #### Features
 
-* Xcode 15 Support.
+* Beacon for iOS/iPadOS now supports Xcode 15.
 
 #### Breaking changes
 
