@@ -2,7 +2,7 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/mobile/).
 
-## 3.0.0 Release (TBD) 
+## 3.0.0 Release (November 30, 2023) 
 
 #### Features
 
