@@ -10,7 +10,7 @@ Help Scout's Beacon SDK allows you to embed the same Beacon functionality we hav
 
 * iOS/iPadOS 12.0 to 17
 * Swift 5
-* Xcode 14.1+
+* Xcode 15.0+
 
 ## Installation
 
