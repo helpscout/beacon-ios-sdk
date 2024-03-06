@@ -1,5 +1,5 @@
 #import <UIKit/UIKit.h>
-@import UserNotifications;
+#import <UserNotifications/UserNotifications.h>
 
 @protocol HSBeaconSuggestionItem;
 @class HSBeaconUser;
