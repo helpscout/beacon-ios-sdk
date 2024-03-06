@@ -1,4 +1,4 @@
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 /// HSBeaconFocusMode represents various configuration modes of Beacon.
 /// Allowing you to customize the experience your users have, from getting in contact
