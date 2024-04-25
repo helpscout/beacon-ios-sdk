@@ -475,6 +475,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -1171,6 +1178,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -1687,6 +1701,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -1906,6 +1927,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -5021,6 +5049,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -6783,6 +6818,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -7495,6 +7537,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -18760,6 +18809,34 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Beacon"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Beacon"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Beacon"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "Beacon"
+      },
+      {
         "kind": "TypeDecl",
         "name": "HSBeacon",
         "printedName": "HSBeacon",
@@ -19698,6 +19775,41 @@
             "printedName": "CVarArg",
             "usr": "s:s7CVarArgP",
             "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Sendable",
+                        "printedName": "Swift.Sendable",
+                        "usr": "s:s8SendableP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
           }
         ]
       },
@@ -20847,6 +20959,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -21294,6 +21413,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -21609,6 +21735,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           },
           {
             "kind": "Conformance",
@@ -38814,6 +38947,482 @@
       "offset": 54811,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 650,
+      "length": 23,
+      "value": "\"agentAvatarBackground\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 797,
+      "length": 9,
+      "value": "\"badGlow\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 931,
+      "length": 12,
+      "value": "\"badgeColor\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1085,
+      "length": 18,
+      "value": "\"beaconBackground\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1242,
+      "length": 19,
+      "value": "\"borderButtonColor\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1395,
+      "length": 14,
+      "value": "\"brightOrange\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1541,
+      "length": 13,
+      "value": "\"charcoal200\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1686,
+      "length": 13,
+      "value": "\"charcoal300\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1831,
+      "length": 13,
+      "value": "\"charcoal700\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1974,
+      "length": 12,
+      "value": "\"chatBorder\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2124,
+      "length": 16,
+      "value": "\"chatBubbleText\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2288,
+      "length": 21,
+      "value": "\"chatErrorBackground\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2449,
+      "length": 17,
+      "value": "\"chatErrorBorder\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2605,
+      "length": 19,
+      "value": "\"chatProgressColor\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2765,
+      "length": 20,
+      "value": "\"defaultBeaconColor\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2923,
+      "length": 16,
+      "value": "\"disabledAction\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3101,
+      "length": 28,
+      "value": "\"escalationThanksBackground\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3255,
+      "length": 10,
+      "value": "\"goodGlow\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3391,
+      "length": 10,
+      "value": "\"green600\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3525,
+      "length": 9,
+      "value": "\"grey400\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3658,
+      "length": 9,
+      "value": "\"grey500\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3804,
+      "length": 18,
+      "value": "\"lightBeaconColor\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3954,
+      "length": 13,
+      "value": "\"neutralGlow\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4103,
+      "length": 15,
+      "value": "\"primaryAccent\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4259,
+      "length": 20,
+      "value": "\"primaryActionColor\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4437,
+      "length": 26,
+      "value": "\"searchBarPlaceholderText\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4599,
+      "length": 15,
+      "value": "\"secondaryText\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4772,
+      "length": 26,
+      "value": "\"tertiaryBeaconBackground\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4950,
+      "length": 23,
+      "value": "\"threadCountBackground\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5114,
+      "length": 20,
+      "value": "\"toolbarButtonColor\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5262,
+      "length": 11,
+      "value": "\"yellow800\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5496,
+      "length": 6,
+      "value": "\"back\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5661,
+      "length": 28,
+      "value": "\"chat_download_failed_emoji\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 5837,
+      "length": 22,
+      "value": "\"chat_ended_checkmark\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6006,
+      "length": 22,
+      "value": "\"chat_timed_out_emoji\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6148,
+      "length": 7,
+      "value": "\"close\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6285,
+      "length": 12,
+      "value": "\"emptyState\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6425,
+      "length": 11,
+      "value": "\"errorIcon\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6561,
+      "length": 12,
+      "value": "\"errorImage\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6709,
+      "length": 16,
+      "value": "\"face-happy-off\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 6859,
+      "length": 15,
+      "value": "\"face-happy-on\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7008,
+      "length": 15,
+      "value": "\"face-okay-off\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7155,
+      "length": 14,
+      "value": "\"face-okay-on\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7301,
+      "length": 14,
+      "value": "\"face-sad-off\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7445,
+      "length": 13,
+      "value": "\"face-sad-on\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7622,
+      "length": 31,
+      "value": "\"icon-white-check-green-circle\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7781,
+      "length": 11,
+      "value": "\"iconBlank\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7917,
+      "length": 10,
+      "value": "\"icon_ask\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8058,
+      "length": 13,
+      "value": "\"icon_attach\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8227,
+      "length": 26,
+      "value": "\"icon_attachment_document\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8398,
+      "length": 23,
+      "value": "\"icon_attachment_image\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8569,
+      "length": 22,
+      "value": "\"icon_attachment_misc\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8741,
+      "length": 23,
+      "value": "\"icon_attachment_video\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 8901,
+      "length": 16,
+      "value": "\"icon_caretDown\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9050,
+      "length": 14,
+      "value": "\"icon_caretUp\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9191,
+      "length": 11,
+      "value": "\"icon_chat\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9344,
+      "length": 19,
+      "value": "\"icon_clear_search\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9513,
+      "length": 23,
+      "value": "\"icon_close_attachment\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9665,
+      "length": 12,
+      "value": "\"icon_error\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9808,
+      "length": 13,
+      "value": "\"icon_jigsaw\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 9948,
+      "length": 11,
+      "value": "\"icon_link\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10088,
+      "length": 12,
+      "value": "\"icon_plane\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10231,
+      "length": 13,
+      "value": "\"icon_search\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10371,
+      "length": 11,
+      "value": "\"icon_send\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10509,
+      "length": 11,
+      "value": "\"icon_sent\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10653,
+      "length": 14,
+      "value": "\"icon_upArrow\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10788,
+      "length": 8,
+      "value": "\"icon_x\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/Library\/Developer\/Xcode\/DerivedData\/Beacon-bythtvqdytblayhamxkwgyytvlsf\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Beacon\/IntermediateBuildFilesPath\/Beacon.build\/Release-iphonesimulator\/Beacon.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 10925,
+      "length": 12,
+      "value": "\"leave_chat\""
     }
   ]
 }

@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Beacon
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import Beacon
 import CommonCrypto
 import CoreData
 import CoreFoundation
+import DeveloperToolsSupport
 import Foundation
 import ImageIO
 import MobileCoreServices
@@ -13,10 +14,12 @@ import Beacon.Private
 import QuickLook
 import Security
 import Swift
+import SwiftUI
 import SystemConfiguration
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 import zlib
 public class Animator {
   public init(withDelegate delegate: any Beacon.GIFAnimatable)
