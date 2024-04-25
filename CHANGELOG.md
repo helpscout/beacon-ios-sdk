@@ -2,7 +2,7 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/mobile/).
 
-## 3.0.1 Release (April TBD, 2024) 
+## 3.0.1 Release (April 25, 2024) 
 
 #### Features
 * Include privacy manifest describing use of required reason API
