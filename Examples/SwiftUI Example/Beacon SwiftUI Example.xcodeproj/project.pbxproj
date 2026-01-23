@@ -344,8 +344,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/helpscout/beacon-ios-sdk";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.2.3;
+				kind = branch;
+				branch = main;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
