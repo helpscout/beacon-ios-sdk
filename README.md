@@ -6,13 +6,18 @@ Help Scout's Beacon SDK allows you to embed the same Beacon functionality we hav
 
 ## Requirements
 
-### Supported platform and language versions
+### Supported platform and language versions (Beacon 4.0.0)
 
-* iOS/iPadOS 12.0 to 17
+* iOS/iPadOS 15.0+
 * Swift 5
-* Xcode 15.0+
+* Xcode 26.0+
 
 ## Installation
+
+
+### Swift Package Manager
+
+Beacon is available through [Swift Package Manager](https://swiftpackageregistry.com/helpscout/beacon-ios-sdk). To install it, simply follow [Apple’s guidance](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app) for adding the Beacon-iOS package dependency in Xcode.
 
 ### CocoaPods
 
@@ -24,13 +29,9 @@ pod 'Beacon'
 
 Beacon is currently distributed as a dynamic framework so the `use_frameworks!` flag will also need to be present in your Podfile.
 
-### Swift Package Manager
-
-Beacon is available through [Swift Package Manager](https://swiftpackageregistry.com/helpscout/beacon-ios-sdk). To install it, simply follow [Apple’s guidance](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app) for adding the Beacon-iOS package dependency in Xcode.
-
 ### Carthage 🛑
 
-**As of Beacon 2.1.0, Beacon is (temporarily 🤞) no longer available to be distributed via Carthage. This is because Beacon is now distributed as an XCFramework which is (as of October 29th, 2020) not supported by Carthage. More info about the progress the Carthage team is making can be found on this [issue](https://github.com/Carthage/Carthage/issues/3019) or the following Pull Requests [1](https://github.com/Carthage/Carthage/pull/3071), [2](https://github.com/Carthage/Carthage/pull/2881).**
+**As of Beacon 2.1.0, Beacon is no longer available to be distributed via Carthage.  This is because Beacon is now distributed as an XCFramework which is (as of October 29th, 2020) not supported by Carthage.  More info about the progress the Carthage team is making can be found on this [issue](https://github.com/Carthage/Carthage/issues/3019) or the following Pull Requests [1](https://github.com/Carthage/Carthage/pull/3071), [2](https://github.com/Carthage/Carthage/pull/2881).**
 
 Beacons up to version 2.0.2 can be installed using Carthage by adding the following line to your `Cartfile` and then following the [Carthage installation instructions][2]:
 
@@ -54,7 +55,7 @@ This repository includes two sample applications, one written in Objective-C and
 
 To run the Objective-C example you can cd into the Examples/Obj-C Example directory `cd Examples/Obj-C\ Example`, open `Beacon Example.xcodeproj` and run the `BeaconExample` scheme.
 
-To run the SwiftUI example you can cd into the Examples/SwiftUI Example directory `cd Examples/SwiftUI\ Example`, open `Beacon SwiftUI Example.xcodeproj` and run the `Beacon SwiftUI Example` scheme.  For it to run properly you'll need to provide a valid Beacon identifer on Line 10 of `SettingsView.swift`.
+To run the SwiftUI example you can cd into the Examples/SwiftUI Example directory `cd Examples/SwiftUI\ Example`, open `Beacon SwiftUI Example.xcodeproj` and run the `Beacon SwiftUI Example` scheme.  For it to run properly you'll need to provide a valid Beacon identifier on Line 10 of `SettingsView.swift`.
 
 ## Documentation
 
