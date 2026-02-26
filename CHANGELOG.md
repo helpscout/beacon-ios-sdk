@@ -11,7 +11,7 @@ To install Beacon, see the [documentation](https://developer.helpscout.com/beaco
 
 ### ⚠️ Breaking changes
 - **Minimum iOS/iPadOS version is now 15.0+**
-- **Tooling requirements updated**: **Xcode 26.0+**, Swift 5
+- **Tooling requirements updated**: **Xcode 26.0+**, Swift 5.5
 - **Some legacy native UI customization is deprecated/has no effect** (use Beacon Builder / supported SDK configuration instead)
 	- `beaconTitle`
 	- `useNavigationBarAppearance`
