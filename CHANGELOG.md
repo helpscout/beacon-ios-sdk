@@ -2,6 +2,27 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/mobile/).
 
+## 4.0.0 Release (February 26, 2026) 
+
+### What's new?
+
+- [AI Answers](https://docs.helpscout.com/article/1569-ai-answers): You can now navigate directly to the AI Answers screen using `HSBeacon.navigate(BeaconRoute.aiAnswers, settings: settings)`or open it with a pre-submitted question using `HSBeacon.askQuestion("How do I reset my password?", beaconSettings: settings)`
+- New `func logout(endActiveChat: Bool = false)` overload - pass `true` to end any active chat when the user logs out.
+
+### ⚠️ Breaking changes
+- **Minimum iOS/iPadOS version is now 15.0+**
+- **Tooling requirements updated**: **Xcode 26.0+**, Swift 5.5
+- **Some legacy native UI customization is deprecated/has no effect** (use Beacon Builder / supported SDK configuration instead)
+	- `beaconTitle`
+	- `useNavigationBarAppearance`
+	- `tintColorOverride`
+- **Updated localization keys** for consistency and alignment. Some keys were renamed and others removed. See the full list of changes [here](https://developer.helpscout.com/beacon-2/ios/#translation-strings).
+
+### Notable changes
+- **Modernized Beacon runtime**: updated internal implementation to align with current Beacon behavior while keeping the **public Objective‑C API surface backward compatible** and offering now **AI Answers!**
+- **Localization overrides**: improved translation override support (dictionary overrides + file-based fallback with validation)
+- **Contact form prefill**: enhanced prefill support, including **prefilled attachments** (with size/count limits and validation)
+
 ## 3.0.1 Release (April 25, 2024) 
 
 #### Features
