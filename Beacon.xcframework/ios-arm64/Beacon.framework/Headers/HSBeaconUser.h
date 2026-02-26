@@ -42,6 +42,12 @@ extern const NSUInteger HSBeaconMaximumUserAttributes;
 @property(strong, nonatomic, nullable) NSURL *avatar;
 
 /**
+ The signature for secure mode authentication. This signature is used to authenticate a user in Secure Mode
+ and retrieve their previous conversations. Secure Mode ensures that the visitor is who they say they are.
+ */
+@property(strong, nonatomic, nullable) NSString *signature;
+
+/**
  The attributes for the current user. These are arbitrary key/value pairs that
  will be sent to Help Scout to help identify the current user. You may add up to
  30 different attributes.

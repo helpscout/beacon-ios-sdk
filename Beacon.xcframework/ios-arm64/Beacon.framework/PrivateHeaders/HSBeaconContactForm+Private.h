@@ -11,6 +11,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (instancetype)initWithBeaconID:(NSString *)beaconID;
 
+/**
+ Internal factory method for creating contact forms from Swift code.
+ This exists because the initializer is marked unavailable in the public header,
+ preventing direct Swift access even with @_implementationOnly imports.
+
+ @param beaconID The Beacon ID for this form
+ @return A new HSBeaconContactForm instance
+ */
++ (instancetype)createWithBeaconID:(NSString *)beaconID;
+
 @end
 
 NS_ASSUME_NONNULL_END

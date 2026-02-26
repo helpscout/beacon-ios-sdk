@@ -7,7 +7,7 @@ let package = Package(
     name: "Beacon-iOS",
     defaultLocalization: "en",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v15)
     ],
     products: [
         .library(

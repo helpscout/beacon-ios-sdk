@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name          = 'Beacon'
   s.swift_version = '5.0'
-  s.version       = '3.0.1'
+  s.version       = '4.0.0'
   s.summary       = 'The Help Scout Beacon SDK'
   s.license       = { :type => 'Commercial', :text => 'Help Scout. All rights reserved.' }
 
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.homepage      = 'http://github.com/helpscout/beacon-ios-sdk'
   s.author        = { 'Help Scout' => 'help@helpscout.com' }
-  s.platform      = :ios, '12.0'
+  s.platform      = :ios, '15.0'
   s.source        = { :git => 'https://github.com/helpscout/beacon-ios-sdk.git', :tag => s.version }
 
   s.source_files  = 'Beacon.xcframework/ios-arm64/Beacon.framework/Headers/*.h'

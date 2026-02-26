@@ -84,8 +84,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  The title used in the main Beacon interface. This is `Support` by default.
+ 
+ @deprecated This property is deprecated and has no effect. It will be removed in a future release.
+ The Beacon title is controlled by the Beacon Builder configuration.
  */
-@property(strong, nonatomic) NSString *beaconTitle;
+@property(strong, nonatomic) NSString *beaconTitle DEPRECATED_MSG_ATTRIBUTE("This property is deprecated and has no effect. It will be removed in a future release. The Beacon title is controlled by the Beacon Builder configuration.");
 
 /**
  * Display strings from BeaconLocalizable.strings instead of those setup in the Beacon Web UI
@@ -93,10 +96,29 @@ NS_ASSUME_NONNULL_BEGIN
 @property BOOL useLocalTranslationOverrides;
 
 /**
+ * Provide custom localized labels directly as a dictionary.
+ *
+ * When set, this dictionary takes precedence over BeaconLocalizable.strings for translation overrides.
+ * Keys must match the Beacon JS API label keys as documented at:
+ * https://developer.helpscout.com/beacon-2/web/javascript-api/#translate-options
+ *
+ * This is useful when your app manages translations programmatically or uses a different
+ * localization system than .strings files.
+ *
+ * @note Each label value will be truncated to 160 characters per Beacon JS API constraints.
+ * @note If nil (default), translations will be loaded from BeaconLocalizable.strings when
+ *       useLocalTranslationOverrides is enabled.
+ */
+@property (strong, nonatomic, nullable) NSDictionary<NSString*, NSString*> *localizationOverrides;
+
+/**
  Allows the Beacon SDK to use the `UIAppearance` settings for `UINavigationController`.
  This is false by default, and will instead use the Beacon color defined in the Beacon Builder.
+ 
+ @deprecated This property is deprecated and has no effect. It will be removed in a future release.
+ Customize your Beacon's appearance via the Beacon Builder.
  */
-@property BOOL useNavigationBarAppearance;
+@property BOOL useNavigationBarAppearance DEPRECATED_MSG_ATTRIBUTE("This property is deprecated and has no effect. It will be removed in a future release. Customize your Beacon's appearance via the Beacon Builder.");
 
 /**
  Disable the contact options manually if it's enabled in the Beacon config.
@@ -138,8 +160,12 @@ Disable previous messages manually if messaging is enabled in the Beacon config.
  This replaces the default blue color used for clickable text throughout Beacon. For example,
  you may want to set this to the tintColor of your window to match the look and feel of the
  rest of your app.
+ 
+ @deprecated This property is deprecated and has no effect. It will be removed in a future release.
+ Use the `color` property to customize your Beacon's brand color, or configure appearance via
+ the Beacon Builder.
  */
-@property UIColor *tintColorOverride;
+@property UIColor *tintColorOverride DEPRECATED_MSG_ATTRIBUTE("This property is deprecated and has no effect. It will be removed in a future release. Use the `color` property to customize your Beacon's brand color, or configure appearance via the Beacon Builder.");
 
 /**
  Used for customizing the runtime behavior of the Beacon SDK
@@ -147,8 +173,7 @@ Disable previous messages manually if messaging is enabled in the Beacon config.
 @property (weak, nonatomic, nullable) id<HSBeaconDelegate> delegate;
 
 /**
- Override the color from the Beacon Builder. The `useNavigationBarAppearance` option
- will override this value.
+ Override the color from the Beacon Builder. This color affects the Beacon's brand color throughout the interface.
  */
 @property (strong, nonatomic, nullable) UIColor *color;
 

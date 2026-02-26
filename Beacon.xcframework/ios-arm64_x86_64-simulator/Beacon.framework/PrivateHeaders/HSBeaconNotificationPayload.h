@@ -2,7 +2,6 @@
 
 #import <Beacon/HSBeaconReplyNotificationPayload.h>
 #import <Beacon/HSBeaconChatNotificationPayload.h>
-#import <Beacon/HSBeaconConversation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -13,8 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) HSBeaconChatNotificationPayload *chatPayload;
 
 - (nullable instancetype)initWithUserInfo:(NSDictionary *)userInfo;
-
-- (HSBeaconConversation *_Nullable)toConversation;
 
 @end
 

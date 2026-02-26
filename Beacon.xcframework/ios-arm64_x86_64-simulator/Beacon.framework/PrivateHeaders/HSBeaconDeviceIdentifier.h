@@ -1,9 +1,8 @@
 #import <Foundation/Foundation.h>
 
-@interface HSBeaconDeviceIdentifier: NSObject
+@interface HSBeaconDeviceIdentifier : NSObject
 
 + (NSString *)platform;
-
 + (NSString *)platformString;
 
 @end

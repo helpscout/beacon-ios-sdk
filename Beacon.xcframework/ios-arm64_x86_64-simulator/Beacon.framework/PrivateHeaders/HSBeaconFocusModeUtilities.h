@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "HSBeaconFocusMode.h"
+#import <Beacon/HSBeaconFocusMode.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

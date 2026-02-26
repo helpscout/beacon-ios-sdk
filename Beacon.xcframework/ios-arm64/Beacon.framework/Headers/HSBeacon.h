@@ -107,6 +107,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)logout;
 
+/**
+ Logs the current Beacon user out and optionally ends any in-progress chats
+ immediately.
+
+ @param endActiveChat If `true`, active chats are ended immediately. If `false`,
+ active chats are allowed to be completed.
+ */
++ (void)logout:(BOOL)endActiveChat;
+
 //MARK: - Suggestions
 
 /**
@@ -272,6 +281,51 @@ NS_ASSUME_NONNULL_BEGIN
  @param signature The signature to provide, if you are using secure mode.
  */
 + (void)search:(NSString *)text  beaconSettings:(HSBeaconSettings *)settings viewController:(UIViewController *)viewController signature:(NSString * _Nullable)signature;
+
+//MARK: - AI Answers
+/**
+ Opens the Beacon window and asks a question in AI Answers automatically.
+ This is only available for Beacons with AI Answers enabled.
+
+ @param question The question to send to AI Answers
+ @param settings The Beacon settings from which to load Beacon.
+
+ @note Displays Beacon from the application delegate's window root view controller.
+ */
++ (void)askQuestion:(NSString *)question beaconSettings:(HSBeaconSettings *)settings;
+
+/**
+ Opens the Beacon window and asks a question in AI Answers automatically.
+ This is only available for Beacons with AI Answers enabled.
+
+ @param question The question to send to AI Answers
+ @param settings The Beacon settings from which to load Beacon.
+ @param viewController The view controller to display Beacon from.
+ */
++ (void)askQuestion:(NSString *)question beaconSettings:(HSBeaconSettings *)settings viewController:(UIViewController *)viewController;
+
+/**
+ Opens the Beacon window and asks a question in AI Answers automatically.
+ This is only available for Beacons with AI Answers enabled.
+
+ @param question The question to send to AI Answers
+ @param settings The Beacon settings from which to load Beacon.
+ @param signature The signature to provide, if you are using secure mode.
+
+ @note Displays Beacon from the application delegate's window root view controller.
+ */
++ (void)askQuestion:(NSString *)question beaconSettings:(HSBeaconSettings *)settings signature:(NSString * _Nullable)signature;
+
+/**
+ Opens the Beacon window and asks a question in AI Answers automatically.
+ This is only available for Beacons with AI Answers enabled.
+
+ @param question The question to send to AI Answers
+ @param settings The Beacon settings from which to load Beacon.
+ @param viewController The view controller to display Beacon from.
+ @param signature The signature to provide, if you are using secure mode.
+ */
++ (void)askQuestion:(NSString *)question beaconSettings:(HSBeaconSettings *)settings viewController:(UIViewController *)viewController signature:(NSString * _Nullable)signature;
 
 //MARK: - Navigation
 /**

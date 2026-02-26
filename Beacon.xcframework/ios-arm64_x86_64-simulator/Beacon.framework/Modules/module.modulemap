@@ -1,36 +1,53 @@
 framework module Beacon {
     umbrella header "Beacon.h"
     export *
-    module * { export * }
-    
+
+    // Swift sources in this framework rely on these Obj-C types.
+    private header "HSBeaconAttachment.h"
+    private header "HSBeacon+Private.h"
+    private header "HSBeaconBundleUtils.h"
+    private header "HSBeaconContactForm+Private.h"
+    private header "HSBeaconColorUtilities.h"
+    private header "HSBeaconConfig.h"
+    private header "HSBeaconContext.h"
+    private header "HSBeaconKeychainWrapper.h"
+    private header "HSBeaconLocalizedStrings.h"
+    private header "HSBeaconNotificationPayload.h"
+    private header "HSBeaconPushNotificationSupport.h"
+    private header "HSBeaconSecurityInfo.h"
+    private header "HSBeaconSerializationUtilities.h"
+    private header "HSBeaconUserStore.h"
+    private header "HSWindowUtilities.h"
+    private header "NSData+Extensions.h"
+
+    // Legacy internal submodule.
+    // This exists to support unit tests and legacy internal compilation without
+    // requiring Swift sources in the framework to `import Beacon.Private`.
     explicit module Private {
-        header "HSAttachmentPicker.h"
+        header "HSBeaconAttachment.h"
+        header "HSBeaconBaseAPIClient.h"
         header "HSBeaconBundleUtils.h"
-        header "HSViewController.h"
-        header "HSTableViewController.h"
-        header "HSView.h"
         header "HSBeaconColorUtilities.h"
         header "HSBeaconConfig.h"
+        header "HSBeaconContext.h"
+        header "HSBeaconEmailValidator.h"
+        header "HSBeaconKeychainWrapper.h"
         header "HSBeaconLocalizedStrings.h"
-        header "HSBeaconKeyboardHeightObserver.h"
-        header "HSBeaconAgentImageView.h"
-        header "HSBeaconAgent.h"
-        header "HSBeaconBaseAPIClient.h"
-        header "HSBeaconChatEndedDelegate.h"
-        header "HSBeaconAgentsView.h"        
-        header "HSBeaconTintColor.h"
-        header "HSBeaconPushNotificationSupport.h"
+        header "HSBeaconMessagingAPIClient.h"
+        header "HSBeaconNotificationPayload.h"
+        header "HSBeaconReplyNotificationPayload.h"
+        header "HSBeaconChatNotificationPayload.h"
+        header "HSBeaconSecurityInfo.h"
+        header "HSBeaconUser.h"
+        header "HSBeaconUserDeviceInfo.h"
         header "HSBeaconSerializationUtilities.h"
-        header "HSBeaconConversation.h"
-        header "HSBeaconArticleViewController.h"
-        header "HSBeaconAskSelectionController.h"
-        header "HSBeaconMessageEntryContainerController.h"
-        header "HSBeaconPreviousMessagesController.h"
-        header "HSBeaconPreviousMessagesEnabler.h"
-        header "HSBeaconPreviousMessagesPresenter.h"
-        header "HSBeaconRoutingFulfilling.h"
-        header "HSCardStackEmbeddable.h"
-        header "UIColor+Image.h"
+        header "HSBeaconUserStore.h"
+        header "HSBeaconPushNotificationSupport.h"
+        header "HSBeaconFocusModeUtilities.h"
+        header "HSBeacon+Private.h"
+        header "HSBeaconContactForm+Private.h"
+
+        export *
     }
 
 }
