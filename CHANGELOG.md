@@ -16,6 +16,7 @@ To install Beacon, see the [documentation](https://developer.helpscout.com/beaco
 	- `beaconTitle`
 	- `useNavigationBarAppearance`
 	- `tintColorOverride`
+- **Updated localization keys** for consistency and alignment. Some keys were renamed and others removed. See the full list of changes [here](https://developer.helpscout.com/beacon-2/ios/#translation-strings).
 
 ### Notable changes
 - **Modernized Beacon runtime**: updated internal implementation to align with current Beacon behavior while keeping the **public Objective‑C API surface backward compatible** and offering now **AI Answers!**
