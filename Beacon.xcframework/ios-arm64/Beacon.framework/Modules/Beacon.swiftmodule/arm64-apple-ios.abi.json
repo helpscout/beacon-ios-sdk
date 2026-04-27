@@ -139,6 +139,13 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Beacon"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2420,28 +2427,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Beacon.swift",
       "kind": "BooleanLiteral",
-      "offset": 10903,
+      "offset": 11113,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Beacon.swift",
       "kind": "IntegerLiteral",
-      "offset": 15859,
+      "offset": 16069,
       "length": 4,
       "value": "1001"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Beacon.swift",
       "kind": "StringLiteral",
-      "offset": 16009,
+      "offset": 16219,
       "length": 28,
       "value": "\"com.helpscout.beacon.error\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Beacon.swift",
       "kind": "StringLiteral",
-      "offset": 16224,
+      "offset": 16434,
       "length": 59,
       "value": "\"Beacon not initialized. Call initialize(beaconId:) first.\""
     },
@@ -2605,6 +2612,13 @@
       "offset": 344,
       "length": 17,
       "value": "\"BeaconDownloads\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Validators\/BeaconEmailValidator.swift",
+      "kind": "StringLiteral",
+      "offset": 1015,
+      "length": 20,
+      "value": "\"^\\S+@\\S+\\.\\S+$\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/WebView\/BeaconEventManager.swift",
@@ -4348,13 +4362,6 @@
       "offset": 372,
       "length": 17,
       "value": "\"BeaconMobileSDK\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/BeaconVersion.swift",
-      "kind": "StringLiteral",
-      "offset": 185,
-      "length": 7,
-      "value": "\"4.0.0\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Presentation\/BeaconViewController.swift",

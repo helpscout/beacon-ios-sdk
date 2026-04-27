@@ -12,11 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HSBeaconUser: NSObject
 
 /**
- The total number of attributes accepted.
- */
-extern const NSUInteger HSBeaconMaximumUserAttributes;
-
-/**
  The email address for the current user.
  */
 @property(strong, nonatomic, nullable) NSString *email;
@@ -27,17 +22,17 @@ extern const NSUInteger HSBeaconMaximumUserAttributes;
 @property(strong, nonatomic, nullable) NSString *name;
 
 /**
- The company of the current user. The max length of this value is `HSBeaconMaxUserCompanyLength` (60) and will be truncated to fit.
+ The company of the current user. The max length of this value is 60 and will be truncated to fit.
  */
 @property(strong, nonatomic, nullable) NSString *company;
 
 /**
- The job title of the current user. The max length of this value is `HSBeaconMaxUserJobTitleLength` (60) and will be truncated to fit.
+ The job title of the current user. The max length of this value is 60 and will be truncated to fit.
  */
 @property(strong, nonatomic, nullable) NSString *jobTitle;
 
 /**
- The URL to the avatar of the current user. The max length of this value is `HSBeaconMaxUserAvatarLength` (200) and will not be set if the `absoluteString` exceeds that length.
+ The URL to the avatar of the current user. The max length of this value is 200 and will not be set if the `absoluteString` exceeds that length.
  */
 @property(strong, nonatomic, nullable) NSURL *avatar;
 
