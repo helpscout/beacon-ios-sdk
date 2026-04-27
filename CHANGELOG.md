@@ -2,6 +2,14 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/mobile/).
 
+## 4.1.0 Release (April 27, 2026) 
+
+### Bug fixes
+
+- Resolved `NSSecureCoding` warnings and a related decoding failure that could occur when the SDK restores persisted user information from the keychain on launch.
+- Email validation in the SDK now matches the Beacon web validator, ensuring consistent behavior between native iOS and web.
+
+
 ## 4.0.0 Release (February 26, 2026) 
 
 ### What's new?
