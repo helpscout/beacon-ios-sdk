@@ -2,6 +2,33 @@
 
 To install Beacon, see the [documentation](https://developer.helpscout.com/beacon-2/mobile/).
 
+## 4.2.0 Release (November 27, 2026)
+
+### What's new?
+
+- **Scout**: AI Answers is now Scout. Navigate to it with `HSBeacon.navigate(BeaconRoute.scout, settings: settings)`. `BeaconRoute.aiAnswers` still works, but it's deprecated and will be removed in the next major version.
+- Built with Xcode 27.2. Apps built with Xcode 26.0 or later can still use the SDK.
+- Beacon's sheet style now follows the window's size class instead of the device type, so it adapts when the window changes size while Beacon is open.
+
+### Behavior changes
+
+- **Beacon Builder settings come first**: `docsEnabled`, `messagingEnabled` and `messagingSettings.contactFormCustomFieldsEnabled` can turn a feature off, but they no longer turn on a feature that is off in Beacon Builder. This is how 3.x worked.
+- **Logout clears the customer's Beacon data**: `HSBeacon.logout()` now also clears the customer's unsent draft and Previous Conversations from the device. The data is cleared the next time Beacon opens, also when the same customer logs in again. An active chat can't be continued from this device after a logout.
+- **A Beacon ID switch clears the signature**: with Secure Mode on, pass the new Beacon's signature when you open it after a switch.
+
+### Bug fixes
+
+- Push notifications are now delivered on Beacons with Secure Mode.
+- With Secure Mode on, Previous Conversations keep working after the customer sends an email or starts a chat.
+- `mailto:` and other app links in Docs articles now open in the matching app (Mail, Phone and so on).
+- Beacon no longer opens blank after the customer closes the "Unable to Connect" screen.
+- A setting that one open turns off (for example `chatEnabled = false`) no longer stays off in later opens that don't set it.
+- After a switch to another Beacon ID:
+  - Beacon shows only the new Beacon's customer and conversations.
+  - The customer identified with `HSBeacon.identify` stays identified.
+  - Live chat keeps updating on the new Beacon.
+
+
 ## 4.1.0 Release (April 27, 2026) 
 
 ### Bug fixes
