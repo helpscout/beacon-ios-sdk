@@ -102,17 +102,20 @@ NS_ASSUME_NONNULL_BEGIN
 + (HSBeaconUser * _Nullable)currentUser;
 
 /**
- Logs the current Beacon user out and clears out their information from local
- storage.
+ Logs the current Beacon user out. Their Beacon data on this device, including
+ any active chat, is cleared the next time Beacon opens. The active chat isn't
+ ended and can't be continued from this device.
  */
 + (void)logout;
 
 /**
- Logs the current Beacon user out and optionally ends any in-progress chats
- immediately.
+ Logs the current Beacon user out and optionally ends any in-progress chat.
+ Their Beacon data on this device is cleared the next time Beacon opens.
 
- @param endActiveChat If `true`, active chats are ended immediately. If `false`,
- active chats are allowed to be completed.
+ @param endActiveChat If `true`, Beacon tries to end the active chat. If the
+ request fails or doesn't finish before Beacon opens again, the chat may stay
+ open until an agent ends it or Help Scout ends it for inactivity. Either way,
+ it can't be continued from this device.
  */
 + (void)logout:(BOOL)endActiveChat;
 
@@ -282,12 +285,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)search:(NSString *)text  beaconSettings:(HSBeaconSettings *)settings viewController:(UIViewController *)viewController signature:(NSString * _Nullable)signature;
 
-//MARK: - AI Answers
+//MARK: - Scout
 /**
- Opens the Beacon window and asks a question in AI Answers automatically.
- This is only available for Beacons with AI Answers enabled.
+ Opens the Beacon window and asks a question in Scout automatically.
+ This is only available for Beacons with Scout enabled.
 
- @param question The question to send to AI Answers
+ @param question The question to send to Scout
  @param settings The Beacon settings from which to load Beacon.
 
  @note Displays Beacon from the application delegate's window root view controller.
@@ -295,20 +298,20 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)askQuestion:(NSString *)question beaconSettings:(HSBeaconSettings *)settings;
 
 /**
- Opens the Beacon window and asks a question in AI Answers automatically.
- This is only available for Beacons with AI Answers enabled.
+ Opens the Beacon window and asks a question in Scout automatically.
+ This is only available for Beacons with Scout enabled.
 
- @param question The question to send to AI Answers
+ @param question The question to send to Scout
  @param settings The Beacon settings from which to load Beacon.
  @param viewController The view controller to display Beacon from.
  */
 + (void)askQuestion:(NSString *)question beaconSettings:(HSBeaconSettings *)settings viewController:(UIViewController *)viewController;
 
 /**
- Opens the Beacon window and asks a question in AI Answers automatically.
- This is only available for Beacons with AI Answers enabled.
+ Opens the Beacon window and asks a question in Scout automatically.
+ This is only available for Beacons with Scout enabled.
 
- @param question The question to send to AI Answers
+ @param question The question to send to Scout
  @param settings The Beacon settings from which to load Beacon.
  @param signature The signature to provide, if you are using secure mode.
 
@@ -317,10 +320,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)askQuestion:(NSString *)question beaconSettings:(HSBeaconSettings *)settings signature:(NSString * _Nullable)signature;
 
 /**
- Opens the Beacon window and asks a question in AI Answers automatically.
- This is only available for Beacons with AI Answers enabled.
+ Opens the Beacon window and asks a question in Scout automatically.
+ This is only available for Beacons with Scout enabled.
 
- @param question The question to send to AI Answers
+ @param question The question to send to Scout
  @param settings The Beacon settings from which to load Beacon.
  @param viewController The view controller to display Beacon from.
  @param signature The signature to provide, if you are using secure mode.

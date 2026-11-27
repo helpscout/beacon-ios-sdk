@@ -11,6 +11,9 @@ typedef void (^NetworkResponseCompletionHandler)(NSURLResponse * _Nonnull respon
 typedef void (^NetworkCompletionHandler)(NSDictionary * _Nullable result, NSError * _Nullable error);
 
 NS_ASSUME_NONNULL_BEGIN
+
+extern NSString *const HSBeaconHTTPStatusCodeErrorKey;
+
 @interface HSBeaconBaseAPIClient: NSObject
 
 @property (nonatomic, strong) NSURL *baseURL;
@@ -35,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)addBeaconAuthHeader:(HSBeaconSecurityInfo *)securityInfo request:(NSMutableURLRequest *)request;
 
-- (NSError * _Nullable)errorFor:(NSData *)data response:(NSHTTPURLResponse *)response error:(NSError *)connectionError;
+- (NSError * _Nullable)errorFor:(NSData *)data response:(NSHTTPURLResponse * _Nullable)response error:(NSError * _Nullable)connectionError;
 
 - (NSString *)apiRootOverride;
 

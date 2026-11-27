@@ -50,6 +50,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype _Nonnull)initWithBeaconSettings:(HSBeaconSettings *_Nullable)beaconSettings user:(HSBeaconUser *_Nullable)user signature:(NSString *_Nullable)signature;
 
+/// Validates the signature for the current email so native requests can authenticate with `Signature`
+/// instead of `DeviceId`. The completion runs on the main queue.
+- (void)verifySignatureIfNeededWithCompletion:(void (^)(void))completion;
+
 @end
 
 NS_ASSUME_NONNULL_END

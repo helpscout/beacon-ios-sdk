@@ -7,7 +7,8 @@
 
 @property (nonatomic) NSString *signature;
 @property (nonatomic) NSString *deviceId;
-@property (nonatomic) BOOL signatureVerified;
+@property (nonatomic, copy) NSString *verifiedSignatureEmail;
+@property (nonatomic, readonly) BOOL signatureVerified;
 @property (nonatomic, readonly) BOOL hasProvidedEmail;
 @property (nonatomic, readonly) BOOL hasProvidedName;
 @property (nonatomic, readonly) BOOL hasVisitorEmail;

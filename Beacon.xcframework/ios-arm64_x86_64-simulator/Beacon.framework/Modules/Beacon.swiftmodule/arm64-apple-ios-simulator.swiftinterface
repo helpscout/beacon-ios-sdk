@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Beacon
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.4.2 effective-5.10 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Beacon
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4.2
 @_exported import Beacon
 import Darwin
 import DeveloperToolsSupport
@@ -19,24 +19,16 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(BeaconPushNotificationManager) public class BeaconPushNotificationManager : ObjectiveC.NSObject {
   @objc public static let shared: Beacon.BeaconPushNotificationManager
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func prepareForPresentation(settings: Beacon.HSBeaconSettings, signature: Swift.String?)
-  #endif
   @objc public func initializeSupport()
   @objc public func configureAutomaticHandling(methodSwizzling: Swift.Bool, overrideDelegate: Swift.Bool)
   @objc public func setDeviceToken(_ token: Foundation.Data)
   @objc(failedToRegisterForRemoteNotificationsWithError:) public func failedToRegisterForRemoteNotifications(error: Foundation.NSError)
   @objc public func isBeaconPushNotification(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
   @objc public func handleWillPresentNotification(_ notification: UserNotifications.UNNotification, completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func handlePushNotification(userInfo: [Swift.AnyHashable : Any], settings: Beacon.HSBeaconSettings, viewController: UIKit.UIViewController?, signature: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func emailSent(conversationId: Swift.String?, email: Swift.String?, name: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func chatStarted(chatId: Swift.String?, email: Swift.String?, name: Swift.String?, subject: Swift.String?)
-  #endif
   @objc deinit
 }
 public enum BeaconRoute {
@@ -45,6 +37,8 @@ public enum BeaconRoute {
   case askMessage
   case askChat
   case answers
+  case scout
+  @available(*, deprecated, renamed: "scout")
   case aiAnswers
   case previousMessages
   case search(Swift.String)
@@ -54,9 +48,7 @@ public enum BeaconRoute {
   }
 }
 extension Beacon.HSBeacon {
-  #if compiler(>=5.3) && $NonescapableTypes
   public class func navigate(_ route: Beacon.BeaconRoute, settings: Beacon.HSBeaconSettings, viewController: UIKit.UIViewController? = nil, signature: Swift.String? = nil)
-  #endif
 }
 @objc extension Foundation.NSNotification {
   @objc public static var beaconUnreadCountDidChangeNotification: Foundation.NSString {
@@ -74,9 +66,7 @@ extension Beacon.HSBeacon {
   @objc dynamic public func contrasting(_ color: UIKit.UIColor) -> UIKit.UIColor
 }
 @objc extension UIKit.UIWindow {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @_Concurrency.MainActor @preconcurrency dynamic public var topViewController: UIKit.UIViewController? {
     @objc get
   }
-  #endif
 }

@@ -90,6 +90,21 @@
     };
 
     // =============================================================================
+    // WEB STORAGE CLEANUP
+    // =============================================================================
+
+    const BEACON_STORAGE_KEY_PREFIXES = ['persist:hs-beacon-', 'hs-beacon-'];
+
+    function removeBeaconKeys(storage) {
+        const keys = [];
+        for (let i = 0; i < storage.length; i++) {
+            keys.push(storage.key(i));
+        }
+        keys.filter(key => BEACON_STORAGE_KEY_PREFIXES.some(prefix => key.startsWith(prefix)))
+            .forEach(key => storage.removeItem(key));
+    }
+
+    // =============================================================================
     // BEACON SDK INTEGRATION
     // =============================================================================
     
@@ -97,6 +112,26 @@
         // Track if event listeners have been registered
         listenersRegistered: false,
         currentBeaconId: null,
+        clearedWebStorageId: null,
+
+        /**
+         * Remove the previous Beacon's data from the web storage before Beacon JS reads it, then let iOS know.
+         * A clear ID is applied once per page, so a repeated init doesn't remove the new Beacon's data.
+         * A failed clear isn't acknowledged, so iOS keeps it pending and the next init retries it.
+         * @param {string} clearId - The ID of the clear iOS asked for
+         */
+        clearWebStorage: function(clearId) {
+            try {
+                if (this.clearedWebStorageId !== clearId) {
+                    removeBeaconKeys(window.localStorage);
+                    removeBeaconKeys(window.sessionStorage);
+                    this.clearedWebStorageId = clearId;
+                }
+                callNative("onWebStorageCleared", clearId);
+            } catch (e) {
+                console.error('Failed to clear web storage:', e);
+            }
+        },
 
         /**
          * Load the Beacon script and notify iOS when ready
@@ -125,7 +160,7 @@
         /**
          * Initialize Beacon.
          * Accepts either a beaconId string (legacy) or an options object:
-         *   { beaconId: '...', deviceId: '...' }
+         *   { beaconId: '...', deviceId: '...', webStorageClearId: '...' }
          *
          * @param {string|object} initArg - The Beacon ID (string) or init options (object)
          */
@@ -133,6 +168,11 @@
             const isObject = initArg && typeof initArg === 'object';
             const beaconId = isObject ? initArg.beaconId : initArg;
             const deviceId = isObject ? initArg.deviceId : null;
+            const webStorageClearId = isObject ? initArg.webStorageClearId : null;
+
+            if (webStorageClearId && typeof webStorageClearId === 'string') {
+                this.clearWebStorage(webStorageClearId);
+            }
 
             // If beacon ID changed, we need to reset listeners
             if (this.currentBeaconId && this.currentBeaconId !== beaconId) {
@@ -251,18 +291,6 @@
         },
 
         /**
-         * Destroy the beacon
-         */
-        destroy: function() {
-            this.listenersRegistered = false;
-            this.currentBeaconId = null;
-            if (window.Beacon) {
-                window.Beacon('destroy');
-            }
-            callNative("onBeaconDestroyed");
-        },
-
-        /**
          * Attempt to navigate back inside the Beacon UI.
          * Searches the main document first, then the #beacon-container iframe.
          * @returns {boolean} true if a back button was found and clicked; false otherwise
@@ -334,14 +362,13 @@
     BeaconSDK.loadScript();
     
     // Expose functions to native layer
-    // Supports either: window.initBeacon('beacon-id') OR window.initBeacon({ beaconId, deviceId })
+    // Supports either: window.initBeacon('beacon-id') OR window.initBeacon({ beaconId, deviceId, webStorageClearId })
     window.initBeacon = function(initArg) { return BeaconSDK.init(initArg); };
     window.openBeacon = function() { return BeaconSDK.open(); };
     window.closeBeacon = function() { return BeaconSDK.close(); };
     window.navigateBeacon = function(route) { return BeaconSDK.navigate(route); };
     window.searchBeacon = function(query) { return BeaconSDK.search(query); };
     window.getBeaconInfo = function() { return BeaconSDK.getInfo(); };
-    window.destroyBeacon = function() { return BeaconSDK.destroy(); };
     window.navigateBeaconBack = function() { return BeaconSDK.navigateBack(); };
 
 })(); 

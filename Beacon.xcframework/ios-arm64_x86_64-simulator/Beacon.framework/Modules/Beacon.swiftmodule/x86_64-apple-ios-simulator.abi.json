@@ -837,38 +837,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -879,10 +851,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -893,10 +879,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -1099,6 +1099,43 @@
           },
           {
             "kind": "Var",
+            "name": "scout",
+            "printedName": "scout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Beacon.BeaconRoute.Type) -> Beacon.BeaconRoute",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BeaconRoute",
+                    "printedName": "Beacon.BeaconRoute",
+                    "usr": "s:6Beacon0A5RouteO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Beacon.BeaconRoute.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BeaconRoute",
+                        "printedName": "Beacon.BeaconRoute",
+                        "usr": "s:6Beacon0A5RouteO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:6Beacon0A5RouteO5scoutyA2CmF",
+            "mangledName": "$s6Beacon0A5RouteO5scoutyA2CmF",
+            "moduleName": "Beacon"
+          },
+          {
+            "kind": "Var",
             "name": "aiAnswers",
             "printedName": "aiAnswers",
             "children": [
@@ -1132,7 +1169,11 @@
             "declKind": "EnumElement",
             "usr": "s:6Beacon0A5RouteO9aiAnswersyA2CmF",
             "mangledName": "$s6Beacon0A5RouteO9aiAnswersyA2CmF",
-            "moduleName": "Beacon"
+            "moduleName": "Beacon",
+            "deprecated": true,
+            "declAttributes": [
+              "Available"
+            ]
           },
           {
             "kind": "Var",
@@ -1727,38 +1768,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -1769,10 +1782,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -1783,10 +1810,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           }
         ]
       },
@@ -1836,8 +1877,8 @@
                 "moduleName": "Beacon",
                 "static": true,
                 "declAttributes": [
-                  "ObjC",
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "isFromExtension": true,
                 "accessorKind": "get"
@@ -1885,8 +1926,8 @@
                 "moduleName": "Beacon",
                 "static": true,
                 "declAttributes": [
-                  "ObjC",
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "isFromExtension": true,
                 "accessorKind": "get"
@@ -1913,38 +1954,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -1955,10 +1968,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -1969,10 +1996,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -2130,7 +2171,6 @@
           "ObjC",
           "SynthesizedProtocol",
           "NonSendable",
-          "Sendable",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -2142,45 +2182,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -2191,10 +2196,24 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -2205,10 +2224,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           },
           {
             "kind": "Conformance",
@@ -2322,38 +2362,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
           },
           {
             "kind": "Conformance",
@@ -2364,17 +2376,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           },
           {
             "kind": "Conformance",
@@ -2385,17 +2397,31 @@
           },
           {
             "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
           },
           {
             "kind": "Conformance",
-            "name": "__DefaultCustomPlaygroundQuickLookable",
-            "printedName": "__DefaultCustomPlaygroundQuickLookable",
-            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -2410,6 +2436,20 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       }
@@ -2426,29 +2466,36 @@
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Beacon.swift",
+      "kind": "StringLiteral",
+      "offset": 1274,
+      "length": 37,
+      "value": "\"com.helpscout.beacon.suggestedItems\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Beacon.swift",
       "kind": "BooleanLiteral",
-      "offset": 11113,
+      "offset": 12809,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Beacon.swift",
       "kind": "IntegerLiteral",
-      "offset": 16069,
+      "offset": 18516,
       "length": 4,
       "value": "1001"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Beacon.swift",
       "kind": "StringLiteral",
-      "offset": 16219,
+      "offset": 18666,
       "length": 28,
       "value": "\"com.helpscout.beacon.error\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Beacon.swift",
       "kind": "StringLiteral",
-      "offset": 16434,
+      "offset": 18881,
       "length": 59,
       "value": "\"Beacon not initialized. Call initialize(beaconId:) first.\""
     },
@@ -2475,15 +2522,8 @@
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/WebView\/Commands\/BeaconCommandManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1019,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/WebView\/Commands\/BeaconCommandManager.swift",
       "kind": "StringLiteral",
-      "offset": 1145,
+      "offset": 1023,
       "length": 30,
       "value": "\"com.helpscout.beacon.command\""
     },
@@ -4016,70 +4056,70 @@
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconLabelsCatalog.swift",
       "kind": "StringLiteral",
-      "offset": 9913,
+      "offset": 9903,
       "length": 16,
       "value": "\"welcomeMessage\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconLabelsCatalog.swift",
       "kind": "StringLiteral",
-      "offset": 9948,
+      "offset": 9938,
       "length": 16,
       "value": "\"welcomeMessage\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconLabelsCatalog.swift",
       "kind": "StringLiteral",
-      "offset": 9994,
-      "length": 35,
-      "value": "\"AI Answers - backend may override\""
+      "offset": 9984,
+      "length": 30,
+      "value": "\"Scout - backend may override\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconLabelsCatalog.swift",
       "kind": "StringLiteral",
-      "offset": 10069,
+      "offset": 10054,
       "length": 16,
       "value": "\"wereHereToHelp\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconLabelsCatalog.swift",
       "kind": "StringLiteral",
-      "offset": 10104,
+      "offset": 10089,
       "length": 16,
       "value": "\"wereHereToHelp\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconLabelsCatalog.swift",
       "kind": "StringLiteral",
-      "offset": 10151,
+      "offset": 10136,
       "length": 17,
       "value": "\"whatMethodWorks\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconLabelsCatalog.swift",
       "kind": "StringLiteral",
-      "offset": 10187,
+      "offset": 10172,
       "length": 17,
       "value": "\"whatMethodWorks\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconLabelsCatalog.swift",
       "kind": "StringLiteral",
-      "offset": 10271,
+      "offset": 10256,
       "length": 5,
       "value": "\"you\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconLabelsCatalog.swift",
       "kind": "StringLiteral",
-      "offset": 10295,
+      "offset": 10280,
       "length": 5,
       "value": "\"you\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconLabelsCatalog.swift",
       "kind": "Array",
-      "offset": 11007,
+      "offset": 10992,
       "length": 315,
       "value": "[]"
     },
@@ -4156,7 +4196,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Utils\/BeaconLogger.swift",
       "kind": "StringLiteral",
-      "offset": 2040,
+      "offset": 2046,
       "length": 14,
       "value": "\"HH:mm:ss.SSS\""
     },
@@ -4275,42 +4315,56 @@
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 5298,
+      "offset": 7212,
       "length": 25,
       "value": "\"com.helpscout.beacon.id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 5360,
+      "offset": 7274,
       "length": 30,
       "value": "\"com.helpscout.beacon.baseURL\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 5436,
+      "offset": 7350,
       "length": 39,
       "value": "\"com.helpscout.beacon.pendingWebLogout\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 7839,
+      "offset": 7443,
+      "length": 47,
+      "value": "\"com.helpscout.beacon.pendingWebStorageClearId\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconStateManager.swift",
+      "kind": "StringLiteral",
+      "offset": 7551,
+      "length": 54,
+      "value": "\"com.helpscout.beacon.loggedOutCustomerOwnsWebStorage\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconStateManager.swift",
+      "kind": "StringLiteral",
+      "offset": 12419,
       "length": 19,
       "value": "\"beacon_user_email\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 7892,
+      "offset": 12472,
       "length": 18,
       "value": "\"beacon_user_name\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Core\/BeaconStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 7949,
+      "offset": 12529,
       "length": 23,
       "value": "\"beacon_user_timestamp\""
     },
@@ -4415,7 +4469,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/Presentation\/BeaconViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8109,
+      "offset": 8133,
       "length": 4,
       "value": "true"
     },
@@ -4429,14 +4483,35 @@
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/WebView\/BeaconWebViewCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 952,
-      "length": 35,
-      "value": "\"com.helpscout.beacon.reinitialize\""
+      "offset": 988,
+      "length": 37,
+      "value": "\"com.helpscout.beacon.configKeyPaths\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/WebView\/BeaconWebViewCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1191,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/WebView\/BeaconWebViewCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1335,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/WebView\/BeaconWebViewCoordinator.swift",
       "kind": "StringLiteral",
-      "offset": 8363,
+      "offset": 1403,
+      "length": 40,
+      "value": "\"com.helpscout.beacon.loggedOutCustomer\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/WebView\/BeaconWebViewCoordinator.swift",
+      "kind": "StringLiteral",
+      "offset": 12648,
       "length": 9,
       "value": "\"unknown\""
     },
@@ -4448,16 +4523,30 @@
       "value": "\"com.helpscout.beacon.coordinator\""
     },
     {
+      "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/WebView\/BeaconWebViewNavigationPolicyResolver.swift",
+      "kind": "Array",
+      "offset": 573,
+      "length": 17,
+      "value": "[\"http\", \"https\"]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/Internal\/WebView\/BeaconWebViewNavigationPolicyResolver.swift",
+      "kind": "Array",
+      "offset": 752,
+      "length": 47,
+      "value": "[\"about\", \"blob\", \"data\", \"file\", \"javascript\"]"
+    },
+    {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/HSBeacon+JSWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 10673,
+      "offset": 10689,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/Beacon\/Classes\/Wrapper\/HSBeacon+JSWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 10720,
+      "offset": 10736,
       "length": 5,
       "value": "false"
     },

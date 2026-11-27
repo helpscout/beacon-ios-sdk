@@ -61,7 +61,7 @@
                          from:(nullable UIViewController *)viewController
                     signature:(nullable NSString *)signature;
 
-/// Ask a question in AI Answers with JS wrapper
+/// Ask a question in Scout with JS wrapper
 + (void)askQuestionWithJSWrapper:(nonnull NSString *)question
                         settings:(nonnull HSBeaconSettings *)settings
                             from:(nullable UIViewController *)viewController
